@@ -32,6 +32,7 @@ const siteConfig = {
   // Used for publishing and more
   projectName: 'es.latamlink.io',
   organizationName: 'LatamLink',
+  cname: "es.latamlink.io", 
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -41,7 +42,6 @@ const siteConfig = {
     {doc: 'eosio', label: 'Docs'},
     {doc: 'api', label: 'APIs'},
     {page: 'ayuda', label: 'Help'},
-    {blog: true, label: 'Blog'},
     {search: true}
   ],
 
