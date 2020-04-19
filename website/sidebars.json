@@ -1,10 +1,39 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Testnet": [
+      "eosio",
+      "protocolo-consenso",
+      "topologia-red",
+      "monitoreo",
+      "recursos",
+      "rendimiento",
+      "cuentas-permisos",
+      "digital-identity",
+      "privacidad",
+      "interoperabilidad",
+      "roadmap"
+    ],
+    "Guías": [
+      "como-iniciar",
+      "llaves-privadas",
+      "instalacion-nodos",
+      "hola-mundo"
+
+    ],
+    "Herramientas": [
+      "monitor",
+      "gestion-red",
+      "explorador-bloques",
+      "api",
+      "cli",
+      "eos-js",
+      "respaldos",
+      "boilerplate  "
+    ],
+    "Recursos": [
+      "otros-recursos",
+      "redes-eosio",
+      "glosario"
+    ]
   }
 }
