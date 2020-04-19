@@ -41,7 +41,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'eosio', label: 'Docs'},
     {doc: 'api', label: 'APIs'},
-    {page: 'ayuda', label: 'Help'},
+    {page: 'ayuda', label: 'Ayuda'},
     {search: true}
   ],
 
