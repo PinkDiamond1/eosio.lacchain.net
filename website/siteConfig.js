@@ -21,17 +21,17 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  title: 'LatamLink EOSIO Testnet - LACChain', // Title for your website.
+  tagline: 'Documentación Técnica',
+  url: 'https://es.latamlink.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'es.latamlink.io',
+  organizationName: 'LatamLink',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -48,16 +48,16 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: "img/latamlink_logo-h-full-color-overwhite.svg",
+  footerIcon: "img/footerlogo.png",
+  favicon: "img/favicon.ico",
 
   /* Colors for website */
   colors: {
-    primaryColor: '#a10e2d',
-    secondaryColor: '#70091f',
+    primaryColor: "#19af54",
+    secondaryColor: "#000"
   },
-
+  editUrl: "https://github.com/LatamLink/es.latamlink.io/edit/master/docs/",
   /* Custom fonts for website */
   /*
   fonts: {
@@ -73,7 +73,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} LatamLink`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
