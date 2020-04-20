@@ -42,6 +42,7 @@ const siteConfig = {
     {doc: 'eosio', label: 'Docs'},
     {doc: 'api', label: 'APIs'},
     {page: 'ayuda', label: 'Ayuda'},
+    {href: 'https://latamlink.io/docs/eosio', label: 'English'},
     {search: true}
   ],
 
@@ -81,6 +82,12 @@ const siteConfig = {
     theme: 'default',
   },
 
+  algolia: {
+    apiKey: 'f7e83f64ca037b5315b5ccd56f79910c',
+    indexName: 'latamlink',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
+  
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['https://buttons.github.io/buttons.js'],
 
