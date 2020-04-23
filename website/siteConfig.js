@@ -87,6 +87,10 @@ const siteConfig = {
     indexName: 'latamlink',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
+
+  separateCss: [
+    "css/static_website.css"
+  ],
   
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['https://buttons.github.io/buttons.js'],
@@ -96,6 +100,7 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
 
+  twitterUsername: "EOSCostaRica",
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
@@ -112,7 +117,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: "https://github.com/LatamLink/es.latamlink.io"
 };
 
 module.exports = siteConfig;
