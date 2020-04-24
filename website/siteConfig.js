@@ -40,8 +40,6 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'eosio', label: 'Docs'},
-    {doc: 'api', label: 'APIs'},
-    {page: 'ayuda', label: 'Ayuda'},
     {href: 'https://latamlink.io/docs/eosio', label: 'English'},
     {search: true}
   ],
@@ -52,6 +50,9 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: "img/latamlink_logo-h-full-color-overwhite.svg",
   footerIcon: "img/footerlogo.png",
+  eoscrIcon: "images/EOSCr-logo.png",
+  eosarIcon: "images/eosar_logo.png",
+  eosvenIcon: "images/eosvenezuelalogo-122x122.png",
   favicon: "img/favicon.ico",
 
   /* Colors for website */
@@ -91,7 +92,13 @@ const siteConfig = {
   separateCss: [
     "css/static_website.css"
   ],
-  
+
+  algolia: {
+    apiKey: '63254e86059566be7b401497c9484166',
+    indexName: 'latamlink_es',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
+
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['https://buttons.github.io/buttons.js'],
 
