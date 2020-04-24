@@ -11,37 +11,38 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption: "User1",
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: "/img/undraw_open_source.svg",
+    infoLink: "https://www.facebook.com",
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: 'LatamLink EOSIO Testnet - LACChain', // Title for your website.
-  tagline: 'Documentación Técnica',
-  url: 'https://es.latamlink.io', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  title: "LatamLink EOSIO Testnet - LACChain", // Title for your website.
+  tagline: "Documentación Técnica",
+  url: "https://es.latamlink.io", // Your website URL
+  baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'es.latamlink.io',
-  organizationName: 'LatamLink',
-  cname: "es.latamlink.io", 
+  projectName: "es.latamlink.io",
+  organizationName: "LatamLink",
+  cname: "es.latamlink.io",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'eosio', label: 'Docs'},
-    {href: 'https://latamlink.io/docs/eosio', label: 'English'},
-    {search: true}
+    { href: "https://es.latamlink.io", label: "Inicio" },
+    { doc: "eosio", label: "Docs" },
+    { href: "https://latamlink.io/docs/eosio", label: "English" },
+    { search: true },
   ],
 
   // If you have users set above, you add it here:
@@ -58,7 +59,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: "#19af54",
-    secondaryColor: "#000"
+    secondaryColor: "#000",
   },
   editUrl: "https://github.com/LatamLink/es.latamlink.io/edit/master/docs/",
   /* Custom fonts for website */
@@ -80,30 +81,28 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: "default",
   },
 
-  separateCss: [
-    "css/static_website.css"
-  ],
+  separateCss: ["css/static_website.css"],
   algolia: {
-    apiKey: '63254e86059566be7b401497c9484166',
-    indexName: 'latamlink_es',
-    algoliaOptions: {} // Optional, if provided by Algolia
+    apiKey: "63254e86059566be7b401497c9484166",
+    indexName: "latamlink_es",
+    algoliaOptions: {}, // Optional, if provided by Algolia
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: ["https://buttons.github.io/buttons.js"],
 
   // On page navigation for the current documentation page.
-  onPageNav: 'separate',
+  onPageNav: "separate",
   // No .html extensions for paths.
   cleanUrl: true,
 
-  twitterUsername: "EOSCostaRica",
+  twitterUsername: "LatamLink_EOS",
   // Open Graph and Twitter card images.
-  ogImage: 'img/undraw_online.svg',
-  twitterImage: 'img/undraw_tweetstorm.svg',
+  ogImage: "img/undraw_online.svg",
+  twitterImage: "img/undraw_tweetstorm.svg",
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
@@ -117,7 +116,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  repoUrl: "https://github.com/LatamLink/es.latamlink.io"
+  repoUrl: "https://github.com/LatamLink/es.latamlink.io",
 };
 
 module.exports = siteConfig;
