@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://latamlink.io">
-		<img src="logo.png" >
+		<img src="https://github.com/LatamLink/latamlink.io/raw/master/logo.png" >
 	</a>
 </p>
 
