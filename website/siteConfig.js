@@ -42,6 +42,7 @@ const siteConfig = {
     { href: "https://es.latamlink.io", label: "Inicio" },
     { href: "https://monitor.latamlink.io", label: "Monitor" },
     { href: "http://explorer.testnet.latamlink.io", label: "Explorador" },
+    { href: "api", label: "APIs" },
     { href: "https://latamlink.io/docs/eosio", label: "English" },
     { search: true },
   ],
