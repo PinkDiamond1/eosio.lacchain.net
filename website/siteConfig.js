@@ -85,7 +85,6 @@ const siteConfig = {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: "default",
   },
-
   separateCss: ["css/static_website.css"],
   algolia: {
     apiKey: "63254e86059566be7b401497c9484166",
