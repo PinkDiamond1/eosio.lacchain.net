@@ -82,13 +82,7 @@ const siteConfig = {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: 'default',
   },
-
-  algolia: {
-    apiKey: 'f7e83f64ca037b5315b5ccd56f79910c',
-    indexName: 'latamlink',
-    algoliaOptions: {} // Optional, if provided by Algolia
-  },
-
+  
   separateCss: [
     "css/static_website.css"
   ],
@@ -107,7 +101,7 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
 
-  twitterUsername: "EOSCostaRica",
+  twitterUsername: "LatamLink_EOS",
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
