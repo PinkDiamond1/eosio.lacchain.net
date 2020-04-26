@@ -10,18 +10,20 @@ En el caso de LatamLink existe un grupo de nodos que poseen la autoridad de vali
 
 ## Proof of Authority (POA)
 
-El grupo de productores de bloques poseen la autoridad de escribir a la cadena de bloques porque fueron otorgados este privilegio por parte de la  autoridad superior, el comité permisionador, quien sera la máxima autoridad y quien determina cuales serán los nodos productores de bloques. 
+El grupo de productores de bloques poseen la autoridad de escribir a la cadena de bloques porque fueron otorgados este privilegio por parte de la  autoridad superior, el **comité permisionador**, quien sera la máxima autoridad y quien determina cuales serán los nodos productores de bloques. 
 
 ### Comite Permisionador LACChain
 
 LACChain es una red pública / permisionada, de tal manera que se requiere de una autoridad central
- que gobierna la actividad de la red red, esto con el objetivo de obtener una red legalmente supervisada.
+ que gobierna la actividad de la red, esto con el objetivo de obtener una red legalmente supervisada.
 
-> LACChain se diseña bajo el principio de que el comité permisionador tenga la menor intervención posible. 
+LACChain se diseña bajo el principio de que el comité permisionador sea transparente y tenga la menor intervención posible. 
 
 La autoridad del comite permisionador podrá ser derivada de un conjunto de actores mediante aprobaciones multifirmas [`multisig`]( https://developers.eos.io/manuals/eosjs/v21.0/how-to-guides/how-to-propose-a-multisig-transaction/#gatsby-focus-wrapper) te tal manera que se requieran del consenso del grupo mediante la aprobación de la mayoría simple, es decir, que se junten los votos de la mitad de los actores más uno adicional como mínimo.
 
-Dentro de la principales funciones del comité permisionador esta evaluar las entidades que quieren registrarse como productores de bloques. Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser productor de bloques.
+Dentro de la principales funciones del comité permisionador esta evaluar las entidades que quieran registrarse como productores de bloques.
+
+>  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser productor de bloques en LatamLink.
 
 Eventualmemte habrá un vehículo legal, quien verifica identidad y firma contratos con productores de bloques. 
 
