@@ -30,4 +30,4 @@ Los contratos de sistema permiten a las redes EOSIO:
 - Mantener la compatibilidad total con otras cadenas de bloques EOSIO.
 
 
-**El objetivo de LatamLink es implementar el testnet de EOSIO para LAC-Chain** y demostrar la flexibilidad de esta tecnología desarrollando contratos de sistema personalizados para LAC-Chain. El testnet de LatamLink permitirá designar los actores que escriben y validan bloques nuevos a la cadena mediante contratos de sistema basados en mecanismos de consenso  Proof-of-Authority (POA) en una blockchain pública permisionada.
+**El objetivo de LatamLink es implementar el testnet de EOSIO para [LAC-Chain](https://medium.com/@lacchain.official/what-is-the-lacchain-global-alliance-and-what-does-it-consist-of-861cb76257b1)** y demostrar la flexibilidad de esta tecnología desarrollando contratos de sistema personalizados para LAC-Chain. El testnet de LatamLink permitirá designar los actores que escriben y validan bloques nuevos a la cadena mediante contratos de sistema basados en mecanismos de consenso  Proof-of-Authority (POA) en una blockchain pública permisionada.
