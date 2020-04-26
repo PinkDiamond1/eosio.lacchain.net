@@ -2,10 +2,10 @@
   "docs": {
     "Testnet": [
       "eosio",
-      "protocolo-consenso",
+      "mecanismo-consenso",
+      "recursos",
       "topologia-red",
       "monitoreo",
-      "recursos",
       "rendimiento",
       "cuentas-permisos",
       "digital-identity",
