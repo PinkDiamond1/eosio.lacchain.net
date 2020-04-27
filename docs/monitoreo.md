@@ -3,20 +3,29 @@ id: monitoreo
 title: Monitoreo de Red
 sidebar_label: Monitoreo de Red
 ---
-El monitoreo de lo que sucede en la red es esencial para mejorarlo y medir el impacto social de sus soluciones.
-
-El principal objetivo es producir información descentralizada y confiable sobre cada nodo y la actividad de la red.
+El monitoreo de lo que sucede en la red es esencial para mejorarlo y medir el impacto social de sus soluciones. El principal objetivo de las herramientas de monitoreo es producir información descentralizada y confiable sobre cada nodo y la actividad de la red.
 
 ## Monitoreo on-chain
 
-- Contratos inteligentes para monitoreo EOSIO.
-- Investigar capacidad de monitorear otra redes blockchian, por ejemplo ethereum.
+Existe una colección de [contratos inteligentes y utilidades para EOSIO](https://eosmechanics.com/)  que se pueden emplear en LatamLink.
 
-### Ejemplos de contratos de monitoreo:
+Las métricas son generadas por contratos inteligentes ubicados bajo la cuenta `eosmechanics`. Son ejecutados durante el `schedule` de cada productor de bloques y registra los tiempos de ejecución utilizando el campo `cpu_usage_us` incluido en todas las transacciones de la red. Los datos estarán públicamente disponibles para su análisis y lo alentamos a hacerlo para ayudar a identificar problemas y mejorar el rendimiento de los productores de bloques.
 
-- [EOS Mechanics](https://github.com/AlohaEOS/eos-mechanics)
-- [EOS Block Producer Benchmarks](https://www.alohaeos.com/tools/benchmarks) por [Aloha EOS](https://www.alohaeos.com/)
-- [Block Producer Performance](https://labs.eostitan.com/#/block-producer-performance) por [EOS Titan](https://eostitan.com/)
+
+Ejemplos de herramientas que utilizan estos datos: 
+
+- [EOS Block Producer Benchmarks](https://www.alohaeos.com/tools/benchmarks) 
+- [Block Producer Performance](https://labs.eostitan.com/#/block-producer-performance) 
+
+
+### CPU Benchmark
+
+Esta métrica de velocidad de CPU utiliza como punto de referencia el tiempo de CPU consumido calculando los números primos de Mersenne. El cálculo de primos es un estándar de la industria para medir el rendimiento de CPU y utiliza operaciones de código que son comunes en el desarrollo de software.
+
+### RAM Benchmark
+
+Esta métrica consiste en escribir y leer rápidamente a una tabla RAM y de forma muy similar a la métrica de CPU pretende medir el rendimiento de los recursos ofrecidos por lo distintos productores de bloques. 
+
 
 ## Monitoreo off-chain
 

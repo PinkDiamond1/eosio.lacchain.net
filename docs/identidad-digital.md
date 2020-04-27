@@ -1,24 +1,26 @@
 ---
-id: digital-identity
-title: Digital Identity
+id: identidad-digital
+title: Identidad Digital
 sidebar_label: Identidad Digital
 ---
 
-Self-soverign identity for end users, compatible with national digital identities and electronic signatures
 
-Interoperable with other national blockchains and ecosystems.
+Identidad autónoma para usuarios finales, compatible con identidades digitales nacionales y firmas electrónicas
 
-## Techno-Legal Framework
+Interoperable con otras cadenas de bloques y ecosistemas nacionales.
 
-### Trust Framework
+
+## Marco tecnolegal
+
+### Marco de confianza
 - Trusted lists (TLs)
 - Identity providers (IDs) and Certificate Authorities (CA)
 - Levels of Assurance (LOAs)
 
-### Regulatory Policies
+### Políticas Regulatorias
 - Electronic Signature, DLTs, DIDs, VCs
 
-### Technology 
+### Tecnologías
 - Decentralized Idetifiers (DIDs)
 - Verifiable Credentials (VC)
 - Verifiable Presentations (VPs)
