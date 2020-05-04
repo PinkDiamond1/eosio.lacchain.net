@@ -6,15 +6,31 @@ sidebar_label: APIs
 
 ## Que es un API
 
-Diferentes API endpoints para interactuar con el testnet.
 
-[API Specification](https://developers.eos.io/manuals/eos/latest/nodeos/plugins/chain_api_plugin/api-reference/index)
+## dfuse 	 
+
+LatamLink ha implementado las potentes funciones de [dfuse](https://www.dfuse.io/en), una sólida API de blockchain que permite transmitir actualizaciones de estado en tiempo real, realizar búsquedas rápidas y proporcionar garantías de transacciones irreversibles todo por primera vez usando una simple llamada API.
+
+### Endpoints GraphQL
+
+>  - [http://dfuse.testnet.latamlink.io/graphiql/](http://dfuse.testnet.latamlink.io/graphiql/)
 
 
-## Endpoints 
+## EOSIO RPC API 
 
-	 https://latamlink.eosio.cr
+La siguiente API es el mecanismo nativo de EOSIO disponible para interactuar con el testnet.
 
-### HTTP RPC 
+[Especificación API](https://developers.eos.io/manuals/eos/latest/nodeos/plugins/chain_api_plugin/api-reference/index)
 
-### P2P
+
+### Endpoints HTTP
+
+> - [https://latamlink.eosio.cr](https://latamlink.eosio.cr/v1/chain/get_info)
+
+
+### EOS JS
+
+EOS JS es la API oficial de JavaScript para la integración con redes blockchain basadas en EOSIO utilizando [RPC API](https://developers.eos.io/eosio-nodeos/reference).
+
+La documentación se puede encontrar [aquí](https://eosio.github.io/eosjs)
+
