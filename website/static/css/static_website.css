@@ -93,6 +93,11 @@ html {
   background: #fff;
 }
 
+.head {
+  grid-area: head;
+  max-height: 59.09px;
+}
+
 #particles-js {
   position: absolute;
   width: 100%;
