@@ -19,56 +19,56 @@
     crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/6c84ac616f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
 </head>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <div style="background-color: #f7f7f7;" id="particles-js"></div>
-<header class="head p-0 fixed-top" style="max-width: 100vw !important;">
-  <header class="head navbar shadow navbar-expand-sm navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="es.latamlink.io">
-      <img src="images/latamlink_logo-h-full-color-overwhite.png" class="img-fluid rounded" width="75" height="75"
-        alt="" />
-    </a>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav text-left mr-2 ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#acerca">Acerca de</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://medium.com/@latam_link">Noticias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://monitor.latamlink.io">Monitor</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="http://explorer.testnet.latamlink.io">Explorador</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/docs/eosio">
-            Documentación
-          </a>
-        </li>
-      </ul>
-      <a style="color: #5bb517;" class="mr-3" href="https://latamlink.io/">English</a>
-      <a style="color: #0bb155;" target="_blank" href="https://github.com/LatamLink"><i
-          class="fab fa-github fa-2x"></i></a>
-    </div>
-  </header>
+<header style="max-width: 100vw !important;"
+  class="head fixed-top navbar shadow navbar-expand-sm navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="es.latamlink.io">
+    <img src="images/latamlink_logo-h-full-color-overwhite.png" class="img-fluid rounded" width="100" height="100"
+      alt="" />
+  </a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav text-left mr-2 ml-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#acerca">Acerca de</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://medium.com/@latam_link">Noticias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://monitor.latamlink.io">Monitor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="http://explorer.testnet.latamlink.io">Explorador</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/docs/eosio">
+          Documentación
+        </a>
+      </li>
+    </ul>
+    <a style="color: #5bb517;" class="mr-3" href="https://latamlink.io/">English</a>
+    <a style="color: #0bb155;" target="_blank" href="https://github.com/LatamLink"><i
+        class="fab fa-github fa-2x"></i></a>
+  </div>
 </header>
 <div class="main-container">
-  <div style="background: transparent;" class="pt-0 pl-2 pr-2 content-header">
+  <div style="background: transparent;" class="pt-0 pl-4 pr-4 content-header">
     <img class="img-fluid" src="images/latamlink_logo-header.svg" alt="" />
-    <div class="mt-5 pt-3 container-fluid text-center">
-      <button id="more" style="font-size: 5em; outline: none;" class="text-secondary btn bg-transparent">
+    <div class="container-fluid text-center">
+      <button id="more" style="font-size: 5em;" class="text-secondary btn bg-transparent">
         <i class="fas fa-angle-down" style="color: #0bb155;"></i>
       </button>
     </div>
   </div>
   <main class="content">
-    <section id="acerca" class="mt-5 mb-5 information-grid">
+    <section id="acerca" class="mt-5 pr-2 pl-2 mb-5 information-grid">
       <div class="information-card">
         <div class="text-top mr-4">
           <img src="images/latamlink_Floor Light_1853.svg" alt="" />
@@ -194,27 +194,156 @@
       </div>
       <img class="img-fluid get-started-img" src="images/mobile-previews-fake.png" alt="" />
     </section>
-    <section class="foot">
-      <div class="footer-container">
-        <h4 class="font-weight-light text-center">
-          " LatamLink is a voluntary regional alliance to highlight the benefits
-          of the EOSIO blockchain. "
-        </h4>
-        <img class="img-fluid" src="images/latamlink_logo-footer.svg" alt="" />
-      </div>
+    <section class="banner">
+      <h4 class="font-weight-light text-center">
+        " LatamLink is a voluntary regional alliance to highlight the benefits
+        of the EOSIO blockchain. "
+      </h4>
+      <img class="img-fluid" src="images/latamlink_logo-footer.svg" alt="" />
     </section>
-    <section id="herramientas" class="d-flex mt-5 mb-5 pt-5 pl-4 pr-4 flex-column justify-content-sm-center">
+    <section id="herramientas" class="d-flex mt-5 mb-5 pt-5 flex-column justify-content-sm-center">
       <div class="tools-header text-center mb-4">
         <h1>
           <span class="underline">Herramientas</span>
         </h1>
         <br />
-        <p>
+        <p class="text-justify text-center">
           Estas son algunas herramientas y recursos que te ayudarán a prepararte
           para iniciar en LatamLink.
         </p>
       </div>
       <br />
+      <div class="tools">
+        <div class="left-to-right-slider">
+          <div class="p-3 shadow-sm rounded text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/search.svg" alt="" />
+            <h2>Explorador de Bloques</h2>
+            <p class="font-weight-light text-justify">
+              <span>LatamLink provee </span>
+              <a target="_blank" href="http://explorer.testnet.latamlink.io">un Explorador de Bloques</a>
+              <span>
+                que te permite buscar y visualizar información acerca de
+                transacciones y datos de los Contratos Inteligentes.
+              </span>
+            </p>
+          </div>
+          <div class="p-3 text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/docse-01.svg" alt="" />
+            <h2>Documentación</h2>
+            <p class="font-weight-light text-justify">
+              <span>
+                Creamos una lista seleccionada con las contribuciones de los
+                expertos en la industria del blockchain. Echa un vistazo a la
+                documentación
+              </span>
+              <a href="https://latamlink.io/docs/eosio">aquí</a>
+            </p>
+          </div>
+          <div class="p-3 shadow-sm rounded text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_1.svg" alt="" />
+            <h2>APIs</h2>
+            <p class="font-weight-light text-justify">
+              Podrás elegir entre un grupo de API endpoints disponibles para
+              trabajar en LatamLink.
+            </p>
+          </div>
+          <div class="p-3 text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_Monitor_1014.svg" alt="" />
+            <h2>Monitor</h2>
+            <p class="font-weight-light text-justify">
+              LatamLink cuenta con un servicio de monitor que te permitirá
+              rastrear la actividad en la red.
+            </p>
+          </div>
+          <div class="p-3 shadow-sm rounded text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_Share_1003884.svg" alt="" />
+            <h2>Faucet</h2>
+            <p class="font-weight-light text-justify">
+              El servicio de faucet de LatamLink te permitirá acceder a tokens
+              gratis para alojar y ejecutar contratos inteligentes y aplicaciones
+              descentralizadas.
+            </p>
+          </div>
+          <div class=" p-3 text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_wallet_1003987.svg" alt="" />
+            <h2>
+              Billeteras
+            </h2>
+            <p class="font-weight-light text-justify">
+              LatamLink se adapta a varias billeteras de EOS que podrás conﬁgurar
+              en el testnet.
+            </p>
+          </div>
+        </div>
+        <div class="right-to-left-slider">
+          <div class="p-3 shadow-sm rounded text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_Laptop_187.svg" alt="" />
+            <h2>Cleos</h2>
+            <p class="font-weight-light text-justify">
+              <a href="https://developers.eos.io/manuals/eos/latest/cleos/index">Cleos</a>
+              <span>
+                es la interfaz de comando desarrollada por la empresa
+              </span>
+              <a target="_blank" href="https://block.one/">block.one</a>
+            </p>
+          </div>
+          <div class="p-3 text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_Wrench_1004034.svg" alt="" />
+            <h2>
+              Ambiente de desarrollo
+            </h2>
+            <p class="font-weight-light text-justify">
+              <a target="_blank" href="https://www.eosstudio.io/">EOS Studio</a>
+              <span>
+                cuenta con un ambiente local para desarrollo de aplicaciones
+                descentralizadas (dApps) basadas en EOS.
+              </span>
+            </p>
+          </div>
+          <div class="p-3 shadow-sm rounded text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_Camera_1.svg" alt="" />
+            <h2>Snapshots</h2>
+            <p class="font-weight-light text-justify">
+              El servicio de snapshots de LatamLink le permitirá hacer cambios en
+              los nodos de EOSIO rápidamente sin necesidad de sincronizar la
+              blockchain.
+            </p>
+          </div>
+          <div class="p-3 text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/latamlink_balloon-1.svg" alt="" />
+            <h2>
+              Grupo de Telegram
+            </h2>
+            <p class="font-weight-light text-justify">
+              Contamos con un grupo de Telegram para coordinar esfuerzos y
+              compartir información relevante al ecosistema de EOS regional.
+            </p>
+          </div>
+          <div class="p-3 shadow-sm rounded text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/dfuse-01.svg" alt="" />
+            <h2>Integración con dfuse</h2>
+            <p class="font-weight-light text-justify">
+              <span>LatamLink provee </span>
+              <a target="_blank" href="http://dfuse.testnet.latamlink.io/graphiql/">un enpoint Dfuse</a>
+              <span>
+                con el fin de ejecutar consultas de alto rendimiento en el
+                blockchain.
+              </span>
+            </p>
+          </div>
+          <div class="p-3 text-center">
+            <img class="mt-5 mb-4 img-fluid" src="images/Github-VerGreen-SVG-Hermes-22-04-20.svg" alt="" />
+            <h3>GitHub</h3>
+            <p class="font-weight-light text-justify">
+              <span>LatamLink tiene</span>
+              <a target="_blank" href="https://github.com/LatamLink">un perfil de github</a>
+              <span>
+                que reune a todos los participantes de la iniciativa.
+              </span>
+            </p>
+          </div>
+        </div>
+        <!--
       <div class="tools">
         <div class="pt-2 pl-4 pr-4 pb-0 border-b border-r text-center d-flex flex-column justify-content-sm-start">
           <img class="mt-5 mb-4 img-fluid" src="images/search.svg" alt="" />
@@ -270,7 +399,7 @@
           <h2>
             Billeteras
           </h2>
-          <p class="font-weight-light">
+          <p class="font-weight-light text-justify">
             LatamLink se adapta a varias billeteras de EOS que podrás conﬁgurar
             en el testnet.
           </p>
@@ -341,6 +470,7 @@
             </span>
           </p>
         </div>
+      </div>  -->
       </div>
     </section>
   </main>
@@ -390,3 +520,59 @@
     </section>
   </footer>
 </div>
+
+<script>
+  var rightToLeft = tns({
+    container: '.right-to-left-slider',
+    items: 3,
+    mouseDrag: true,
+    speed: 700,
+    loop: true,
+    autoplay: true,
+    controls: false,
+    autoplayTimeout: 3000,
+    autoplayButtonOutput: false,
+    responsive: {
+      360: {
+        items: 1
+      },
+      640: {
+        items: 2
+      },
+      700: {
+        items: 2
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
+  var leftToRight = tns({
+    container: '.left-to-right-slider',
+    items: 3,
+    mouseDrag: true,
+    speed: 700,
+    loop: true,
+    autoplay: true,
+    controls: false,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    autoplayDirection: "backward",
+    responsive: {
+      360: {
+        items: 1
+      },
+      640: {
+        items: 2
+      },
+      700: {
+        items: 2
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
+
+  $(".tns-nav").remove();
+</script>
