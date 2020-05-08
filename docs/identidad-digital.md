@@ -4,10 +4,22 @@ title: Identidad Digital
 sidebar_label: Identidad Digital
 ---
 
+La criptografía de clave pública ha estado en uso durante varias décadas y ha evolucionado a un conjunto de estándares para firmas digitales. Muchos gobiernos han adoptado estándares de firma digital para que individuos o empresas puedan obtener certificados de identidad y usarlos para firmar documentos legales.
 
-Identidad autónoma para usuarios finales, compatible con identidades digitales nacionales y firmas electrónicas
+>	 LatamLink aspira a integrar una identidad auto soberana para los usuarios finales que sea compatible con las identidades digitales nacionales y las firmas digitales comúnmente utilizadas por los usuarios de grandes empresas.
 
-Interoperable con otras cadenas de bloques y ecosistemas nacionales.
+La integración de la identidad digital a las redes blockchain abre nuevas oportunidades, por ejemplo:
+
+- La integración de la identidad digital con blockchain reducirá la necesidad de KYC.
+
+- Integración perfecta con las soluciones informáticas existentes.
+
+- Eliminar la compleja mecánica de la clave privada de la experiencia del usuario.
+
+
+## certificados de cliente X.509
+
+Los certificados emitidos por una Autoridad de Certificación (CA) responsable de validar la identidad del usuario se usan comúnmente para la Identidad Digital. Estos certificados se pueden usar para generar claves privadas de blockchain. Lea este artículo sobre [Uso de certificados PKI X.509 como identidad de cadena de bloques EOSIO](https://github.com/cc32d9/cc32d9_ideas_for_EOSIO/blob/master/X509_Certificates_as_EOSIO_id.md)
 
 
 ## Marco tecnolegal
