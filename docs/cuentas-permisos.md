@@ -6,17 +6,47 @@ sidebar_label: Cuentas y Permisos
 
 ## Cuentas
 
-Una cuenta en EOSIO es un nombre legible para humanos que se almacena en la cadena de bloques. Puede ser propiedad de un individuo o grupo de individuos dependiendo de la configuración de los permisos. Se requiere una cuenta para transferir o enviar cualquier transacción válida a la cadena de bloques.
+Una **cuenta** en EOSIO es un nombre legible para humanos que se almacena en la cadena de bloques. Puede ser propiedad de un individuo o grupo de individuos dependiendo de la configuración de los permisos. Se requiere una cuenta para transferir o enviar cualquier transacción válida a la cadena de bloques.
 
 El nombre de la cuenta debe cumplir con ciertos requisitos: caracteres de la a `a` la `z` en minúscula, números del `1` al `5` y tener una longitud de 12 caracteres. Por ejemplo : `latamlink12`.
 
-## Autorizaciones y Permisos
+Obtenga más información sobre [cuentas en EOSIO](https://developers.eos.io/welcome/latest/protocol/accounts_and_permissions/#2-accounts)
 
-Los permisos son nombres arbitrarios utilizados para definir los requisitos para una transacción enviada en nombre de ese permiso. Se pueden asignar permisos para la autoridad sobre acciones contractuales específicas vinculando autorización o linkauth.
+## Permisos
 
-Para obtener más información sobre estos conceptos, consulte la [documentación de Cuentas y permisos](https://developers.eos.io/welcome/latest/protocol/accounts_and_permissions).
+EOSIO permite crear permisos jerárquicos personalizados que se derivan del permiso `owner`. Un permiso personalizado es básicamente una llave que solo puede realizar las acciones que se le permite realizar.
+
+>	**Por ejemplo:** Cualquier cuenta puede crear un permiso personalizado con su par de llaves únicas para interactuar únicamente con un contrato.
+
+De esta manera, EOSIO ofrece capacidades de permisos de última generación con una gran flexibilidad para configurar un protocolo simple o complejo integrado en el protocolo base.
+
+Los permisos de la cuenta también fortalecen la seguridad en caso de que alguien que no esté autorizado obtenga una llave privada, lo único que puede hacer son las acciones que la clave se ha limitado a ejecutar.
 
 
-## Wallets
+## Autorizaciones
 
-Los wallets son clientes que almacenan llaves privadas asociadas con los permisos de una o más cuentas. Idealmente, un wallet (o billetera) tiene un estado bloqueado (cifrado) y desbloqueado (descifrado) que está protegido por una contraseña de alta entropía. En la distribución de EOSIO  viene incluido  un cliente CLI llamado `cleos` que interactúa con un cliente lite llamado `keosd`.
+Una cuenta puede definir una asignación entre cualquiera de sus permisos nombrados y un contrato inteligente o acción dentro de ese contrato. Esto permite un control más preciso sobre las autorizaciones de acción, lo que facilita mucho que las cuentas que pertenecen a actores con diferentes roles dentro de una organización reflejen la estructura organizativa en la cadena de bloques.
+
+En otras palabras, el permiso de cada cuenta se puede vincular a una tabla de autoridad utilizada para determinar si se puede satisfacer una autorización de acción determinada.
+
+Para obtener más información sobre estos conceptos, consulte [documentación de cuentas y permisos](https://developers.eos.io/welcome/latest/protocol/accounts_and_permissions).
+
+## Autenticado (Billeteras)
+
+Las billeteras son clientes que almacenan llaves privadas asociadas con los permisos de una o más cuentas. Idealmente, una billetera tiene un estado bloqueado (encriptado) y desbloqueado (sin encriptar) que está protegido por una contraseña de alta entropía.
+
+### Biblioteca de autenticación universal
+Existe una biblioteca que permite a las aplicaciones usar fácilmente diferentes proveedores de autenticación. Los desarrolladores de aplicaciones deben admitir muchos proveedores de autenticación (billeteras) para maximizar el alcance del usuario y permitir la elección del usuario.
+
+La librería [Universal Authenticator Library (UAL)](https://github.com/EOSIO/universal-authenticator-library) logra este objetivo al abstraer la lógica comercial interna de muchos proveedores de autenticación y exponer una única API universal.
+
+#### Autenticadores disponibles:
+ - [UAL for Scatter](https://github.com/EOSIO/ual-scatter)
+ - [UAL for Lynx](https://github.com/EOSIO/ual-lynx)
+ - [UAL for Ledger](https://github.com/EOSIO/ual-ledger)
+ - [UAL for Token Pocket](https://github.com/EOSIO/ual-token-pocket)
+ - [UAL for MEET.ONE](https://github.com/meet-one/ual-meetone)
+ - [UAL for Anchor](https://github.com/greymass/ual-anchor)
+
+### KEOSD
+En la distribución de EOSIO viene incluido un cliente CLI llamado [`cleos`](https://developers.eos.io/manuals/eos/latest/cleos/index) que interactúa con un cliente llamado [`keosd`](https://developers.eos.io/manuals/eos/latest/keosd/index) que proporciona un servicio de billetera seguro y un punto final API para aplicaciones que requieren integración de back-end con un proveedor de firmas digitales.

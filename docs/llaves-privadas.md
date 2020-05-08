@@ -5,7 +5,7 @@ sidebar_label: Llaves Privadas
 ---
 
 ## Crear cuenta en el blockchain público
-En la terminal, vamos a ejecutar el comando `cleos` para generar las llaves criptográficas requeridas para crear una cuenta . Para crear una cuenta en el testnet de LatamLink. Además, vamos a requerir un block explorer para verificar las acciones ejecutadas. Para eso, vamos a usar Bloks.io que es muy popular entre la comunidad EOS.
+En la mayoría de las billeteras puede generar nuevas llaves para EOSIO, en esta guía crearemos claves en el terminal. Ejecutemos el comando `cleos` para generar las claves criptográficas necesarias para crear una cuenta. Para crear una cuenta en LatamLink Testnet.
 
 
 ## Generar y gestionar las llaves
@@ -16,7 +16,7 @@ Una vez generadas las llaves, nos dirigimos al sandbox, LatamLink Testnet, para 
 Luego, introducimos las llaves públicas de `owner` y `active` para ejecutar el contrato. Estas pueden ser cualquiera de las que se generaron con el comando cleos create key anteriormente. Se recomienda no compartir las llaves privadas.
 
 
-## Administrar la billetera
+## Administrar la billetera con cleos
 Una vez creada la cuenta, debemos generar la billetera e identificarla con el nombre de la cuenta, que en este ejemplo es `holacontrato`, mediante el comando `cleos wallet create -n holacontrato --to-console`.
 
 En este momento, las llaves están guardadas únicamente en la consola, por lo que es necesario crear la billetera que contendrá las llaves. De esta manera, se podrá acceder a estas llaves con una única contraseña. Hay que importar las llaves en la billetera una a la vez, siguiendo el comando: `cleos wallet import` y añadiendo el nombre de la cuenta.

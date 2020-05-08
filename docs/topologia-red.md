@@ -4,7 +4,6 @@ title: Topología de Red
 sidebar_label: Topología de Red
 ---
 
-
 <img src="/img/diagramas/topologia-red.png" alt="Topologia de Red LatamLink" width="450"/>
 
 ## Red Core
@@ -22,14 +21,15 @@ Nodos productores que pueden asumir el rol de productores de bloques si alguno d
 
 ![Topología de Red de Acceso](/img/diagramas/red-de-acceso.png)
 
+### Nodos Semilla
+Proveen acceso a los bloques de los producers , se conectan directamente a los producers y a los nodos API
+
 ### Nodos API
 Proveen acceso a la red mediante el API servido sobre HTTPS. Se pueden configurar como varios nodos detrás de un proxy / load balancer . También es recomendable algún tipo de protección contra ataques de denegación de servicio DDoS  ya que son el servicio con contacto directo con redes públicas.
 
 ### Nodos Completos
 Mantienen un registro completo de la historia de las transacciones en una base de datos convencional que facilita la consulta de datos de las transacciones en la cadena. 
 
-### Nodos Semilla
-Proveen acceso a los bloques de los producers , se conectan directamente a los producers y a los nodos API
 
 ## Red de Consumo
 
@@ -37,13 +37,15 @@ La red de consumo utiliza la red de acceso para escritura y lectura del blockcha
 
 ![Topología Red de Consumo](/img/diagramas/red-consumo.png)
 
-### Optimización de Rutas / Conexiones 
+## Optimización de Rutas / Conexiones 
 La meta es gestionar la topología de red de forma dinámica usando contratos inteligentes.
 
-En la [topología actual de de LACChain](https://github.com/lacchain/besu-network/blob/master/TOPOLOGY_AND_ARCHITECTURE.md), los nodos "boot" se pueden conectar a todos los nodos de la red (boot, validador y escritor). En la actualidad, todos los nodos "boot" están conectados a todos los nodos. Esto no es muy escalable ni eficiente. Además, los nodos no están restringidos por la red para conectarse solo a los nodos que corresponden (es decir, escritor con boot, o validador con validador y boot), ni tienen la información sobre qué tipo de nodo es cada uno. Necesitamos proporcionarles esa información fuera de la cadena.
+
+### Topología red BESU
+En la [topología actual de de LACChain](https://github.com/lacchain/besu-network/blob/master/TOPOLOGY_AND_ARCHITECTURE.md), los nodos "boot" se pueden conectar a todos los nodos de la red (boot, validador y escritor). En la actualidad, todos los nodos "boot" están conectados a todos los nodos. Esto no es muy escalable ni eficiente. Además, los nodos no están restringidos por la red para conectarse solo a los nodos que corresponden (es decir, escritor con boot, o validador con validador y boot), ni tienen la información sobre qué tipo de nodo es cada uno. Es necesario proporcionarles esa información fuera de la cadena.
 
 
-### Infraestructura Cloud
+## Infraestructura Cloud
 
 Es de interes de LAC-Chain utilizar implementaciones automáticas en varias nubes utilizando herramientas como terraform.
 - Aprovechar las herramientas en la nube para mejorar las capacidades de la red.
