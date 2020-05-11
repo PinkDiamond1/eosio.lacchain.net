@@ -26,16 +26,22 @@ class Footer extends React.Component {
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
           <div>
-            <h5>Documentación</h5>
-            <a href={this.docUrl('como-iniciar', this.props.language)}>
-              Como Iniciar
+            <h5>Herramientas</h5>
+            <a 
+              href='http://monitor.latamlink.io'
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Monitor de Red
             </a>
-            <a href={this.docUrl('http://explorer.testnet.latamlink.io', this.props.language)}>
+            <a 
+              href='http://explorer.testnet.latamlink.io'
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               Explorador de Bloques 
             </a>
-            <a href={this.docUrl('api', this.props.language)}>
-              APIs
-            </a>
+            <a href={this.docUrl("api.html")}>APIs</a>
           </div>
           <div>
             <h5>Comunidad</h5>
@@ -46,29 +52,36 @@ class Footer extends React.Component {
             >
               Stack Overflow
             </a>
-            <a href="https://t.me/">Chat Telegram</a>
             <a
-              href="https://twitter.com/"
+              href="https://github.com/LatamLink"
               target="_blank"
               rel="noreferrer noopener"
             >
-              Twitter
+              GitHub
+            </a>
+            <a 
+              class="github-button" 
+              href="https://github.com/LatamLink" 
+              aria-label="Follow @LatamLink on GitHub"
+            >
+              Follow @LatamLink
             </a>
           </div>
           <div>
             <h5>Más</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/LatamLink">GitHub</a>
-            <a
-              className="github-button"
-              href={this.props.config.repoUrl}
-              data-icon="octicon-star"
-              data-count-href="/LatamLink/documentacion"
-              data-show-count="true"
-              data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub"
+            <a 
+              href="https://medium.com/@latam_link"
+              target="_blank"
+              rel="noreferrer noopener"
             >
-              Star
+              Medium
+            </a>
+            <a
+              href="https://twitter.com/LatamLink_EOS"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Twitter
             </a>
             {this.props.config.twitterUsername && (
               <div className="social">
@@ -78,19 +91,6 @@ class Footer extends React.Component {
                 >
                   Follow @{this.props.config.twitterUsername}
                 </a>
-              </div>
-            )}
-            {this.props.config.facebookAppId && (
-              <div className="social">
-                <div
-                  className="fb-like"
-                  data-href={this.props.config.url}
-                  data-colorscheme="dark"
-                  data-layout="standard"
-                  data-share="true"
-                  data-width="225"
-                  data-show-faces="false"
-                />
               </div>
             )}
           </div>
