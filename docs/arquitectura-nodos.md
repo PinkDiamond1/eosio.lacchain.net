@@ -1,4 +1,8 @@
-# LACCHAIN TOPOLOGIA Y ARQUITECTURA PARA NODOS EOSIO NODES
+---
+id: arquitectura-nodos
+title: Arquitectura para nodos red LACCHAIN
+sidebar_label: Arquitectura Nodos
+---
 
 Tomando como referencia la topologia de red de la red besu presentamos una propuesta de configuracion utilizando nodos EOSIO.
 
@@ -13,7 +17,7 @@ Tomando como referencia la topologia de red de la red besu presentamos una propu
 
 ## 2 Topology
 
-![LatamLink Topology](topologia-nodos.png)
+![LatamLink Topology](/img/diagramas/topologia-nodos.png)
 
 ### Layers
 * **Layer 1 (Core)** Red de validadores y nodos p2p para meshear entre ellos
