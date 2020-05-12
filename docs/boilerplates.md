@@ -1,7 +1,7 @@
 ---
-id: boilerplate
-title: Dapp Boilerplate
-sidebar_label: dAPP Boilerplate
+id: boilerplates
+title: Dapp Boilerplates
+sidebar_label: dAPP Boilerplates
 ---
 
 ## Dapp Boilerplate
