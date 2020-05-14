@@ -6,7 +6,7 @@ sidebar_label: Arquitectura Nodos
 
 Tomando como referencia la topologia de red de la red besu presentamos una propuesta de configuracion utilizando nodos EOSIO.
 
-## 1 Criterios
+## Criterios
 * **Trustless**, el funcionamiento correcto y optimo de la red, no deberia basarse en confianza entre las entidades que conformen la red.
 
 * **Escalabilidad horizontal**, poder escalar la infraestructura de la red para satisfacer el crecimiento de su demanda de forma sencilla.
@@ -15,7 +15,7 @@ Tomando como referencia la topologia de red de la red besu presentamos una propu
 
 * **MVP** La presente topologia puede ser la base de un mvp sin modificaciones custom.
 
-## 2 Topology
+## Topology
 
 ![LatamLink Topology](/img/diagramas/topologia-nodos.png)
 
@@ -63,7 +63,7 @@ Tomando como referencia la topologia de red de la red besu presentamos una propu
 
 
 
-## 3 Architecture
+## Architecture
 
 
 ### Node Discovery
