@@ -100,7 +100,7 @@ El ciclo de una transaccion es:
 * los boot de layer 2 verifican el nuevo bloque y lo broadcastean al layer 3
 
 
-## 4 Configuraciones relevantes nodeos
+## Configuraciones relevantes nodeos
 
 Esta no es una lista de configuraciones que pueden usarse out of the box, mas bien una lista de opciones importantes para cada tipo de nodo.
 
