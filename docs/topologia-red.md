@@ -4,45 +4,117 @@ title: Topología de Red
 sidebar_label: Topología de Red
 ---
 
+Tomando como referencia la topologia de red de la red besu presentamos una propuesta de configuración utilizando nodos EOSIO.
+
+## Criterios de Diseño
+* **Trustless**, el funcionamiento correcto y optimo de la red, no debería basarse en confianza entre las entidades que conformen la red.
+
+* **Escalabilidad horizontal**, poder escalar la infraestructura de la red para satisfacer el crecimiento de su demanda de forma sencilla.
+
+* **Permisos de escritura y lectura** Utilizar un sistema de permisos para otorgar permisos de escritura (push tx) o de lectura (consumo de API o bloques por P2P).
+
+* **MVP** La presente topología puede ser la base de un MVP sin modificaciones al protocolo de red nativo de EOSIO.
+
+
+
+## Topología Propuesta
+
+
 <img src="/img/diagramas/topologia-red.png" alt="Topologia de Red LatamLink" width="450"/>
 
-## Red Core
+- **Capa 1 ([Core](/docs/topologia-red#capa-1---red-core))** Red de validadores y nodos p2p para meshear entre ellos
+
+	- **Capa 2 ([Bridge](/docs/topologia-red#capa-2---bridge))** Distribucion p2p entre validators p2p y boots
+
+		- **Capa 3 ([Satellite](/docs/topologia-red#layer-3---satellite))** Layer de consumo para writers y observers
+
+
+![LatamLink Topology](/img/diagramas/topologia-nodos.png)
+
+
+## Capa 1 - Red Core
 La red core se compone de los productores de bloques quienes han sido agregados al grupo de consenso. La fuente de poder computacional final es derivada de la red core.
 
-![Topología de Red Core](/img/diagramas/red-core.png)
 
 ### Nodos Productores de Bloques
-Nodos que ejecutan los contratos inteligentes y añaden nuevos bloques a la cadena. Son los custodios de la red que escriben la cadena de bloques que el resto de la red validará.
+En una red EOSIO estos nodos son denominados blockproducers, se encargan de generar bloques cada 500ms. Estos nodos deberían estar conectados unicamente a otros nodos manejados por la misma entidad.
 
-### Productores de Bloques de Reserva
-Nodos productores que pueden asumir el rol de productores de bloques si alguno del grupo principal dejará de responder.
+###  Validator p2p para otros Validadores
+Nodo P2P configurado como parte de la red interna de los validadores.
 
-## Red de Acceso
+## Capa 2 - Bridge
 
-![Topología de Red de Acceso](/img/diagramas/red-de-acceso.png)
+### Validator p2p out
+Nodo configurado para solo broadcastear bloques por conexiones p2p , los observers p2p out permitidos se conectan a este nodo
 
-### Nodos Semilla
-Proveen acceso a los bloques de los producers , se conectan directamente a los producers y a los nodos API
+### Validator p2p bidir
+Nodo configurado para aceptar transacciones por p2p de nodos permitidos y enviarsela al validador
 
-### Nodos API
-Proveen acceso a la red mediante el API servido sobre HTTPS. Se pueden configurar como varios nodos detrás de un proxy / load balancer . También es recomendable algún tipo de protección contra ataques de denegación de servicio DDoS  ya que son el servicio con contacto directo con redes públicas.
+### Boot p2p out
+Nodo configurado para aceptar bloques de los validadores p2p y solo reenviarlos a los observers p2p y api, no acepta txs
 
-### Nodos Completos
-Mantienen un registro completo de la historia de las transacciones en una base de datos convencional que facilita la consulta de datos de las transacciones en la cadena. 
+### Boot p2p bidir
+Nodo p2p configurado para actualizar con nuevos bloques a los nodos writer y a su vez aceptar txs para enviar a los validadores
+
+## Layer 3 - Satellite
+
+### Writer p2p
+Acepta transacciones por p2p y las envia al layer 1 atravez de un `boot-p2p-bidir`.
+> por ejemplo: Una wallet maneja su propia API y se conecta a la red atravez de un writer p2p.
+
+### Writer api
+Acepta solicitudes de push transaction por http y las envia al layer 1 atravez de un `boot-p2p-bidir`
+
+### Observer nodes p2p
+Un observer node p2p es un nodo que esta consumiendo información del layer 1 atravez de un `boot-p2p-out`, solo puede leer el estado de la blockchain.
+
+### Observer nodes API
+Nodo que permite pedir información de la blockchain a travez de un request http, se recomienda el uso de dfuse.
 
 
-## Red de Consumo
+## Architecture
 
-La red de consumo utiliza la red de acceso para escritura y lectura del blockchain. Se compone de todas  las aplicaciones y usuarios que interactúan con el blockchain. Las interacciones de usuarios y aplicaciones se realiza mediante proveedores de firmas digitales o wallets y librerías como EOSJS.
 
-![Topología Red de Consumo](/img/diagramas/red-consumo.png)
+### Node Discovery
+
+Ciclo de Node Discovery
+
+1. La entidad configura un nuevo nodo
+1. La entidad registra un nuevo nodo con el comité incluyendo en su información, tipo de nodo ( `observer-api`,`writer-p2p`,`boot-p2p-bidir`,etc. ) junto con su llave publica para peering
+1. El comité actualiza la tabla de nodos en el smart contract con la información de los nodos para agregar esta información
+1. Los nodos de la red que lo necesiten actualizan su lista de pares permitidos para agregar el nuevo nodo a los nodos que hagan falta.
+1. El nuevo nodo confirma que esta conectado a la red.
+
+
+### Node Communication
+
+Para mas información sobre como funciona la comunicación entre nodos en redes EOSIO se puede consultar su [Developers Portal](https://developers.eos.io/welcome/latest/protocol/network_peer_protocol)
+
+### Transactions
+
+El ciclo de una transacción es :
+
+1. Un cliente envía  una transacción firmada por https o por p2p a un writer node, ya sea api o p2p.
+
+1. El writer verifica la transacción
+
+1. El writer broadcastea la transacción a los nodos `boot-p2p-bidir`
+
+1. el `boot-p2p-bidir`, broadcastea la transaccion al layer 1(core)
+
+1. El validador que este en schedule verifica la transacción y la ejecuta.
+
+1. El validador broadcastea el nuevo bloque al layer 1 y layer 2
+
+1. los boot de layer 2 verifican el nuevo bloque y lo broadcastean al layer 3
+
+
+
+
+
 
 ## Optimización de Rutas / Conexiones 
 La meta es gestionar la topología de red de forma dinámica usando contratos inteligentes.
-
-
-### Topología red BESU
-En la [topología actual de de LACChain](https://github.com/lacchain/besu-network/blob/master/TOPOLOGY_AND_ARCHITECTURE.md), los nodos "boot" se pueden conectar a todos los nodos de la red (boot, validador y escritor). En la actualidad, todos los nodos "boot" están conectados a todos los nodos. Esto no es muy escalable ni eficiente. Además, los nodos no están restringidos por la red para conectarse solo a los nodos que corresponden (es decir, escritor con boot, o validador con validador y boot), ni tienen la información sobre qué tipo de nodo es cada uno. Es necesario proporcionarles esa información fuera de la cadena.
 
 
 ## Infraestructura Cloud

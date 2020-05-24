@@ -2,7 +2,6 @@
 id: explorador-bloques
 title: Explorador de Bloques
 ---
-
 Un explorador de bloques es una herramienta para visualizar todas las transacciones que ocurren en la red.
 
 ## Explorador de bloques de alta precisión eosq

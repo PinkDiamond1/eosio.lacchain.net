@@ -3,9 +3,7 @@ id: funciones-importantes
 title: Funciones Importantes en EOSIO
 sidebar_label: Funciones Importantes
 ---
-
 ## Cuenta Privilegiada EOSIO
-
 Esta cuenta posee acceso ilimitado a los recursos CPU, NET, y RAM.  Se fijará una cuenta compuesta por el comité permisionador que representa la autoridad máxima de la red. 
 
 Se pueden crear permisos especificaos para cada acción privilegiada y ademas se podrá utilizar un contrato multifirma (o “multisig”) con parámetros variables que requerirá el consentimiento de la mayoría de los actores en la tabla. Esta cuenta privilegiada se denominará la cuenta `eosio`.
