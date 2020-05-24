@@ -5,6 +5,7 @@
       "mecanismo-consenso",
       "recursos",
       "cuentas-permisos",
+      "funciones-importantes",
       "arquitectura-nodos",
       "topologia-red",
       "monitoreo",
@@ -27,7 +28,7 @@
       "explorador-bloques",
       "api",
       "cli",
-      "eos-js",
+      "librerias-sdk",
       "respaldos",
       "boilerplates"
     ],
