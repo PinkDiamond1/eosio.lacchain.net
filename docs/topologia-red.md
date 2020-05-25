@@ -15,10 +15,7 @@ Tomando como referencia la topologia de red de la red besu presentamos una propu
 
 * **MVP** La presente topología puede ser la base de un MVP sin modificaciones al protocolo de red nativo de EOSIO.
 
-
-
 ## Topología Propuesta
-
 
 <img src="/img/diagramas/topologia-red.png" alt="Topologia de Red LatamLink" width="450"/>
 
@@ -107,10 +104,6 @@ El ciclo de una transacción es :
 1. El validador broadcastea el nuevo bloque al layer 1 y layer 2
 
 1. los boot de layer 2 verifican el nuevo bloque y lo broadcastean al layer 3
-
-
-
-
 
 
 ## Optimización de Rutas / Conexiones 
