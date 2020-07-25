@@ -12,7 +12,7 @@ Las cuentas podrán utilizar los siguientes recursos en la red:
 ### RAM
 En una red EOSIO, la RAM es el espacio de almacenamiento de memoria donde la cadena de bloques almacena datos, se mide en kilobytes (KiB). Si su contrato necesita almacenar datos en una tabla de blockchain, como en una base de datos, puede almacenarlos en la RAM de blockchain.
 
-RAM es un recurso muy importante y es limitado. Se utiliza al ejecutar muchas acciones que están disponibles en la cadena de bloques, al crear una nueva cuenta, por ejemplo, la información de esa cuenta se almacena en la memoria de la cadena de bloques. Además, cuando una cuenta acepta un nuevo tipo de token, se debe crear un nuevo registro en algún lugar de la memoria de blockchain que contenga el saldo del nuevo token aceptado, y esa memoria, el espacio de almacenamiento en blockchain, debe ser comprada por el cuenta que transfiere el token o por la cuenta que acepta el nuevo tipo de token.
+RAM es un recurso muy importante y es limitado. Se utiliza al ejecutar muchas acciones que están disponibles en la cadena de bloques, al crear una nueva cuenta, por ejemplo, la información de esa cuenta se almacena en la memoria de la cadena de bloques. Un ejemplo del uso de RAM es cuando una cuenta acepta un nuevo tipo de token, se debe crear un nuevo registro en algún lugar de la memoria de blockchain que contenga el saldo del nuevo token aceptado, y esa memoria, el espacio de almacenamiento en blockchain, debe ser comprada por el cuenta que transfiere el token o por la cuenta que acepta el nuevo tipo de token.
 
 RAM es referido como `memory` en el siguiente resultado del comando `cleos get account` : 
 ```c++
@@ -23,7 +23,7 @@ memory:
 Puede encontrar más detalles sobre RAM como recurso del sistema [aquí](https://developers.eos.io/manuals/eosio.contracts/latest/key-concepts/ram).
 
 ### CPU
-La CPU está procesando la potencia, la cantidad de CPU que tiene una cuenta se mide en microsegundos (μs), se conoce como `CPU bandwith`, el comando `cleos get account` emite la cantidad de tiempo de procesamiento que una cuenta tiene a su disposición al presionar acciones a un contrato.
+CPU es el poder de procesamiento, la cantidad de CPU que tiene una cuenta se mide en microsegundos (μs), se conoce como `CPU bandwith`, el comando `cleos get account` emite la cantidad de tiempo de procesamiento que una cuenta tiene a su disposición al enviar acciones a un contrato.
 
 Puede encontrar más detalles sobre la CPU como recurso del sistema [aquí](https://developers.eos.io/manuals/eosio.contracts/latest/key-concepts/cpu).
 
