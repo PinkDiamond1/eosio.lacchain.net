@@ -33,12 +33,82 @@ Esta métrica consiste en escribir y leer rápidamente a una tabla RAM y de form
 - datos podrían venir de validadores (todo tienen el mismo peso )
 - el comité permisionador se reserva el derecho discrecional de eliminar un productor.
 
-### Información sobre nodos
-- a que entidad pertenece 
-- ubicación de nodos
-- metricas de rendimiento y disponibilidad del nodo
-- datos públicos
-	
+## Divulgación voluntaria de información de nodo
+
+Permite a los operadores de nodos anunciar públicamente su propiedad de una cuenta de LAC-Chain y compartir información sobre ellos mismos.
+
+Piense en un WHOIS para cuentas de LAC-Chain que se verifiquen mediante una firma de blockchain. Todos estos campos requieren un inicio de sesión único que se autentica a través de blockchain y, por lo tanto, no puede estar equivocado. Solo el BP con la clave correcta puede editar estos campos utilizando la interfaz de usuario.
+
+
+### Fase 1
+#### 1. Interfaz de usuario básica completa
+#### 2. Lista autogenerada de todos los productores de bloques extraídos de la cadena de bloques.
+ - Nombre de la cuenta del nodo
+ - Tipo de entidad de nodo
+ - Clave pública de nodo
+ - Código de ubicación (ISO 3166-1 numérico)
+
+#### 3. Información voluntaria proporcionada por cada entidad
+ - Nombre legal
+ - Número de identificación
+ - Nombre de contacto técnico
+ - Nombre de contacto negocios
+ - Dirección
+ - Sitio web
+ - Email
+ - Redes sociales
+ - Marca / Logotipo
+ - Código de Conducta
+ 
+#### Nodos EOSIO
+- Ubicaciones de nodos
+- Puntos finales API y P2P
+- Validadores
+- Nodos de escritor
+- Nodos History API
+- Nodos API
+- Nodos Boot
+- Nodos Observadores
+ 
+### Fase II
+#### Rendimiento
+ - Bloques perdidos en X período de tiempo * * Involuntario *
+ - Rondas perdidas en X período de tiempo * * Involuntario *
+ - Número total de bloques producidos * * Involuntario *
+ - Posición media en la lista de BP * * Involuntaria *
+ - Calificación de rendimiento promedio * * Involuntario *
+ - Tiempo de inactividad total
+ - Interrupciones
+ - Pruebas de estrés
+ - Gestión de parches
+ - Capacidad Recuperación de Desastres
+ - Pruebas de intrusión
+
+#### Infraestructura
+- Física / Nube pública / Compartida
+* Sitio primario
+* Sitio secundario
+- Diagrama Infraestructura
+- Protección DDoS
+- Firewalls
+- Balanceadores de carga
+- VPN 
+- Planes futuros
+
+### Fase III
+
+#### Estructura de soporte
+ - Número de empleados técnicos.
+ - Soporte 24/7
+ - Herramientas de monitoreo
+ - Plan de comunicación con otros BP
+
+#### Estructura de propiedad
+ - Descripción de la estructura comercial
+ - Número de empleados
+ - Titulares de intereses individuales
+ - Accionistas de entidades comerciales
+ - Entidades afiliadas
 
 ### Monitoreo en la Nube
 
