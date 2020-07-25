@@ -23,7 +23,7 @@ La autoridad del comite permisionador podrá ser derivada de un conjunto de acto
 
 Dentro de la principales funciones del comité permisionador esta evaluar las entidades que quieran registrarse como productores de bloques.
 
->  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser productor de bloques en LatamLink.
+>  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser productor de bloques en LatamLink. Consulte nuestra sección sobre el [proceso de permisionado](proceso-permisionado.md) para obtener más información.
 
 Eventualmemte habrá un vehículo legal, quien verifica identidad y firma contratos con productores de bloques. 
 

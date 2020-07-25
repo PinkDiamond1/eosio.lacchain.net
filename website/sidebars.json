@@ -5,7 +5,6 @@
       "mecanismo-consenso",
       "recursos",
       "cuentas-permisos",
-      "funciones-importantes",
       "topologia-red",
       "trazabilidad",
       "monitoreo",
@@ -16,11 +15,11 @@
       "roadmap"
     ],
     "Guías": [
+      "proceso-permisionado",
       "como-iniciar",
       "llaves-privadas",
       "instalacion-nodos",
       "hola-mundo"
-
     ],
     "Herramientas": [
       "monitor",
@@ -35,6 +34,7 @@
     "Recursos": [
       "otros-recursos",
       "redes-eosio",
+      "funciones-importantes",
       "glosario"
     ]
   }
