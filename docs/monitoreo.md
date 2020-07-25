@@ -72,11 +72,11 @@ Piense en un WHOIS para cuentas de LAC-Chain que se verifiquen mediante una firm
  
 ### Fase II
 #### Rendimiento
- - Bloques perdidos en X período de tiempo * * Involuntario *
- - Rondas perdidas en X período de tiempo * * Involuntario *
- - Número total de bloques producidos * * Involuntario *
- - Posición media en la lista de BP * * Involuntaria *
- - Calificación de rendimiento promedio * * Involuntario *
+ - Bloques perdidos en X período de tiempo *Involuntario*
+ - Rondas perdidas en X período de tiempo *Involuntario*
+ - Número total de bloques producidos *Involuntario*
+ - Posición media en la lista de BP *Involuntario*
+ - Calificación de rendimiento promedio *Involuntario*
  - Tiempo de inactividad total
  - Interrupciones
  - Pruebas de estrés
@@ -86,8 +86,8 @@ Piense en un WHOIS para cuentas de LAC-Chain que se verifiquen mediante una firm
 
 #### Infraestructura
 - Física / Nube pública / Compartida
-* Sitio primario
-* Sitio secundario
+	- Sitio primario
+	- Sitio secundario
 - Diagrama Infraestructura
 - Protección DDoS
 - Firewalls
@@ -114,8 +114,8 @@ Piense en un WHOIS para cuentas de LAC-Chain que se verifiquen mediante una firm
 
 Además de aprovechar los servicios en la nube existentes para el monitoreo.
 
- - prometheus
- - grafana 
+ - Prometheus
+ - Grafana 
 
 Adicionalmente se explorarán herramientas de Blockchain Analytics y Data Science.
 
@@ -124,7 +124,3 @@ Adicionalmente se explorarán herramientas de Blockchain Analytics y Data Scienc
 
 Se proponer crear un [monitor de red](monitor.md) nativo como herramienta para lograr este objetivo. 
  
-
-
-
-
