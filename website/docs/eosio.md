@@ -8,7 +8,6 @@ sidebar_label: Protocolo EOSIO
 Algunas de las características innovadoras de EOSIO incluyen:
 
 - **Transacciones gratuitas** con límites de consumo.
-[![EOSIO Github](/img/eosio-logo.png#right)](https://github.com/eosio)
 - **Baja latencia** en confirmación de bloques nuevos  *(0.5 segundos)*
 - Finalidad **tolerante a fallas bizantinas BFT**
 - **Nombres de cuentas legibles por humanos** *(e.g. :* `latamlink12`*)*
