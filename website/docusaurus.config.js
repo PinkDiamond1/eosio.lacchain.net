@@ -8,9 +8,6 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
-
-
-
 const siteConfig = {
   title: "LatamLink EOSIO Testnet - LACChain", // Title for your website.
   tagline: "Documentación Técnica",
@@ -21,7 +18,6 @@ const siteConfig = {
   projectName: "es.latamlink.io",
   organizationName: "LatamLink",
   favicon: "img/favicon.ico",
-
 
   presets: [
     [
@@ -35,7 +31,7 @@ const siteConfig = {
           routeBasePath: 'docs',
           // Sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
         },
         theme: {
@@ -57,11 +53,6 @@ const siteConfig = {
       },
       
       items: [
-        {
-          href: 'https://medium.com/@latam_link',
-          label: ' Acerca de',
-          position: 'right',
-        },
         {
           href: 'https://medium.com/@latam_link',
           label: ' Noticias',
