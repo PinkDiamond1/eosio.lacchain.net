@@ -15,7 +15,7 @@ Obtenga más información sobre [cuentas en EOSIO](https://developers.eos.io/wel
 
 EOSIO permite crear permisos jerárquicos personalizados que se derivan del permiso `owner`. Un permiso personalizado es básicamente una llave que solo puede realizar las acciones que se le permite realizar.
 
->	**Por ejemplo:** Cualquier cuenta puede crear un permiso personalizado con su par de llaves únicas para interactuar únicamente con un contrato.
+ >  **Por ejemplo:** Cualquier cuenta puede crear un permiso personalizado con su par de llaves únicas para interactuar únicamente con un contrato.
 
 De esta manera, EOSIO ofrece capacidades de permisos de última generación con una gran flexibilidad para configurar un protocolo simple o complejo integrado en el protocolo base.
 
