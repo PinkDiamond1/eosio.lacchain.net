@@ -5,6 +5,18 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+ @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+ :root {
+  --ifm-color-primary: #19af54;
+--ifm-color-primary-dark: #179e4c;
+--ifm-color-primary-darker: #159547;
+--ifm-color-primary-darkest: #117b3b;
+--ifm-color-primary-light: #1cc15c;
+--ifm-color-primary-lighter: #1dc961;
+--ifm-color-primary-lightest: #24e06e;
+}
+
 /* your custom css */
 
 img[src*="#left"] {
@@ -77,6 +89,14 @@ img.logo {
 	justify-items: center;
 	justify-content: center;
 	column-gap: 30px;
+}
+
+.pagination-nav__label{
+  color: var(--ifm-color-primary);
+}
+
+.col a{
+  color: black;
 }
 
 a.nav-home {
