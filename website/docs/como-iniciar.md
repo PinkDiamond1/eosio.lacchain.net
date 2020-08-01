@@ -18,7 +18,3 @@ Adicionalmente, recomendamos instalar desde antes el Contract Development Toolki
 ## Obtenga sus llaves privadas
 
 Mas información [sobre llaves privadas.](llaves-privadas.md)  
-
-## Creador de cuentas ágil
-
-Portal para crear cuentas y llaves públicas o privadas en un solo clic.
