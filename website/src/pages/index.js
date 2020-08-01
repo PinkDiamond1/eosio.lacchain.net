@@ -339,35 +339,11 @@ const ToolsSection = () => {
           spacing={2}
         >
           <Grid item xs={12} sm={12} md={4}>
-            <CustomCard
-              href="http://explorer.testnet.latamlink.io"
-              img="images/search.svg"
-              title="Explorador de Bloques"
-              body="Un explorador de bloques que permite al usuario buscar información sobre transacciones y contratos inteligentes."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
             <CustomCard 
               href="/docs/eosio"
               img="images/docse-01.svg"
               title="Documentación"
               body="Una lista de recursos para aprender de expertos de la industria de blockchain."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="/docs/api"
-              img="images/latamlink_1.svg"
-              title="APIs"
-              body="Variedad de API endpoints para integrar a través de LatamLink."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="/docs/monitor"
-              img="images/latamlink_Monitor_1014.svg"
-              title="Servicio de monitoreo"
-              body="Un servicio de monitoreo que permite la trazabilidad de la actividad en la red."
             />
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
@@ -398,25 +374,9 @@ const ToolsSection = () => {
           <Grid item xs={12} sm={12} md={4}>
             <CustomCard 
               href="/"
-              img="images/latamlink_Camera_1.svg"
-              title="Snapshots"
-              body="El servicio de snapshots de LatamLink le permitirá hacer cambios en los nodos de EOSIO rápidamente sin necesidad de sincronizar la blockchain."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="/"
               img="images/latamlink_balloon-1.svg"
               title="Comunidad de Telegram"
               body="Contamos con un grupo de Telegram para coordinar esfuerzos y compartir información relevante al ecosistema de EOS regional."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="http://dfuse.testnet.latamlink.io/graphiql/"
-              img="images/dfuse-01.svg"
-              title="Integración con dfuse"
-              body="LatamLink provee un endpoint dDfuse con el fin de ejecutar consultas de alto rendimiento en el blockchain."
             />
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
