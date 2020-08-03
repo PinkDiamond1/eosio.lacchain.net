@@ -81,12 +81,12 @@ Nodo que permite pedir información de la blockchain a travez de un request http
 1. Los nodos de la red que lo necesiten actualizan su firewall y lista de pares permitidos para agregar el nuevo nodo a los nodos que hagan falta.
 1. El nuevo nodo confirma que esta conectado a la red.
 
-#### Gruos y Sub-Grupos de Nodos
+#### Grupos y Sub-Grupos de Nodos
 
-|  **Nodos Escritores** | **Nodos Boot** | **Nodos Validadores** |
-|---|---|---|
-| Grupo 1....n  |   Grupo 1...n  | Activos y Stand-By  |
-| grupos de hasta 40 nodos  | grupos de hasta 10 nodos |  activos definidos en schdedule  |
+| **Nodos Escritores** | **Nodos Boot** | **Nodos Observadores** | **Nodos Validadores** |
+|---|---|---|---|
+| Grupo 1....n  | Grupo 1....n  | Grupo 1...n  | Activos y Stand-By  |
+| grupos de hasta 40 nodos | grupos de hasta 40 nodos  | grupos de hasta 10 nodos |  activos definidos en schdedule  |
 
 Los nodos de boot y validadores que no cumplen con la configuracion requerida pueden ser eliminados por el comite permisionador.
 
