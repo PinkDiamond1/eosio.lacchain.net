@@ -76,8 +76,8 @@ Nodo que permite pedir información de la blockchain a travez de un request http
 ### Ciclo de Node Discovery
 
 1. La entidad configura un nuevo nodo
-1. La entidad registra un nuevo nodo con el comité incluyendo en su información, tipo de nodo ( `observer-api`,`writer-p2p`,`boot-p2p-bidir`,etc. ) junto con su dirección IP y opcionalmente su llave publica para peering
-1. El comité actualiza la tabla de nodos en el contrato inteligente con la información de los nodos para agregar esta información se asignan a grupos y sub-bgrupos 
+1. La entidad registra un nuevo nodo con el comité incluyendo en su información, tipo de nodo ( `observer-api`,`writer-p2p`,`boot-p2p-bidir`,etc. ) junto con su dirección IP y opcionalmente su llave publica para peering.
+1. El comité actualiza la tabla de nodos en el contrato de sistema con la información de los nodos para agregar esta información. Casa nodo se asigna a un grupo y sub-grupos para generar la lista de pares para interconectarse. 
 1. Los nodos de la red que lo necesiten actualizan su firewall y lista de pares permitidos para agregar el nuevo nodo a los nodos que hagan falta.
 1. El nuevo nodo confirma que esta conectado a la red.
 
