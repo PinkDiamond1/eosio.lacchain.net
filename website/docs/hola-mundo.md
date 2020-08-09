@@ -11,23 +11,15 @@ Explicamos con ejemplos cómo crear una cuenta y un contrato “Hello World” p
 Mas información [sobre llaves privadas.](llaves-privadas.md)  
 
 ## Adquirir recurso RAM
-Una vez que se tiene la cuenta en el LatamLink Testnet, podemos usar el Faucet para recibir tokens ficticios gratis, que en este caso serán EOS, necesarios para usar recursos de la red (siempre y cuando se tenga participación en esa red). La lógica de esto es que, para el contrato, estaremos requiriendo adquirir recursos RAM de block producers, para lo cual necesitaremos estos EOS que se nos acaban de enviar.
+Una vez que se tiene la cuenta en el LatamLink Testnet, para el contrato, estaremos requiriendo disponer de recursos RAM. 
 
-Con este comando podemos revisar la cantidad de EOS con los que contamos en esta cuenta (que en este caso son 100 EOS), así como el recurso RAM, que en este momento es de 5.366 KiB.
+En este caso estamos conectados a un url remoto por medio de un API endpoint de LatamLink Testnet para extraer la información de la cuenta y verificar cuantos kiloytes de RAM tiene disponbible la cuenta.
 
-
-En este caso estamos conectados a un url remoto por medio de un API endpoint de LatamLink Testnet para extraer la información de la cuenta.
-
-Para adquirir RAM, escribimos el comando `buyram` para nuestra cuenta. Se debe especificar dos veces el nombre de la cuenta, una vez para definir de dónde salen los EOS y otra vez para indicar hacia dónde se envía el RAM. En la misma línea, se debe indicar la cantidad de EOS que estaremos aportando. Para el ejemplo estaremos enviando 50 EOS. Al tener la billetera desbloqueada, automáticamente adquirimos el RAM por el monto de EOS que indicamos.
-
-Luego de ejecutar la compra, se puede verificar que ahora se tienen 86 KiB de RAM y solo 50 EOS de los 100 que originalmente nos fueron asignados.
-
-En el block explorer de Bloks.io, se puede buscar la información de esa cuenta. Adicionalmente, se pueden revisar las acciones tomadas, incluyendo las transacciones de compra de RAM, los tokens del Faucet y el historial completo de movimientos.
-
+`cleos get account {nomredecuenta}`
 
 ## Crear un Contrato
 
-Para continuar, vamos a crear un contrato sencillo dentro de un nuevo directorio, el cual llamamos “holacontrato”. Como en EOS se requieren recursos, estos deberán estar asociados a los tokens de una cuenta, por lo que se debe poner el mismo nombre del contrato anteriormente creado.
+Para continuar, vamos a crear un contrato sencillo dentro de un nuevo directorio, el cual llamamos `holacontrato`. Como en EOS se requieren recursos, estos deberán estar asociados al nombre de una cuenta, por lo que se debe poner el mismo nombre del contrato anteriormente creado.
 
 Para editar el contrato, puede usarse un editor de texto. Para este ejemplo se utilizó Sublime Text.
 
@@ -46,7 +38,7 @@ Una vez ejecutado el comando para set contract, el sistema lee la información e
 
 Una vez listo el contrato, vamos a publicar en la cuenta de LatamLink Testnet. Para publicar nuestro contrato, debemos usar el comando usado en cleos y el API endpoint usado anteriormente en LatamLink Testnet para subir el contrato a la ubicación que queremos con un permiso activo para poder firmar con la billetera creada.
 
-De vuelta al block explorer (Bloks.io), podemos verificar que la cuenta es dueña de un contrato que expone la acción “Hola” y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
+De vuelta al block explorer podemos verificar que la cuenta es dueña de un contrato que expone la acción “Hola” y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
 
 
 Una vez que el contrato esté listo, podemos ejecutar una acción en el contrato. Con cleos existe un comando para especificar el endpoint dentro de LatamLink Testnet y así ejecutar la acción “Hola”. Para este ejemplo, ponemos como input: “eoscostarica”. El output de la acción será el texto “Hola eoscostarica”.
