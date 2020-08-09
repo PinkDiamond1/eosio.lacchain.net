@@ -5,13 +5,140 @@ sidebar_label: Datos de Entidades y Nodos
 ---
 ## Divulgación voluntaria de datos
 
-Permite a los operadores de nodos anunciar públicamente su propiedad de una cuenta de LAC-Chain y compartir información sobre ellos mismos.
+Los contratos de sistema de permiten a las entidades que sean operadores de nodos anunciar públicamente las cuentas de sus nodos y compartir información sobre ellos mismos.
 
-Piense en un WHOIS para cuentas de LAC-Chain que se verifiquen mediante una firma de blockchain. Todos estos campos requieren un inicio de sesión único que se autentica a través de blockchain y, por lo tanto, no puede estar equivocado. Solo el BP con la clave correcta puede editar estos campos utilizando la interfaz de usuario.
+Piense en un WHOIS para cuentas de LAC-Chain que se verifiquen mediante una firma de blockchain. Todos estos campos requieren un inicio de sesión único que se autentica a través de blockchain. Solo la entidad con las claves correctas pueden editar estos campos , ya sea mediante linea de comando p utilizando la interfaz de usuario.
+
 
 ## Herramienta Para Actualizar Datos
 
-Para acceder a la interfaz de usuario para actualizar datos seleccione la opción "Update Node Info" en el [Monitor de red](https://dashboard.latamlink.io).
+Con el propósito de facilitar la actualización de datos de las entidades hemos desarrollado una herramienta para entidades permisionadas.  Para acceder a la interfaz de usuario para actualizar datos seleccione la opción "Update Node Info" en el [Monitor de red](https://dashboard.latamlink.io).
+
+## Información de Entidades
+
+`eosio::action`
+`setentinfo(entity, info)`
+
+Ejecutar esta acción requiere de la autorización de la cuenta permisionada o del comité permisionador.
+
+| Parámetro | Tipo | Notas |
+|---|---|---|
+| `entity` | *name* | Cuenta de la entidad permisionada |
+| `info` | *string* | JSON según estructura de entidades |
+
+
+### Estructura JSON Entidades  
+
+```json
+{
+	"account_name": "eoscostarica",
+	"org": {
+		"organization_name": "EOS Costa Rica",
+		"organization_id": "3-101-090127",
+		"technical_contact": "Xavier Fernandez",
+		"business_contact": "Edgar Fernandez",
+		"email": "bp@eosio.cr",
+		"website": "https://eoscostarica.io",
+		"code_of_conduct": "https://eoscostarica.io/en/transparency/#code_of_conduct",
+		"ownership_disclosure": "https://eoscostarica.io/en/transparency/#ownership_disclosure",
+		"branding": {
+			"logo_256": "https://eoscostarica.io/assets/eos-CostaRica-256x256.png",
+			"logo_1024": "https://eoscostarica.io/assets/eos-CostaRica-1024x1024.png",
+			"logo_svg": "https://eoscostarica.io/assets/eos-CostaRica-vectors.svg"
+		},
+		"location": {
+			"name": "San Jose",
+			"country": "CR",
+			"latitude": 9.936377,
+			"longitude": -84.078155
+		},
+		"social": {
+			"steemit": "eos-costarica",
+			"twitter": "EOSCostaRica",
+			"youtube": "channel/UCvYinCH3O1iKpi-_dNfQAGQ",
+			"facebook": "costaricaeos",
+			"github": "eoscostarica",
+			"reddit": "eoscostarica",
+			"keybase": "eoscostarica",
+			"telegram": "eoscr",
+			"wechat": ""
+		}
+	}
+}
+```
+
+## Información de Nodos
+
+`eosio::action`
+`setentinfo(node, info)`
+
+Ejecutar esta acción requiere de la autorización de la cuenta permisionada o del comité permisionador.
+
+| Parámetro | Tipo | Notas |
+|---|---|---|
+| `node` | *name* | Cuenta del nodo asociada a la entidad |
+| `info` | *string* | JSON según tipo de Nodo |
+
+
+### Nodo Escritor
+```json
+{
+	"writer_api": "http://lacchain.eosio.cr",
+	"writer_ssl": "https://lacchain.eosio.cr",
+	"writer_p2p": "lacchain.eosio.cr:9876",
+	"location": {
+		"name": "San Jose",
+		"country": "CR",
+		"latitude": 9.936377,
+		"longitude": -84.078155
+	}
+}
+```
+
+### Nodo Validador
+
+```json
+{
+	"validator_p2p_out": "lacchain.eosio.cr:9876",
+	"validator_p2p_bidir": "lacchain.eosio.cr:9876",
+	"validator_location": {
+		"name": "San Jose",
+		"country": "CR",
+		"latitude": 9.936377,
+		"longitude": -84.078155
+	}
+}
+```
+
+### Nodo Boot
+```json
+{
+	"boot_p2p_out": "",
+	"boot_p2p_bidir": "lacchain.eosio.cr:9876",
+	"boot_location": {
+		"name": "San Jose",
+		"country": "CR",
+		"latitude": 9.936377,
+		"longitude": -84.078155
+	}
+}
+```
+
+### Nodo Observador
+```json
+{
+	"observer_api": "http://lacchain.eosio.cr",
+	"observer_ssl": "https://lacchain.eosio.cr",
+	"observer_p2p": "lacchain.eosio.cr:9876",
+	"observer_location": {
+		"name": "San Jose",
+		"country": "CR",
+		"latitude": 9.936377,
+		"longitude": -84.078155
+	}
+}
+```
+
 
 ## Fases de Implementación 
 
@@ -83,76 +210,3 @@ Para acceder a la interfaz de usuario para actualizar datos seleccione la opció
  - Titulares de intereses individuales
  - Accionistas de entidades comerciales
  - Entidades afiliadas
-
-## Estructura JSON 
-
- ```json
- {
-	"validator_account_name": "crsix",
-	"org": {
-		"organization_name": "EOS Costa Rica",
-		"organization_id": "3-101-090127",
-		"technical_contact": "Xavier Fernandez",
-		"business_contact": "Edgar Fernandez",
-		"email": "bp@eosio.cr",
-		"website": "https://eoscostarica.io",
-		"code_of_conduct": "https://eoscostarica.io/en/transparency/#code_of_conduct",
-		"ownership_disclosure": "https://eoscostarica.io/en/transparency/#ownership_disclosure",
-		"branding": {
-			"logo_256": "https://eoscostarica.io/assets/eos-CostaRica-256x256.png",
-			"logo_1024": "https://eoscostarica.io/assets/eos-CostaRica-1024x1024.png",
-			"logo_svg": "https://eoscostarica.io/assets/eos-CostaRica-vectors.svg"
-		},
-		"location": {
-			"name": "San Jose",
-			"country": "CR",
-			"latitude": 9.936377,
-			"longitude": -84.078155
-		},
-		"social": {
-			"steemit": "eos-costarica",
-			"twitter": "EOSCostaRica",
-			"youtube": "channel/UCvYinCH3O1iKpi-_dNfQAGQ",
-			"facebook": "costaricaeos",
-			"github": "eoscostarica",
-			"reddit": "eoscostarica",
-			"keybase": "eoscostarica",
-			"telegram": "eoscr",
-			"wechat": ""
-		}
-	},
-	"nodes": [
-		{
-			"location": {
-				"name": "San Jose",
-				"country": "CR",
-				"latitude": 9.936377,
-				"longitude": -84.078155
-			},
-			"node_type": "writer",
-			"history_type": "none",
-			"api_endpoint": "http://lacchain.eosio.cr",
-			"ssl_endpoint": "https://lacchain.eosio.cr"
-		},
-		{
-			"location": {
-				"name": "San Jose",
-				"country": "CR",
-				"latitude": 9.936377,
-				"longitude": -84.078155
-			},
-			"node_type": "boot",
-			"p2p_endpoint": "lacchain.eosio.cr:9876"
-		},
-		{
-			"location": {
-				"name": "San Jose",
-				"country": "CR",
-				"latitude": 9.936377,
-				"longitude": -84.078155
-			},
-			"node_type": "validator"
-		}
-	]
-}
- ```
