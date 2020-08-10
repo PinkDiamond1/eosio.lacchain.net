@@ -70,7 +70,7 @@ Ejecutar esta acción requiere de la autorización de la cuenta permisionada o d
 ## Información de Nodos
 
 `eosio::action`
-`setentinfo(node, info)`
+`setnodeinfo(node, info)`
 
 Ejecutar esta acción requiere de la autorización de la cuenta permisionada o del comité permisionador.
 
