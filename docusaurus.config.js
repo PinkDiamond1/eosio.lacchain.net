@@ -48,8 +48,8 @@ const siteConfig = {
       title: ' ',
       logo: {
         alt: 'LatamLink Logo',
-        src: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/website/static/images/latamlink_logo-h-full-color-overwhite.svg',
-        srcDark: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/website/static/img/footerlogo.png'
+        src: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.svg',
+        srcDark: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/img/footerlogo.png'
       },
       
       items: [
@@ -126,7 +126,6 @@ const siteConfig = {
             },
           ],
         },
-        
       ],
       copyright: `Copyright © ${new Date().getFullYear()} LatamLink`, // You can also put own HTML here.
     },
