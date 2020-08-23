@@ -348,11 +348,10 @@ const ToolsSection = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
             <CustomCard 
-              href="/"
-              img="images/latamlink_wallet_1003987.svg"
-              title="Billeteras"
-              body="LatamLink se adapta a varias billeteras de EOS que podrás conﬁgurar
-              en el testnet."
+              href="https://dashboard.latamlink.io"
+              img="images/latamlink_Monitor_1014.svg"
+              title="Servicio de monitoreo"
+              body="Un servicio de monitoreo que permite la trazabilidad de la actividad en la red."
             />
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
@@ -365,7 +364,7 @@ const ToolsSection = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
             <CustomCard 
-              href="/"
+              href="https://github.com/eoscostarica/eosio-network-bootstrap"
               img="images/latamlink_Wrench_1004034.svg"
               title="Ambiente local"
               body="Un ambiente local para desarrollar aplicaciones descentralizadas basadas en EOSIO."
@@ -373,7 +372,7 @@ const ToolsSection = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
             <CustomCard 
-              href="/"
+              href="https://t.me/latamlink"
               img="images/latamlink_balloon-1.svg"
               title="Comunidad de Telegram"
               body="Contamos con un grupo de Telegram para coordinar esfuerzos y compartir información relevante al ecosistema de EOS regional."
@@ -381,7 +380,7 @@ const ToolsSection = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
             <CustomCard 
-              href="https://github.com/LatamLink"
+              href="https://github.com/latamlink"
               img="images/Github-VerGreen-SVG-Hermes-22-04-20.svg"
               title="GitHub"
               body="LatamLink tiene un perfil de github que reune a todos los participantes de la iniciativa."

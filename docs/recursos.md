@@ -33,6 +33,65 @@ Como CPU y RAM, NET también es un recurso muy importante en las cadenas de bloq
 
 Puede encontrar más detalles sobre NET como recurso del sistema [aquí](https://developers.eos.io/manuals/eosio.contracts/latest/key-concepts/net).
 
+
+## Limite de Recursos de la RED
+
+Los siguientes valores se obtienen al llamar [system get_info](https://lacchain.eosio.cr/v1/chain/get_info) al RPC API en la red de latamlink.
+
+
+```json title="CPU limit"
+"block_cpu_limit":199900
+```
+
+```json title="NET limit"
+"block_net_limit":1048576
+````
+
+```json title="RAM limit"
+
+La red de eos inicio con 64GB de ram y incrementa en  1KiB (1024 bytes) por día
+```
+
+### Distribución de Recursos
+
+Las entidades que operan nodos escritores reciben una porción equivalente de los recursos de la red que las demás entidades. De tal manera que a cada nodo se le asigna `1/N` de la totalidad de los recursos donde : 
+
+**`N = Numero de entidades permisionadas`**.
+
+ Si una entidad decide operar mas de un nodo escritor esto no afecta la cantidad de recursos que recibe.
+
+#### Entidad con dos nodos escritores 
+
+
+`CPU = 1/N • 200 ms` `NET = 1/N • 1048 KiB` `RAM = 10000 KiB`
+
+![Ejemplo de Entidad 1](/img/diagramas/entity1-authorities.png)
+
+#### Entidad con un nodo escritor 
+
+`CPU = 1/N • 200 ms` `NET = 1/N • 1048 KiB` `RAM = 10000 KiB`
+
+![Ejemplo de Entidad 2](/img/diagramas/entity2-authorities.png)
+
+#### Entidad sin nodos  
+
+`CPU = X txs per day`
+
+`NET = X txs per day`
+
+`RAM = 10000 KiB`
+
+![Ejemplo de Entidad 3](/img/diagramas/entity3-authorities.png)
+
+### Usuarios
+Los Usuarios no poseen recursos, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción.
+
+`CPU = 0 us`
+`NET = 0 KiB`
+`RAM = 0 KiB`
+
+![Ejemplo de Autoridades Usuario](/img/diagramas/user-authorities.png)
+
 ## Límites de recursos de la cuenta
 Cada cuenta en una cadena de bloques basada en EOSIO tiene límites de recursos para CPU / NET y RAM asociados. Estos límites especifican cuánto de cada recurso puede usar la cuenta y se pueden cambiar dinámicamente llamando a la API privilegiada `set_resource_limits`.
 
@@ -86,7 +145,7 @@ Al hacer de la CPU un recurso elástico, se creará una CPU virtual que oscilar�
 virtual cpu = [[maximum usage, maximum usage * multiplier]]
 ```
 
-El límite de la CPU virtual se contraerá (expandirá) mediante la `relación de contrato (expandir) 'cuando la utilización promedio esté por encima (debajo) del uso deseado, lo que significa que` lo máximo que una cuenta puede consumir durante los períodos de inactividad es 1000x (multiplicador) ancho de banda se garantiza bajo congestión.
+El límite de la CPU virtual se contraerá (o expandirá) mediante la relación de expansión,  cuando la utilización promedio esté por encima (debajo) del uso deseado, lo que significa que lo máximo que una cuenta puede consumir durante los períodos de inactividad es 1000x (multiplicador) ancho de banda se garantiza bajo congestión.
 
 La utilización promedio de la CPU se calcula utilizando un EMA (Promedio móvil exponencial) que otorga un mayor peso e importancia al uso más reciente.
 

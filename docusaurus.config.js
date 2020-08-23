@@ -26,7 +26,7 @@ const siteConfig = {
         docs: {
           // Docs folder path relative to website dir.
           path: './docs',
-          editUrl: 'https://github.com/LatamLink/es.latamlink.io/tree/master/website',
+          editUrl: 'https://github.com/LatamLink/es.latamlink.io/tree/master',
           // Equivalent to `docsUrl`.
           routeBasePath: 'docs',
           // Sidebars file relative to website dir.
@@ -53,21 +53,21 @@ const siteConfig = {
       },
       
       items: [
-        {
-          href: 'https://medium.com/@latam_link',
-          label: ' Noticias',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://medium.com/@latam_link',
+        //   label: ' Noticias',
+        //   position: 'right',
+        // },
         {
           href: 'https://monitor.latamlink.io/',
           label: 'Monitor',
           position: 'right',
         },
-        {
-          href: 'http://explorer.testnet.latamlink.io/',
-          label: 'Explorador',
-          position: 'right',
-        },
+        // {
+        //   href: 'http://explorer.testnet.latamlink.io/',
+        //   label: 'Explorador',
+        //   position: 'right',
+        // },
         {
           to: 'docs/eosio',
           label: 'Documentación',

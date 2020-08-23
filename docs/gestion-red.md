@@ -3,12 +3,17 @@ id: gestion-red
 title: Herramientas de gestión de red.
 sidebar_label: Gestión de Red
 ---
+
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap.md).
+:::
+
 ## Contratos Inteligentes
 Esta herramienta es para manejar el permisionamiento y gobernanza de LatamLink mediante contratos inteligentes.
 
 Tendrá las siguientes funciones.
 
-### Registro de nodos productores de bloques
+### Registro de nodos validadores
 
 ### Cambios de nodos activos
 

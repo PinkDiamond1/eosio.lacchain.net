@@ -93,7 +93,7 @@ Se define como el número de bloques en la cadena entre un bloque dado y el prim
 
 ### Block producer (productor de bloques)
 
-Los productores de bloques son una de las innovaciones principales de Block.one, son las entidades descentralizadas que rigen la cadena de bloques EOSIO. En lugar de ser administrado por un pequeño número de grupos mineros, EOSIO tendrá un grupo en constante cambio de 21 productores de bloques.
+Los nodos productores de bloques son una de las innovaciones principales de Block.one, son las entidades descentralizadas que rigen la cadena de bloques EOSIO. En lugar de ser administrado por un pequeño número de grupos mineros, EOSIO tendrá un grupo en constante cambio de 21 nodos productores de bloques.
 
 * * *
 
@@ -196,7 +196,7 @@ Es una forma fácil y segura de ayudar a los usuarios a acceder a varias funcion
 
 ### EOS Rate
 
-`EOS Rate` es un dApp de código abierto que permite a los titulares de tokens EOS calificar a los productores de bloques (BP) en solo unos pocos clics. Los usuarios pueden acceder a un sistema de calificación y portal de votación, lo que facilita a los titulares de tokens tomar una decisión informada.
+`EOS Rate` es un dApp de código abierto que permite a los titulares de tokens EOS calificar a los nodos productores de bloques (BP) en solo unos pocos clics. Los usuarios pueden acceder a un sistema de calificación y portal de votación, lo que facilita a los titulares de tokens tomar una decisión informada.
 
 * * *
 

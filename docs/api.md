@@ -1,8 +1,11 @@
 ---
 id: api
-title: Application Programming Interface API
-sidebar_label: APIs
+title: Application Programming Interface
 ---
+
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap.md).
+:::
 
 ## Que es un API
 

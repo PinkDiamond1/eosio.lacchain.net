@@ -27,17 +27,17 @@ Presentamos la siguiente propuesta de configuración de red LAC-Chain utilizando
 		- **Capa 3 ([Satellite](/docs/topologia-red#layer-3---satellite))** Layer de consumo para writers y observers
 
 
-![LatamLink Topology](/img/diagramas/topologia-nodos.png)
+![LatamLink Topology](/img/diagramas/topologia-nodos-2.png)
 
 
 ## Capa 1 - Red Core
-La red core se compone de los productores de bloques quienes han sido agregados al grupo de consenso. La fuente de poder computacional final es derivada de la red core.
+La red core se compone de los nodos validadores quienes han sido agregados al grupo de consenso. La fuente de poder computacional final es derivada de la red core.
 
 
-### Nodos Productores de Bloques
+### Nodos Validadores
 En una red EOSIO estos nodos son denominados blockproducers, se encargan de generar bloques cada 500ms. Estos nodos deberían estar conectados unicamente a otros nodos manejados por la misma entidad.
 
-###  Validator p2p para otros Validadores
+###  P2P para otros Validadores
 Nodo P2P configurado como parte de la red interna de los validadores.
 
 ## Capa 2 - Bridge

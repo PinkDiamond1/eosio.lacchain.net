@@ -4,6 +4,10 @@ title: Privacidad
 sidebar_label: Privacidad
 ---
 
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap.md).
+:::
+
 La tecnología Blockchain proporciona las herramientas necesarias para descentralizar la información de forma segura e inquebrantable. La introducción de Bitcoin hizo posible que miles de nodos de todo el mundo compartan y mantengan la misma información. Sin embargo, en la mayoría de las Blockchains, la idea central es hacer pública esta información para que todos accedan a ella y verificarla, sin la necesidad de una autoridad central. Por lo tanto, las cadenas de bloques públicas se definen como * sin confianza * (no es necesario confiar). Sin embargo, muchas empresas y entidades privadas que desean usar la tecnología blockchain se encuentran con una pregunta muy importante: ¿cómo mantener la información privada y al mismo tiempo mantener la seguridad y la transparencia de una blockchain pública?
 
 La privacidad en LatamLink se centra en hacer que los datos solo estén disponibles para una lista específica de participantes. Para lograr esto, se debe implementar un mecanismo que garantice que las transacciones se distribuyan solo a una lista de participantes que pueden enviar transacciones privadas entre ellos.
