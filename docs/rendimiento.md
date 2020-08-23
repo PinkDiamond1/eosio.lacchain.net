@@ -4,6 +4,10 @@ title: Rendimiendo y Seguridad de la Red
 sidebar_label: Rendimiento y Seguridad
 ---
 
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap.md).
+:::
+
 Es esencial conocer los límites de la infraestructura desde una perspectiva de ciberseguridad y rendimiento.
 
 LatamLink planea realizar análisis y evaluaciones de ciberseguridad en la infraestructura. asi como realizar pruebas de estrés coordinadas juntas.

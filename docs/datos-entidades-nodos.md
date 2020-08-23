@@ -76,17 +76,23 @@ Ejecutar esta acción requiere de la autorización de la cuenta permisionada o d
 
 | Parámetro | Tipo | Notas |
 |---|---|---|
-| `node` | *name* | Cuenta del nodo asociada a la entidad |
+| `node` | *name* | Nombre del nodo asociada a la entidad |
 | `info` | *string* | JSON según tipo de Nodo |
 
 
 ### Nodo Escritor
 ```json
 {
-	"writer_api": "http://lacchain.eosio.cr",
-	"writer_ssl": "https://lacchain.eosio.cr",
-	"writer_p2p": "lacchain.eosio.cr:9876",
-	"location": {
+	"writer_keys":{
+		"peer_key": "EOS...",
+		"account_key": "EOS..."
+	},
+	"writer_endpoints":{
+		"writer_api": "http://lacchain.eosio.cr",
+		"writer_ssl": "https://lacchain.eosio.cr",
+		"writer_p2p": "lacchain.eosio.cr:9876"
+	},
+	"writer_location": {
 		"name": "San Jose",
 		"country": "CR",
 		"latitude": 9.936377,
@@ -99,8 +105,14 @@ Ejecutar esta acción requiere de la autorización de la cuenta permisionada o d
 
 ```json
 {
-	"validator_p2p_out": "lacchain.eosio.cr:9876",
-	"validator_p2p_bidir": "lacchain.eosio.cr:9876",
+	"validator_keys":{
+		"peer_key": "EOS...",
+		"block_signing_key": "EOS..."
+	},
+	"validator_endpoints":{
+		"validator_p2p_out": "lacchain.eosio.cr:9876",
+		"validator_p2p_bidir": "lacchain.eosio.cr:9876"
+	},
 	"validator_location": {
 		"name": "San Jose",
 		"country": "CR",
@@ -113,8 +125,13 @@ Ejecutar esta acción requiere de la autorización de la cuenta permisionada o d
 ### Nodo Boot
 ```json
 {
-	"boot_p2p_out": "",
-	"boot_p2p_bidir": "lacchain.eosio.cr:9876",
+	"boot_keys":{
+		"peer_key": "EOS..."
+	},
+	"boot_endpoints":{
+		"boot_p2p_out": "",
+		"boot_p2p_bidir": "lacchain.eosio.cr:9876",
+	},
 	"boot_location": {
 		"name": "San Jose",
 		"country": "CR",
@@ -127,9 +144,14 @@ Ejecutar esta acción requiere de la autorización de la cuenta permisionada o d
 ### Nodo Observador
 ```json
 {
-	"observer_api": "http://lacchain.eosio.cr",
-	"observer_ssl": "https://lacchain.eosio.cr",
-	"observer_p2p": "lacchain.eosio.cr:9876",
+	"observer_keys":{
+		"peer_key": "EOS..."
+	},
+	"observer_endpoints":{
+		"observer_api": "http://lacchain.eosio.cr",
+		"observer_ssl": "https://lacchain.eosio.cr",
+		"observer_p2p": "lacchain.eosio.cr:9876"
+	},
 	"observer_location": {
 		"name": "San Jose",
 		"country": "CR",
@@ -143,7 +165,7 @@ Ejecutar esta acción requiere de la autorización de la cuenta permisionada o d
 ## Fases de Implementación 
 
 ### Fase I
-#### Lista autogenerada de todos los productores de bloques extraídos de la cadena de bloques.
+#### Lista autogenerada de todos los nodos validadores extraídos de la cadena de bloques.
  - Nombre de la cuenta del nodo
  - Tipo de entidad de nodo
  - Clave pública de nodo

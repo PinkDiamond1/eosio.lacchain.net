@@ -3,14 +3,14 @@ module.exports = {
     "Testnet": [
         "eosio",
         "mecanismo-consenso",
-        "recursos",
-        "cuentas-permisos",
         "topologia-red",
+        "cuentas-permisos",
         "trazabilidad",
+        "recursos",
         "monitoreo",
         "rendimiento",
-        "privacidad",
         "identidad-digital",
+        "privacidad",
         "interoperabilidad",
         "roadmap"
     ],

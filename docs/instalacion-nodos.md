@@ -138,7 +138,7 @@ Esta no es una lista de configuraciones que pueden usarse "out of the box", mas 
 
 ### Validador
 
-```bash
+```bash title="config.ini"
 
 producer-name = <validator_name>
 
@@ -152,7 +152,7 @@ eosio::producer_plugin
 ```
 
 ### Validador p2p layer 1
-```bash
+```bash title="config.ini"
 peer-key =
 peer-private-key =
 p2p-listen-endpoint =
@@ -166,7 +166,7 @@ eosio::net_plugin
 ```
 
 ### Validador p2p out
-```bash
+```bash title="config.ini"
 p2p-accept-transactions = false
 api-accept-transactions = false
 
@@ -182,7 +182,7 @@ net-threads =
 eosio::net_plugin
 ```
 ### Validador p2p bidir
-```bash
+```bash title="config.ini"
 peer-key =
 peer-private-key =
 p2p-listen-endpoint =
@@ -196,7 +196,7 @@ eosio::net_plugin
 ```
 
 ### boot p2p out
-```bash
+```bash title="config.ini"
 p2p-accept-transactions = false
 api-accept-transactions = false
 
@@ -213,7 +213,7 @@ eosio::net_plugin
 ```
 
 ### boot p2p bidir
-```bash
+```bash title="config.ini"
 peer-key =
 peer-private-key =
 p2p-listen-endpoint =
@@ -227,7 +227,7 @@ eosio::net_plugin
 ```
 
 ### writer p2p
-```bash
+```bash title="config.ini"
 peer-key =
 peer-private-key =
 p2p-listen-endpoint =
@@ -247,7 +247,7 @@ Hacer referencia a la documentacion de [dfuse](https://www.dfuse.io/en)
 
 ### observer p2p
 
-```bash
+```bash title="config.ini"
 p2p-accept-transactions = false
 api-accept-transactions = false
 
