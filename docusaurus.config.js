@@ -46,6 +46,7 @@ const siteConfig = {
     },
     navbar: {
       title: ' ',
+      hideOnScroll: true,
       logo: {
         alt: 'LatamLink Logo',
         src: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.svg',
