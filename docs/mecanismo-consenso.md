@@ -68,7 +68,7 @@ Las redes EOSIO manejan un grupo de validadores registrados que pueden asumir el
 
 ### Rotación de nodos activos
 
-La rotación periódica de nodos nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramineta de gestión de red](gestion-red.md) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
+La rotación periódica de nodos nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramineta de gestión de red](gobernanza-red.md) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
 
 > **Por ejemplo**: Se puede definir una política de rotación de nodos activos semanalmente.  
 
