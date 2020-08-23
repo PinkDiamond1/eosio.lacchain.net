@@ -92,8 +92,8 @@ Este cambio implica deshabilitar el uso de tokens y de votos característicos de
 ### Funciones dPOS deshabilitadas:
 
  - Token de Sistema
- - Votos por nodos validadores
- - Pago de nodos validadores
+ - Votos por nodos productores de bloques
+ - Pago de nodos productores de bloquess
  - "Staking" para recursos
  - Delegación de Recursos
  - Namebiding

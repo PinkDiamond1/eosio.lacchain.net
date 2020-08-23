@@ -83,10 +83,6 @@ Las entidades que operan nodos escritores reciben una porción equivalente de lo
 
 ![Ejemplo de Entidad 3](/img/diagramas/entity3-authorities.png)
 
-
-
-
-
 ### Usuarios
 Los Usuarios no poseen recursos, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción.
 
