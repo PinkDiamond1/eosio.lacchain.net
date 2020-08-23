@@ -1,7 +1,7 @@
 ---
-id: gestion-red
-title: Herramientas de gestión de red.
-sidebar_label: Gestión de Red
+id: gobernanza-red
+title: Herramientas de Gobernanza.
+sidebar_label: Gobernanza de Red
 ---
 
 :::note Trabajo en progreso
@@ -26,7 +26,3 @@ Tendrá las siguientes funciones.
 
 ## Interfaz gráfica 
 Herramienta GUI para facilitar la gestión de la red por parte del comité permisionador. 
-
-
-
-

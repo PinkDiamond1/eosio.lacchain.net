@@ -27,7 +27,7 @@ module.exports = {
         "api",
         "cli",
         "explorador-bloques",
-        "gestion-red",
+        "gobernanza-red",
         "librerias-sdk",
         "respaldos",
         "boilerplates"

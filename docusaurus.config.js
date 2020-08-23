@@ -9,7 +9,7 @@
 // site configuration options.
 
 const siteConfig = {
-  title: "LatamLink EOSIO Testnet - LACChain", // Title for your website.
+  title: "Red Blockchain EOSIO para LAC Chain BID Labs", // Title for your website.
   tagline: "Documentación Técnica",
   url: "https://es.latamlink.io", // Your website URL
   baseUrl: "/", // Base URL for your project */

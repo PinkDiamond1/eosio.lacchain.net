@@ -37,36 +37,43 @@ La red core se compone de los nodos validadores quienes han sido agregados al gr
 ### Nodos Validadores
 En una red EOSIO estos nodos son denominados blockproducers, se encargan de generar bloques cada 500ms. Estos nodos deberían estar conectados unicamente a otros nodos manejados por la misma entidad.
 
-###  P2P para otros Validadores
+####  P2P para otros Validadores
 Nodo P2P configurado como parte de la red interna de los validadores.
 
 ## Capa 2 - Bridge
 
-### Validator p2p out
+#### Validator p2p out
 Nodo configurado para solo broadcastear bloques por conexiones p2p , los observers p2p out permitidos se conectan a este nodo
 
-### Validator p2p bidir
+#### Validator p2p bidir
 Nodo configurado para aceptar transacciones por p2p de nodos permitidos y enviarsela al validador
 
-### Boot p2p out
+
+### Nodos Boot
+
+#### Boot p2p out
 Nodo configurado para aceptar bloques de los validadores p2p y solo reenviarlos a los observers p2p y api, no acepta txs
 
-### Boot p2p bidir
+#### Boot p2p bidir
 Nodo p2p configurado para actualizar con nuevos bloques a los nodos writer y a su vez aceptar txs para enviar a los validadores
 
 ## Layer 3 - Satellite
 
-### Writer p2p
+### Nodos Escritores
+
+#### Writer p2p
 Acepta transacciones por p2p y las envia al layer 1 atravez de un `boot-p2p-bidir`.
 > por ejemplo: Una wallet maneja su propia API y se conecta a la red atravez de un writer p2p.
 
-### Writer API
+#### Writer API
 Acepta solicitudes de push transaction por http y las envia al layer 1 atravez de un `boot-p2p-bidir`
 
-### Observer nodes p2p
+### Nodos Observadores
+
+#### Observer nodes p2p
 Un observer node p2p es un nodo que esta consumiendo información del layer 1 atravez de un `boot-p2p-out`, solo puede leer el estado de la blockchain.
 
-### Observer nodes API
+#### Observer nodes API
 Nodo que permite pedir información de la blockchain a travez de un request http, se recomienda el uso de dfuse.
 
 
