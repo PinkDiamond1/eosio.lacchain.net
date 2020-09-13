@@ -32,7 +32,7 @@ const siteConfig = {
           // Sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateAuthor: false,
-          showLastUpdateTime: true,
+          showLastUpdateTime: true
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -42,6 +42,7 @@ const siteConfig = {
   ],
   themeConfig: {
     colorMode: {
+      defaultMode: 'light',
       disableSwitch: true
     },
     navbar: {
