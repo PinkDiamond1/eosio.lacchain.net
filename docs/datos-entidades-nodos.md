@@ -126,8 +126,8 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 
 - **node:** *{Object}*
     - **nodetype_keys:**  *{Object}* - Public Keys required for each node type.
-        - **peer_key** : "EOS..." 
-        - **block_signing_key** : "EOS..." *(required for validator node)*
+        - **peer_keys** : **[Array]** ["EOS..."] 
+        - **account_key** : "EOS..." *(required for writer node)*
     - **nodetype_endpoints:**  *{Object}* - HTTP and P2P endpoints required for each node type.
         - **p2p_endpoint:** EOSIO P2P endpoint `host:port`
         - **api_endpoint:** EOSIO HTTP endpoint `http://host:port`
@@ -145,8 +145,7 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 ```json title="información on-chain de un nodo velidador"
 {
     "validator_keys":{
-        "peer_key": "EOS...",
-        "block_signing_key": "EOS..."
+        "peer_keys": ["EOS..."]
     },
     "validator_endpoints":{
         "validator_p2p_out": "lacchain.eosio.cr:9876",
@@ -165,7 +164,7 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 ```json title="información on-chain de un nodo boot"
 {
     "boot_keys":{
-        "peer_key": "EOS..."
+        "peer_keys": ["EOS..."]
     },
     "boot_endpoints":{
         "boot_p2p_out": "",
@@ -184,7 +183,7 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 ```json title="información on-chain de un nodo escritor"
 {
     "writer_keys":{
-        "peer_key": "EOS...",
+        "peer_keys": ["EOS..."],
         "account_key": "EOS..."
     },
     "writer_endpoints":{
@@ -206,7 +205,7 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 ```json title="on-chain observer node info"
 {
     "observer_keys":{
-        "peer_key": "EOS..."
+        "peer_keys": ["EOS..."]
     },
     "observer_endpoints":{
         "observer_api": "http://lacchain.eosio.cr",
