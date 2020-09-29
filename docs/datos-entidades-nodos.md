@@ -35,7 +35,7 @@ Insertará o actualizará un registro en la tabla `entity` en los contratos del 
 
 - **org:** *{Object}*
   - **candidate_name**: Organization name
-  - **organization_id**"**: Government Issued Organization ID
+  - **organization_id**: Government Issued Organization ID
   - **technical_contact**: Person Name
   - **business_contact**: Person Name
   - **website**: Organization website
