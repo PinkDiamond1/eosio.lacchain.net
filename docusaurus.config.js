@@ -61,8 +61,8 @@ const siteConfig = {
         //   position: 'right',
         // },
         {
-          href: 'https://monitor.latamlink.io/',
-          label: 'Monitor',
+          href: 'https://dashboard.latamlink.io/',
+          label: 'Monitor de Red',
           position: 'right',
         },
         // {
@@ -90,7 +90,7 @@ const siteConfig = {
           items: [
             {
               label: 'Monitor de Red',
-              to: 'http://monitor.latamlink.io/',
+              to: 'http://dashboard.latamlink.io/',
             },
             {
               label: 'Explorador de Bloques',
