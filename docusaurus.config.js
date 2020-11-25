@@ -67,7 +67,7 @@ const siteConfig = {
         },
         {
           href: 'http://explorer.latamlink.io/',
-          label: 'Exploradorde Bloques',
+          label: 'Explorador de Bloques',
           position: 'right',
         },
         {
