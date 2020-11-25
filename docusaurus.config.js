@@ -65,11 +65,11 @@ const siteConfig = {
           label: 'Monitor de Red',
           position: 'right',
         },
-        // {
-        //   href: 'http://explorer.testnet.latamlink.io/',
-        //   label: 'Explorador',
-        //   position: 'right',
-        // },
+        {
+          href: 'http://explorer.latamlink.io/',
+          label: 'Exploradorde Bloques',
+          position: 'right',
+        },
         {
           to: 'docs/eosio',
           label: 'Documentación',
@@ -94,7 +94,7 @@ const siteConfig = {
             },
             {
               label: 'Explorador de Bloques',
-              to: 'http://explorer.testnet.latamlink.io/',
+              to: 'http://explorer.latamlink.io/',
             },
             {
               label: 'APIs',
