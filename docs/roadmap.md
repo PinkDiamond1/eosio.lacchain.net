@@ -19,27 +19,27 @@ Actualizado a Julio 2020
 | Documentation available in the Github repository on topology and architecture                                           | ✓ | ✓ | ✓ | ✓ | completado |
 | Documentation available in the Github repository on how to deploy your apps                                             | ✓ | ✓ | ✓ | ✓ | completado |
 | Validator nodes enabled                                                                                                 | ✓ | ✓ | ✓ | ✓ | completado |
-| Writer nodes enabled                                                                                                    | ✓ | ✓ | ✓ | ✓ |      |
-| Boot nodes enabled                                                                                                      |   | ✓ | ✓ | ✓ |      |
+| Writer nodes enabled                                                                                                    | ✓ | ✓ | ✓ | ✓ | completado |
+| Boot nodes enabled                                                                                                      |   | ✓ | ✓ | ✓ | completado |
 | Smart-contract based permissioning                                                                                      |   | ✓ | ✓ | ✓ | en progreso |
-| App for managing permissioning                                                                                          |   | ✓ | ✓ | ✓ |      |
+| App for managing permissioning                                                                                          |   | ✓ | ✓ | ✓ | completado |
 | Privacy leveraged as native                                                                                             |   | ✓ | ✓ | ✓ |      |
-| Dashboard for nodes                                                                                                     |   | ✓ | ✓ | ✓ |      |
-| Transaction explorer                                                                                                    |   | ✓ | ✓ | ✓ |      |
-| Dashboard of entities running nodes                                                                                     |   | ✓ | ✓ | ✓ |      |
-| Interface to visualize node's activity                                                                                  |   | ✓ | ✓ | ✓ |      |
+| Dashboard for nodes                                                                                                     |   | ✓ | ✓ | ✓ | completado |
+| Transaction explorer                                                                                                    |   | ✓ | ✓ | ✓ | en progreso |
+| Dashboard of entities running nodes                                                                                     |   | ✓ | ✓ | ✓ | completado |
+| Interface to visualize node's activity                                                                                  |   | ✓ | ✓ | ✓ | en progreso |
 | Tracking system to follow and fix installation issues                                                                   |   |   | ✓ | ✓ |      |
 | Smart-contract based local whitelisting                                                                                 |   |   | ✓ | ✓ | completado |
 | Dashboard of applications runing on the blockchain                                                                      |   |   | ✓ | ✓ |      |
 | Follow installation issues via a defined tracking system to enable and fix installation problems                        |   |   | ✓ | ✓ |      |
 | Cloud vendor integration                                                                                                |   |   | ✓ | ✓ |      |
-| Gas schema to manage the use of the network                                                                             |   |   | ✓ | ✓ |      |
-| Observer nodes enabled                                                                                                  |   |   | ✓ | ✓ |      |
+| Gas schema to manage the use of the network                                                                             |   |   | ✓ | ✓ | completado |
+| Observer nodes enabled                                                                                                  |   |   | ✓ | ✓ | completado |
 | Smart-contract-based rotation of core nodes                                                                             |   |   | ✓ | ✓ |      |
-| Node's activity monitored                                                                                               |   |   | ✓ | ✓ |      |
+| Node's activity monitored                                                                                               |   |   | ✓ | ✓ | en progreso |
 | Markeplace of applications                                                                                              |   |   | ✓ | ✓ |      |
-| Smart-contract based gas schema                                                                                         |   |   |   | ✓ |      |
-| Data anlytics tools                                                                                                     |   |   |   | ✓ |      |
+| Smart-contract based gas schema                                                                                         |   |   |   | ✓ | completado |
+| Data anlytics tools                                                                                                     |   |   |   | ✓ | en progreso |
 | Quantum safe protocolos and algorithms                                                                                  |   |   |   | ✓ |      |
 
 ## Servicio
@@ -47,7 +47,7 @@ Actualizado a Julio 2020
 |                                                                                                                         |  **TestNet**  | **Pro TestNet** | **Pre MainNet** | **MainNet** | **Estado** |
 |:------------------------------------------------------------------------------------------------------------------------|:--------------:|:--------------:|:--------------:|:-----------:|:-----------:| 
 | Installation support                                                                                                    | ✓ | ✓ | ✓ | ✓ | completado |
-| Writer nodes allowed to run tests and demos                                                                             | ✓ | ✓ | ✓ | ✓ |      |
+| Writer nodes allowed to run tests and demos                                                                             | ✓ | ✓ | ✓ | ✓ | completado |
 | Writer nodes allowed to run tests, demos, POCs, MVPs and sandboxes                                                      |   | ✓ | ✓ | ✓ |      |
 | Writer nodes allowed to run applications in production                                                                  |   |   | ✓ | ✓ |      |
 | Cloud integration for node deploy and maintenance                                                                       |   |   | ✓ | ✓ |      |
