@@ -68,19 +68,19 @@ Las redes EOSIO manejan un grupo de validadores registrados que pueden asumir el
 
 ### Rotación de nodos activos
 
-La rotación periódica de nodos nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramineta de gestión de red](gobernanza-red.md) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
+La rotación periódica de nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramineta de gestión de red](gobernanza-red.md) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
 
 > **Por ejemplo**: Se puede definir una política de rotación de nodos activos semanalmente.  
 
-Mas adelante se habilitrá la rotación periódica y automática basada en contratos inteligentes. De tal forma que sea imposible predecir quienes sean los nodos validadores activos seleccionados. (entropía externa)
+Mas adelante se habilitará la rotación periódica y automática basada en contratos inteligentes. De tal forma que sea imposible predecir quienes sean los nodos validadores activos seleccionados. (entropía externa)
 
 
 ### Sustitución de un Productor de Bloques activo 
-En caso de que algún nodo del grupo principal dejará de responder. El comité permisionador podrá reemplazar manualmente los nodos validadores que presenten problemas de rendimiento o seguridad.
+En caso de que algún nodo del grupo principal dejara de responder. El comité permisionador podrá reemplazar manualmente los nodos validadores que presenten problemas de rendimiento o seguridad.
 
 Eventualmente se podrá implementar un contrato inteligente que sustituya una cuenta en el `schedule` de forma automática basado en métricas objetivas de rendimiento.
 
-**Aun se requiere definir numero optimo de nodos validadores de respaldo para LACChain.**
+**Aun se requiere definir número óptimo de nodos validadores de respaldo para LACChain.**
 
 
 ## Contratos de sistema EOSIO a la medida
@@ -101,6 +101,6 @@ Este cambio implica deshabilitar el uso de tokens y de votos característicos de
 
 Esta funcionalidad no necesariamente se eliminará, sino que se utilizará una función de “assert false” para deshabilitar las funciones ya que la plataforma no soporta estas funciones.
 
-En esencia la los contratos de sistema de LAC Chain definen un mecanismo para registrar los nodos validadores así como asignar **recursos de sistema** requeridos por las cuentas de nodos escritores de la red para ejecutar sus contratos inteligentes.
+En esencia los contratos de sistema de LAC Chain definen un mecanismo para registrar los nodos validadores así como asignar **recursos de sistema** requeridos por las cuentas de nodos escritores de la red para ejecutar sus contratos inteligentes.
 
 
