@@ -1,8 +1,10 @@
 ---
-id: como-iniciar
-title: Como Iniciar
-sidebar_label: Como Iniciar
+id: ambiente-desarrollo
+title: Ambiente de desarrollo
+sidebar_label: Ambiente de desarrollo
 ---
+
+Estos pasos muestran el proceso de instalación del ambiente de desarrollo necesario para trabajar sobre la red de Lacchain EOSIO (creación de cuentas, manejo de recursos, desplegar contratos...)
 
 ## 1. Instalación de software
 Primero, debe tener instalado el software [EOSIO](https://developers.eos.io/manuals/eos/latest/install/install-prebuilt-binaries) desarrollado por [Block.one](https://block.one/) para realizar acciones con el protocolo EOS.
@@ -15,7 +17,7 @@ Este software se compone de:
 
 ![Cleos](/img/diagramas/cleos.png)
 
-### 1.1 Prebuilt Binaries 
+### 1.1 Binarios Pre-Compilados
 **Mac:**
 ```
 brew tap eosio/eosio
