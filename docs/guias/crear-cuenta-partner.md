@@ -1,6 +1,6 @@
 ---
 id: crear-cuenta-partner
-title: Obtener una cuenta en LACChain EOSIO para partners
+title: Obtener una cuenta para partners
 sidebar_label: Cuentas para partners
 ---
 

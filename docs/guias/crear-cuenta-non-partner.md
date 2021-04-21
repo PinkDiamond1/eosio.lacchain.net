@@ -1,6 +1,6 @@
 ---
 id: crear-cuenta-non-partner
-title: Obtener una cuenta en LACChain EOSIO para non-partners
+title: Obtener una cuenta para non-partners
 sidebar_label: Cuentas para non-partners
 ---
 

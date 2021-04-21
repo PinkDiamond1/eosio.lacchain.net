@@ -1,6 +1,6 @@
 ---
 id: crear-cuenta-final
-title: Obtener una cuenta en LACChain EOSIO para un usuario final
+title: Obtener una cuenta para un usuario final
 sidebar_label: Cuentas para usuarios finales
 ---
 

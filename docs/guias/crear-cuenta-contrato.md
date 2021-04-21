@@ -1,7 +1,7 @@
 ---
 id: crear-cuenta-contrato
-title: Obtener una cuenta en LACChain EOSIO para una aplicación o contrato inteligente
-sidebar_label: Cuentas para aplicaciones o contratos inteligentes
+title: Obtener una cuenta para una aplicación o contrato inteligente
+sidebar_label: Cuentas para aplicaciones
 ---
 
 :::note Trabajo en progreso
