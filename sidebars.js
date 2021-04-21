@@ -15,6 +15,7 @@ module.exports = {
         "testnet/roadmap"
     ],
     "Guías":[
+        "guias/ambiente-desarrollo",
         "guias/como-iniciar",
         "guias/llaves-privadas",
         "guias/crear-cuenta-final",
