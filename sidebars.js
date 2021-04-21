@@ -15,7 +15,7 @@ module.exports = {
         "roadmap"
     ],
     "Guías":[
-        "como-iniciar",
+        "ambiente-desarrollo",
         "llaves-privadas",
         "proceso-permisionado",
         "datos-entidades-nodos",
