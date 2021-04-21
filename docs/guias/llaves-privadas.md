@@ -1,12 +1,8 @@
 ---
-id: crear-cuenta
-title: Obtener una cuenta en LACChain EOSIO
-sidebar_label: Obtener una cuenta en LACChain EOSIO
+id: llaves-privadas
+title: Manejo de Llaves Privadas
+sidebar_label: Manejo de Llaves Privadas
 ---
-
-:::note 
-Trabajo en progreso. Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](./roadmap.md).
-:::
 
 ## 1. Generar llaves privadas
 
@@ -20,20 +16,14 @@ cleos create key
 
 Este comando nos va a generar llaves privadas y públicas (podemos crear la cantidad de llaves que queramos). Las cuentas cleos, por defecto, vienen en pares: una `active key` y una `owner key` (para recuperar cuenta en caso de perder la active key).
 
-## 2. Solicitar una cuenta a un Partner
+## 2. Crear una cuenta
 
-Para poder crear una cuenta en LACChain, es necesario establecer la comunicacion con un `partner`, los cuales son los encargados de crear las cuentas.  
+En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
 
-A continuacion se presenta una lista de `partners` los cuales pueden generar cuentas. 
-
-- [EOS Argentina](https://www.eosargentina.io/)
-- [EOS Costa Rica](https://es.eoscostarica.io/)
-- [EOS Venezuela](https://eosvenezuela.io//)
-
-
-El nombre de la cuenta debe cumplir con ciertos requisitos: caracteres de la A a la Z en minúscula, números del 1 al 5 y tener una longitud de 12 caracteres. Para el ejemplo, llamaremos la cuenta: `holacontrato`.
-
-Luego, introducimos las llaves públicas de `owner` y `active` para ejecutar el contrato. Estas pueden ser cualquiera de las que se generaron con el comando cleos create key anteriormente. Se recomienda no compartir las llaves privadas.
+- [Usuario final](./crear-cuenta-final)
+- [Aplicación o contrato](./crear-cuenta-contrato)
+- [Non-partner](./crear-cuenta-non-partner)
+- [Partner](./crear-cuenta-partner)
 
 
 ## 3. Administrar la billetera con cleos

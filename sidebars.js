@@ -16,7 +16,11 @@ module.exports = {
     ],
     "Guías":[
         "guias/como-iniciar",
-        "guias/crear-cuenta",
+        "guias/llaves-privadas",
+        "guias/crear-cuenta-final",
+        "guias/crear-cuenta-contrato",
+        "guias/crear-cuenta-non-partner",
+        "guias/crear-cuenta-partner",
         "guias/proceso-permisionado",
         "guias/datos-entidades-nodos",
         "guias/instalacion-nodos",
