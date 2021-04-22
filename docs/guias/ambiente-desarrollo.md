@@ -54,4 +54,9 @@ sudo apt install ./eosio.cdt_1.7.0-1-ubuntu-18.04_amd64.deb
 
 ## Obtenga su cuenta en Lacchain
 
-Mas información [sobre la creacion de cuentas.](llaves-privadas.md)  
+En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
+
+- [Usuario final](./crear-cuenta-final)
+- [Aplicación o contrato](./crear-cuenta-contrato)
+- [Non-partner](./crear-cuenta-non-partner)
+- [Partner](./crear-cuenta-partner)

@@ -8,7 +8,12 @@ A continuación explicamos con ejemplos cómo crear, compilar y desplegar un con
 
 ## 1. Obtenga su cuenta LACChain EOSIO
 
-Mas información [sobre creación de cuentas.](llaves-privadas.md)  
+En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
+
+- [Usuario final](./crear-cuenta-final)
+- [Aplicación o contrato](./crear-cuenta-contrato)
+- [Non-partner](./crear-cuenta-non-partner)
+- [Partner](./crear-cuenta-partner) 
 
 ## 2. Adquirir RAM
 Una vez que se tiene la cuenta en el LACChain EOSIO Testnet, para el contrato, necesitaremos disponer de recursos para desplegar el contrato en este caso RAM. Para esto consulte sobre el [manejo de recursos en la red](recursos.md).

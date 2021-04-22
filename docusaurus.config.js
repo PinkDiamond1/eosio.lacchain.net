@@ -28,7 +28,7 @@ const siteConfig = {
           path: './docs',
           editUrl: 'https://github.com/LatamLink/es.latamlink.io/tree/master',
           // Equivalent to `docsUrl`.
-          routeBasePath: 'docs',
+          routeBasePath: 'docs/',
           // Sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateAuthor: false,
@@ -71,7 +71,7 @@ const siteConfig = {
           position: 'right',
         },
         {
-          to: 'docs/eosio',
+          to: 'docs/testnet/eosio',
           label: 'Documentación',
           position: 'right',
         },
