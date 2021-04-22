@@ -37,7 +37,6 @@ sudo dpkg -i ./libicu60_60.2-3ubuntu3.1_amd64.deb
 ```
 :::
 
-
 ### 1.2 Contract Development Toolkit
 Adicionalmente, recomendamos instalar desde antes el Contract Development Toolkit (CDT), para acceder a recursos para crear los contratos este se puede instalar utilizando el comando:
 

@@ -20,7 +20,7 @@ module.exports = {
         "proceso-permisionado",
         "datos-entidades-nodos",
         "instalacion-nodos",
-        "hola-mundo"
+        "desplegar-contrato-inteligente"
     ],
     "Herramientas": [
         "monitor",
