@@ -1,42 +1,46 @@
 module.exports = {
   docs: {
     "Testnet": [
-        "eosio",
-        "mecanismo-consenso",
-        "topologia-red",
-        "cuentas-permisos",
-        "trazabilidad",
-        "recursos",
-        "monitoreo",
-        "rendimiento",
-        "identidad-digital",
-        "privacidad",
-        "interoperabilidad",
-        "roadmap"
+        "testnet/eosio",
+        "testnet/mecanismo-consenso",
+        "testnet/topologia-red",
+        "testnet/cuentas-permisos",
+        "testnet/trazabilidad",
+        "testnet/recursos",
+        "testnet/monitoreo",
+        "testnet/rendimiento",
+        "testnet/identidad-digital",
+        "testnet/privacidad",
+        "testnet/interoperabilidad",
+        "testnet/roadmap"
     ],
     "Guías":[
-        "ambiente-desarrollo",
-        "llaves-privadas",
-        "proceso-permisionado",
-        "datos-entidades-nodos",
-        "instalacion-nodos",
-        "hola-mundo"
+        "guias/ambiente-desarrollo",
+        "guias/llaves-privadas",
+        "guias/crear-cuenta-final",
+        "guias/crear-cuenta-contrato",
+        "guias/crear-cuenta-non-partner",
+        "guias/crear-cuenta-partner",
+        "guias/proceso-permisionado",
+        "guias/datos-entidades-nodos",
+        "guias/instalacion-nodos",
+        "guias/hola-mundo"
     ],
     "Herramientas": [
-        "monitor",
-        "api",
-        "cli",
-        "explorador-bloques",
-        "gobernanza-red",
-        "librerias-sdk",
-        "respaldos",
-        "boilerplates"
+        "herramientas/monitor",
+        "herramientas/api",
+        "herramientas/cli",
+        "herramientas/explorador-bloques",
+        "herramientas/gobernanza-red",
+        "herramientas/librerias-sdk",
+        "herramientas/respaldos",
+        "herramientas/boilerplates"
     ],
     "Recursos": [
-        "otros-recursos",
-        "redes-eosio",
-        "funciones-importantes",
-        "glosario"
+        "recursos/otros-recursos",
+        "recursos/redes-eosio",
+        "recursos/funciones-importantes",
+        "recursos/glosario"
     ]
   }   
 }
