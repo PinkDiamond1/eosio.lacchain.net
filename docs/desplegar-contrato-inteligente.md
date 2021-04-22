@@ -15,13 +15,26 @@ Una vez que se tiene la cuenta en el LACChain EOSIO Testnet, para el contrato, n
 
 Para extraer la información de la cuenta y verificar cuantos kilobytes de RAM tiene disponbible la cuenta puede realizar ejecutando el siguiente comando el cual puede apuntar al "end-point" de cualquiera de los partner de la red, puede observar la lista de partners [aquí]()
 
-```
+```bash
 cleos -u http://lacchain.eosio.cr get account {nombrecuenta}
 ```
 
 ## 3. Crear un contrato
 
 Para continuar, vamos a crear un contrato sencillo dentro de un nuevo directorio, el cual llamamos `holacontrato`. Como en EOS se requieren recursos, estos deberán estar asociados a los tokens de una cuenta, por lo que se debe poner el mismo nombre del contrato anteriormente creado.
+
+```cpp title="holacontrato.cpp"
+# include <eosio/eosio.hpp>
+using namespace eosio;
+class [[eosio::contract]] holacontrato : public contract {
+	public:
+		using contract::contract;
+		[[eosio::action]]
+		void hola( name user){
+			print( "Hola, ". user);
+		}
+};
+```
 
 Para editar el contrato, puede usarse un editor de texto. Para este ejemplo se utilizó Sublime Text.
 
@@ -33,7 +46,7 @@ En la línea de clase, se deberá exponer nuestro contrato “holacontrato” qu
 
 El archivo C++ se tiene que compilar usando la herramienta CDT, que recibe de input el archivo C++ y como output origina un archivo web assembly (wasm) que es un archivo ejecutable por el contrato. Adicional al archivo wasm, también se genera un archivo abi que sirve para el mapeo de las funciones del contrato. El comando va a recibir el contrato como un input y como output va a generar un archivo wasm que es el archivo que realmente se sube al blockchain.
 
-```
+```bash
 eosio-cpp -abigen -I ./include -I ../anothercontract/include -R ./resource -contract holacontrato -o holacontrato.wasm src/holacontrato.cpp
 ```
 <br/>
@@ -60,7 +73,7 @@ Cuando se tiene compilado el contrato y generado el archivo .wasm y el archivo .
 
 En la terminal, ejecutamos:
 
-```
+```bash
 touch holacontrato.sh
 chmod 755 holacontrato.sh
 ```
@@ -78,7 +91,7 @@ chmod 755 holacontrato.sh
 
 Dentro del archivo que acabamos de crear, se debe a insertar la siguiente función:
 
-```
+```bash title="holacontrato.sh"
 deploy_holacontrato_contracts_to_lacchain() {   
     echo 'Deploy holacontrato'
     mkdir -p ./stdout/holacontrato
