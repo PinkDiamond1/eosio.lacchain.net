@@ -29,6 +29,8 @@ La primera línea incluye una librería que a la cual se tiene acceso a través 
 
 En la línea de clase, se deberá exponer nuestro contrato “holacontrato” que tiene una acción definida, que en este caso llamamos “Hola” y su argumento es un usuario tipo nombre. Al guardar el contrato, en el directorio queda un archivo C++.
 
+## 4. Compilar el contrato
+
 El archivo C++ se tiene que compilar usando la herramienta CDT, que recibe de input el archivo C++ y como output origina un archivo web assembly (wasm) que es un archivo ejecutable por el contrato. Adicional al archivo wasm, también se genera un archivo abi que sirve para el mapeo de las funciones del contrato. El comando va a recibir el contrato como un input y como output va a generar un archivo wasm que es el archivo que realmente se sube al blockchain.
 
 ```
@@ -52,7 +54,7 @@ Como no especificamos una, el sistema nos da un mensaje de que no existe una cl�
 
 Una vez ejecutado el comando para set contract, el sistema lee la información en el contrato para luego publicarlo.
 
-## 4. Publicar el contrato
+## 5. Publicar el contrato
 
 Cuando se tiene compilado el contrato y generado el archivo .wasm y el archivo .abi, se procede a subir el contrado a LACChain y para este caso, es requerido crear un archivo .sh que permite la ejecución de comandos para automatizar en cierta medida ese proceso.
 
@@ -72,7 +74,7 @@ chmod 755 holacontrato.sh
 
 <br/>
 
-### 4.1 Archivo shell
+### 5.1 Archivo shell
 
 Dentro del archivo que acabamos de crear, se debe a insertar la siguiente función:
 
@@ -104,15 +106,20 @@ deploy_holacontrato_contracts_to_lacchain
 
 Para este punto de la ejecución, ya tenemos nuestro contrato inteligente desplegado en LACChain.
 
-De vuelta al block explorer ([EOSIO Dashboard](https://dashboard.latamlink.io/accounts)), podemos verificar que la cuenta es dueña de un contrato que expone la acción “Hola” y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
 
-Una vez que el contrato esté listo, podemos ejecutar una acción en el contrato. Con cleos existe un comando para especificar el endpoint y así ejecutar la acción “Hola”. Para este ejemplo, ponemos como input: “eoscostarica”. El output de la acción será el texto “Hola eoscostarica”.
+## 6. Verificación de contrato
 
-Podemos verificar en el explorador de bloques las acciones ejecutadas.
+Para esto nos dirigimos al block explorer ([EOSIO Dashboard](https://dashboard.latamlink.io/accounts)), podemos verificar que la cuenta es dueña de un contrato que expone la acción “Hola” y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
 
+Una vez que el contrato esté listo, podemos ejecutar una acción en el contrato. Para esto debemos ejecutar el siguiente comando:
+
+```
+cleos -u http://lacchain.eosio.cr push action holacontrato hola '["eoscostarica"]' -p holacontrato@active
+```
+
+:::note Nota
 Es necesario esperar unos segundos para completar la irreversibilidad del bloque, ya que los block producers deben hacer la validación del bloque de datos para esto.
-
-Finalmente, esta es una muestra de cómo se puede interactuar con una blockchain. Existen herramientas de Javascript, librería [EOS JS](/docs/librerias-sdk#eosjs) que podría implementarse para ejecutar acciones de una manera más programática para integrar con dApps, poder persistir datos, o incluso ejecutar lógica de negocios en la blockchain con este mismo patrón.
+:::
 
 ## Video tutorial
 <iframe width="100%" height="350px" src="https://www.youtube.com/embed/nMivNMvS09Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
