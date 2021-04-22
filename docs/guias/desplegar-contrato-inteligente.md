@@ -18,7 +18,7 @@ En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía 
 ## 2. Adquirir RAM
 Una vez que se tiene la cuenta en el LACChain EOSIO Testnet, para el contrato, necesitaremos disponer de recursos para desplegar el contrato en este caso RAM. Para esto consulte sobre el [manejo de recursos en la red](recursos.md).
 
-Para extraer la información de la cuenta y verificar cuantos kilobytes de RAM tiene disponbible la cuenta puede realizar ejecutando el siguiente comando el cual puede apuntar al "end-point" de cualquiera de los partner de la red, puede observar la lista de partners [aquí]()
+Para extraer la información de la cuenta y verificar cuantos kilobytes de RAM tiene disponbible la cuenta puede realizar ejecutando el siguiente comando el cual puede apuntar al "end-point" de cualquiera de los partner de la red, puede observar la lista de partners [aquí]().
 
 ```bash
 cleos -u http://lacchain.eosio.cr get account {nombrecuenta}
@@ -35,8 +35,8 @@ class [[eosio::contract]] holacontrato : public contract {
 	public:
 		using contract::contract;
 		[[eosio::action]]
-		void hola( name user){
-			print( "Hola, ". user);
+		void hola( name user ){
+			print( "Hola, ", user );
 		}
 };
 ```
@@ -45,21 +45,19 @@ Para editar el contrato, puede usarse un editor de texto. Para este ejemplo se u
 
 La primera línea incluye una librería que a la cual se tiene acceso a través del Contract Development Toolkit (CDT), una herramienta que permite acceder a recursos para crear los contratos, [información sobre su instalación](ambiente-desarrollo.md).
 
-En la línea de clase, se deberá exponer nuestro contrato “holacontrato” que tiene una acción definida, que en este caso llamamos “Hola” y su argumento es un usuario tipo nombre. Al guardar el contrato, en el directorio queda un archivo C++.
+En la línea de clase, se deberá exponer nuestro contrato `holacontrato` que tiene una acción definida, que en este caso llamamos `hola` y su argumento es un usuario tipo nombre. Al guardar el contrato, en el directorio queda un archivo C++.
 
 ## 4. Compilar el contrato
 
-El archivo C++ se tiene que compilar usando la herramienta CDT, que recibe de input el archivo C++ y como output origina un archivo web assembly (wasm) que es un archivo ejecutable por el contrato. Adicional al archivo wasm, también se genera un archivo abi que sirve para el mapeo de las funciones del contrato. El comando va a recibir el contrato como un input y como output va a generar un archivo wasm que es el archivo que realmente se sube al blockchain.
+El archivo C++ se tiene que compilar usando la herramienta CDT, que recibe de input el archivo C++ y como output origina un archivo web assembly (wasm) que es un archivo ejecutable por el contrato. Adicional al archivo wasm, también se genera un archivo abi que sirve para el mapeo de las funciones del contrato.
 
 ```bash
-eosio-cpp -abigen -I ./include -I ../anothercontract/include -R ./resource -contract holacontrato -o holacontrato.wasm src/holacontrato.cpp
+eosio-cpp -abigen -contract holacontrato -o holacontrato.wasm src/holacontrato.cpp
 ```
 <br/>
 
 :::note Nota
 **-abigen**: Flag para generar el archivo ABI (Application Binary Interface).
-
-**-I**: Añade un directorio para incluir al path de búsqueda (para los include).
 
 **-contract**: Especifica el nombre del contrato.
 
@@ -68,9 +66,7 @@ eosio-cpp -abigen -I ./include -I ../anothercontract/include -R ./resource -cont
 
 <br/>
 
-Como no especificamos una, el sistema nos da un mensaje de que no existe una cláusula ricardiana. Una cláusula ricardiana es un contrato en prosa, escrito en inglés, que describe la intención del contrato y que debe estar alineada con la intención para la que se creó. En el sitio de Block.one vienen recursos para las cláusulas ricardianas. Para efectos del ejemplo no creamos uno.
-
-Una vez ejecutado el comando para set contract, el sistema lee la información en el contrato para luego publicarlo.
+Como no especificamos una cláusula ricardiana, el sistema nos da un mensaje de que no existe. Ver más información sobre [cláusulas ricardianas](https://guias.eoscostarica.io/docs/aprender-eosio/contratos-ricardianos).
 
 ## 5. Publicar el contrato
 
@@ -127,12 +123,12 @@ Para este punto de la ejecución, ya tenemos nuestro contrato inteligente desple
 
 ## 6. Verificación de contrato
 
-Para esto nos dirigimos al block explorer ([EOSIO Dashboard](https://dashboard.latamlink.io/accounts)), podemos verificar que la cuenta es dueña de un contrato que expone la acción “Hola” y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
+Para esto nos dirigimos al block explorer ([LACChain EOSIO Dashboard](https://dashboard.latamlink.io/accounts)), podemos verificar que la cuenta es dueña de un contrato que expone la acción `hola` y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
 
-Una vez que el contrato esté listo, podemos ejecutar una acción en el contrato. Para esto debemos ejecutar el siguiente comando:
+Una vez que el contrato esté listo, podemos ejecutar una acción en el contrato, esta va recibir como input la frase **LACChain EOSIO** y se obtendrá como output **hola LACChain EOSIO**. Para esto debemos ejecutar el siguiente comando:
 
 ```
-cleos -u http://lacchain.eosio.cr push action holacontrato hola '["eoscostarica"]' -p holacontrato@active
+cleos -u http://lacchain.eosio.cr push action holacontrato hola '["LACChain EOSIO"]' -p holacontrato@active
 ```
 
 :::note Nota
