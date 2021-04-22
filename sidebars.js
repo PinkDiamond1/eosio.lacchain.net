@@ -16,7 +16,6 @@ module.exports = {
     ],
     "Guías":[
         "guias/ambiente-desarrollo",
-        "guias/como-iniciar",
         "guias/llaves-privadas",
         "guias/crear-cuenta-final",
         "guias/crear-cuenta-contrato",

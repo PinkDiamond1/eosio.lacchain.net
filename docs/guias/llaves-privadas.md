@@ -8,7 +8,7 @@ sidebar_label: Manejo de Llaves Privadas
 
 Las llaves, son requisito para crear una cuenta en una blockchain. En la mayoría de las billeteras se puede generar llaves nuevas para EOSIO.
 
-Para poder generar ejecutaremos el siguiente comando en la terminal.
+Para generarlas ejecutaremos el siguiente comando en la terminal.
 
 ```bash
 cleos create key
