@@ -8,7 +8,11 @@ sidebar_label: Cuentas para non-partners
 Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
 :::
 
-Los Non-Partners en la red LAAChain EOSIO son entidades poseen nodos validadores, los cuales se encargan de observar las transacciones que se realizan dentro de las red, sin embargo no tienen permisos de escritura. 
+Los `Non-Partners` son un tipo de entidad dentro de la red LAAChain EOSIO con algunas características peculiares que lo diferencian de los `Partners`:
+
+- No tiene nodos escritores.
+- Pueden añadir nodos observadores.
+- No pueden añadir nuevas cuentas en la red.
 
 ## Solicitar el ingreso a la red LACChain EOSIO como Non-Partner
 
