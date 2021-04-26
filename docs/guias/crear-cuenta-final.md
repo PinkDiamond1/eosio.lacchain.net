@@ -25,7 +25,7 @@ A continuación, una lista de proyectos en las cuales hacen uso de cuentas de cu
 
 ### 1. Generar llaves privadas
 
-Las llaves, son requisito para crear una cuenta en una blockchain. Consulte el siguiente tutorial para crear [llaves privadas](./llaves-privadas.md).
+Las llaves, son requisito para crear una cuenta en una blockchain. Consulte el siguiente tutorial para crear [llaves privadas](./llaves-privadas).
 
 ###  2. Solicitar una cuenta a un Partner
 
