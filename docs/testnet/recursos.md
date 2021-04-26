@@ -4,7 +4,7 @@ title: Uso de Recursos
 sidebar_label: Uso de Recursos
 ---
 
-LACChain no tiene y no tendrá tarifas de transacción. Sin embargo, para limitar el uso de la red a sus límites técnicos y evitar ataques de denegación de servicio, es necesario establecer un mecanismo para solicitar y asignar recursos de red.
+LACChain no tiene y no tendrá tarifas de transacción. Sin embargo, para regular el uso de la red a sus límites técnicos y evitar ataques de denegación de servicio, es necesario establecer un mecanismo para solicitar y asignar recursos de red.
 
 ## Tipos de Recursos
 Las cuentas podrán utilizar los siguientes recursos en la red:
@@ -15,7 +15,7 @@ En una red EOSIO, la RAM es el espacio de almacenamiento de memoria donde la cad
 RAM es un recurso muy importante y es limitado. Se utiliza al ejecutar muchas acciones que están disponibles en la cadena de bloques, al crear una nueva cuenta, por ejemplo, la información de esa cuenta se almacena en la memoria de la cadena de bloques. Un ejemplo del uso de RAM es cuando una cuenta acepta un nuevo tipo de token, se debe crear un nuevo registro en algún lugar de la memoria de blockchain que contenga el saldo del nuevo token aceptado, y esa memoria, el espacio de almacenamiento en blockchain, debe ser comprada por el cuenta que transfiere el token o por la cuenta que acepta el nuevo tipo de token.
 
 RAM es referido como `memory` en el siguiente resultado del comando `cleos get account` : 
-```c++
+```cpp
 memory: 
      quota:     86.68 KiB    used:     11.62 KiB  
 ```
@@ -54,7 +54,7 @@ La red de eos inicio con 64GB de ram y incrementa en  1KiB (1024 bytes) por día
 
 ### Distribución de Recursos
 
-Las entidades que operan nodos escritores reciben una porción equivalente de los recursos de la red que las demás entidades. De tal manera que a cada nodo se le asigna `1/N` de la totalidad de los recursos donde : 
+Las entidades que operan nodos escritores reciben una porción equivalente de los recursos de la red. De tal manera que a cada nodo se le asigna `1/N` de la totalidad de los recursos donde : 
 
 **`N = Numero de entidades permisionadas`**.
 
@@ -84,11 +84,11 @@ Las entidades que operan nodos escritores reciben una porción equivalente de lo
 ![Ejemplo de Entidad 3](/img/diagramas/entity3-authorities.png)
 
 ### Usuarios
-Los Usuarios no poseen recursos, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción.
+Los Usuarios no poseen recursos de CPU y NET, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción., estos solo poseen RAM misma que sera necesaria para poder desplegar contratos en la red, para obtener este recurso el usuario debe solicitarselo a su partner, dicha solicitud asi como la cantidad y el valor de esta es definido por cada partner ya que ellos cuenta con la autonomia de administrar los recursos disponible.
 
 `CPU = 0 us`
 `NET = 0 KiB`
-`RAM = 0 KiB`
+`RAM = 100 KiB`
 
 ![Ejemplo de Autoridades Usuario](/img/diagramas/user-authorities.png)
 
