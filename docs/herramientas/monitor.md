@@ -5,7 +5,7 @@ sidebar_label: Monitor de Red
 ---
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap.md).
+Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
 :::
 
 Dentro del plan de trabajo de LatamLink se planea crear un monitor de red nativo como herramienta para desarrolladores y usuarios para el lanzamiento del Pro Testnet de LatamLink. El monitor incorporará metricas "on-chain" y "off-chain"  Ver artículo sobre [monitoreo](monitoreo.md)

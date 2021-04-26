@@ -5,7 +5,7 @@ sidebar_label: dAPP Boilerplates
 ---
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap.md).
+Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
 :::
 
 ## Dapp Boilerplate
