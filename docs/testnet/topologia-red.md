@@ -20,11 +20,11 @@ Presentamos la siguiente propuesta de configuración de red LAC-Chain utilizando
 
 <img src="/img/diagramas/topologia-red.png#center" alt="Topologia de Red LatamLink" width="450"/>
 
-- **Capa 1 ([Core](/docs/topologia-red#capa-1---red-core))** Red de validadores y nodos p2p para meshear entre ellos
+- **Capa 1 ([Core](/docs/testnet/topologia-red#capa-1---red-core))** Red de validadores y nodos p2p para meshear entre ellos
 
-	- **Capa 2 ([Bridge](/docs/topologia-red#capa-2---bridge))** Distribución p2p entre validators p2p y boots
+	- **Capa 2 ([Bridge](/docs/testnet/topologia-red#capa-2---bridge))** Distribución p2p entre validators p2p y boots
 
-		- **Capa 3 ([Satellite](/docs/topologia-red#layer-3---satellite))** Layer de consumo para writers y observers
+		- **Capa 3 ([Satellite](/docs/testnet/topologia-red#layer-3---satellite))** Layer de consumo para writers y observers
 
 
 ![LatamLink Topology](/img/diagramas/topologia-nodos-2.png)

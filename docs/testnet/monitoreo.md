@@ -5,7 +5,7 @@ sidebar_label: Monitoreo de Red
 ---
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap.md).
+Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap).
 :::
 
 El monitoreo de lo que sucede en la red es esencial para mejorarlo y medir el impacto social de sus soluciones. El principal objetivo de las herramientas de monitoreo es producir información descentralizada y confiable sobre cada nodo y la actividad de la red.
@@ -47,5 +47,5 @@ Adicionalmente se explorarán herramientas de Blockchain Analytics y Data Scienc
 
 ## Monitor de Red
 
-Se proponer crear un [monitor de red](monitor.md) nativo como herramienta para lograr este objetivo. 
+Se proponer crear un [monitor de red](../herramientas/monitor) nativo como herramienta para lograr este objetivo. 
  
