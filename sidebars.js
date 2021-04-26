@@ -5,6 +5,7 @@ module.exports = {
         "testnet/mecanismo-consenso",
         "testnet/topologia-red",
         "testnet/cuentas-permisos",
+        "testnet/datos-entidades-nodos",
         "testnet/trazabilidad",
         "testnet/recursos",
         "testnet/monitoreo",
@@ -23,7 +24,6 @@ module.exports = {
         "guias/crear-cuenta-partner",
         "guias/partners",
         "guias/proceso-permisionado",
-        "guias/datos-entidades-nodos",
         "guias/instalacion-nodos",
         "guias/desplegar-contrato-inteligente"
     ],

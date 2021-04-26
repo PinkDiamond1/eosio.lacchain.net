@@ -33,11 +33,11 @@ Las entidades permisionadas pueden ser "partners" de lacchain los cuales pueden 
 
 |                 | Account key              | Block Signing Key | Peer Key | Extra Keys            |
 |-----------------|:------------------------:|:-----------------:|:--------:|:---------------------:|
-| **Entity**      | Active/Owner permissions | ![No](/img/no-icon.svg) | ![No](/img/no-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#estructura-json-entidades)) |
-|  ˫ **validator**| ![No](/img/no-icon.svg)  | ![Yes](/img/yes-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-validador)) |
-|  ˫ **boot**     | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-boot)) |
-|  ˫ **writer**   | NodeName permission      | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-escritor)) |
-|  ˪ **observer** | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-observador)) |
+| **Entity**      | Active/Owner permissions | ![No](/img/no-icon.svg) | ![No](/img/no-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#estructura-json-entidades)) |
+|  ˫ **validator**| ![No](/img/no-icon.svg)  | ![Yes](/img/yes-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-validador)) |
+|  ˫ **boot**     | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-boot)) |
+|  ˫ **writer**   | NodeName permission      | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-escritor)) |
+|  ˪ **observer** | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-observador)) |
 
 
 #### Account key	
@@ -54,7 +54,6 @@ permissions:
 #### Block Signing Key
 
 LLaves utilizadas para firma de bloques por parte de los nodos validadores que formen parte del grupo de consenso.
-
 
 ```sh title="parámetros de configuración de nodeos"
   -p [ --producer-name ] arg            ID of producer controlled by this node 
@@ -86,7 +85,6 @@ Llaves utilizadas por el protocolo P2P para establecer comunicación entre nodos
 #### Extra Keys
 
 Llaves Adicionales para otros usos que no se utilizan en el consenso o protocolo de red de EOSIO pero que pueden emplearse para otras funciones como criptografía post-quatinca. Esta información se puede incluir dentro de los [datos de las entidad y nodos](datos-entidades-nodos.md) almacenados en el contrato de sistema.
-
 
 ### Autoridad Nodos Escritores
 

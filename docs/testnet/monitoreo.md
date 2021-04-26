@@ -47,5 +47,5 @@ Adicionalmente se explorarán herramientas de Blockchain Analytics y Data Scienc
 
 ## Monitor de Red
 
-Se proponer crear un [monitor de red](monitor.md) nativo como herramienta para lograr este objetivo. 
+Se proponer crear un [monitor de red](../herramientas/monitor) nativo como herramienta para lograr este objetivo. 
  

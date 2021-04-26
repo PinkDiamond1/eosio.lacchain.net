@@ -22,7 +22,7 @@ Dentro de la principales funciones del comité permisionador esta evaluar las en
 
 El grupo de nodos validadores activos poseen la autoridad de escribir a la cadena de bloques porque fueron otorgados este privilegio por parte de la  autoridad superior, el **comité permisionador**, quien sera la máxima autoridad y quien determina cuales entidades serán responsables de operar los nodos validadores. 
 
->  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LatamLink. Consulte nuestra sección sobre el [proceso de permisionado](proceso-permisionado.md) para obtener más información.
+>  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LatamLink. Consulte nuestra sección sobre el [proceso de permisionado](../guias/proceso-permisionado) para obtener más información.
 
 Eventualmemte habrá un vehículo legal, quien verifica identidad y firma contratos con entidades que operan los nodos validadores. 
 
@@ -68,7 +68,7 @@ Las redes EOSIO manejan un grupo de validadores registrados que pueden asumir el
 
 ### Rotación de nodos activos
 
-La rotación periódica de nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramineta de gestión de red](gobernanza-red.md) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
+La rotación periódica de nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramineta de gestión de red](../herramientas/gobernanza-red) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
 
 > **Por ejemplo**: Se puede definir una política de rotación de nodos activos semanalmente.  
 
