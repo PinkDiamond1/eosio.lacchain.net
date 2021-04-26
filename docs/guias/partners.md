@@ -8,6 +8,6 @@ Actualmente la red LACChain EOSIO cuenta con una serie de partners los cuales so
 
 - [EOS Argentina](https://www.eosargentina.io/)
 - [EOS Costa Rica](https://es.eoscostarica.io/)
-- [EOS Venezuela](https://eosvenezuela.io//)
+- [Inter-American Development Bank](https://www.iadb.org/en)
 
 Para ser parte de la red como partner consulte [esta información](./crear-cuenta-partner)
