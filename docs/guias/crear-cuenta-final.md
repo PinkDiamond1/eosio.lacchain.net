@@ -16,10 +16,10 @@ En la red LACChain EOSIO, las cuentes de los usuarios finales, pueden ser creada
 A continuación, una lista de proyectos en las cuales hacen uso de cuentas de cuentas en LACChain EOSIO:
 
 - [LifeBank](https://lifebank.io/)
-- [Inmutrust]()
+- [Inmutrust](https://inmutrust.com/)
 - [SMARTGATE](https://smartgate.tech/)
 - [Notario Digital](https://notarize.eosio.cr/dashboard/notary)
-- [EOS Mechanics]()
+- [EOS Mechanics](https://dashboard.latamlink.io/node-performance)
 
 ## Crear cuenta mediante un partner
 
