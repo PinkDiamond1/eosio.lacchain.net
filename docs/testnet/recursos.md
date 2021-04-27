@@ -9,21 +9,39 @@ LACChain no tiene y no tendrá tarifas de transacción. Sin embargo, para regula
 ## Tipos de Recursos
 Las cuentas podrán utilizar los siguientes recursos en la red:
 
+| **[RAM](/docs/testnet/recursos#ram)** | **[CPU](/docs/testnet/recursos#cpu)** | **[NET](/docs/testnet/recursos#network-net)** |
+:--------------:|:--------------:|:--------------:| 
+|Memoria para almacenar el estado|Tiempo de procesamiento|Ancho de banda para transmitir información|
+|Se mide en bytes|Se mide en microsegundos|Se mide en bytes| 
+|Es un recurso limitado|La CPU y el NET se repondrán por completo cuando la cuenta no esté usando la red durante 24 horas|La CPU y el NET se repondrán por completo cuando la cuenta no esté usando la red durante 24 horas|
+
 ### RAM
 En una red EOSIO, la RAM es el espacio de almacenamiento de memoria donde la cadena de bloques almacena datos, se mide en kilobytes (KiB). Si su contrato necesita almacenar datos en una tabla de blockchain, como en una base de datos, puede almacenarlos en la RAM de blockchain.
 
-RAM es un recurso muy importante y es limitado. Se utiliza al ejecutar muchas acciones que están disponibles en la cadena de bloques, al crear una nueva cuenta, por ejemplo, la información de esa cuenta se almacena en la memoria de la cadena de bloques. Un ejemplo del uso de RAM es cuando una cuenta acepta un nuevo tipo de token, se debe crear un nuevo registro en algún lugar de la memoria de blockchain que contenga el saldo del nuevo token aceptado, y esa memoria, el espacio de almacenamiento en blockchain, debe ser comprada por el cuenta que transfiere el token o por la cuenta que acepta el nuevo tipo de token.
+RAM es un recurso muy importante y es limitado. Se utiliza al ejecutar muchas acciones que están disponibles en la cadena de bloques, al crear una nueva cuenta, por ejemplo, la información de esa cuenta se almacena en la memoria de la cadena de bloques. Un ejemplo del uso de RAM es cuando una cuenta acepta un nuevo tipo de token, se debe crear un nuevo registro en algún lugar de la memoria de blockchain que contenga el saldo del nuevo token aceptado, y esa memoria, el espacio de almacenamiento en blockchain, debe ser comprada por la cuenta que transfiere el token o por la cuenta que acepta el nuevo tipo de token.
 
-RAM es referido como `memory` en el siguiente resultado del comando `cleos get account` : 
+RAM es referido como `memory` al ejecutar el siguiente comando: 
+
+#### Entrada
+
+``` bash
+cleos get account
+```
+
+#### Salida
+
 ```cpp
-memory: 
-     quota:     86.68 KiB    used:     11.62 KiB  
+memory: quota:     86.68 KiB    used:     11.62 KiB  
 ```
 
 Puede encontrar más detalles sobre RAM como recurso del sistema [aquí](https://developers.eos.io/manuals/eosio.contracts/latest/key-concepts/ram).
 
 ### CPU
-CPU es el poder de procesamiento, la cantidad de CPU que tiene una cuenta se mide en microsegundos (μs), se conoce como `CPU bandwith`, el comando `cleos get account` emite la cantidad de tiempo de procesamiento que una cuenta tiene a su disposición al enviar acciones a un contrato.
+CPU es el poder de procesamiento, la cantidad de CPU que tiene una cuenta se mide en microsegundos (μs), se conoce como `CPU bandwith`, el siguiente comando emite la cantidad de tiempo de procesamiento que una cuenta tiene a su disposición al enviar acciones a un contrato.
+
+``` bash
+cleos get account
+``` 
 
 Puede encontrar más detalles sobre la CPU como recurso del sistema [aquí](https://developers.eos.io/manuals/eosio.contracts/latest/key-concepts/cpu).
 
@@ -36,21 +54,14 @@ Puede encontrar más detalles sobre NET como recurso del sistema [aquí](https:/
 
 ## Limite de Recursos de la RED
 
-Los siguientes valores se obtienen al llamar [system get_info](https://lacchain.eosio.cr/v1/chain/get_info) al RPC API en la red de latamlink.
+| **CPU** | **NET** | **RAM** |
+:--------------:|:--------------:|:--------------:|
+| 200 ms por bloque | 1 MB por bloque | 32 GB |
+| 34.560 segundos CPU por día | 172.800 MB por día | Se aumenta según demanda |
 
-
-```json title="CPU limit"
-"block_cpu_limit":199900
-```
-
-```json title="NET limit"
-"block_net_limit":1048576
-````
-
-```json title="RAM limit"
-
-La red de eos inicio con 64GB de ram y incrementa en  1KiB (1024 bytes) por día
-```
+:::note Nota
+Se produce un bloque nuevo cada 500ms 
+:::
 
 ### Distribución de Recursos
 
@@ -60,35 +71,54 @@ Las entidades que operan nodos escritores reciben una porción equivalente de lo
 
  Si una entidad decide operar mas de un nodo escritor esto no afecta la cantidad de recursos que recibe.
 
+ | | **CPU** | **NET** | **RAM** |
+:--------------:|:--------------:|:--------------:|:--------------:|
+| Comité Permisionador | - | - | 32 GB |
+| Entidades | 1/N del CPU total | 1/N del NET total | Asignado por comité |
+| Nodos Escritores | Utiliza CPUde la entidad | Utiliza NET de la entidad | n/a |
+| Contratos Inteligentes | 0 ųs | 0 Bytes | Asignado por entidad |
+| Usuarios Finales | 0 ųs | 0 Bytes | 0 Bytes |
+
 #### Entidad con dos nodos escritores 
 
-
-`CPU = 1/N • 200 ms` `NET = 1/N • 1048 KiB` `RAM = 10000 KiB`
+| **Recurso** | **Distribución** |
+:--------------:|:--------------:| 
+| CPU | 1/N • 200 ms   |
+| NET | 1/N • 1048 KiB | 
+| RAM | 10000 KiB      |
 
 ![Ejemplo de Entidad 1](/img/diagramas/entity1-authorities.png)
 
-#### Entidad con un nodo escritor 
+#### Entidad con un nodo escritor
 
-`CPU = 1/N • 200 ms` `NET = 1/N • 1048 KiB` `RAM = 10000 KiB`
+| **Recurso** | **Distribución** |
+:--------------:|:--------------:| 
+| CPU | 1/N • 200 ms   |
+| NET | 1/N • 1048 KiB | 
+| RAM | 10000 KiB      |
 
 ![Ejemplo de Entidad 2](/img/diagramas/entity2-authorities.png)
 
 #### Entidad sin nodos  
 
-`CPU = X txs per day`
-
-`NET = X txs per day`
-
-`RAM = 10000 KiB`
+| **Recurso** | **Distribución** |
+:--------------:|:--------------:| 
+| CPU | X txs per day |
+| NET | X txs per day | 
+| RAM | 10000 KiB     |
 
 ![Ejemplo de Entidad 3](/img/diagramas/entity3-authorities.png)
 
 ### Usuarios
-Los Usuarios no poseen recursos de CPU y NET, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción., estos solo poseen RAM misma que sera necesaria para poder desplegar contratos en la red, para obtener este recurso el usuario debe solicitarselo a su partner, dicha solicitud asi como la cantidad y el valor de esta es definido por cada partner ya que ellos cuenta con la autonomia de administrar los recursos disponible.
 
-`CPU = 0 us`
-`NET = 0 KiB`
-`RAM = 100 KiB`
+Los Usuarios no poseen recursos de CPU y NET, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción. Estos solo poseen RAM misma que será necesaria para poder desplegar contratos en la red, para obtener este recurso el usuario debe solicitárselo a su partner, dicha solicitud, así como la cantidad y el valor de esta es definido por cada partner ya que ellos cuentan con la autonomía de administrar los recursos disponibles.
+
+
+| **Recurso** | **Distribución** |
+:--------------:|:--------------:| 
+| CPU | 0 us    |
+| NET | 0 KiB   | 
+| RAM | 100 KiB |
 
 ![Ejemplo de Autoridades Usuario](/img/diagramas/user-authorities.png)
 
@@ -159,4 +189,3 @@ def update_elastic_limit(current_limit, average_usage, elastic_resource_limit) {
 
    return min(max(result, elastic_resource_limit.max), elastic_resource_limit.max * elastic_resource_limit.max_multiplier)
 ```
-
