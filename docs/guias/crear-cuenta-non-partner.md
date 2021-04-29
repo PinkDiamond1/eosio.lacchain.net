@@ -5,7 +5,7 @@ sidebar_label: Cuentas para non-partners
 ---
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
+Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto](../testnet/roadmap).
 :::
 
 Los `Non-Partners` son un tipo de entidad dentro de la red LAAChain EOSIO con algunas características peculiares con los nodos que pueden desplegar que lo diferencian de los `Partners`:
@@ -18,7 +18,7 @@ Los `Non-Partners` son un tipo de entidad dentro de la red LAAChain EOSIO con al
 | **Nodos observadores** | ![Yes](/img/yes-icon.svg) | ![Yes](/img/yes-icon.svg) |
 
 
-Puede consultar mas información sobre [autorizaciones y trazabilidad ](../testnet/trazabilidad)
+Puede consultar mas información sobre [autorizaciones y trazabilidad](../testnet/trazabilidad).
 
 ## Solicitar el ingreso a la red LACChain EOSIO como Non-Partner
 
