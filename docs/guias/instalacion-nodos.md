@@ -9,7 +9,11 @@ sidebar_label: Instalación de nodos Validator / Boot / Writer / Observer
 <table>
 <tr>
     <td>Versión EOSIO</td>
-    <td><code>v2.0.5</code></td>
+    <td>
+        <a href="https://github.com/lacchain/eosio-network" target="_blank" rel="noopener noreferrer">
+            <code>LACChain EOSIO</code>
+        </a>
+    </td>
 </tr>
 <tr>
     <td>Chain ID</td>
@@ -22,6 +26,8 @@ sidebar_label: Instalación de nodos Validator / Boot / Writer / Observer
     </td>
 </tr>
 </table>
+
+Consulte nuestro [repositorio en GitHub](https://github.com/lacchain/eosio-network) para obtener mas información sobre los nodos en LACChain EOSIO.
 
 ## 1. Crear una cuenta
 
