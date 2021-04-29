@@ -52,7 +52,9 @@ Como CPU y RAM, NET también es un recurso muy importante en las cadenas de bloq
 Puede encontrar más detalles sobre NET como recurso del sistema [aquí](https://developers.eos.io/manuals/eosio.contracts/latest/key-concepts/net).
 
 
-## Limite de Recursos de la RED
+## Limite de recursos de la RED
+
+A continuación se muestran una tabla que contiene los valores globales de los recursos con los que dispone el testnet de LACChain EOSIO, mismo son definidos en la capa de consenso cero, es aquí donde están definidas las interfaces para que el contrato de sistema pueda determinar la forma de distribución de estos recursos.
 
 | **CPU** | **NET** | **RAM** |
 :--------------:|:--------------:|:--------------:|
@@ -111,7 +113,7 @@ Las entidades que operan nodos escritores reciben una porción equivalente de lo
 
 ### Usuarios
 
-Los Usuarios no poseen recursos de CPU y NET, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción. Estos solo poseen RAM misma que será necesaria para poder desplegar contratos en la red, para obtener este recurso el usuario debe solicitárselo a su partner, dicha solicitud, así como la cantidad y el valor de esta es definido por cada partner ya que ellos cuentan con la autonomía de administrar los recursos disponibles.
+Los usuarios no poseen recursos de CPU y NET, estos son descontados de la cuenta del nodo escritor a la hora de co-firmar una transacción. Estos solo poseen RAM misma que será necesaria para poder desplegar contratos en la red, para obtener este recurso el usuario debe solicitárselo a su partner, dicha solicitud, así como la cantidad y el valor de esta es definido por cada partner ya que ellos cuentan con la autonomía de administrar los recursos disponibles.
 
 
 | **Recurso** | **Distribución** |
