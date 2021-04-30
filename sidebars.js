@@ -5,6 +5,7 @@ module.exports = {
         "testnet/mecanismo-consenso",
         "testnet/topologia-red",
         "testnet/cuentas-permisos",
+        "testnet/nodos-eosio",
         "testnet/datos-entidades-nodos",
         "testnet/trazabilidad",
         "testnet/recursos",
