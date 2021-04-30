@@ -24,6 +24,7 @@ module.exports = {
         "guias/crear-cuenta-non-partner",
         "guias/crear-cuenta-partner",
         "guias/partners",
+        "guias/obtener-recursos",
         "guias/proceso-permisionado",
         "guias/instalacion-nodos",
         "guias/desplegar-contrato-inteligente"

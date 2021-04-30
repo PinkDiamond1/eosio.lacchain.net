@@ -4,8 +4,6 @@ title: Información sobre Entidades y Nodos
 sidebar_label: Datos de Entidades y Nodos
 ---
 
-
-
 Este es un estándar JSON propuesto para la información de entidades y nodos que los socios de LAC-Chain deben publicar y almacenar en las tablas de contratos del sistema. Este estándar se basa en el [estándar BP JSON](https://github.com/eosrio/bp-info-standard) utilizado en la red mainnet de EOS.
 
 Los contratos de sistema de permiten a las entidades que sean operadores de nodos anunciar públicamente las cuentas de sus nodos y compartir información sobre ellos mismos.
