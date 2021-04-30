@@ -12,10 +12,10 @@ El nombre de la cuenta debe cumplir con ciertos requisitos: caracteres de la a `
 
 En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
 
-- [Usuario final](./crear-cuenta-final)
-- [Aplicación o contrato](./crear-cuenta-contrato)
-- [Non-partner](./crear-cuenta-non-partner)
-- [Partner](./crear-cuenta-partner)
+- [Usuario final](../guias/crear-cuenta-final)
+- [Aplicación o contrato](../guias/crear-cuenta-contrato)
+- [Non-partner](../guias/crear-cuenta-non-partner)
+- [Partner](../guias/crear-cuenta-partner)
 
 
 ## Permisos
