@@ -12,7 +12,7 @@ El monitoreo de lo que sucede en la red es esencial para mejorarlo y medir el im
 
 ## Monitoreo on-chain
 
-Existe una colección de [contratos inteligentes y utilidades para EOSIO](https://eosmechanics.com/)  que se pueden emplear en LatamLink.
+Existe una colección de [contratos inteligentes y utilidades para EOSIO](https://eosmechanics.com/)  que se pueden emplear en LACChain EOSIO.
 
 Las métricas son generadas por contratos inteligentes ubicados bajo la cuenta `eosmechanics`. Son ejecutados durante el `schedule` de cada productor de bloques y registra los tiempos de ejecución utilizando el campo `cpu_usage_us` incluido en todas las transacciones de la red. Los datos estarán públicamente disponibles para su análisis y lo alentamos a hacerlo para ayudar a identificar problemas y mejorar el rendimiento de los nodos validadores.
 

@@ -9,7 +9,7 @@ Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta
 :::
 
 ## Contratos Inteligentes
-Esta herramienta es para manejar el permisionamiento y gobernanza de LatamLink mediante contratos inteligentes.
+Esta herramienta es para manejar el permisionamiento y gobernanza de LACChain EOSIO mediante contratos inteligentes.
 
 Tendrá las siguientes funciones.
 

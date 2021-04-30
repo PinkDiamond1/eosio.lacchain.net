@@ -12,7 +12,7 @@ Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta
 
 ## dfuse 	 
 
-LatamLink ha implementado las potentes funciones de [dfuse](https://www.dfuse.io/en), una sólida API de blockchain que permite transmitir actualizaciones de estado en tiempo real, realizar búsquedas rápidas y proporcionar garantías de transacciones irreversibles todo por primera vez usando una simple llamada API.
+LACChain EOSIO ha implementado las potentes funciones de [dfuse](https://www.dfuse.io/en), una sólida API de blockchain que permite transmitir actualizaciones de estado en tiempo real, realizar búsquedas rápidas y proporcionar garantías de transacciones irreversibles todo por primera vez usando una simple llamada API.
 
 ### Endpoints GraphQL
 

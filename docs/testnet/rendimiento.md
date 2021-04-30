@@ -10,7 +10,7 @@ Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta
 
 Es esencial conocer los límites de la infraestructura desde una perspectiva de ciberseguridad y rendimiento.
 
-LatamLink planea realizar análisis y evaluaciones de ciberseguridad en la infraestructura. asi como realizar pruebas de estrés coordinadas juntas.
+LACChain EOSIO planea realizar análisis y evaluaciones de ciberseguridad en la infraestructura. asi como realizar pruebas de estrés coordinadas juntas.
 
 ## Transacciones por Segundo (TPS)
 Dependiendo del uso, EOSIO tiene capacidad de aproximadamente **10,000 transacciones por segundo** usando EOSIO v2.0.
@@ -28,7 +28,7 @@ Dependiendo del uso, EOSIO tiene capacidad de aproximadamente **10,000 transacci
  >  Este tema se abordó en [esta publicación del BID](https://publications.iadb.org/es/tecnologias-cuanticas-una-oportunidad-transversal-e-interdisciplinar-para-la-transformacion-digital)
 
    
-LatamLink explorará la forma generar certificados siguiendo el estándar de credenciales verificables [VC](https://www.w3.org/TR/vc-data-model/) para todos los nodos en la red que tendrán como mecanismo de autenticación un par de llaves pública-privada generados con un algoritmo cuántico seguro.
+LACChain EOSIO explorará la forma generar certificados siguiendo el estándar de credenciales verificables [VC](https://www.w3.org/TR/vc-data-model/) para todos los nodos en la red que tendrán como mecanismo de autenticación un par de llaves pública-privada generados con un algoritmo cuántico seguro.
 
 Con el objetivo de :
 

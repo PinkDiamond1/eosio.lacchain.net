@@ -10,7 +10,7 @@ Algunas de las características innovadoras de EOSIO incluyen:
 - **Transacciones gratuitas** con límites de consumo.
 - **Baja latencia** en confirmación de bloques nuevos  *(0.5 segundos)*
 - Finalidad **tolerante a fallas bizantinas BFT**
-- **Nombres de cuentas legibles por humanos** *(e.g. :* `latamlink12`*)*
+- **Nombres de cuentas legibles por humanos** *(e.g. :* `lacchaineos1`*)*
 - **Permisos ACL** basados en roles jerárquicos
 - Contratos actualizables **escritos en C++** facilitan el uso a programadores.
 - Soporte para llaves protegidas por **hardware biométrico** *(e.g. : Apple Secure Enclave)*
@@ -28,4 +28,4 @@ Los contratos de sistema permiten a las redes EOSIO:
 - Mantener la compatibilidad total con otras cadenas de bloques EOSIO.
 
 
-**El objetivo de LatamLink es implementar el testnet de EOSIO para [LAC-Chain](https://medium.com/@lacchain.official/what-is-the-lacchain-global-alliance-and-what-does-it-consist-of-861cb76257b1)** y demostrar la flexibilidad de esta tecnología desarrollando contratos de sistema personalizados para LAC-Chain. El testnet de LatamLink permitirá designar los actores que escriben y validan bloques nuevos a la cadena mediante contratos de sistema basados en mecanismos de consenso  establecido por LAC-Chain bajo un modelo de red blockchain pública / permisionada.
+**El objetivo de LatamLink es implementar el testnet de EOSIO para [LACChain](https://medium.com/@lacchain.official/what-is-the-lacchain-global-alliance-and-what-does-it-consist-of-861cb76257b1)** y demostrar la flexibilidad de esta tecnología desarrollando contratos de sistema personalizados para LACChain. El testnet de LACChain EOSIO permitirá designar los actores que escriben y validan bloques nuevos a la cadena mediante contratos de sistema basados en mecanismos de consenso establecido por LACChain bajo un modelo de red blockchain pública/permisionada.

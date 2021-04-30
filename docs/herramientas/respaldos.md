@@ -8,4 +8,4 @@ sidebar_label: Respaldos y Snapshots
 Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
 :::
 
-El servicio de snapshots de LatamLink le permitirá hacer cambios en los nodos de EOSIO rápidamente sin necesidad de sincronizar la cadena de bloques desde su génesis.
+El servicio de snapshots de LACChain EOSIO le permitirá hacer cambios en los nodos de EOSIO rápidamente sin necesidad de sincronizar la cadena de bloques desde su génesis.

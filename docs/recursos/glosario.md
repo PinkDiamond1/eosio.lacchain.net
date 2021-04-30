@@ -395,7 +395,7 @@ LACChain es una iniciativa de BID Labs (parte del Banco Interamericano de Desarr
 
 ### LatamLink 
 
-LatamLink es una alianza regional voluntaria liderada por empresas tecnológicas latinoamericanas. Desarrollamos un testnet basado en EOSIO para la red LACChain con el fin de resaltar los beneficios de esta tecnología. LatamLink utiliza una versión pública permisionada de la tecnología EOSIO para que desarrolladores y organizaciones puedan probar sus aplicaciones descentralizadas e infraestructura.
+LatamLink es una alianza regional voluntaria liderada por empresas tecnológicas latinoamericanas. Desarrollamos un testnet basado en EOSIO para la red LACChain con el fin de resaltar los beneficios de esta tecnología. LACChain EOSIO utiliza una versión pública permisionada de la tecnología EOSIO para que desarrolladores y organizaciones puedan probar sus aplicaciones descentralizadas e infraestructura.
 
 * * *
 

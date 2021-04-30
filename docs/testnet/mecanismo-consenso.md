@@ -6,11 +6,11 @@ sidebar_label: Mecanismo de Consenso
 
 El mecanismo de consenso asegura que cada nuevo bloque que se agrega al Blockchain sea la única versión de la verdad acordada por todos los nodos en la red. Por lo tanto, un algoritmo de consenso tiene como objetivo encontrar un acuerdo común que sea una aceptado por toda la red.
 
-En el caso de LatamLink existe un grupo de nodos que poseen la autoridad de validar transacciones y escribir estas transacciones dentro de bloques nuevos. A estos nodos los denominaremos **Validadores**. 
+En el caso de LACChain EOSIO existe un grupo de nodos que poseen la autoridad de validar transacciones y escribir estas transacciones dentro de bloques nuevos. A estos nodos los denominaremos **Validadores**. 
 
 ## Comite Permisionador LACChain
 
-LACChain es una red pública / permisionada, de tal manera que se requiere de una autoridad central que gobierna la actividad de la red, esto con el objetivo de obtener una red legalmente supervisada.
+LACChain es una red pública/permisionada, de tal manera que se requiere de una autoridad central que gobierna la actividad de la red, esto con el objetivo de obtener una red legalmente supervisada.
 
 LACChain se diseña bajo el principio de que el comité permisionador sea transparente y tenga la menor intervención posible. 
 
@@ -22,7 +22,7 @@ Dentro de la principales funciones del comité permisionador esta evaluar las en
 
 El grupo de nodos validadores activos poseen la autoridad de escribir a la cadena de bloques porque fueron otorgados este privilegio por parte de la  autoridad superior, el **comité permisionador**, quien sera la máxima autoridad y quien determina cuales entidades serán responsables de operar los nodos validadores. 
 
->  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LatamLink. Consulte nuestra sección sobre el [proceso de permisionado](../guias/proceso-permisionado) para obtener más información.
+>  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LACChain EOSIO. Consulte nuestra sección sobre el [proceso de permisionado](../guias/proceso-permisionado) para obtener más información.
 
 Eventualmemte habrá un vehículo legal, quien verifica identidad y firma contratos con entidades que operan los nodos validadores. 
 

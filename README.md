@@ -14,7 +14,7 @@
 </p>
 
 ## Descripción 
-Documentación técnica para el testnet LatamLink [latamlink.io](https://es.latamlink.io)
+Documentación técnica para el testnet LACChain EOSIO [es.latamlink.io](https://es.latamlink.io)
 
 Este sitio web es creado usando [https://docusaurus.io/](Docusaurus), una herramienta para mantener documentación técnica de proyectos de código libre. 
 
