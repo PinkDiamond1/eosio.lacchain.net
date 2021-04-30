@@ -43,7 +43,7 @@ cleos wallet import -n holacontrato
 
 La última actualización importante para EOSJS incluyó soporte incorporado para proveedores de firmas intercambiables; eliminando la carga de manejar la gestión segura de claves de su alcance y mejorando la interoperabilidad. Lo que es más importante, esta es una mejora importante de seguridad que limita la exposición de las claves de un usuario en muchas aplicaciones a un único proveedor de firmas confiable que mitiga los riesgos potenciales que pueden surgir de un código malicioso o un error del usuario al usar aplicaciones blockchain. 
 
-#### **4.1 Configuracion de Autenticadores Externos (Anchor Wallet)**
+#### **4.1 Configuración de Autenticadores Externos (Anchor Wallet)**
 
 Para utilizar autenticadores externos en LACChain EOSIO como por ejemplo Anchor Wallet, se debe realizar una configuración para incluir la red dentro de las redes disponibles en el autenticador, a continuación, se muestra un tutorial donde se explica este proceso.
 
