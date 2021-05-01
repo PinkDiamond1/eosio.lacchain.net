@@ -129,7 +129,7 @@ const siteConfig = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} LatamLink`, // You can also put own HTML here.
+      copyright: `Copyright © ${new Date().getFullYear()} LACChain`, // You can also put own HTML here.
     },
     //Algolia integration
     algolia: {

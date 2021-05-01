@@ -18,7 +18,7 @@ Presentamos la siguiente propuesta de configuración de red LAC-Chain utilizando
 
 ## Topología Propuesta
 
-<img src="/img/diagramas/topologia-red.png#center" alt="Topologia de Red LatamLink" width="450"/>
+<img src="/img/diagramas/topologia-red.png#center" alt="Topologia de Red LACChain EOSIO" width="450"/>
 
 - **Capa 1 ([Core](/docs/testnet/topologia-red#capa-1---red-core))** Red de validadores y nodos p2p para meshear entre ellos
 
@@ -27,7 +27,7 @@ Presentamos la siguiente propuesta de configuración de red LAC-Chain utilizando
 		- **Capa 3 ([Satellite](/docs/testnet/topologia-red#layer-3---satellite))** Layer de consumo para writers y observers
 
 
-![LatamLink Topology](/img/diagramas/topologia-nodos-2.png)
+![LACChain EOSIO Topology](/img/diagramas/topologia-nodos-2.png)
 
 
 ## Capa 1 - Red Core

@@ -14,8 +14,7 @@ Como vimos en la seccion de cuentas y permisos eosio cuenta con un sistema nativ
 
 Los permisos privilegiados pueden delegarse de forma dinámica a distintas entidades y nodos, por ejemplo a comités legales dentro del comité o a representantes técnicos dentro del comité.
 
-Considerando que el permiso de crear nuevas cuenta podría delegarse exclusivamente a los escritores y de esa manera toda acción sin importar  como ingresa a la red podría quedar vinculada al escritor que creo la cuenta. 
- 
+Considerando que el permiso de crear nuevas cuenta podría delegarse exclusivamente a los escritores y de esa manera toda acción sin importar  como ingresa a la red podría quedar vinculada al escritor que creo la cuenta.
 
 ## Tipos de Entidades Permisionadas
 
@@ -28,7 +27,6 @@ Las entidades permisionadas pueden ser "partners" de lacchain los cuales pueden 
 | **Writer nodes**   | ![Yes](/img/yes-icon.svg) | ![Yes](/img/yes-icon.svg) |
 | **Observer nodes** | ![Yes](/img/yes-icon.svg) | ![Yes](/img/yes-icon.svg) |
 
-
 #### Permisos y llaves por tipo de nodo
 
 |                 | Account key              | Block Signing Key | Peer Key | Extra Keys            |
@@ -39,7 +37,6 @@ Las entidades permisionadas pueden ser "partners" de lacchain los cuales pueden 
 |  ˫ **writer**   | NodeName permission      | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-escritor)) |
 |  ˪ **observer** | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-observador)) |
 
-
 #### Account key	
 
 Llaves perteneciente a una cuenta registrada, en EOSIO se requieren como mínimo de dos permisos.
@@ -49,7 +46,6 @@ permissions:
      owner     1:    1 EOS6R46x4P8b82D4zjpU62xZG3ytn6VUxcyuJntSxSwMLXAgLxcU8
         active     1:    1 EOS6R46x4P8b82D4zjpU62xZG3ytn6VUxcyuJntSxSwMLXAgLxcU8
 ```
-
 
 #### Block Signing Key
 
@@ -100,14 +96,11 @@ Cada usuario nuevo estará vinculado a un nodo escritor perteneciente a una enti
 
 ![Ejemplo de Autoridades Usuario](/img/diagramas/user-authorities.png)
 
-
 La red LAC-Chain requiere rastrear cual nodo escritor generó una transacción, de tal forma que es posible hacerlos legalmente responsables de ella.
 
-Es necesario verificar que en LatamLink cualquier transacción que sea emitida se propague por un nodo que esté en la lista de cuentas autorizadas por el comité permisionador.
+Es necesario verificar que en LACChain EOSIO cualquier transacción que sea emitida se propague por un nodo que esté en la lista de cuentas autorizadas por el comité permisionador.
 
 Esta trazabilidad requiere que cada transacción de EOSIO incluya la firma del nodo escritor de tal forma que los  demás nodos sean capaces de reconocer a través de que nodo ha entrado la transacciones a la red. 
-
-
 
 ### Creación de cuenta
 Se plantean los siguientes pasos para la creación de cuentas y uso de los recursos de la chain.
@@ -119,7 +112,6 @@ Se plantean los siguientes pasos para la creación de cuentas y uso de los recur
 3. En la tabla de cuentas, `aliceaccount` tiene definido a `escritorbobb` como el escritor que creo la cuenta
 4. El escritor decide como distribuirle recursos a alice en función a los requerimientos definidos por el comite, puede optar por transferir recursos, delegarlos, cofirmar transacciones.
 5. alice utiliza los recursos de la red.
-
 
 ## Damage control y liability
 

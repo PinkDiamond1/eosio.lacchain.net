@@ -35,7 +35,7 @@ En la distribución de EOSIO viene incluido un cliente CLI llamado [`cleos`](htt
 
 La criptografía de clave pública ha estado en uso durante varias décadas y ha evolucionado a un conjunto de estándares para firmas digitales. Muchos gobiernos han adoptado estándares de firma digital para que individuos o empresas puedan obtener certificados de identidad y usarlos para firmar documentos legales.
 
- > LatamLink aspira a integrar una identidad auto soberana para los usuarios finales que sea compatible con las identidades digitales nacionales y las firmas digitales comúnmente utilizadas por los usuarios de grandes empresas.
+ > LACChain EOSIO aspira a integrar una identidad auto soberana para los usuarios finales que sea compatible con las identidades digitales nacionales y las firmas digitales comúnmente utilizadas por los usuarios de grandes empresas.
 
 La integración de la identidad digital a las redes blockchain abre nuevas oportunidades, por ejemplo:
 
