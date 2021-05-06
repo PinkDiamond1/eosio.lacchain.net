@@ -146,17 +146,17 @@ const AboutSection = () => {
             <AboutCards 
                 img="images/latamlink_Floor_Light_1853.svg"
                 title="Aprender sobre Blockchain"
-                body=" LatamLink le permite explorar los beneficios de la tecnología blockchain EOSIO para proyectos en Latinoamérica."
+                body=" LACChain EOSIO le permite explorar los beneficios de la tecnología blockchain EOSIO para proyectos en Latinoamérica."
             ></AboutCards>
             <AboutCards 
                 img="images/latamlink_finger_108.svg"
                 title="Pon tus dApps a prueba"
-                body="LatamLink provee un ambiente local para desarrollar y probar apps descentralizadas (dApps)."
+                body="LACChain EOSIO provee un ambiente local para desarrollar y probar apps descentralizadas (dApps)."
             ></AboutCards>
             <AboutCards 
                 img="images/latamlink_cog_104.svg"
                 title="Prueba tu infraestructura"
-                body="LatamLink incluye una plataforma sólida para que desarrolladores y organizaciones prueben su infraestructura blockchain."
+                body="LACChain EOSIO incluye una plataforma sólida para que desarrolladores y organizaciones prueben su infraestructura blockchain."
             ></AboutCards>
         </section>
     );
@@ -178,7 +178,7 @@ const InformationSection = () => {
               tecnológicas latinoamericanas. Desarrollamos un testnet basado en EOSIO para la red <a
                 style={{color: "#5bb517"}}
                 href="https://www.lacchain.net/"
-                target="blank">LACChain</a> con el fin de resaltar los beneficios de esta tecnología. LatamLink utiliza
+                target="blank">LACChain</a> con el fin de resaltar los beneficios de esta tecnología. LACChain EOSIO utiliza
               una
               versión pública permisionada de la tecnología EOSIO para que desarrolladores y organizaciones puedan probar
               sus aplicaciones descentralizadas e infraestructura.
@@ -249,7 +249,7 @@ const WhyChoose = () => {
       <section id="iniciar" className="get-started-structure pt-5 pl-3 pr-3 pb-5">
         <div className="mt-5 mb-5 get-started-header">
           <h2 className="h1 text-center font-weight-bold">
-            <span className="underline">¿Por qué elegir LatamLink?</span>
+            <span className="underline">¿Por qué elegir LACChain EOSIO?</span>
           </h2>
         </div>
         <div className="get-started-steps">
@@ -274,7 +274,7 @@ const WhyChoose = () => {
           <GetStartedSteps
               title="3. Ofrece una solución integral"
               img="images/latamlink_Rocket_1885.svg"
-              body="LatamLink utiliza una versión pública permisionada de la tecnología EOSIO para Latinoamérica.
+              body="LACChain EOSIO utiliza una versión pública permisionada de la tecnología EOSIO para Latinoamérica.
               Incluimos características como un ambiente local de desarrollo y prueba, un servicio de monitoreo,
               adaptabilidad a API endpoints, billeteras y otras herramientas. Puede ver la lista completa más
               abajo."
@@ -327,7 +327,7 @@ const ToolsSection = () => {
         <br />
         <p className="text-justify text-center">
           Estas son algunas herramientas y recursos que te ayudarán a prepararte
-          para iniciar en LatamLink.
+          para iniciar en LACChain EOSIO.
         </p>
       </div>
       <div class="container">

@@ -8,7 +8,7 @@ sidebar_label: Cuentas para partners
 Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
 :::
 
-Los partner en la red LAAChain EOSIO son entidades que forman parte del comite permisionador, los cuales se encargan de regular y gestionar el manejo de recursos y el acceso a la red.
+Los partner en la red LACChain EOSIO son entidades que forman parte del comite permisionador, los cuales se encargan de regular y gestionar el manejo de recursos y el acceso a la red.
 
 Cada partner cuenta con la autonomia de administrar de forma personalizada los recursos disponibles para sus afiliados en la red, estos tienen dentro de sus funciones:
 
