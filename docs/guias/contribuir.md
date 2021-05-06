@@ -1,7 +1,7 @@
 ---
 id: contribuir
-title: ¿Como contribuir?
-sidebar_label: ¿Como contribuir?
+title: ¿Cómo contribuir?
+sidebar_label: ¿Cómo contribuir?
 ---
 
 El objetivo de esta documentación es que la comunidad cuente con información confiable y útil para hacer crecer la red LACChain EOSIO, como parte de esta misión queremos que todo aquel que tenga una contribución para mejorar esta documentación pueda hacerlo con los siguientes pasos:
@@ -37,6 +37,6 @@ Luego de esto lo dirigirá a una página para que pueda comparar los cambios rea
 
 ![Comparar contenido](/img/docs/compareContent.png)
 
-Para finalizar, se le presenta una ventana donde puede realizar alguna modificación en la descripción de la contribución, cuando considere que esta lista solo debe seleccionar el botón **Create pull request**
+Para finalizar, se le presenta una ventana donde puede modificar la descripción de la contribución, cuando considere que esta lista solo debe seleccionar el botón **Create pull request**
 
 ![Create pull request](/img/docs/createPR.png)
