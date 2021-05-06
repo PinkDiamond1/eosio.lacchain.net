@@ -85,7 +85,7 @@ Eventualmente se podrá implementar un contrato inteligente que sustituya una cu
 
 ## Contratos de sistema EOSIO a la medida
 
-LACChain utilizará contratos de sistema hechos a la medida. Para esto nos basaremos en los contratos de sistema nativos de EOSIO, donde el principal cambio es sustituir el mecanismo nativo **Delegated Proof of Stake (dPOS)** por el estándar definido por **LAC-Chain**.
+LACChain utilizará contratos de sistema hechos a la medida. Para esto nos basaremos en los contratos de sistema nativos de EOSIO, donde el principal cambio es sustituir el mecanismo nativo **Delegated Proof of Stake (dPOS)** por el estándar definido por **LACChain**.
 
 Este cambio implica deshabilitar el uso de tokens y de votos característicos del protocolo DPOS. Es decir, al momento de girar recursos, no será necesario disponer de ningún token. 
 

@@ -8,7 +8,7 @@ sidebar_label: Interoperabilidad
 Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap).
 :::
 
-LAC-Chain es independiente de la tecnología, por lo que queremos poder integrar distintos protocolos blockchain que están siendo utilizados en LAC-Chain.
+LACChain es independiente de la tecnología, por lo que queremos poder integrar distintos protocolos blockchain que están siendo utilizados en LACChain.
 
 La interoperabilidad entre distintos protocoles blockchain se puede lograr de dos formas:
 
