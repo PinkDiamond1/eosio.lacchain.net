@@ -15,7 +15,7 @@ function NotFound() {
               <Box className="sectionHero">
                 <Box className="titleBox">
                   <h1 className="centerText">¡Ups! No pudimos encontrar esta página.</h1>
-                  <h1 className="centerText">Por favor, regrese a la <a style={{color:'#1dc961'}} href="/">página de inicio</a> e inténtalo de nuevo.</h1>
+                  <h1 className="centerText">Por favor, regrese a la <a style={{color:'#1dc961'}} href="/">página de inicio</a> e inténtelo de nuevo.</h1>
                 </Box>
                 <p className="centerText">Si tiene alguna duda sobre LACChain EOSIO diríjase a <a href="/docs/testnet/eosio">nuestra documentación</a>!</p>
               </Box>
