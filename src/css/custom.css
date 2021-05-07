@@ -60,14 +60,14 @@ img.logo {
   padding: 60px 0 !important;
 }
 
-.mainContainer {
-  padding: 60px 0 !important;
-}
-
 .onPageNav {
   padding: 30px 0 !important;
 }
 
+.mainContainer{
+  overflow-x: hidden;
+  padding: 60px
+}
 
 .nav-footer .copyright {
 	color: rgba(255, 255, 255, 0.4);
@@ -131,4 +131,71 @@ a.nav-home {
   width: 100%;
   text-align: start;
   font-size: 1.5rem;
+}
+
+.containerSec{
+  margin: 0 auto;
+  display: flex;
+  width: 1100px;
+  justify-content: center;
+  padding: 0;
+}
+
+.sectionHeroBlog{
+  width: 1100px;
+  padding-top: 250px;
+}
+
+.titleBox{
+  margin-bottom: 3rem;
+}
+
+.centerText{
+  text-align: center;
+}
+
+.sectionHeroMobile{
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+a {
+  color: #1dc961;
+}
+
+.section{
+  padding-bottom: 140px;
+  width: 1100px;
+}
+
+@media only screen and (max-width: 1279px) {
+
+  .containerSec{
+    width: 960px;
+  }
+
+  .sectionHero{
+    width: 960px;
+  }
+
+  .section{
+    width: 960px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  .containerSec{
+    width: 100%;
+  }
+
+  .section{
+    width: 100%;
+  }
+
+  .mainContainer{
+    padding: 0
+  }
 }

@@ -43,7 +43,7 @@ class [[eosio::contract]] holacontrato : public contract {
 
 Para editar el contrato, puede usarse un editor de texto. Para este ejemplo se utilizó Sublime Text.
 
-La primera línea incluye una librería que a la cual se tiene acceso a través del Contract Development Toolkit (CDT), una herramienta que permite acceder a recursos para crear los contratos, [información sobre su instalación](ambiente-desarrollo.md).
+La primera línea incluye una librería que a la cual se tiene acceso a través del Contract Development Toolkit (CDT), una herramienta que permite acceder a recursos para crear los contratos, [información sobre su instalación](./ambiente-desarrollo).
 
 En la línea de clase, se deberá exponer nuestro contrato `holacontrato` que tiene una acción definida, que en este caso llamamos `hola` y su argumento es un usuario tipo nombre. Al guardar el contrato, en el directorio queda un archivo C++.
 

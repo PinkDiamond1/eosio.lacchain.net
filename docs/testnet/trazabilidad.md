@@ -84,7 +84,7 @@ Llaves utilizadas por el protocolo P2P para establecer comunicación entre nodos
 
 #### Extra Keys
 
-Llaves Adicionales para otros usos que no se utilizan en el consenso o protocolo de red de EOSIO pero que pueden emplearse para otras funciones como criptografía post-quatinca. Esta información se puede incluir dentro de los [datos de las entidad y nodos](datos-entidades-nodos.md) almacenados en el contrato de sistema.
+Llaves Adicionales para otros usos que no se utilizan en el consenso o protocolo de red de EOSIO pero que pueden emplearse para otras funciones como criptografía post-quatinca. Esta información se puede incluir dentro de los [datos de las entidad y nodos](./datos-entidades-nodos) almacenados en el contrato de sistema.
 
 ### Autoridad Nodos Escritores
 
