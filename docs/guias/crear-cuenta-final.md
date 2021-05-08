@@ -31,6 +31,6 @@ Las llaves, son requisito para crear una cuenta en una blockchain. Consulte el s
 
 Para poder crear una cuenta en LACChain EOSIO, es necesario establecer la comunicación con un `partner`, los cuales son los encargados de crear las cuentas.
 
-Para ver la lista de partner que forman parte de la red dirijase [aquí](partners.md).
+Para ver la lista de partner que forman parte de la red dirijase [aquí](./partners).
 
 El nombre de la cuenta debe cumplir con ciertos requisitos: caracteres de la A a la Z en minúscula, números del 1 al 5 y tener una longitud de 12 caracteres. Para el ejemplo, llamaremos la cuenta: `holacontrato`.
