@@ -52,7 +52,7 @@ LACChain Mailbox permite una mensajería similar a un correo electrónico para c
 
 LACChain Mailbox también proporciona una solución API para usar la funcionalidad de resolución DID, enviando y recibiendo VC cifrado desde cualquier aplicación.
 
-[Lea más sobre Lac-chain ID Mailbox](https://github.com/lacchain/id-mailbox)
+[Lea más sobre LACChain ID Mailbox](https://github.com/lacchain/id-mailbox)
 
 ## certificados de cliente X.509
 

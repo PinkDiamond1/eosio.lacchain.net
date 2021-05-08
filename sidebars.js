@@ -27,7 +27,8 @@ module.exports = {
         "guias/obtener-recursos",
         "guias/proceso-permisionado",
         "guias/instalacion-nodos",
-        "guias/desplegar-contrato-inteligente"
+        "guias/desplegar-contrato-inteligente",
+        "guias/contribuir"
     ],
     "Herramientas": [
         "herramientas/monitor",

@@ -4,7 +4,7 @@ title: Topología de Red
 sidebar_label: Topología de Red
 ---
 
-Presentamos la siguiente propuesta de configuración de red LAC-Chain utilizando nodos EOSIO.
+Presentamos la siguiente propuesta de configuración de red LACChain utilizando nodos EOSIO.
 
 ## Criterios de Diseño
 * **Trustless**, el funcionamiento correcto y optimo de la red, no debería basarse en confianza entre las entidades que conformen la red.
@@ -126,7 +126,7 @@ La meta es gestionar la topología de red de forma dinámica usando contratos in
 
 ## Infraestructura Cloud
 
-Es de interés de LAC-Chain utilizar implementaciones automáticas en varias nubes utilizando herramientas como terraform.
+Es de interés de LACChain utilizar implementaciones automáticas en varias nubes utilizando herramientas como terraform.
 - Aprovechar las herramientas en la nube para mejorar las capacidades de la red.
 - Explorar el uso de bóvedas de claves en la nube.
 - Trabajar con socios para proporcionar servicios en la nube en LACChain en una base SAAS.

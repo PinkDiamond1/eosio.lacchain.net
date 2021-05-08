@@ -96,7 +96,7 @@ Cada usuario nuevo estará vinculado a un nodo escritor perteneciente a una enti
 
 ![Ejemplo de Autoridades Usuario](/img/diagramas/user-authorities.png)
 
-La red LAC-Chain requiere rastrear cual nodo escritor generó una transacción, de tal forma que es posible hacerlos legalmente responsables de ella.
+La red LACChain requiere rastrear cual nodo escritor generó una transacción, de tal forma que es posible hacerlos legalmente responsables de ella.
 
 Es necesario verificar que en LACChain EOSIO cualquier transacción que sea emitida se propague por un nodo que esté en la lista de cuentas autorizadas por el comité permisionador.
 
