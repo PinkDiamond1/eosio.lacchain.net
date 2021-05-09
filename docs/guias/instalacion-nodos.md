@@ -1,7 +1,7 @@
 ---
 id: instalacion-nodos
-title: Instalación de nodos Validator / Boot / Writer / Observer
-sidebar_label: Instalación de nodos Validator / Boot / Writer / Observer
+title: Instalación de Nodos LACChain
+sidebar_label: Instalación de Nodos
 ---
 
 ## Testnet LACChain EOSIO 

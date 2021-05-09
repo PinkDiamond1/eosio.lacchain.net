@@ -23,8 +23,8 @@ Puede consultar mas información sobre [autorizaciones y trazabilidad](../testne
 
 Para formar parte de la red se debe completar un formulario de solicitud registro, el cual será evaluado por el comité permisionador. Para esto debe ponerse en contacto con un miembro del comité  y hacerle llegar los siguientes datos:
 
-- **entity_name** (nombre de cuenta de la entidad)
-- **entity_type** (non-partner)
-- **pub_key** (llave publica para la cuenta de la nueva entidad)
+- **`entity_name`** Nombre de cuenta de la entidad.
+- **`entity_type`** (non-partner)
+- **`pub_key`** (llave publica para la cuenta de la nueva entidad)
 
-Para ver la lista de partners que forman parte del comité  permisionador de la red diríjase [aquí](./partners).
+Para ver la lista de partners que forman parte del comité permisionador de la red diríjase [aquí](./partners).

@@ -1,7 +1,7 @@
 ---
 id: desplegar-contrato-inteligente
 title: Desplegar un contrato inteligente
-sidebar_label: Desplegar un contrato inteligente
+sidebar_label: Desplegar un Contrato 
 ---
 
 A continuación explicamos con ejemplos cómo crear, compilar y desplegar un contrato “Hello World” para subirlo a la red LACChain EOSIO. Para este ejemplo, nos basamos en recursos publicados por [Block.one para compartir con la comunidad](http://developers.eos.io/).
@@ -18,7 +18,7 @@ En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía 
 ## 2. Adquirir RAM
 Una vez que se tiene la cuenta en el LACChain EOSIO Testnet, para el contrato, necesitaremos disponer de recursos para desplegar el contrato en este caso RAM. Para esto consulte sobre el [manejo de recursos en la red](../testnet/recursos).
 
-Para extraer la información de la cuenta y verificar cuantos kilobytes de RAM tiene disponbible la cuenta puede realizar ejecutando el siguiente comando el cual puede apuntar al "end-point" de cualquiera de los partner de la red, puede observar la lista de partners [aquí](./partners).
+Para extraer la información de la cuenta y verificar cuantos kilobytes de RAM tiene disponible la cuenta puede realizar ejecutando el siguiente comando el cual puede apuntar al "end-point" de cualquiera de los partner de la red, puede observar la lista de partners [aquí](./partners).
 
 ```bash
 cleos -u http://lacchain.eosio.cr get account {nombrecuenta}
@@ -70,7 +70,7 @@ Como no especificamos una cláusula ricardiana, el sistema nos da un mensaje de 
 
 ## 5. Publicar el contrato
 
-Cuando se tiene compilado el contrato y generado el archivo .wasm y el archivo .abi, se procede a subir el contrado a LACChain y para este caso, es requerido crear un archivo .sh que permite la ejecución de comandos para automatizar en cierta medida ese proceso.
+Cuando se tiene compilado el contrato y generado el archivo .wasm y el archivo .abi, se procede a subir el contrato a LACChain y para este caso, es requerido crear un archivo .sh que permite la ejecución de comandos para automatizar en cierta medida ese proceso.
 
 En la terminal, ejecutamos:
 
@@ -123,7 +123,7 @@ Para este punto de la ejecución, ya tenemos nuestro contrato inteligente desple
 
 ## 6. Verificación de contrato
 
-Para esto nos dirigimos al block explorer ([LACChain EOSIO Dashboard](https://dashboard.latamlink.io/accounts)), podemos verificar que la cuenta es dueña de un contrato que expone la acción `hola` y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
+Para esto nos dirigimos a la aplicación ([LACChain EOSIO Dashboard](https://dashboard.latamlink.io/accounts)), podemos verificar que la cuenta es dueña de un contrato que expone la acción `hola` y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
 
 Una vez que el contrato esté listo, podemos ejecutar una acción en el contrato, esta va recibir como input la frase **LACChain EOSIO** y se obtendrá como output **hola LACChain EOSIO**. Para esto debemos ejecutar el siguiente comando:
 

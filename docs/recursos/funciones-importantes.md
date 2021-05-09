@@ -6,7 +6,7 @@ sidebar_label: Funciones Importantes
 ## Cuenta Privilegiada EOSIO
 Esta cuenta posee acceso ilimitado a los recursos CPU, NET, y RAM.  Se fijará una cuenta compuesta por el comité permisionador que representa la autoridad máxima de la red. 
 
-Se pueden crear permisos especificaos para cada acción privilegiada y ademas se podrá utilizar un contrato multifirma (o “multisig”) con parámetros variables que requerirá el consentimiento de la mayoría de los actores en la tabla. Esta cuenta privilegiada se denominará la cuenta `eosio`.
+Se pueden crear permisos específicos para cada acción privilegiada y ademas se podrá utilizar un contrato multi-firma (o “multisig”) con parámetros variables que requerirá el consentimiento de la mayoría de los actores en la tabla. Esta cuenta privilegiada se denominará la cuenta `eosio`.
 
 ## Funciones Privilegiadas EOSIO
 
@@ -36,11 +36,11 @@ Modifica uno o varios parámetros de la blockchain.
 
 Parámetros:
 
-* **`max_block_net_usage`**   La cantidad maxima de uso de net en un bloque
+* **`max_block_net_usage`**   La cantidad máxima de uso de net en un bloque
 
-* **`target_block_net_usage_pct`**    El porcentaje de uso maximo de net, pasado este limite la red entra en modo congestion.
+* **`target_block_net_usage_pct`**    El porcentaje de uso máximo de net, pasado este limite la red entra en modo congestión.
 
-* **`max_transaction_net_usage`**  El uso maximo de net que la chain va a permitir, mas alla de los limites de la cuenta.
+* **`max_transaction_net_usage`**  El uso máximo de net que la chain va a permitir, mas allá de los limites de la cuenta.
 
 * **`base_per_transaction_net_usage`**  The base amount of net usage billed for a transaction to cover incidentals
 * **`net_usage_leeway`**

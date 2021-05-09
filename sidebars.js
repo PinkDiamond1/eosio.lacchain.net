@@ -31,7 +31,6 @@ module.exports = {
         "guias/contribuir"
     ],
     "Herramientas": [
-        "herramientas/monitor",
         "herramientas/api",
         "herramientas/cli",
         "herramientas/explorador-bloques",
