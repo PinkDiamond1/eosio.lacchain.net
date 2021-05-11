@@ -51,7 +51,7 @@ Cree dos nuevos pares de claves usando
 cleos create key --to-console
 ```
 
-#### 3.2 Importar claves
+#### Paso 2: Importar claves
 
 Importar nuevas claves a su billetera 
 
@@ -59,7 +59,7 @@ Importar nuevas claves a su billetera
 cleos wallet import -n holacontrato
 ```
 
-#### 3.3 Establecer permisos
+#### Paso 3: Establecer permisos
 
 Establecer el permiso de la cuenta del **owner** 
 
