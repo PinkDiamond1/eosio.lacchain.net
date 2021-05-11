@@ -39,6 +39,44 @@ En este momento, las llaves están guardadas únicamente en la consola, por lo q
 cleos wallet import -n holacontrato
 ```` 
 
+### 3.1 Cambiar clave privada
+
+En caso de que se desee cambiar la clave privada de su cuenta en LACChain EOSIO debe seguir los siguientes pasos:
+
+#### Paso 1: Crear nuevas llaves
+
+Cree dos nuevos pares de claves usando 
+
+```
+cleos create key --to-console
+```
+
+#### Paso 2: Importar claves
+
+Importar nuevas claves a su billetera 
+
+```
+cleos wallet import -n holacontrato
+```
+
+#### Paso 3: Establecer permisos
+
+Establecer el permiso de la cuenta del **owner** 
+
+```
+cleos -u https://lacchain.eosio.cr set account permission account_name owner EOS_public_key_of_new_owner -p account_name@owner
+```
+
+Establecer el permiso de la cuenta del **active** 
+
+```
+cleos -u https://lacchain.eosio.cr set account permission account_name active EOS_private_key_of_new_active -p account_name@active
+```
+
+:::note Nota
+Debe tener la clave de propietario actual en su billetera para autorizar esta transacción.
+:::
+
 ## 4. Autenticadores Externos (Wallets)
 
 La última actualización importante para EOSJS incluyó soporte incorporado para proveedores de firmas intercambiables; eliminando la carga de manejar la gestión segura de claves de su alcance y mejorando la interoperabilidad. Lo que es más importante, esta es una mejora importante de seguridad que limita la exposición de las claves de un usuario en muchas aplicaciones a un único proveedor de firmas confiable que mitiga los riesgos potenciales que pueden surgir de un código malicioso o un error del usuario al usar aplicaciones blockchain. 
