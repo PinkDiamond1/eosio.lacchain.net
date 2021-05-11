@@ -3,10 +3,6 @@ id: api
 title: Application Programming Interface
 ---
 
-:::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
-:::
-
 ## Que es un API
 
 
@@ -37,3 +33,6 @@ EOS JS es la API oficial de JavaScript para la integración con redes blockchain
 
 La documentación se puede encontrar [aquí](https://eosio.github.io/eosjs)
 
+:::note Trabajo en progreso
+Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](./guias/contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::

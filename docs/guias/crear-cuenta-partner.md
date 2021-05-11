@@ -4,10 +4,6 @@ title: Obtener una cuenta para partners
 sidebar_label: Cuentas para partners
 ---
 
-:::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
-:::
-
 Los partner en la red LACChain EOSIO son entidades que forman parte del comite permisionador, los cuales se encargan de regular y gestionar el manejo de recursos y el acceso a la red.
 
 Cada partner cuenta con la autonomia de administrar de forma personalizada los recursos disponibles para sus afiliados en la red, estos tienen dentro de sus funciones:
@@ -34,3 +30,7 @@ Para formar parte de la red se debe completar un formulario de solicitud registr
 - **pub_key** (llave publica para la cuenta de la nueva entidad)
 
 Para ver la lista de partners que forman parte del comité  permisionador de la red diríjase [aquí](./partners).
+
+:::note Trabajo en progreso
+Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](./contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::

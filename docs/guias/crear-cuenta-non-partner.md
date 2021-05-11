@@ -4,10 +4,6 @@ title: Obtener una cuenta para non-partners
 sidebar_label: Cuentas para non-partners
 ---
 
-:::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto](../testnet/roadmap).
-:::
-
 Los `Non-Partners` son un tipo de entidad dentro de la red LAAChain EOSIO que cuentan con algunas características especiales en los nodos que pueden desplegar esto los diferencian de los `Partners`:
 
 | Tipo de nodo | Partner | Non-Partner |
@@ -28,3 +24,8 @@ Para formar parte de la red se debe completar un formulario de solicitud registr
 - **pub_key** (llave publica para la cuenta de la nueva entidad)
 
 Para ver la lista de partners que forman parte del comité  permisionador de la red diríjase [aquí](./partners).
+
+
+:::note Trabajo en progreso
+Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](./contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::

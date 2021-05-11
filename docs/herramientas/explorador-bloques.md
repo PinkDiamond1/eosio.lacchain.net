@@ -3,10 +3,6 @@ id: explorador-bloques
 title: Explorador de Bloques
 ---
 
-:::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
-:::
-
 Un explorador de bloques es una herramienta para visualizar todas las transacciones que ocurren en la red.
 
 ## Explorador de bloques de alta precisión eosq
@@ -17,3 +13,7 @@ LACChain EOSIO ha optado por **eosq**, un explorador de bloques que proporciona 
 http://explorer.testnet.latamlink.io/
 
 **eosq** fue desarrollado por [dfuse](https://dfuse.io) para la comunidad EOSIO.
+
+:::note Trabajo en progreso
+Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](../guias/contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::

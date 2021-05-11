@@ -4,10 +4,6 @@ title: Obtener una cuenta para una aplicación o contrato inteligente
 sidebar_label: Cuentas para aplicaciones
 ---
 
-:::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
-:::
-
 Las cuentas de aplicación o contrato, son utilizadas para el desarrollo de aplicaciones como su nombre lo indica, este tipo de cuentas principalmente son las que poseen las acciones del sistema, permitiéndole a los usuarios finales interactuar con ellas y el blockchain. 
 
 ### 1. Generar llaves privadas
@@ -21,3 +17,7 @@ Para poder crear una cuenta en LACChain EOSIO, es necesario establecer la comuni
 Para ver la lista de partner que forman parte de la red diríjase [aquí](./partners).
 
 El nombre de la cuenta debe cumplir con ciertos requisitos: caracteres de la A a la Z en minúscula, números del 1 al 5 y tener una longitud de 12 caracteres. Para el ejemplo, llamaremos la cuenta: `holacontrato`.
+
+:::note Trabajo en progreso
+Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](./contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::

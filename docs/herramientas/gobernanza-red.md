@@ -4,10 +4,6 @@ title: Herramientas de Gobernanza.
 sidebar_label: Gobernanza de Red
 ---
 
-:::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
-:::
-
 ## Contratos Inteligentes
 Esta herramienta es para manejar el permisionamiento y gobernanza de LACChain EOSIO mediante contratos inteligentes.
 
@@ -26,3 +22,7 @@ Tendrá las siguientes funciones.
 
 ## Interfaz gráfica 
 Herramienta GUI para facilitar la gestión de la red por parte del comité permisionador. 
+
+:::note Trabajo en progreso
+Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](../guias/contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::
