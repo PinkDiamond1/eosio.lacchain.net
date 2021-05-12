@@ -22,9 +22,9 @@ Dentro de la principales funciones del comité permisionador esta evaluar las en
 
 El grupo de nodos validadores activos poseen la autoridad de escribir a la cadena de bloques porque fueron otorgados este privilegio por parte de la  autoridad superior, el **comité permisionador**, quien sera la máxima autoridad y quien determina cuales entidades serán responsables de operar los nodos validadores. 
 
->  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LACChain EOSIO. Consulte nuestra sección sobre el [proceso de permisionado](../guias/proceso-permisionado) para obtener más información.
+>  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LACChain EOSIO. Consulte nuestra sección sobre el [proceso de permisionado](../guias/crear-cuenta-entidad) para obtener más información.
 
-Eventualmemte habrá un vehículo legal, quien verifica identidad y firma contratos con entidades que operan los nodos validadores. 
+Eventualmente habrá un vehículo legal, quien verifica identidad y firma contratos con entidades que operan los nodos validadores. 
 
 
 ## Nodos Validadores Activos
@@ -64,11 +64,11 @@ Es importante que las llaves privadas de producción estén respaldadas correcta
 
 ## Nodos Validadores de Reserva
 
-Las redes EOSIO manejan un grupo de validadores registrados que pueden asumir el rol de producir bloques con solo ser agregado al `schedule` de nodos validadores activos por el comite permisionador.
+Las redes EOSIO manejan un grupo de validadores registrados que pueden asumir el rol de producir bloques con solo ser agregado al `schedule` de nodos validadores activos por el comité permisionador.
 
 ### Rotación de nodos activos
 
-La rotación periódica de nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramineta de gestión de red](../herramientas/gobernanza-red) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
+La rotación periódica de nodos validadores activos favorece la descentralización. Por esta razón el comité permisionador contará con una [herramienta de gestión de red](../herramientas/gobernanza-red) que permita seleccionar los nodos validadores que desea incluir o excluir en el `schedule`. 
 
 > **Por ejemplo**: Se puede definir una política de rotación de nodos activos semanalmente.  
 
@@ -85,7 +85,7 @@ Eventualmente se podrá implementar un contrato inteligente que sustituya una cu
 
 ## Contratos de sistema EOSIO a la medida
 
-LACChain utilizará contratos de sistema hechos a la medida. Para esto nos basaremos en los contratos de sistema nativos de EOSIO, donde el principal cambio es sustituir el mecanismo nativo **Delegated Proof of Stake (dPOS)** por el estándar definido por **LACChain**.
+LACChain utilizará contratos de sistema hechos a la medida. Para esto nos basaremos en los contratos de sistema nativos de EOSIO, donde el principal cambio es sustituir el mecanismo nativo **Delegated Proof of Stake (DPOS)** por el estándar definido por **LACChain**.
 
 Este cambio implica deshabilitar el uso de tokens y de votos característicos del protocolo DPOS. Es decir, al momento de girar recursos, no será necesario disponer de ningún token. 
 
@@ -93,7 +93,7 @@ Este cambio implica deshabilitar el uso de tokens y de votos característicos de
 
  - Token de Sistema
  - Votos por nodos productores de bloques
- - Pago de nodos productores de bloquess
+ - Pago de nodos productores de bloques
  - "Staking" para recursos
  - Delegación de Recursos
  - Namebiding

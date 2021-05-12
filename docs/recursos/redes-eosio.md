@@ -6,7 +6,7 @@ sidebar_label: Redes EOSIO
 
 El ecosistema EOSIO está compuesto por muchas cadenas de bloques públicas y privadas diferentes, cada una con una gobernanza diferente y cada una dirigida a diferentes casos de uso y mercados.
 
-A continuación incluimos una lista de algunas otras redes publicas lanzadas sobre eosio, no incluimos redes EOSIO privadas.
+A continuación incluimos una lista de algunas otras redes publicas lanzadas sobre EOSIO, no incluimos redes EOSIO privadas.
 
 
 - [**EOS**](https://bloks.io/) : La primer cadena de bloques lanzada en el protocolo EOSIO, también denominada "mainnet".

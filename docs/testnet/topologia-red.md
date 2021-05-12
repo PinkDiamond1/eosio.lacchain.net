@@ -95,7 +95,7 @@ Nodo que permite pedir información de la blockchain a travez de un request http
 | Grupo 1....n  | Grupo 1....n  | Grupo 1...n  | Activos y Stand-By  |
 | grupos de hasta 40 nodos | grupos de hasta 40 nodos  | grupos de hasta 10 nodos |  activos definidos en schdedule  |
 
-Los nodos de boot y validadores que no cumplen con la configuracion requerida pueden ser eliminados por el comite permisionador.
+Los nodos de boot y validadores que no cumplen con la configuración requerida pueden ser eliminados por el comité permisionador.
 
 ### Comunicación de Nodos
 

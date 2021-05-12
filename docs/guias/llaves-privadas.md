@@ -20,10 +20,10 @@ Este comando nos va a generar llaves privadas y públicas (podemos crear la cant
 
 En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
 
-- [Usuario final](./crear-cuenta-final)
+- [Usuario final](./crear-cuenta-usuario)
 - [Aplicación o contrato](./crear-cuenta-contrato)
-- [Non-partner](./crear-cuenta-non-partner)
-- [Partner](./crear-cuenta-partner)
+- [Non-partner](./crear-cuenta-entidad)
+- [Partner](./crear-cuenta-entidad)
 
 ## 3. Administrar la billetera con cleos
 

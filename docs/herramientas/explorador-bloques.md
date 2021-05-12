@@ -5,12 +5,18 @@ title: Explorador de Bloques
 
 Un explorador de bloques es una herramienta para visualizar todas las transacciones que ocurren en la red.
 
-## Explorador de bloques de alta precisión eosq
-LACChain EOSIO ha optado por **eosq**, un explorador de bloques que proporciona acceso a datos detallados, precisos y procesables sobre cuentas, acciones, nodos validadores y más informacion sobre el testnet de LACChain EOSIO.
+## EOSIO Explorer
+[ESOIO Explorer](https://github.com/EOSIO/eosio-explorer) es una aplicación web completa para comunicarse con una cadena de bloques EOSIO desarrollado como proyecto de código abierto por Block One.
+
+El objetivo de esta aplicación es proporcionar a los desarrolladores de aplicaciones para LACChain EOSIO (que consta de desarrolladores de contratos inteligentes y desarrolladores front-end) una forma rápida y fácil de visualizar y probar dichas aplicaciones en la cadena de bloques EOSIO.
 
 ### Enlace al explorador de bloques
 
-http://explorer.testnet.latamlink.io/
+http://explorer.latamlink.io/
+
+
+## Explorador de bloques de alta precisión eosq
+LACChain EOSIO tiene proyectado instalar un explorador de bloques adicional llamado **eosq**, un explorador de bloques que proporciona acceso a datos detallados, precisos y procesables sobre cuentas, acciones, nodos validadores y más información sobre el testnet de LACChain EOSIO.
 
 **eosq** fue desarrollado por [dfuse](https://dfuse.io) para la comunidad EOSIO.
 

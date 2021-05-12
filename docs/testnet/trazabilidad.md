@@ -1,14 +1,14 @@
 ---
 id: trazabilidad
 title: Autorizaciones y Trazabilidad 
-sidebar_label: Autorizaciones y Trazabilidad
+sidebar_label: Permisos y Trazabilidad
 ---
 
 ## Permisos y trazabilidad en EOSIO
 
 En EOSIO ninguna acción es anónima, todas las transacciones están vinculadas a una cuenta, por ejemplo si se desea llamar a la acción de un contrato, el llamado va a venir acompañado de una cuenta origen que consume esa acción del contrato inteligente.
 
-Como vimos en la seccion de cuentas y permisos eosio cuenta con un sistema nativo para definir autorizaciones que satisfagan permisos que pueden ser definidos para una cuenta en la red.
+Como vimos en la sección de [cuentas y permisos EOSIO](cuentas-permisos) cuenta con un sistema nativo para definir autorizaciones que satisfagan permisos que pueden ser definidos para una cuenta en la red.
 
 ## Comite Permisionador
 
@@ -103,22 +103,22 @@ Es necesario verificar que en LACChain EOSIO cualquier transacción que sea emit
 Esta trazabilidad requiere que cada transacción de EOSIO incluya la firma del nodo escritor de tal forma que los  demás nodos sean capaces de reconocer a través de que nodo ha entrado la transacciones a la red. 
 
 ### Creación de cuenta
-Se plantean los siguientes pasos para la creación de cuentas y uso de los recursos de la chain.
+Se plantean los siguientes pasos para la creación de cuentas y uso de los recursos de la red.
 
 1.  Se delega el permiso de crear nuevas cuentas exclusivamente a los escritores/writers.
 
 2. Un escritor `escritorbobb`, crea una cuenta nueva `aliceaccount`.
 
 3. En la tabla de cuentas, `aliceaccount` tiene definido a `escritorbobb` como el escritor que creo la cuenta
-4. El escritor decide como distribuirle recursos a alice en función a los requerimientos definidos por el comite, puede optar por transferir recursos, delegarlos, cofirmar transacciones.
-5. alice utiliza los recursos de la red.
+4. El escritor decide como distribuirle recursos a Alice en función a los requerimientos definidos por el comité, puede optar por transferir recursos, delegarlos, confirmar transacciones.
+5. Alice utiliza los recursos de la red.
 
 ## Damage control y liability
 
-En caso de que se estén usando recursos de la chain por fuera del scope planteado por el comité, se plantea el siguiente escenario.
+En caso de que se estén usando recursos de la red por fuera del scope planteado por el comité, se plantea el siguiente escenario.
 
 1. Se identifica la cuenta abusando de los recursos
-2. Se identifica el escritor responsable de la creación de esa cuenta (información publica en la chain)
+2. Se identifica el escritor responsable de la creación de esa cuenta (información publica en la red)
 3. Se notifica al escritor
 4. El comité puede optar por accionar de distintas formas:
 
