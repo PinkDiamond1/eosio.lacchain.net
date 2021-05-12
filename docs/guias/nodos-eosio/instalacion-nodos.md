@@ -1,6 +1,6 @@
 ---
 id: instalacion-nodos
-title: Instalación de Nodos LACChain
+title: Instalación de Nodos en LACChain EOSIO
 sidebar_label: Instalación de Nodos
 ---
 

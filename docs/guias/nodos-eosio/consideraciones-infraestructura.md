@@ -1,7 +1,7 @@
 ---
-id: nodos-eosio
-title: Nodos EOSIO
-sidebar_label: Nodos EOSIO
+id: consideraciones-infraestructura
+title: Consideraciones e Infraestructura
+sidebar_label: Infraestructura
 ---
 
 `Nodeos` es el software central de una cadena de bloques EOSIO. Es un deamon que realiza todas las funciones de un nodo de blockchain, tales como sincronización con otros nodos a través del `protocolo p2p`, proporciona una `API HTTP` para el software del cliente y, opcionalmente, `firma bloques` si se configura con la cuenta de un validador.
