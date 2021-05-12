@@ -1,6 +1,6 @@
 ---
 id: crear-cuenta-contrato
-title: Obtener una cuenta para una aplicación o contrato inteligente
+title: Obtener una cuenta para un contrato
 sidebar_label: Cuentas para Aplicaciones
 ---
 
