@@ -18,5 +18,5 @@ El monitor de red esta disponible en el siguiente enlace: https://monitor.lataml
 https://github.com/CryptoLions/EOS-Network-monitor
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](../guias/contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
 :::

@@ -46,5 +46,5 @@ Adicionalmente se explorarán herramientas de Blockchain Analytics y Data Scienc
 Se proponer crear un [monitor de red](../herramientas/monitor) nativo como herramienta para lograr este objetivo. 
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](../guias/contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](./roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
 :::

@@ -9,5 +9,5 @@ sidebar_label: dAPP Boilerplates
 Un marco de desarrollo "Full Stack" para acelerar el desarollo de aplicaciones de blockchain.
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](../guias/contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
 :::

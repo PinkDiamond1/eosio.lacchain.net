@@ -32,5 +32,5 @@ Para formar parte de la red se debe completar un formulario de solicitud registr
 Para ver la lista de partners que forman parte del comité  permisionador de la red diríjase [aquí](./partners).
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](./contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
 :::

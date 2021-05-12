@@ -19,5 +19,5 @@ Para ver la lista de partner que forman parte de la red diríjase [aquí](./part
 El nombre de la cuenta debe cumplir con ciertos requisitos: caracteres de la A a la Z en minúscula, números del 1 al 5 y tener una longitud de 12 caracteres. Para el ejemplo, llamaremos la cuenta: `holacontrato`.
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red, si desea mejorar el contenido puede informarse [aquí](./contribuir), sus aportes son muy valisos. Consulte el [Roadmap del proyecto](../testnet/roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
 :::
