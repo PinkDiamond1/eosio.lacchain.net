@@ -22,7 +22,7 @@ Dentro de la principales funciones del comité permisionador esta evaluar las en
 
 El grupo de nodos validadores activos poseen la autoridad de escribir a la cadena de bloques porque fueron otorgados este privilegio por parte de la  autoridad superior, el **comité permisionador**, quien sera la máxima autoridad y quien determina cuales entidades serán responsables de operar los nodos validadores. 
 
->  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LACChain EOSIO. Consulte nuestra sección sobre el [proceso de permisionado](../guias/proceso-permisionado) para obtener más información.
+>  Cualquier entidad que cumpla con un mínimo de requisitos técnicos y legales puede aplicar para ser validador de bloques en LACChain EOSIO. Consulte nuestra sección sobre el [proceso de permisionado](../guias/crear-cuenta-entidad) para obtener más información.
 
 Eventualmente habrá un vehículo legal, quien verifica identidad y firma contratos con entidades que operan los nodos validadores. 
 
