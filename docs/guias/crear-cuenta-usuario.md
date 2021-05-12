@@ -1,7 +1,7 @@
 ---
-id: crear-cuenta-final
+id: crear-cuenta-usuario
 title: Obtener una cuenta en LACChain
-sidebar_label: Cuentas para usuarios
+sidebar_label: Cuentas para Usuarios
 ---
 
 :::note Trabajo en progreso
