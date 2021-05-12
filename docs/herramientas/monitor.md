@@ -16,5 +16,3 @@ El monitor de red esta disponible en el siguiente enlace: https://dashboard.lata
 
 **Repositorio de GitHub** https://https://github.com/eoscostarica/eosio-dashboard
  
-
-
