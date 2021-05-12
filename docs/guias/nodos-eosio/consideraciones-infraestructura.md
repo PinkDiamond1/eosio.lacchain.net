@@ -10,7 +10,7 @@ sidebar_label: Infraestructura
 
 Cuando planifique la instalación de un servidor, tiene varias opciones para seleccionar. A menudo, la selección está determinada por los hábitos y preferencias existentes del administrador del sistema.
 
-Consulte nuestra de guÍa de sobre como configurar el [ambiente de desarrollo](../guias/ambiente-desarrollo) para poder trabajar sobre la red de LACChain EOSIO.
+Consulte nuestra de guÍa de sobre como configurar el [ambiente de desarrollo](../ambiente-desarrollo) para poder trabajar sobre la red de LACChain EOSIO.
 
 ### Requerimientos de Hardware
 

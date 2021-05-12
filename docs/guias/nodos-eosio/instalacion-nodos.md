@@ -35,15 +35,15 @@ Para poder desplegar nodos en la red de LACChain EOSIO, es importante tener una 
  
 Consulte la guía para crear una cuenta según su rol de usuario: 
 
-- [Non-partner](./crear-cuenta-entidad)
-- [Partner](./crear-cuenta-entidad)
+- [Non-partner](../crear-cuenta-entidad)
+- [Partner](../crear-cuenta-entidad)
 
 
 ## 2. Autenticarse en el Dashboard
 
 La red de LACChain EOSIO cuenta con un [dashboard](https://dashboard.latamlink.io/), el cual permite a los usuarios realizar gestiones dentro de la red, incluida la opción de desplegar varios tipos de nodos.  
 
-Accede con su cuenta de tipo `Partner` o `Non-Partner`. Consulte nuestro tutorial de como administrar las [llaves privadas](./llaves-privadas#31-autenticadores-externos-wallets)
+Accede con su cuenta de tipo `Partner` o `Non-Partner`. Consulte nuestro tutorial de como administrar las [llaves privadas](../llaves-privadas#31-autenticadores-externos-wallets)
 
 
 ## 3. Desplegar un nodo 
