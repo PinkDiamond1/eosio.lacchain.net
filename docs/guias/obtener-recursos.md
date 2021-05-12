@@ -1,7 +1,7 @@
 ---
 id: obtener-recursos
 title: ¿Como obtener recursos en la red?
-sidebar_label: ¿Como obtener recursos en la red?
+sidebar_label: Obtener recursos en la red
 ---
 
 :::note Trabajo en progreso

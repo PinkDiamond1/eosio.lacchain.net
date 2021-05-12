@@ -23,7 +23,7 @@ Dependiendo del uso, EOSIO tiene capacidad de aproximadamente **10,000 transacci
 
 ## Quantum safe cryptography
  
- El BID tiene interés en comenzar a explorar cómo avanzar hacia una nueva generación de tecnología blockchain segura cuántica. Hay un interes en  probar las capacidades cuánticas en la red LACChain para hacerlo resistente a las computadoras cuánticas. 
+ El BID tiene interés en comenzar a explorar cómo avanzar hacia una nueva generación de tecnología blockchain segura cuántica. Hay un interés en  probar las capacidades cuánticas en la red LACChain para hacerlo resistente a las computadoras cuánticas. 
 
  >  Este tema se abordó en [esta publicación del BID](https://publications.iadb.org/es/tecnologias-cuanticas-una-oportunidad-transversal-e-interdisciplinar-para-la-transformacion-digital)
 

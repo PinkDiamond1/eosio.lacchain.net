@@ -1,7 +1,7 @@
 ---
 id: identidad-digital
 title: Autenticado y Firmas Digitales
-sidebar_label: Autenticado y Firmas Digitales
+sidebar_label: Autenticado y Firmas
 ---
 
 

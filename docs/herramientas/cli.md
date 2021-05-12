@@ -61,7 +61,7 @@ Subcommands:
 
 ### Subcomandos de Cleos
 
-Para obtener ayuda con cualquier subcomando en particular, ejecute `cleos SUBCOMMAND --help`. Por ejemplo:
+Para obtener ayuda con cualquier sub-comando en particular, ejecute `cleos SUBCOMMAND --help`. Por ejemplo:
 
 ```sh
 cleos create --help

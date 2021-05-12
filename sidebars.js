@@ -19,19 +19,15 @@ module.exports = {
     "Guías":[
         "guias/ambiente-desarrollo",
         "guias/llaves-privadas",
-        "guias/crear-cuenta-final",
+        "guias/crear-cuenta-usuario",
         "guias/crear-cuenta-contrato",
-        "guias/crear-cuenta-non-partner",
-        "guias/crear-cuenta-partner",
-        "guias/partners",
+        "guias/crear-cuenta-entidad",
         "guias/obtener-recursos",
-        "guias/proceso-permisionado",
         "guias/instalacion-nodos",
         "guias/desplegar-contrato-inteligente",
         "guias/contribuir"
     ],
     "Herramientas": [
-        "herramientas/monitor",
         "herramientas/api",
         "herramientas/cli",
         "herramientas/explorador-bloques",

@@ -1,7 +1,7 @@
 ---
 id: datos-entidades-nodos
 title: Información sobre Entidades y Nodos
-sidebar_label: Datos de Entidades y Nodos
+sidebar_label: Info Entidades y Nodos
 ---
 
 Este es un estándar JSON propuesto para la información de entidades y nodos que los socios de LACChain deben publicar y almacenar en las tablas de contratos del sistema. Este estándar se basa en el [estándar BP JSON](https://github.com/eosrio/bp-info-standard) utilizado en la red mainnet de EOS.
@@ -41,7 +41,7 @@ Insertará o actualizará un registro en la tabla `entity` en los contratos del 
   - **ownership_disclosure:** Full URL to page
   - **email:** Contact email
   - **github_user:** Operational github username (or array or usernames)
-  - **chain_resources:** *[Array]* - List related resources on LAC Chain
+  - **chain_resources:** *[Array]* - List related resources on LACChain
   - **other_resources:** *[Array]* - List of other relevant URLs 
   - **branding:** *{Object} *- Logo images
       - **logo_256:** Entire url to image 256x256px 
