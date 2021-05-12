@@ -11,7 +11,7 @@ Se pueden visualizar las entidades registradas en el siguiente enlace:  https://
 
 ## Registro de Entidades en LACChain 
 
-Para ser parte de la red como Partners o Non-Partners consulte [esta información](./crear-cuenta-partner)
+Para ser parte de la red como Partners o Non-Partners consulte [esta información](./crear-cuenta-entidad)
 
 ## Partners Fundadores
 - [EOS Argentina](https://www.eosargentina.io/)

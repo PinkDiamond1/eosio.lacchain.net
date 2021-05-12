@@ -74,5 +74,5 @@ En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía 
 
 - [Usuario final](./crear-cuenta-final)
 - [Aplicación o contrato](./crear-cuenta-contrato)
-- [Non-partner](./crear-cuenta-non-partner)
-- [Partner](./crear-cuenta-partner)
+- [Non-partner](./crear-cuenta-entidad)
+- [Partner](./crear-cuenta-entidad)

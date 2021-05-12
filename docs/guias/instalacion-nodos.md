@@ -35,8 +35,8 @@ Para poder desplegar nodos en la red de LACChain EOSIO, es importante tener una 
  
 Consulte la guía para crear una cuenta según su rol de usuario: 
 
-- [Non-partner](./crear-cuenta-non-partner)
-- [Partner](./crear-cuenta-partner)
+- [Non-partner](./crear-cuenta-entidad)
+- [Partner](./crear-cuenta-entidad)
 
 
 ## 2. Autenticarse en el Dashboard
