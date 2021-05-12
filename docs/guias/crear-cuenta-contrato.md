@@ -8,7 +8,7 @@ sidebar_label: Cuentas para Aplicaciones
 Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto](../testnet/roadmap).
 :::
 
-Las cuentas de aplicación o contrato, son utilizadas para el desarrollo de aplicaciones como su nombre lo indica, este tipo de cuentas principalmente son las que poseen las acciones del sistema, permitiendo a los usuarios finales interactuar con ellas y el blockchain. 
+Las cuentas de aplicación o contrato inteligente, son utilizadas para el desarrollo de aplicaciones como su nombre lo indica, este tipo de cuentas principalmente son las que poseen las acciones del sistema, permitiendo a los usuarios finales interactuar con ellas y el blockchain. 
 
 ### 1. Generar llaves públicas y privadas
 
