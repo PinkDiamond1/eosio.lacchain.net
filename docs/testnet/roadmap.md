@@ -4,7 +4,7 @@ title: Ruta del Proyecto
 sidebar_label: Roadmap
 ---
 
-### Estado Actual: TestNet en progreso 
+### Estado Actual: Pro TestNet en progreso 
 Actualizado a Mayo 2021
 
 
