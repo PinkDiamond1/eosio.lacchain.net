@@ -3,10 +3,6 @@ id: api
 title: API
 ---
 
-:::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
-:::
-
 ## Que es un API
 El término API es una abreviatura de "Application Programming Interfaces", que en español significa interfaz de programación de aplicaciones. Permite la interacción de aplicaciones con la red mediante el protocolo HTTP.
 
@@ -37,3 +33,6 @@ EOSJS es la librería oficial de JavaScript para la integración con redes block
 
 La documentación se puede encontrar [aquí](https://eosio.github.io/eosjs)
 
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./guias/contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::

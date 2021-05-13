@@ -21,6 +21,7 @@ module.exports = {
         "guias/crear-cuenta-usuario",
         "guias/crear-cuenta-contrato",
         "guias/crear-cuenta-entidad",
+        "guias/partners",
         "guias/obtener-recursos",
         "guias/instalacion-nodos",
         "guias/nodos-eosio",
