@@ -42,7 +42,7 @@ Adicionalmente, recomendamos instalar desde antes el Contract Development Toolki
 
 **Mac:**
 ```bash
-brew tap eosio.cdt
+brew tap eosio/eosio.cdt
 brew install eosio.cdt
 ``` 
 
