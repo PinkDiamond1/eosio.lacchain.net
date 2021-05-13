@@ -4,10 +4,6 @@ title: Interoperabilidad
 sidebar_label: Interoperabilidad
 ---
 
-:::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap).
-:::
-
 LACChain es independiente de la tecnología, por lo que queremos poder integrar distintos protocolos blockchain que están siendo utilizados en LACChain.
 
 La interoperabilidad entre distintos protocoles blockchain se puede lograr de dos formas:
@@ -30,3 +26,6 @@ Block.one anunció un desafío de un contrato inteligente, ofreciendo un premio 
 
 https://github.com/jafri/eosio.evm
 
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+:::

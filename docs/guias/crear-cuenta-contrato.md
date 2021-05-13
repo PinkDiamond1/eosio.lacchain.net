@@ -4,10 +4,6 @@ title: Obtener una cuenta para un contrato
 sidebar_label: Cuentas para Aplicaciones
 ---
 
-:::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto](../testnet/roadmap).
-:::
-
 Las cuentas de aplicación o contrato inteligente, son utilizadas para el desarrollo de aplicaciones como su nombre lo indica, este tipo de cuentas principalmente son las que poseen las acciones del sistema, permitiendo a los usuarios finales interactuar con ellas y el blockchain. 
 
 ### 1. Generar llaves públicas y privadas
@@ -24,3 +20,7 @@ Para ver la lista de partner que forman parte de la red diríjase [aquí](./part
  - No estar previamente registrada
  - Componerse de caracteres de la A a la Z en minúscula y números del 1 al 5 
  - Por ejemplo podemos crear una cuenta: `holacontrato`.
+
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::

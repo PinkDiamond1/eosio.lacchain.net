@@ -1,10 +1,10 @@
 ---
-id: autenticadores-externos
-title: Configurar autenticadores externos
+id: configurar-wallet
+title: Configurar Wallet
 sidebar_label: Configurar Wallet
 ---
 
-Para utilizar autenticadores externos en LACChain EOSIO como por ejemplo Anchor Wallet, se debe realizar una configuración para incluir la red dentro de las redes disponibles en el autenticador, a continuación, se muestra un tutorial donde se explica este proceso.
+Para utilizar autenticadores externos (wallets) en LACChain EOSIO como por ejemplo Anchor Wallet, se debe realizar una configuración para incluir la red dentro de las redes disponibles en el autenticador, a continuación, se muestra un tutorial donde se explica este proceso.
 
 ### Paso 1: Descarga e instalación
  

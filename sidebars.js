@@ -18,10 +18,11 @@ module.exports = {
     "Guías":[
         "guias/ambiente-desarrollo",
         "guias/llaves-privadas",
-        "guias/autenticadores-externos",
+        "guias/configurar-wallet",
         "guias/crear-cuenta-usuario",
         "guias/crear-cuenta-contrato",
         "guias/crear-cuenta-entidad",
+        "guias/partners",
         "guias/obtener-recursos",
         "guias/instalacion-nodos",
         "guias/nodos-eosio",

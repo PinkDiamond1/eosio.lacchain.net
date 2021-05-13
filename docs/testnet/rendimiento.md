@@ -4,10 +4,6 @@ title: Rendimiendo y Seguridad de la Red
 sidebar_label: Rendimiento y Seguridad
 ---
 
-:::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](./roadmap).
-:::
-
 Es esencial conocer los límites de la infraestructura desde una perspectiva de ciberseguridad y rendimiento.
 
 LACChain EOSIO planea realizar análisis y evaluaciones de ciberseguridad en la infraestructura. asi como realizar pruebas de estrés coordinadas juntas.
@@ -34,4 +30,7 @@ Con el objetivo de :
 
 - Usar estas llaves para encapsular el proceso de [comunicación entre nodos a través de TCP / RPLx](https://github.com/lacchain/besu-network/blob/master/TOPOLOGY_AND_ARCHITECTURE.md)
 -  Usar las llaves cuánticas para firmar las transacciones emitidas por los nodos escritor, de modo que puede ser verificado por los nodos validadores
- 
+
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+:::
