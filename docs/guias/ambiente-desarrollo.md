@@ -4,7 +4,7 @@ title: Ambiente de desarrollo
 sidebar_label: Ambiente de desarrollo
 ---
 
-Estos pasos muestran el proceso de instalación del ambiente de desarrollo necesario para trabajar sobre la red de LACChain EOSIO (creación de cuentas, manejo de recursos, desplegar contratos...)
+Estos pasos muestran el proceso de instalación del ambiente de desarrollo necesario para trabajar sobre la red de LACChain EOSIO (creación de cuentas, manejo de recursos, desplegar contratos, etc.)
 
 ## 1. Instalación de software
 Primero, debe tener instalado el software [EOSIO](https://developers.eos.io/manuals/eos/latest/install/install-prebuilt-binaries) desarrollado por [Block.one](https://block.one/) para realizar acciones con el protocolo EOS.
