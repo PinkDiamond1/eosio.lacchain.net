@@ -33,6 +33,10 @@ Una vez creada la cuenta, debemos generar la billetera e identificarla con el no
 cleos wallet create -n holacontrato --to-console
 ```
 
+:::note Nota
+Si desea configurar su wallet para utilizarla por medio de autenticadores externos como Anchor Wallet, consulte [aquí](./configurar-wallet)
+:::
+
 En este momento, las llaves están guardadas únicamente en la consola, por lo que es necesario crear la billetera que contendrá las llaves. De esta manera, se podrá acceder a estas llaves con una única contraseña. Hay que importar las llaves en la billetera una a la vez, siguiendo el comando.
 
 ```
