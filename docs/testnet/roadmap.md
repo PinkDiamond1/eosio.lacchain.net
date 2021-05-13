@@ -5,7 +5,7 @@ sidebar_label: Roadmap
 ---
 
 ### Estado Actual: TestNet en progreso 
-Actualizado a Julio 2020
+Actualizado a Mayo 2021
 
 
 ` ✓ = requerido para el hito`
@@ -25,12 +25,12 @@ Actualizado a Julio 2020
 | App for managing permissioning                                                                                          |   | ✓ | ✓ | ✓ | completado |
 | Privacy leveraged as native                                                                                             |   | ✓ | ✓ | ✓ |      |
 | Dashboard for nodes                                                                                                     |   | ✓ | ✓ | ✓ | completado |
-| Transaction explorer                                                                                                    |   | ✓ | ✓ | ✓ | en progreso |
+| Transaction explorer                                                                                                    |   | ✓ | ✓ | ✓ | completado |
 | Dashboard of entities running nodes                                                                                     |   | ✓ | ✓ | ✓ | completado |
 | Interface to visualize node's activity                                                                                  |   | ✓ | ✓ | ✓ | en progreso |
 | Tracking system to follow and fix installation issues                                                                   |   |   | ✓ | ✓ |      |
 | Smart-contract based local whitelisting                                                                                 |   |   | ✓ | ✓ | completado |
-| Dashboard of applications runing on the blockchain                                                                      |   |   | ✓ | ✓ |      |
+| Dashboard of applications running on the blockchain                                                                      |   |   | ✓ | ✓ | en progreso |
 | Follow installation issues via a defined tracking system to enable and fix installation problems                        |   |   | ✓ | ✓ |      |
 | Cloud vendor integration                                                                                                |   |   | ✓ | ✓ |      |
 | Gas schema to manage the use of the network                                                                             |   |   | ✓ | ✓ | completado |
@@ -48,7 +48,7 @@ Actualizado a Julio 2020
 |:------------------------------------------------------------------------------------------------------------------------|:--------------:|:--------------:|:--------------:|:-----------:|:-----------:| 
 | Installation support                                                                                                    | ✓ | ✓ | ✓ | ✓ | completado |
 | Writer nodes allowed to run tests and demos                                                                             | ✓ | ✓ | ✓ | ✓ | completado |
-| Writer nodes allowed to run tests, demos, POCs, MVPs and sandboxes                                                      |   | ✓ | ✓ | ✓ |      |
+| Writer nodes allowed to run tests, demos, POCs, MVPs and sandboxes                                                      |   | ✓ | ✓ | ✓ | completado |
 | Writer nodes allowed to run applications in production                                                                  |   |   | ✓ | ✓ |      |
 | Cloud integration for node deploy and maintenance                                                                       |   |   | ✓ | ✓ |      |
 | 24/7 technical support                                                                                                  |   |   |   | ✓ |      |
