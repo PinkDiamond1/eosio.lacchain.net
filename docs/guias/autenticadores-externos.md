@@ -1,16 +1,12 @@
 ---
 id: autenticadores-externos
 title: Configurar autenticadores externos
-sidebar_label: Configurar autenticadores externos
+sidebar_label: Configurar Wallet
 ---
-
-La última actualización importante para EOSJS incluyó soporte incorporado para proveedores de firmas intercambiables; eliminando la carga de manejar la gestión segura de claves de su alcance y mejorando la interoperabilidad. Lo que es más importante, esta es una mejora importante de seguridad que limita la exposición de las claves de un usuario en muchas aplicaciones a un único proveedor de firmas confiable que mitiga los riesgos potenciales que pueden surgir de un código malicioso o un error del usuario al usar aplicaciones blockchain. 
-
-## Configuración de Autenticadores Externos (Anchor Wallet)
 
 Para utilizar autenticadores externos en LACChain EOSIO como por ejemplo Anchor Wallet, se debe realizar una configuración para incluir la red dentro de las redes disponibles en el autenticador, a continuación, se muestra un tutorial donde se explica este proceso.
 
-### Paso 1: descarga e instalación
+### Paso 1: Descarga e instalación
  
 En este caso se utilizará el autenticador [Anchor Wallet](https://greymass.com/en/anchor/)
 
@@ -36,7 +32,7 @@ En este momento se deben completar un formulario para ingresar en el autenticado
 Verifique antes de guardar la información que la casilla **This blockchain is a test network(TESTNET)** este selecciona.
 :::
 
-### Paso 3: importar cuentas
+### Paso 3: Importar cuentas
 
 Luego de añadir la red, deberá importar las llaves asociadas a su cuenta en LACChain EOSIO, para esto en el menú lateral seleccione la opción **Setup Account** ahí seleccione el botón **Import Account**.
 
