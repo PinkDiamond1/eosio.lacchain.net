@@ -1,14 +1,14 @@
-### GH Issue
+### Issue de GH
 
-# 
+#
 
-## Steps to test
+## ¿Qué tiene este PR?
 1.
 1.
 1.
 
-#### CheckList
-- [ ] Follow proper Markdown format
-- [ ] The content is adequate
-- [ ] The content is available in both english and spanish
-- [ ] I Ran a spell check
+#### Lista de Verificación
+- [ ] Siga el formato de Markdown adecuado
+- [ ] El contenido es adecuado
+- [ ] El contenido está disponible en inglés y español.
+- [ ] Ejecuté un corrector ortográfico
