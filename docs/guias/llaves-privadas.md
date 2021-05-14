@@ -1,7 +1,7 @@
 ---
 id: llaves-privadas
 title: Manejo de Llaves Privadas
-sidebar_label: Administración de cuentas en LACChain EOSIO
+sidebar_label: Administración de cuentas
 ---
 
 ## Obtenga su cuenta en LACChain
