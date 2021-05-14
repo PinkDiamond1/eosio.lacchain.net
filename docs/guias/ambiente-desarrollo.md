@@ -4,18 +4,20 @@ title: Ambiente de desarrollo
 sidebar_label: Ambiente de desarrollo
 ---
 
-Estos pasos muestran el proceso de instalación del ambiente de desarrollo necesario para trabajar sobre la red de LACChain EOSIO (creación de cuentas, manejo de recursos, desplegar contratos...)
+Estos pasos muestran el proceso de instalación del ambiente de desarrollo necesario para trabajar sobre la red de LACChain EOSIO (creación de cuentas, manejo de recursos, desplegar contratos, etc.)
 
 ## 1. Instalación de software
-Primero, debe tener instalado el software [EOSIO](https://developers.eos.io/manuals/eos/latest/install/install-prebuilt-binaries) desarrollado por [Block.one](https://block.one/) para realizar acciones con el protocolo EOS.
+Primero, debe instalar varios binarios que hacen parte del software de [EOSIO](https://developers.eos.io/manuals/eos/latest/install/install-prebuilt-binaries) desarrollado por [Block.one](https://block.one/) para realizar acciones con el protocolo EOS.
 
-Este software se compone de:
+Este software se compone principalmente de:
 
 - **cleos:** es el command line tool que se conecta con el API expuesto por nodeos y funciona para administrar la billetera, cuenta, llaves, transacciones y contratos inteligentes.
 - **nodeos:** funciona como el daemon central que maneja la red EOSIO y puede ser configurado como nodo para producir bloques.
 - **keosd:** funciona como billetera para manejar las llaves para EOSIO.
 
 ![Cleos](/img/diagramas/cleos.png)
+
+A continuación se detalla cómo installar dichos binarios desde la línea de comandos de diferentes sistemas operativos: 
 
 ### 1.1 Binarios Pre-Compilados
 **Mac:**
@@ -42,7 +44,7 @@ Adicionalmente, recomendamos instalar desde antes el Contract Development Toolki
 
 **Mac:**
 ```bash
-brew tap eosio.cdt
+brew tap eosio/eosio.cdt
 brew install eosio.cdt
 ``` 
 

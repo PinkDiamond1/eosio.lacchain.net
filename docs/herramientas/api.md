@@ -34,5 +34,5 @@ EOSJS es la librería oficial de JavaScript para la integración con redes block
 La documentación se puede encontrar [aquí](https://eosio.github.io/eosjs)
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./guias/contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
 :::
