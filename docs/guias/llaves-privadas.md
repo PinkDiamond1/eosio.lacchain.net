@@ -1,8 +1,19 @@
 ---
 id: llaves-privadas
 title: Manejo de Llaves Privadas
-sidebar_label: Manejo de Llaves Privadas
+sidebar_label: Administración de cuentas en LACChain EOSIO
 ---
+
+## Obtenga su cuenta en LACChain
+
+Después de instaler el ambiente de desarrollo y pruebas, el siguiente paso consiste en obtener una cuenta en la red. En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su caso de uso:
+
+- [Usuario final](./crear-cuenta-usuario)
+- [Aplicación o contrato](./crear-cuenta-contrato)
+- [Non-partner](./crear-cuenta-entidad)
+- [Partner](./crear-cuenta-entidad)
+
+Para lo anterior se requiere adicionalmente de los siguientes pasos:
 
 ## 1. Generar llaves privadas
 
@@ -16,16 +27,7 @@ cleos create key
 
 Este comando nos va a generar llaves privadas y públicas (podemos crear la cantidad de llaves que queramos). Las cuentas cleos, por defecto, vienen en pares: una `active key` y una `owner key` (para recuperar cuenta en caso de perder la active key).
 
-## 2. Crear una cuenta
-
-En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
-
-- [Usuario final](./crear-cuenta-usuario)
-- [Aplicación o contrato](./crear-cuenta-contrato)
-- [Non-partner](./crear-cuenta-entidad)
-- [Partner](./crear-cuenta-entidad)
-
-## 3. Administrar la billetera con cleos
+## 2. Administrar la billetera con cleos
 
 Una vez creada la cuenta, debemos generar la billetera e identificarla con el nombre de la cuenta, que en este ejemplo es `holacontrato`, mediante el siguiente comando.
 
@@ -43,7 +45,7 @@ En este momento, las llaves están guardadas únicamente en la consola, por lo q
 cleos wallet import -n holacontrato
 ```` 
 
-### 3.1 Cambiar clave privada
+### 2.1 Cambiar clave privada
 
 En caso de que se desee cambiar la clave privada de su cuenta en LACChain EOSIO debe seguir los siguientes pasos:
 
