@@ -5,7 +5,7 @@ sidebar_label: Cuentas para Usuarios
 ---
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
+Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../roadmap).
 :::
 
 Existen varias formas de obtener una cuenta en LACChain EOSIO , las mas comunes son mediante una aplicación o mediante una entidad permisionada en LACChain.

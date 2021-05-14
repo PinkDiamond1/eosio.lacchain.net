@@ -27,8 +27,8 @@ Para ver la lista de partners que forman parte del comité permisionador de la r
  
 Para que una entidad tenga permiso para operar un nodo escritor, debe seguir los siguientes pasos:
 
-1. Lea, comprenda y acepte los [Términos y condiciones para los nodos escritores para LACChain](https://latamlink.io/docs/testnet/writer-nodes-terms-conditions) que incluye la Política de privacidad y los Casos de uso prohibido como anexos.
-2. Complete el [Acuerdo de nodo](https://latamlink.io/docs/testnet/node-agreement) y envíelo firmado a info@lacchain.net (como PDF).
+1. Lea, comprenda y acepte los [Términos y condiciones para los nodos escritores para LACChain](https://latamlink.io/docs/writer-nodes-terms-conditions) que incluye la Política de privacidad y los Casos de uso prohibido como anexos.
+2. Complete el [Acuerdo de nodo](https://latamlink.io/docs/node-agreement) y envíelo firmado a info@lacchain.net (como PDF).
 3. Siga las [instrucciones](./instalacion-nodos) para implementar un nodo de escritor y envíenos la información del nodo que obtiene al final del proceso a info@lacchain.net para autorizar su nodo.
 
 Las entidades que "non-partner" pueden registrar nuevas cuentas en la red y permitir que las transacciones ingresen a la red firmando conjuntamente las transacciones con la llave privada del nodo escritor.
@@ -40,8 +40,8 @@ Cada nodo escritor tiene autonomía para administrar su parte de los recursos de
 Para que una entidad tenga permiso para operar un nodo validador, debe seguir los siguientes pasos:
 
 1. Conviértase en socio (partner) de LACChain Alliance.
-2. Lea, comprenda y acepte los [Términos y condiciones para nodos validadores LACChain](https://latamlink.io/docs/testnet/validator-nodes-terms-conditions) que incluye la Política de privacidad y los Casos de uso prohibido como anexos.
-3. Complete el [Acuerdo de nodo](https://latamlink.io/docs/testnet/node-agreement) y envíelo firmado a info@lacchain.net (como PDF).
+2. Lea, comprenda y acepte los [Términos y condiciones para nodos validadores LACChain](https://latamlink.io/docs/validator-nodes-terms-conditions) que incluye la Política de privacidad y los Casos de uso prohibido como anexos.
+3. Complete el [Acuerdo de nodo](https://latamlink.io/docs/node-agreement) y envíelo firmado a info@lacchain.net (como PDF).
 4. Siga las [instrucciones](./instalacion-nodos) para implementar un nodo validador y envíenos la información del nodo que que obtiene al final del proceso a info@lacchain.net para autorizar su nodo.
 
 Los partner de la red LACChain EOSIO son entidades que también pueden formar parte del comité permisionador, que se encarga de regular y administrar la gestión de los recursos y el acceso a la red.
@@ -49,5 +49,5 @@ Los partner de la red LACChain EOSIO son entidades que también pueden formar pa
 Cada partner tiene la autonomía para administrar su parte de los recursos de la red para sus clientes y afiliados en la red.
 
 :::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
+Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../roadmap).
 :::
