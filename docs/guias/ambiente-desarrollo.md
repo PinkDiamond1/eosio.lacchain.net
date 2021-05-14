@@ -66,15 +66,4 @@ brew remove eosio
 **Linux:**
 ```bash 
 sudo apt remove eosio
-``` 
-
-
-
-## Obtenga su cuenta en Lacchain
-
-En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su caso de uso: 
-
-- [Usuario final](./crear-cuenta-usuario)
-- [Aplicación o contrato](./crear-cuenta-contrato)
-- [Non-partner](./crear-cuenta-entidad)
-- [Partner](./crear-cuenta-entidad)
+```
