@@ -4,14 +4,6 @@ title: Consideraciones e Infraestructura
 sidebar_label: Infraestructura
 ---
 
-`Nodeos` es el software central de una cadena de bloques EOSIO. Es un deamon que realiza todas las funciones de un nodo de blockchain, tales como sincronización con otros nodos a través del `protocolo p2p`, proporciona una `API HTTP` para el software del cliente y, opcionalmente, `firma bloques` si se configura con la cuenta de un validador.
-
-`Nodeos` está disponible en código fuente y paquetes binarios en el [repositorio GitHub](https://github.com/EOSIO/eos/releases).  Las plataformas compatibles son Ubuntu 16.04 y 18.04, RHEL7 y MacOS. 
-
-Cuando planifique la instalación de un servidor, tiene varias opciones para seleccionar. A menudo, la selección está determinada por los hábitos y preferencias existentes del administrador del sistema.
-
-Consulte nuestra de guÍa de sobre como configurar el [ambiente de desarrollo](../ambiente-desarrollo) para poder trabajar sobre la red de LACChain EOSIO.
-
 ### Requerimientos de Hardware
 
 Las características de un servidor dependen mucho de los requisitos de la red. Las redes de alto tráfico como el mainnet de EOS requieren un servidor dedicado con SSD o NVMe conectados directamente, al menos para los archivos de estado de los nodos. Algunos proveedores de hosting permiten una combinación de HDD y SSD en el mismo servidor físico, y bloquea el registro y el archivo de historial de estado que se pueden almacenar en discos duros. 
@@ -19,7 +11,6 @@ Las características de un servidor dependen mucho de los requisitos de la red. 
 > Un servidor típico en producción tendría al menos 500 GB de almacenamiento SSD, 32 GB de RAM y una CPU de 3.5 Ghz o más rápido.
 
 Las redes de bajo tráfico y las redes de prueba estarían funcionando bien en servidores virtuales VPS. Por lo general, 8 GB de RAM y un par de núcleos de CPU son suficientes. 
-
 
 ### Almacenamiento
 
@@ -65,7 +56,6 @@ En la mayoría de los entornos de proveedores de alojamiento, las máquinas fís
 Un proceso de nodeos generalmente se escucha en 2 o 3 puertos TCP: el punto final p2p, la API HTTP y, opcionalmente, el websocket del complemento de historial de estado.
 
 Además, nodeos suele establecer conexiones TCP salientes a sus pares p2p como se especifica en su configuración.
-
 
 #### Balanceadores de carga
 Algunos proveedores de alojamiento ofrecen equilibradores de carga frente a los servidores. Un equilibrador de carga generalmente supervisa la conectividad a los servidores de fondo y deja de enviar solicitudes a un servidor que deja de responder, o se cumple alguna condición de supervisión personalizada. Normalmente también le permiten pausar el tráfico a uno de los servidores y dejarlo fuera de servicio para mantenimiento y actualizaciones. 

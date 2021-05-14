@@ -21,13 +21,9 @@ module.exports = {
         "guias/crear-cuenta-usuario",
         "guias/crear-cuenta-contrato",
         "guias/crear-cuenta-entidad",
-        {
-          'Nodos EOSIO': [
-            "guias/nodos-eosio/consideraciones-infraestructura",
-            "guias/nodos-eosio/instalacion-nodos"
-          ],
-        },
+        "guias/partners",
         "guias/obtener-recursos",
+        "guias/instalacion-nodos",
         "guias/desplegar-contrato-inteligente",
         "guias/contribuir"
     ],

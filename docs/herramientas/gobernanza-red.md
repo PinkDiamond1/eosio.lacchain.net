@@ -4,10 +4,6 @@ title: Herramientas de Gobernanza.
 sidebar_label: Gobernanza de Red
 ---
 
-:::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la red. Por favor referirse a la [Ruta del Proyecto](../testnet/roadmap).
-:::
-
 ## Contratos de Sistema
 
 Los contratos de permisionado de LACChain EOSIO son implementados como [Contratos de Sistema](https://developers.eos.io/manuals/eosio.contracts/latest/index). Estos contratos tiene acceso a [funciones privilegiadas](http://localhost:3000/docs/recursos/funciones-importantes) que encapsulan la funcionalidad base para el marco de gobernanza de LACChain.
@@ -37,3 +33,7 @@ Las cuentas se pueden agregar a una lista negra que debe de ser implementada por
 ## Actualización de contratos de sistema
 
 La actualización de los contratos de sistema solo se puede realizar por la cuenta `eosio` la cual representa al comité permisionador.
+
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
+:::
