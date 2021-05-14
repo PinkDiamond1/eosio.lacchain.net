@@ -12,12 +12,12 @@ Primero, debe instalar varios binarios que hacen parte del software de [EOSIO](h
 Este software se compone principalmente de:
 
 - **cleos:** es el command line tool que se conecta con el API expuesto por nodeos y funciona para administrar la billetera, cuenta, llaves, transacciones y contratos inteligentes.
-- **nodeos:** funciona como el daemon central que maneja la red EOSIO y puede ser configurado como nodo para producir bloques.
-- **keosd:** funciona como billetera para manejar las llaves para EOSIO.
+- **nodeos:** es el daemon principal que maneja cualquier red usando EOSIO (incluyendo LACChain) y puede ser configurado como nodo para producir bloques.
+- **keosd:** funciona como billetera para manejar las llaves la red desplegada con EOSIO.
 
 ![Cleos](/img/diagramas/cleos.png)
 
-A continuación se detalla cómo installar dichos binarios desde la línea de comandos de diferentes sistemas operativos: 
+A continuación se detalla cómo instalar los binarios desde la línea de comandos de diferentes sistemas operativos: 
 
 ### 1.1 Binarios Pre-Compilados
 **Mac:**
@@ -34,13 +34,13 @@ sudo apt install ./eosio_2.0.11-1-ubuntu-18.04_amd64.deb
 :::note Nota
 En caso de tener error en la instalación en Linux, instale el siguiente paquete e intentelo nuevamente:
 ```bash
-wget http://mirrors.edge.kernel.org/ubuntu/pool/main/i/icu/libicu60_60.2-3ubuntu3.1_amd64.deb
-sudo dpkg -i ./libicu60_60.2-3ubuntu3.1_amd64.deb
+sudo apt-get update
+sudo apt-get install libicu60
 ```
 :::
 
 ### 1.2 Contract Development Toolkit
-Adicionalmente, recomendamos instalar desde antes el Contract Development Toolkit (CDT), para acceder a recursos para crear los contratos este se puede instalar utilizando el comando:
+Adicionalmente, recomendamos instalar el Contract Development Toolkit (CDT), para acceder a recursos para crear contratos inteligentes. Este CDT se puede instalar utilizando el comando:
 
 **Mac:**
 ```bash
@@ -72,7 +72,7 @@ sudo apt remove eosio
 
 ## Obtenga su cuenta en Lacchain
 
-En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
+En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su caso de uso: 
 
 - [Usuario final](./crear-cuenta-usuario)
 - [Aplicación o contrato](./crear-cuenta-contrato)
