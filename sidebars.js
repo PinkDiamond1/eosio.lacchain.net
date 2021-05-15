@@ -1,19 +1,19 @@
 module.exports = {
   docs: {
     "Testnet": [
-        "testnet/eosio",
-        "testnet/mecanismo-consenso",
-        "testnet/topologia-red",
-        "testnet/cuentas-permisos",
-        "testnet/datos-entidades-nodos",
-        "testnet/trazabilidad",
-        "testnet/recursos",
-        "testnet/monitoreo",
-        "testnet/rendimiento",
-        "testnet/identidad-digital",
-        "testnet/privacidad",
-        "testnet/interoperabilidad",
-        "testnet/roadmap"
+        "eosio",
+        "mecanismo-consenso",
+        "topologia-red",
+        "cuentas-permisos",
+        "datos-entidades-nodos",
+        "trazabilidad",
+        "recursos",
+        "monitoreo",
+        "rendimiento",
+        "identidad-digital",
+        "privacidad",
+        "interoperabilidad",
+        "roadmap"
     ],
     "Guías":[
         "guias/ambiente-desarrollo",

@@ -53,5 +53,5 @@ Las cuentas se pueden agregar a una lista negra que debe de ser implementada por
 La actualización de los contratos de sistema solo se puede realizar por la cuenta `eosio` la cual representa al comité permisionador.
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../testnet/roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../roadmap).
 :::

@@ -9,7 +9,7 @@ LACChain no tiene y no tendrá tarifas de transacción. Sin embargo, para regula
 ## Tipos de Recursos
 Las cuentas podrán utilizar los siguientes recursos en la red:
 
-| **[RAM](/docs/testnet/recursos#ram)** | **[CPU](/docs/testnet/recursos#cpu)** | **[NET](/docs/testnet/recursos#network-net)** |
+| **[RAM](/docs/recursos#ram)** | **[CPU](/docs/recursos#cpu)** | **[NET](/docs/recursos#network-net)** |
 :--------------:|:--------------:|:--------------:| 
 |Memoria para almacenar el estado|Tiempo de procesamiento|Ancho de banda para transmitir información|
 |Se mide en bytes|Se mide en microsegundos|Se mide en bytes| 

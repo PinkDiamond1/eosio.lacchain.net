@@ -53,7 +53,6 @@ const siteConfig = {
         src: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.svg',
         srcDark: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/img/footerlogo.png'
       },
-      
       items: [
         // {
         //   href: 'https://medium.com/@latam_link',
@@ -71,7 +70,7 @@ const siteConfig = {
           position: 'right',
         },
         {
-          to: 'docs/testnet/eosio',
+          to: 'docs/eosio',
           label: 'Documentación',
           position: 'right',
         },

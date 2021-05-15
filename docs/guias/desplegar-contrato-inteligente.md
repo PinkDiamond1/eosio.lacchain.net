@@ -16,7 +16,7 @@ En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía 
 - [Partner](./crear-cuenta-entidad) 
 
 ## 2. Adquirir RAM
-Una vez que se tiene la cuenta en el LACChain EOSIO Testnet, para el contrato, necesitaremos disponer de recursos para desplegar el contrato en este caso RAM. Para esto consulte sobre el [manejo de recursos en la red](../testnet/recursos).
+Una vez que se tiene la cuenta en el LACChain EOSIO Testnet, para el contrato, necesitaremos disponer de recursos para desplegar el contrato en este caso RAM. Para esto consulte sobre el [manejo de recursos en la red](../recursos).
 
 Para extraer la información de la cuenta y verificar cuantos kilobytes de RAM tiene disponible la cuenta puede realizar ejecutando el siguiente comando el cual puede apuntar al "end-point" de cualquiera de los partner de la red, puede observar la lista de partners [aquí](./partners).
 

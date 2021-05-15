@@ -31,11 +31,11 @@ Las entidades permisionadas pueden ser "partners" de lacchain los cuales pueden 
 
 |                 | Account key              | Block Signing Key | Peer Key | Extra Keys            |
 |-----------------|:------------------------:|:-----------------:|:--------:|:---------------------:|
-| **Entity**      | Active/Owner permissions | ![No](/img/no-icon.svg) | ![No](/img/no-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#estructura-json-entidades)) |
-|  ˫ **validator**| ![No](/img/no-icon.svg)  | ![Yes](/img/yes-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-validador)) |
-|  ˫ **boot**     | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-boot)) |
-|  ˫ **writer**   | NodeName permission      | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-escritor)) |
-|  ˪ **observer** | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/testnet/datos-entidades-nodos#nodo-observador)) |
+| **Entity**      | Active/Owner permissions | ![No](/img/no-icon.svg) | ![No](/img/no-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#estructura-json-entidades)) |
+|  ˫ **validator**| ![No](/img/no-icon.svg)  | ![Yes](/img/yes-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-validador)) |
+|  ˫ **boot**     | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-boot)) |
+|  ˫ **writer**   | NodeName permission      | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-escritor)) |
+|  ˪ **observer** | ![No](/img/no-icon.svg)  | ![No](/img/no-icon.svg) | ![Yes](/img/yes-icon.svg) | Optional ([info field](/docs/datos-entidades-nodos#nodo-observador)) |
 
 #### Account key	
 
