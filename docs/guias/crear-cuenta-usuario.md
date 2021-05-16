@@ -34,6 +34,7 @@ Para ver la lista de partner que forman parte de la red diríjase [aquí](./part
  - Componerse de caracteres de la A a la Z en minúscula y números del 1 al 5 
  - Por ejemplo podemos crear una cuenta: `holacontrato`.
 
+
 :::note Trabajo en progreso
 Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
 :::
