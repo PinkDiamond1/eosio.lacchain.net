@@ -65,5 +65,5 @@ Además de aprovechar los servicios en la nube existentes para el monitoreo.
 Adicionalmente se explorarán herramientas de Blockchain Analytics y Data Science.
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](/guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
 :::
