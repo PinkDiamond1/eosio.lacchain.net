@@ -1,10 +1,10 @@
 ---
 id: trazabilidad
 title: Autorizaciones y Trazabilidad 
-sidebar_label: Permisos y Trazabilidad
+sidebar_label: Permisos y Visibilidad
 ---
 
-## Permisos y trazabilidad en EOSIO
+## Características Nativas de EOSIO
 
 En EOSIO ninguna acción es anónima, todas las transacciones están vinculadas a una cuenta, por ejemplo si se desea llamar a la acción de un contrato, el llamado va a venir acompañado de una cuenta origen que consume esa acción del contrato inteligente.
 

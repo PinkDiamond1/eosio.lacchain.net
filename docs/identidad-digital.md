@@ -1,7 +1,7 @@
 ---
 id: identidad-digital
 title: Autenticado y Firmas Digitales
-sidebar_label: Autenticado y Firmas
+sidebar_label: Identidad Digital
 ---
 
 Las billeteras son clientes que almacenan llaves privadas asociadas con los permisos de una o más cuentas. Idealmente, una billetera tiene un estado bloqueado (encriptado) y desbloqueado (sin encriptar) que está protegido por una contraseña de alta entropía.

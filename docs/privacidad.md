@@ -1,7 +1,7 @@
 ---
 id: privacidad
-title: Privacidad
-sidebar_label: Privacidad
+title: Privacidad en Redes Blockchain
+sidebar_label: Privacidad en Blockchain
 ---
 
 La tecnología Blockchain proporciona las herramientas necesarias para descentralizar la información de forma segura e inquebrantable. La introducción de Bitcoin hizo posible que miles de nodos de todo el mundo compartan y mantengan la misma información. Sin embargo, en la mayoría de las Blockchains, la idea central es hacer pública esta información para que todos accedan a ella y verificarla, sin la necesidad de una autoridad central. Por lo tanto, las cadenas de bloques públicas se definen como * sin confianza * (no es necesario confiar). Sin embargo, muchas empresas y entidades privadas que desean usar la tecnología blockchain se encuentran con una pregunta muy importante: ¿cómo mantener la información privada y al mismo tiempo mantener la seguridad y la transparencia de una blockchain pública?
@@ -30,7 +30,7 @@ Esto trae unas cuantas de preguntas:
 
 **Varias cadenas de bloques para la privacidad de los datos:** las soluciones intentaron crear una nueva cadena de bloques privada para cada relación de datos privados que finalmente se abandonó a favor de un blockchain compartido con colecciones / transacciones de datos privados que estaban ancladas en el blockchain con un hash en para mejorar la escalabilidad.
 
-[Descargar informe de privacidad](https://arxiv.org/pdf/2105.01316)
+[**Ver Informe de Privacidad en EOSIO**](https://arxiv.org/pdf/2105.01316)
 
 ## Privacidad en EOSIO
 

@@ -1,7 +1,7 @@
 ---
 id: partners
-title: Partners de la red
-sidebar_label: Partners de la red
+title: Partners de la Red 
+sidebar_label: Partners de la Red
 ---
 
 Actualmente la red LACChain EOSIO se compone de un grupo de entidades las cuales son las encargadas de gestionar y administrar las cuentas y recursos en la red, estas entidades están registradas en la tabla `entity` en los contratos de sistema `eosio`.

@@ -15,14 +15,14 @@ Después de instaler el ambiente de desarrollo y pruebas, el siguiente paso cons
 
 Para lo anterior se requiere adicionalmente de los siguientes pasos:
 
-## 1. Generar llaves privadas
+## 1. Generar llaves publicas y privadas
 
 Las llaves, son requisito para crear una cuenta en una blockchain. En la mayoría de las billeteras se puede generar llaves nuevas para EOSIO.
 
 Para generarlas ejecutaremos el siguiente comando en la terminal.
 
 ```bash
-cleos create key
+cleos create key --to-console
 ```
 
 Este comando nos va a generar llaves privadas y públicas (podemos crear la cantidad de llaves que queramos). Las cuentas cleos, por defecto, vienen en pares: una `active key` y una `owner key` (para recuperar cuenta en caso de perder la active key).

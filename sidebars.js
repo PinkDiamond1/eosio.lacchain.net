@@ -15,7 +15,7 @@ module.exports = {
         "interoperabilidad",
         "roadmap"
     ],
-    "Guías":[
+    "Guías y Tutoriales":[
         "guias/crear-cuenta-usuario",
         "guias/crear-cuenta-contrato",
         "guias/crear-cuenta-entidad",
@@ -38,7 +38,7 @@ module.exports = {
         "herramientas/respaldos",
         "herramientas/gobernanza-red"
     ],
-    "Recursos": [
+    "Recursos de Aprendizaje": [
         "recursos/otros-recursos",
         "recursos/glosario",
         "recursos/funciones-importantes",

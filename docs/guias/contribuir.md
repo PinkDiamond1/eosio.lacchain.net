@@ -1,7 +1,7 @@
 ---
 id: contribuir
-title: ¿Cómo contribuir?
-sidebar_label: ¿Cómo contribuir?
+title: Ayúdenos a Mejorar Esta Documentación
+sidebar_label: ¿Cómo Contribuir?
 ---
 
 El objetivo de esta documentación es que la comunidad cuente con información confiable y útil para hacer crecer la red LACChain EOSIO, como parte de esta misión queremos que todo aquel que tenga una contribución para mejorar esta documentación pueda hacerlo con los siguientes pasos:
