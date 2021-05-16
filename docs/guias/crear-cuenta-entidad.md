@@ -1,7 +1,7 @@
 ---
 id: crear-cuenta-entidad
 title: Obtener una cuenta para una entidad 
-sidebar_label: Cuentas para Entidades
+sidebar_label: Registrarse como Entidad
 ---
 
 Como red pública de blockchain, LACChain esta abierta a cualquier entidad en América Latina y el Caribe. Como redes permisionadas, las entidades deben estar autenticadas y comprometerse a cumplir con la ley, las políticas y las reglamentaciones para obtener la autorización.

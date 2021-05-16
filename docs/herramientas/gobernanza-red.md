@@ -4,12 +4,16 @@ title: Herramientas de Gobernanza.
 sidebar_label: Gobernanza de Red
 ---
 
+## Cuenta Privilegiada EOSIO
+La cuenta `eosio` representa el comité permisionador que representa la autoridad máxima de la red. Esta cuenta posee acceso ilimitado a los recursos CPU, NET, y RAM. 
+
+Se pueden crear permisos específicos para cada acción privilegiada y ademas se podrá utilizar un contrato multi-firma (o “multisig”) con parámetros variables que requerirá el consentimiento de la mayoría de los actores en la tabla. 
+
 ## Contratos de Sistema
 
 Los contratos de permisionado de LACChain EOSIO son implementados como [Contratos de Sistema](https://developers.eos.io/manuals/eosio.contracts/latest/index). Estos contratos tiene acceso a [funciones privilegiadas](http://localhost:3000/docs/recursos/funciones-importantes) que encapsulan la funcionalidad base para el marco de gobernanza de LACChain.
 
 [Contratos de Sistemas LACChain EOSOIO](https://github.com/LatamLink/eosio.contracts/tree/master/contracts/lacchain.system)
-
 
 ## Interfaz Grafica para Comite Permisionador
 Esta herramienta es para manejar el permisionamiento y gobernanza de LACChain EOSIO mediante contratos inteligentes.

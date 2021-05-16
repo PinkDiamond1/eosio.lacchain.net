@@ -1,7 +1,7 @@
 ---
 id: crear-cuenta-usuario
 title: Obtener una cuenta en LACChain
-sidebar_label: Cuentas para Usuarios
+sidebar_label: Registrarse como Usuario
 ---
 
 :::note Trabajo en progreso

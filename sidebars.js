@@ -1,13 +1,13 @@
 module.exports = {
   docs: {
-    "Testnet": [
+    "LACChain EOSIO": [
         "eosio",
         "mecanismo-consenso",
-        "topologia-red",
         "cuentas-permisos",
-        "datos-entidades-nodos",
         "trazabilidad",
         "recursos",
+        "topologia-red",
+        "datos-entidades-nodos",
         "monitoreo",
         "rendimiento",
         "identidad-digital",
@@ -15,35 +15,34 @@ module.exports = {
         "interoperabilidad",
         "roadmap"
     ],
-    "Guías":[
-        "guias/ambiente-desarrollo",
-        "guias/llaves-privadas",
-        "guias/configurar-wallet",
+    "Guías y Tutoriales":[
         "guias/crear-cuenta-usuario",
         "guias/crear-cuenta-contrato",
         "guias/crear-cuenta-entidad",
-        "guias/partners",
+        "guias/llaves-privadas",
+        "guias/configurar-wallet",
         "guias/obtener-recursos",
+        "guias/desplegar-contrato-inteligente",
+        "guias/ambiente-desarrollo",
         "guias/instalacion-nodos",
         "guias/nodos-eosio",
-        "guias/desplegar-contrato-inteligente",
         "guias/contribuir"
     ],
     "Herramientas": [
+        "herramientas/explorador-bloques",
         "herramientas/monitor",
         "herramientas/api",
         "herramientas/cli",
-        "herramientas/explorador-bloques",
-        "herramientas/gobernanza-red",
+        "herramientas/boilerplates",
         "herramientas/librerias-sdk",
         "herramientas/respaldos",
-        "herramientas/boilerplates"
+        "herramientas/gobernanza-red"
     ],
-    "Recursos": [
+    "Recursos de Aprendizaje": [
         "recursos/otros-recursos",
-        "recursos/redes-eosio",
+        "recursos/glosario",
         "recursos/funciones-importantes",
-        "recursos/glosario"
+        "recursos/redes-eosio"
     ]
   }   
 }

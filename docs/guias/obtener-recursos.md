@@ -1,7 +1,7 @@
 ---
 id: obtener-recursos
 title: ¿Como obtener recursos en la red?
-sidebar_label: Obtener recursos en la red
+sidebar_label: Obtener Recursos en la Red
 ---
 
 En la red LACChain EOSIO los usuarios no poseen recursos de CPU y NET, estos son descontados de la cuenta del nodo escritor (partner) a la hora de co-firmar una transacción. Estos solo poseen RAM misma que es necesaria para [desplegar contratos en la red](./desplegar-contrato-inteligente).

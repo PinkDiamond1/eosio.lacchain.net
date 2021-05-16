@@ -1,7 +1,7 @@
 ---
 id: roadmap
 title: Ruta del Proyecto
-sidebar_label: Roadmap
+sidebar_label: Ruta del Proyecto
 ---
 
 ### Estado Actual: Pro TestNet en progreso 

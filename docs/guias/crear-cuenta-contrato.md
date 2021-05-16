@@ -1,7 +1,7 @@
 ---
 id: crear-cuenta-contrato
 title: Obtener una cuenta para un contrato
-sidebar_label: Cuentas para Aplicaciones
+sidebar_label: Registrarse como App
 ---
 
 Las cuentas de aplicación o contrato inteligente, son utilizadas para el desarrollo de aplicaciones como su nombre lo indica, este tipo de cuentas principalmente son las que poseen las acciones del sistema, permitiendo a los usuarios finales interactuar con ellas y el blockchain. 

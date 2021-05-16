@@ -1,12 +1,10 @@
 ---
 id: identidad-digital
 title: Autenticado y Firmas Digitales
-sidebar_label: Autenticado y Firmas
+sidebar_label: Identidad y Firma Digital
 ---
 
-
 Las billeteras son clientes que almacenan llaves privadas asociadas con los permisos de una o más cuentas. Idealmente, una billetera tiene un estado bloqueado (encriptado) y desbloqueado (sin encriptar) que está protegido por una contraseña de alta entropía.
-
 
 ### Capa de acceso Transit Wallet Access Layer
 Esta biblioteca es una pequeña capa de abstracción sobre `eosjs` que tiene como objetivo ayudar a los desarrolladores de EOS dApp (aplicación descentralizada) con la comunicación de billetera (verificación y aceptación de firma) al proporcionar una API simple e intuitiva.
@@ -77,3 +75,7 @@ Los certificados emitidos por una Autoridad de Certificación (CA) responsable d
 - Credentials Storage and Recovery
 - Authentication 
 - Sign On 
+
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+:::

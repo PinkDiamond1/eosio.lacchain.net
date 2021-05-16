@@ -1,6 +1,6 @@
 ---
 id: interoperabilidad
-title: Interoperabilidad
+title: Interoperabilidad de Redes
 sidebar_label: Interoperabilidad
 ---
 
