@@ -32,5 +32,5 @@ Con el objetivo de :
 -  Usar las llaves cuánticas para firmar las transacciones emitidas por los nodos escritor, de modo que puede ser verificado por los nodos validadores
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](/guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
 :::

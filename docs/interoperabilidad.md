@@ -27,5 +27,5 @@ Block.one anunció un desafío de un contrato inteligente, ofreciendo un premio 
 https://github.com/jafri/eosio.evm
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](/guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
 :::

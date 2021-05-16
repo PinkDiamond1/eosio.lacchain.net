@@ -52,5 +52,5 @@ https://github.com/EOSIO/eosjs-ecc/issues/19#issuecomment-392941963
 https://github.com/GetScatter/ScatterDesktop/issues/43
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
 :::
