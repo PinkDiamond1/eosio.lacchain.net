@@ -1,7 +1,7 @@
 ---
 id: cuentas-permisos
-title: Cuentas y Permisos
-sidebar_label: Cuentas y Permisos
+title: Cuentas y Autorizaciones
+sidebar_label: Cuentas y Autorizaciones
 ---
 
 ## Cuentas

@@ -1,7 +1,7 @@
 ---
 id: llaves-privadas
 title: Manejo de Llaves Privadas
-sidebar_label: Administración de cuentas
+sidebar_label: Llaves Públicas y Privadas
 ---
 
 ## Obtenga su cuenta en LACChain

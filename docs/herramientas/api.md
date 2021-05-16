@@ -1,6 +1,6 @@
 ---
 id: api
-title: API
+title: API Endpoints
 ---
 
 ## Que es un API
