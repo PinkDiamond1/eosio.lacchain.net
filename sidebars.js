@@ -1,48 +1,48 @@
 module.exports = {
   docs: {
-    "Testnet": [
-        "testnet/eosio",
-        "testnet/mecanismo-consenso",
-        "testnet/topologia-red",
-        "testnet/cuentas-permisos",
-        "testnet/datos-entidades-nodos",
-        "testnet/trazabilidad",
-        "testnet/recursos",
-        "testnet/monitoreo",
-        "testnet/rendimiento",
-        "testnet/identidad-digital",
-        "testnet/privacidad",
-        "testnet/interoperabilidad",
-        "testnet/roadmap"
+    "LACChain EOSIO": [
+        "eosio",
+        "mecanismo-consenso",
+        "cuentas-permisos",
+        "trazabilidad",
+        "recursos",
+        "topologia-red",
+        "datos-entidades-nodos",
+        "monitoreo",
+        "rendimiento",
+        "identidad-digital",
+        "privacidad",
+        "interoperabilidad",
+        "roadmap"
     ],
-    "Guías":[
-        "guias/ambiente-desarrollo",
-        "guias/llaves-privadas",
-        "guias/configurar-wallet",
+    "Guías y Tutoriales":[
         "guias/crear-cuenta-usuario",
         "guias/crear-cuenta-contrato",
         "guias/crear-cuenta-entidad",
-        "guias/partners",
+        "guias/llaves-privadas",
+        "guias/configurar-wallet",
         "guias/obtener-recursos",
-        "guias/instalacion-nodos",
         "guias/desplegar-contrato-inteligente",
+        "guias/ambiente-desarrollo",
+        "guias/instalacion-nodos",
+        "guias/nodos-eosio",
         "guias/contribuir"
     ],
     "Herramientas": [
+        "herramientas/explorador-bloques",
         "herramientas/monitor",
         "herramientas/api",
         "herramientas/cli",
-        "herramientas/explorador-bloques",
-        "herramientas/gobernanza-red",
+        "herramientas/boilerplates",
         "herramientas/librerias-sdk",
         "herramientas/respaldos",
-        "herramientas/boilerplates"
+        "herramientas/gobernanza-red"
     ],
-    "Recursos": [
+    "Recursos de Aprendizaje": [
         "recursos/otros-recursos",
-        "recursos/redes-eosio",
+        "recursos/glosario",
         "recursos/funciones-importantes",
-        "recursos/glosario"
+        "recursos/redes-eosio"
     ]
   }   
 }

@@ -1,7 +1,7 @@
 ---
 id: cuentas-permisos
-title: Cuentas y Permisos
-sidebar_label: Cuentas y Permisos
+title: Cuentas y Autorizaciones
+sidebar_label: Cuentas y Autorizaciones
 ---
 
 ## Cuentas
@@ -12,10 +12,10 @@ El nombre de la cuenta debe cumplir con ciertos requisitos: caracteres de la a `
 
 En la red de LACChain EOSIO, existen varios tipos de cuentas. Consulte la guía para crear una cuenta según su rol de usuario: 
 
-- [Usuario final](../guias/crear-cuenta-usuario)
-- [Aplicación o contrato](../guias/crear-cuenta-contrato)
-- [Non-partner](../guias/crear-cuenta-entidad)
-- [Partner](../guias/crear-cuenta-entidad)
+- [Usuario final](guias/crear-cuenta-usuario)
+- [Aplicación o contrato](guias/crear-cuenta-contrato)
+- [Non-partner](guias/crear-cuenta-entidad)
+- [Partner](guias/crear-cuenta-entidad)
 
 
 ## Permisos

@@ -9,8 +9,8 @@
 // site configuration options.
 
 const siteConfig = {
-  title: "Red Blockchain EOSIO para LAC Chain BID Labs", // Title for your website.
-  tagline: "Documentación Técnica",
+  title: "EOSIO Pro Testnet Blockchain - LACChain BID Labs", // Title for your website.
+  tagline: "Documentación Técnica LACChain EOSIO",
   url: "https://es.latamlink.io", // Your website URL
   baseUrl: "/", // Base URL for your project */
 
@@ -47,13 +47,12 @@ const siteConfig = {
     },
     navbar: {
       title: ' ',
-      hideOnScroll: true,
+      hideOnScroll: false,
       logo: {
         alt: 'LatamLink Logo',
         src: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.svg',
         srcDark: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/img/footerlogo.png'
       },
-      
       items: [
         // {
         //   href: 'https://medium.com/@latam_link',
@@ -71,7 +70,7 @@ const siteConfig = {
           position: 'right',
         },
         {
-          to: 'docs/testnet/eosio',
+          to: 'docs/eosio',
           label: 'Documentación',
           position: 'right',
         },
@@ -97,7 +96,7 @@ const siteConfig = {
               to: 'http://explorer.latamlink.io/',
             },
             {
-              label: 'APIs',
+              label: 'Endpoints API',
               to: 'https://es.latamlink.io/docs/api.html',
             },
           ],
@@ -111,7 +110,7 @@ const siteConfig = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/LatamLink',
+              href: 'https://github.com/lacchain',
             },
           ],
         },

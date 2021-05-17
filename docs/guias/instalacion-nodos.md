@@ -10,7 +10,7 @@ sidebar_label: Instalación de Nodos
 
 Cuando planifique la instalación de un servidor, tiene varias opciones para seleccionar. A menudo, la selección está determinada por los hábitos y preferencias existentes del administrador del sistema.
 
-Consulte nuestra de guÍa de sobre como configurar el [ambiente de desarrollo](./ambiente-desarrollo) para poder trabajar sobre la red de LACChain EOSIO.
+Consulte nuestra guÍa sobre como configurar el [ambiente de desarrollo](./ambiente-desarrollo) para poder trabajar sobre la red de LACChain EOSIO. En casos de necesitar mayor informacion sobre la configuracion de nodos en redes EOSIO en general, informese [aquí](https://guias.eoscostarica.io/docs/tutoriales/instalacion-de-nodos/)
 
 ## Testnet LACChain EOSIO 
 
@@ -35,7 +35,7 @@ Consulte nuestra de guÍa de sobre como configurar el [ambiente de desarrollo](.
 </tr>
 </table>
 
-Consulte nuestro [repositorio en GitHub](https://github.com/lacchain/eosio-network) para obtener mas información sobre los nodos en LACChain EOSIO. Si desea realizar la instalacion y condiguracion de nodos desde linea de comandos consulte el [README.md](https://github.com/lacchain/eosio-network/blob/master/README.md) de nuestro repositorio en GitHub, antes de esto asegurse de haber instalado el [ambiente de desarrollo](./ambiente-desarrollo) para EOSIO.
+Consulte nuestro [repositorio en GitHub](https://github.com/lacchain/eosio-network) para obtener mas información sobre los nodos en LACChain EOSIO. Si desea realizar la instalacion y configuración de nodos desde linea de comandos consulte el [README.md](https://github.com/lacchain/eosio-network/blob/master/README.md) de nuestro repositorio en GitHub, antes de esto asegurse de haber instalado el [ambiente de desarrollo](./ambiente-desarrollo) para EOSIO.
 
 Antes de iniciar es importante que conozca algunas [consideraciones en infraestrutura](./consideraciones-infraestructura) sobre los nodos en EOSIO que pueden serle util para amplir el conocimiento sobre el funcionamiento de la red.
 

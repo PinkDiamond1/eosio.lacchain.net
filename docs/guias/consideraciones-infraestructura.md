@@ -1,7 +1,7 @@
 ---
-id: consideraciones-infraestructura
-title: Consideraciones e Infraestructura
-sidebar_label: Infraestructura
+id: nodos-eosio
+title: Consideraciones Infraestructura
+sidebar_label: Notas Infraestructura
 ---
 
 ### Requerimientos de Hardware

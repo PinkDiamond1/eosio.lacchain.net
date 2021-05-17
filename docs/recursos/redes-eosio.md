@@ -1,7 +1,7 @@
 ---
 id: redes-eosio
 title: Redes Blockchain basadas en EOSIO 
-sidebar_label: Redes EOSIO
+sidebar_label: Otras Redes EOSIO
 ---
 
 El ecosistema EOSIO está compuesto por muchas cadenas de bloques públicas y privadas diferentes, cada una con una gobernanza diferente y cada una dirigida a diferentes casos de uso y mercados.

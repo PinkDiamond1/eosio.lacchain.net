@@ -1,12 +1,8 @@
 ---
 id: crear-cuenta-usuario
 title: Obtener una cuenta en LACChain
-sidebar_label: Cuentas para Usuarios
+sidebar_label: Registrarse como Usuario
 ---
-
-:::note Trabajo en progreso
-Todavía estamos trabajando en este aspecto de la red. Consulte el [Roadmap del proyecto ](../testnet/roadmap).
-:::
 
 Existen varias formas de obtener una cuenta en LACChain EOSIO , las mas comunes son mediante una aplicación o mediante una entidad permisionada en LACChain.
 
@@ -37,3 +33,8 @@ Para ver la lista de partner que forman parte de la red diríjase [aquí](./part
  - No estar previamente registrada
  - Componerse de caracteres de la A a la Z en minúscula y números del 1 al 5 
  - Por ejemplo podemos crear una cuenta: `holacontrato`.
+
+
+:::note Trabajo en progreso
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
+:::
