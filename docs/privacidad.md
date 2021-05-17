@@ -46,7 +46,7 @@ Un Privacy Transaction Manager (PTM) es un mecanismo utilizado en varias tecnolo
 
 Por ejemplo **Hyperledger Besu**, otra tecnología blockchain utilizada en LACChain, utiliza un PTM llamado Orion. Besu proporciona una extensión de contrato pre-compilada del cliente ethereum que usa claves de Orion para canalizar transacciones privadas a través de nodos de Orion para evitar que los datos sean visibles en la red pública.
 
-### Soluciones existentes de privacidad de datos en EOSIO
+### Soluciones existentes de privacidad en EOSIO
 https://github.com/EOSIO/eosjs-ecc/issues/19#issuecomment-392941963
 
 https://github.com/GetScatter/ScatterDesktop/issues/43
