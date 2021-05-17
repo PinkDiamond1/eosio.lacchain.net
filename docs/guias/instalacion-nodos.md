@@ -37,7 +37,7 @@ Consulte nuestra guÍa sobre como configurar el [ambiente de desarrollo](./ambie
 
 Consulte nuestro [repositorio en GitHub](https://github.com/lacchain/eosio-network) para obtener mas información sobre los nodos en LACChain EOSIO. Si desea realizar la instalacion y configuración de nodos desde linea de comandos consulte el [README.md](https://github.com/lacchain/eosio-network/blob/master/README.md) de nuestro repositorio en GitHub, antes de esto asegurse de haber instalado el [ambiente de desarrollo](./ambiente-desarrollo) para EOSIO.
 
-Antes de iniciar es importante que conozca algunas [consideraciones en infraestrutura](./consideraciones-infraestructura) sobre los nodos en EOSIO que pueden serle util para amplir el conocimiento sobre el funcionamiento de la red.
+Antes de iniciar es importante que conozca algunas [consideraciones en infraestrutura](./nodos-eosio) sobre los nodos en EOSIO que pueden serle util para amplir el conocimiento sobre el funcionamiento de la red.
 
 ## 1. Crear una cuenta
 
@@ -45,15 +45,15 @@ Para poder desplegar nodos en la red de LACChain EOSIO, es importante tener una 
  
 Consulte la guía para crear una cuenta según su rol de usuario: 
 
-- [Non-partner](../crear-cuenta-entidad)
-- [Partner](../crear-cuenta-entidad)
+- [Non-partner](./crear-cuenta-entidad)
+- [Partner](./crear-cuenta-entidad)
 
 
 ## 2. Autenticarse en el Dashboard
 
 La red de LACChain EOSIO cuenta con un [dashboard](https://dashboard.latamlink.io/), el cual permite a los usuarios realizar gestiones dentro de la red, incluida la opción de desplegar varios tipos de nodos.  
 
-Accede con su cuenta de tipo `Partner` o `Non-Partner`. Consulte nuestro tutorial de como administrar las [llaves privadas](../llaves-privadas#31-autenticadores-externos-wallets)
+Accede con su cuenta de tipo `Partner` o `Non-Partner`. Consulte nuestro tutorial de como administrar las [llaves privadas](./llaves-privadas#31-autenticadores-externos-wallets)
 
 
 ## 3. Desplegar un nodo 
