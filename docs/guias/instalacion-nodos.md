@@ -1,8 +1,16 @@
 ---
 id: instalacion-nodos
-title: Instalación de Nodos LACChain
+title: Instalación de Nodos en LACChain EOSIO
 sidebar_label: Instalación de Nodos
 ---
+
+`Nodeos` es el software central de una cadena de bloques EOSIO. Es un deamon que realiza todas las funciones de un nodo de blockchain, tales como sincronización con otros nodos a través del `protocolo p2p`, proporciona una `API HTTP` para el software del cliente y, opcionalmente, `firma bloques` si se configura con la cuenta de un validador.
+
+`Nodeos` está disponible en código fuente y paquetes binarios en el [repositorio GitHub](https://github.com/EOSIO/eos/releases).  Las plataformas compatibles son Ubuntu 16.04 y 18.04, RHEL7 y MacOS. 
+
+Cuando planifique la instalación de un servidor, tiene varias opciones para seleccionar. A menudo, la selección está determinada por los hábitos y preferencias existentes del administrador del sistema.
+
+Consulte nuestra guÍa sobre como configurar el [ambiente de desarrollo](./ambiente-desarrollo) para poder trabajar sobre la red de LACChain EOSIO. En casos de necesitar mayor informacion sobre la configuracion de nodos en redes EOSIO en general, informese [aquí](https://guias.eoscostarica.io/docs/tutoriales/instalacion-de-nodos/)
 
 ## Testnet LACChain EOSIO 
 
@@ -27,7 +35,9 @@ sidebar_label: Instalación de Nodos
 </tr>
 </table>
 
-Consulte nuestro [repositorio en GitHub](https://github.com/lacchain/eosio-network) para obtener mas información sobre los nodos en LACChain EOSIO.
+Consulte nuestro [repositorio en GitHub](https://github.com/lacchain/eosio-network) para obtener mas información sobre los nodos en LACChain EOSIO. Si desea realizar la instalacion y configuración de nodos desde linea de comandos consulte el [README.md](https://github.com/lacchain/eosio-network/blob/master/README.md) de nuestro repositorio en GitHub, antes de esto asegurse de haber instalado el [ambiente de desarrollo](./ambiente-desarrollo) para EOSIO.
+
+Antes de iniciar es importante que conozca algunas [consideraciones en infraestrutura](./consideraciones-infraestructura) sobre los nodos en EOSIO que pueden serle util para amplir el conocimiento sobre el funcionamiento de la red.
 
 ## 1. Crear una cuenta
 
@@ -35,15 +45,15 @@ Para poder desplegar nodos en la red de LACChain EOSIO, es importante tener una 
  
 Consulte la guía para crear una cuenta según su rol de usuario: 
 
-- [Non-partner](./crear-cuenta-entidad)
-- [Partner](./crear-cuenta-entidad)
+- [Non-partner](../crear-cuenta-entidad)
+- [Partner](../crear-cuenta-entidad)
 
 
 ## 2. Autenticarse en el Dashboard
 
 La red de LACChain EOSIO cuenta con un [dashboard](https://dashboard.latamlink.io/), el cual permite a los usuarios realizar gestiones dentro de la red, incluida la opción de desplegar varios tipos de nodos.  
 
-Accede con su cuenta de tipo `Partner` o `Non-Partner`. Consulte nuestro tutorial de como administrar las [llaves privadas](./llaves-privadas#31-autenticadores-externos-wallets)
+Accede con su cuenta de tipo `Partner` o `Non-Partner`. Consulte nuestro tutorial de como administrar las [llaves privadas](../llaves-privadas#31-autenticadores-externos-wallets)
 
 
 ## 3. Desplegar un nodo 
