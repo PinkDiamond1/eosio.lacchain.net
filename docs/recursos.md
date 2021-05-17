@@ -6,14 +6,20 @@ sidebar_label: Uso de Recursos
 
 LACChain no tiene y no tendrá tarifas de transacción. Sin embargo, para regular el uso de la red a sus límites técnicos y evitar ataques de denegación de servicio, es necesario establecer un mecanismo para solicitar y asignar recursos de red.
 
-## Tipos de Recursos
-Las cuentas podrán utilizar los siguientes recursos en la red:
+## Video Sobre Recursos de red LACChain EOSIO
 
-| **[RAM](/docs/recursos#ram)** | **[CPU](/docs/recursos#cpu)** | **[NET](/docs/recursos#network-net)** |
-:--------------:|:--------------:|:--------------:| 
+En este video Matias Romeo explica cómo se distribuyen los recursos de la red en la red LACChain EOSIO.
+
+<iframe width="100%" height="350px" src="https://www.youtube.com/embed/q-4LNfv4XtQ?start=3375" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark"></iframe>
+
+## Tipos de Recursos
+Las cuentas podrán utilizar los siguientes tipos de recursos en la red:
+
+|**[RAM](/docs/recursos#ram)**| **[CPU](/docs/recursos#cpu)** | **[NET](/docs/recursos#network-net)** |
+|:--------------:|:--------------:|:--------------:| 
 |Memoria para almacenar el estado|Tiempo de procesamiento|Ancho de banda para transmitir información|
 |Se mide en bytes|Se mide en microsegundos|Se mide en bytes| 
-|Es un recurso limitado|La CPU y el NET se repondrán por completo cuando la cuenta no esté usando la red durante 24 horas|La CPU y el NET se repondrán por completo cuando la cuenta no esté usando la red durante 24 horas|
+|Es un recurso limitado Actualmente 32GB|CPU se repondrá por completo cuando la cuenta no esté usando la red durante 24 horas|NET se repondrá por completo cuando la cuenta no esté usando la red durante 24 horas|
 
 ### RAM
 En una red EOSIO, la RAM es el espacio de almacenamiento de memoria donde la cadena de bloques almacena datos, se mide en kilobytes (KiB). Si su contrato necesita almacenar datos en una tabla de blockchain, como en una base de datos, puede almacenarlos en la RAM de blockchain.
