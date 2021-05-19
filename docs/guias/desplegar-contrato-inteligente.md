@@ -21,7 +21,7 @@ Una vez que se tiene la cuenta en el LACChain EOSIO Testnet, para el contrato, n
 Para extraer la información de la cuenta y verificar cuantos kilobytes de RAM tiene disponible la cuenta puede realizar ejecutando el siguiente comando el cual puede apuntar al "end-point" de cualquiera de los partner de la red, puede observar la lista de partners [aquí](./partners).
 
 ```bash
-cleos -u http://lacchain.eosio.cr get account {nombrecuenta}
+cleos -u http://lacchain.eosio.cr get account <nombrecuenta>
 ```
 
 ## 3. Crear un contrato

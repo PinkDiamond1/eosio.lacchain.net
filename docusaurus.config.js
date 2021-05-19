@@ -73,10 +73,9 @@ const siteConfig = {
           to: 'docs/eosio',
           label: 'Documentación',
           position: 'right',
-        },
+        },        
         {
-          href: 'https://latamlink.io/',
-          label: 'English',
+          type: 'localeDropdown',
           position: 'right',
         },
         {to: 'search'},
