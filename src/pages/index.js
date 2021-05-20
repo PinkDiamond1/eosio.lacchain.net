@@ -395,7 +395,7 @@ const ToolsSection = () => {
 const HomePage = () => {  
     return (
         <div>
-          <link rel="canonical" href="https://es.latamlink.io/" />
+          <link rel="canonical" href="https://eosio.lacchain.net/" />
           <Layout>
             <HeroSection/>
             <AboutSection/>
