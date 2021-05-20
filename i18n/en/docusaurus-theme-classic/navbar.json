@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": " ",
+    "description": "The title in the navbar"
+  },
+  "item.label.Monitor de Red": {
+    "message": "Network Monitor",
+    "description": "Navbar item with label Monitor de Red"
+  },
+  "item.label.Explorador de Bloques": {
+    "message": "Block Explorer",
+    "description": "Navbar item with label Explorador de Bloques"
+  },
+  "item.label.Documentación": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentación"
+  },
+  "item.label.English": {
+    "message": "Español",
+    "description": "Navbar item with label English"
+  }
+}
