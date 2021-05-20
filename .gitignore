@@ -10,7 +10,6 @@ build/
 yarn.lock
 package-lock.json
 node_modules
-i18n/*
 
 # dependencies
 /node_modules
