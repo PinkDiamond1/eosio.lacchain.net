@@ -1,414 +1,602 @@
-import React,{ useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Layout from '@theme/Layout';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core';
-import { Card } from '@material-ui/core';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
-import Particles from 'react-particles-js';
+import React, { useState, useEffect } from "react"
+import { useHistory } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
+import Box from '@material-ui/core/Box'
+import Grid from '@material-ui/core/Grid'
+import useBaseUrl from "@docusaurus/useBaseUrl"
+import clsx from "clsx"
+import Layout from "@theme/Layout"
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import TelegramIcon from '@material-ui/icons/Telegram'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import MenuBookIcon from '@material-ui/icons/MenuBook'
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks'
+import CropFreeIcon from '@material-ui/icons/CropFree'
+import BarChartIcon from '@material-ui/icons/BarChart'
+import SearchIcon from '@material-ui/icons/Search'
+import ExtensionIcon from '@material-ui/icons/Extension'
+import ScatterPlotIcon from '@material-ui/icons/ScatterPlot'
+import LocalLibraryIcon from '@material-ui/icons/LocalLibrary'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/static_website.css';
 
-const lightTheme = makeStyles({
-    heroHead:{
-      backgroundColor:"transparent"
-    },
-    card:{
-      backgroundColor: '#FFFFFF'
-    },
-    imgcard:{
-      display:'block',
-      width:50,
-      margin: 'auto',
-      marginTop: 30,
-      marginBottom: 30 
-    },
-    overline:{
-      fontFamily: "Roboto",
-      fontSize: 12.7,
-    },
-    title: {
-      fontSize: 21.1,
-      fontWeight: "bold",
-    },
-    body: {
-      fontSize: 13.8,
-      height:55
-    },
-    media: {
-      objectFit: "cover",
-      objectPosition:"bottom",
-    }
-  });
-
-const ParticleSection = () => {
-  return(
-    <Particles
-      height={"90vh"}
-      style={{backgroundColor:"#f7f7f7"}}
-      params={{ 
-        particles: { 
-          number: {
-            value: 100,
-            max: -1,
-            density: {
-                enable: true,
-                area: 1500
-            }
-          },
-          color: {
-            value: "#bdbdbd",
-          },
-          links: {
-            color: "#bdbdbd",
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            random: true,
-            value: 10,
-          },
-          move: {
-            direction: "top",
-            enable: true,
-            outMode: "out",
-            random: false,
-            speed: 1,
-            straight: false,
-          },    
-        }, 
-      }} 
-    />
-  );
+const MetaData={
+  title:"Enterprise Blockchain Solutions | EOSIO",
+  description:"EOS Costa Rica develops blockchain solutions. We deploy the EOSIO protocol to improve business efficiency, traceability, and transparency.",
+  img:"img/metaImgBlack.png",
+  hrefLangPath: "https://es.eoscostarica.io/"
 }
 
-function Scroll(){
-    $("html,body").animate(
-      {
-        scrollTop: 550,
-      },
-      "slow"
-    );
-}
+const Home = () => {
+  const isMobile = useMediaQuery( {query:'(max-width: 960px)'} )
+  const isDesktop = useMediaQuery( {query:'(min-width: 960px)'} )
+  const [expanded, setExpanded] = useState('panel_SoftDev')
+  const history = useHistory()
+  
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded? panel: false)
+  }
+  
+  useEffect(() => {
+    handleChange('panel_SoftDev')
+  }, [])
 
-const HeroSection = () => {
-  return (
-    <div>
-        <ParticleSection />
-        <div style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: 'transparent'
-          }}
-         className="pt-0 pl-4 pr-4 content-header"
-         >
-          <img className="img-fluid" src="images/latamlink_logo-header.svg" alt="" />
-          <div className="container-fluid text-center">
-              <button onClick={Scroll} id="more" style={{fontSize: '5em'}} className="text-secondary btn bg-transparent">
-                  <i className="fas fa-angle-down" style={{color:"#0bb155"}}></i>
-              </button>
-          </div>
-        </div>
-    </div>
-  );
-}
-
-const AboutCards = (props) => {
+  const HeroSection = () => {
     return (
-        <div className="information-card">
-            <div className="text-top mr-4">
-                <img src={props.img} width="110" alt="" />
-            </div>
-            <div>
-                <h4>{props.title}</h4>
-                <p className="information-card-text text-justify"> {props.body}</p>
-            </div>
-        </div>
-    );
-}
-
-const AboutSection = () => {
-    return (
-        <section id="acerca" className="mt-5 pr-2 pl-2 mb-5 information-grid">
-            <AboutCards 
-                img="images/latamlink_Floor_Light_1853.svg"
-                title="Aprender sobre Blockchain"
-                body=" LACChain EOSIO le permite explorar los beneficios de la tecnología blockchain EOSIO para proyectos en Latinoamérica."
-            ></AboutCards>
-            <AboutCards 
-                img="images/latamlink_finger_108.svg"
-                title="Pon tus dApps a prueba"
-                body="LACChain EOSIO provee un ambiente local para desarrollar y probar apps descentralizadas (dApps)."
-            ></AboutCards>
-            <AboutCards 
-                img="images/latamlink_cog_104.svg"
-                title="Prueba tu infraestructura"
-                body="LACChain EOSIO incluye una plataforma sólida para que desarrolladores y organizaciones prueben su infraestructura blockchain."
-            ></AboutCards>
-        </section>
-    );
-}
-
-const InformationSection = () => {
-    return (
-      <div className="mt-5 mb-5 pb-3 information-grid-footer">
-        <div className="information d-flex flex-column">
-          <div className="text-justify">
-            <h2 className="text-left mb-4 font-weight-bold">
-              <span className="underline">
-                ¿Qué es LatamLink?
-              </span>
-            </h2>
-            <br />
-            <span>
-              LatamLink es una alianza regional voluntaria liderada por empresas
-              tecnológicas latinoamericanas. Desarrollamos un testnet basado en EOSIO para la red <a
-                style={{color: "#5bb517"}}
-                href="https://www.lacchain.net/"
-                target="blank">LACChain</a> con el fin de resaltar los beneficios de esta tecnología. LACChain EOSIO utiliza
-              una
-              versión pública permisionada de la tecnología EOSIO para que desarrolladores y organizaciones puedan probar
-              sus aplicaciones descentralizadas e infraestructura.
-            </span>
-            <h2 className="h3" style={{padding: "20px 0 0 0"}} >
-              ¿Qué es LACChain?
-            </h2>
-            <span>
-              LACChain es una iniciativa de BID Labs (parte del <a style={{color: "#5bb517"}}  href="https://www.iadb.org/en"
-                target="_blank">Banco Interamericano de Desarrollo</a>)
-              cuyo propósito es acompañar y acelerar el desarrollo del ecosistema de blockchain en Latinoamérica. LACChain
-              busca establecer consorcios nacionales en la región, desarrollar y promover estándares de interoperablidad
-              en
-              redes, y desarrollar y dar mantenimiento a infraestructuras interoperables de blockchain.
-            </span>
-            <h2 className="h3"  style={{padding: "20px 0 0 0"}}>
-              ¿Qué es EOSIO?
-            </h2>
-            <span>
-              EOSIO es una tecnología blockchain de siguiente generación lanzada en 2018 por <a style={{color: "#5bb517"}}
-                href="https://block.one/" target="_blank">block.one</a>, una compañía líder que ofrece soluciones
-              blockchain de alto rendimiento. EOSIO permite mayor flexibilidad, escalabilidad y costo-eficiencia, por lo
-              que su red puede llegar a tener hasta 4.000 transacciones por segundo.
-            </span>
-            <h3 className="h4"  style={{padding: "20px 0 0 0"}}>
-              LatamLink es liderado por:
-            </h3>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">
-                <a target="_blank" href="https://www.eosargentina.io/">EOS Argentina</a>
-              </li>
-              <li className="list-group-item">
-                <a target="_blank" href="https://eoscostarica.io/">EOS Costa Rica</a>
-                <br />
-              </li>
-              <li className="list-group-item">
-                <a target="_blank" href="https://eosvenezuela.io/">EOS Venezuela</a>
-              </li>
-              <li className="list-group-item"></li>
-            </ul>
-          </div>
-        </div>
-        <div className="information-img">
-          <img className="img-fluid" src="images/map-content-home.png" alt="" />
-        </div>
-      </div>
-    );
-}
-
-const GetStartedSteps = (props) => {
-    return (
-        <div className="get-started-step">
-            <img className="get-started-icon" height="30" width="30" src={props.img} alt="Explorar EOSIO" />
-            <p className="ml-4 text-justify">
-                <strong className="h4">{props.title}</strong>
-                <br />
-                <br />
-                <span>{props.body}
-                    <a href={props.href} target="_blank">{props.info}</a>.
-                </span>
+      <Box className="containerSec">
+        {isDesktop && 
+          <Box className="sectionHero">
+          <Box className="titleBox">
+            <h1>The EOSIO Blockchain Network for <br/> Latin America and the Caribbean</h1>
+          </Box>
+          <p>
+            LACChain EOSIO enables organizations and developers to build blockchain 
+            applications on the LACChain network powered by EOSIO technology.
+          </p>
+          <Box className="buttonBox" style={{justifyContent:'space-around', display:'flex'}}>
+            <button className="buttonPrimary" onClick={() => history.push("/")} >Join the Network</button>
+            <button className="buttonPrimary" onClick={() => history.push("/")} >Learn More</button>
+          </Box>
+        </Box>
+        }
+        {isMobile && 
+          <Box className="sectionHeroMobile">
+            <Box className="titleBox">
+              <h1>The EOSIO Blockchain Network for <br/> Latin America and the Caribbean</h1>
+            </Box>
+            <p>
+              LACChain EOSIO enables organizations and developers to build blockchain 
+              applications on the LACChain network powered by EOSIO technology.
             </p>
-        </div>
-    );
-}
+            <Box className="buttonBoxMobile" style={{display:'grid'}}>
+              <button className="buttonPrimary" onClick={() => history.push("/")} >Join the Network</button>
+              <br/>
+              <button className="buttonPrimary" onClick={() => history.push("/")} >Learn More</button>
+            </Box>
+          </Box>
+      }
+      </Box>
+    )
+  } 
 
-const WhyChoose = () => {
+  const IconSection = () => {
     return (
-      <section id="iniciar" className="get-started-structure pt-5 pl-3 pr-3 pb-5">
-        <div className="mt-5 mb-5 get-started-header">
-          <h2 className="h1 text-center font-weight-bold">
-            <span className="underline">¿Por qué elegir LACChain EOSIO?</span>
-          </h2>
-        </div>
-        <div className="get-started-steps">
-          <GetStartedSteps
-              title="1. Permite explorar EOSIO"
-              img="images/latamlink_Rocket_1885.svg"
-              body="EOSIO es una tecnología blockchain de código abierto que permite mayor flexibilidad, escalabilidad y
-              costo-eficiencia, ideales para desarrollar soluciones empresariales y de impacto social."
-              href="https://eos.io/"
-              info=" Lea más sobre EOSIO aquí"
-          ></GetStartedSteps>
-          <GetStartedSteps
-              title="2. Somos parte de la iniciativa LACChain"
-              img="images/latamlink_sun_1004125.svg"
-              body="LACChain es una iniciativa de BID Lab para fomentar un ecosistema blockchain en Latinoamérica. El equipo
-              de LACChain forma alianzas con compañías líderes en la industria de
-              blockchain e integra las principales tecnologías blockchain dentro de su red LACChain. Para más
-              información sobre LACChain,"
-              href="https://medium.com/@lacchain.official/what-is-the-lacchain-global-alliance-and-what-does-it-consist-of-861cb76257b1"
-              info=" dirígase a este link"
-          ></GetStartedSteps>
-          <GetStartedSteps
-              title="3. Ofrece una solución integral"
-              img="images/latamlink_Rocket_1885.svg"
-              body="LACChain EOSIO utiliza una versión pública permisionada de la tecnología EOSIO para Latinoamérica.
-              Incluimos características como un ambiente local de desarrollo y prueba, un servicio de monitoreo,
-              adaptabilidad a API endpoints, billeteras y otras herramientas. Puede ver la lista completa más
-              abajo."
-              href=""
-              info=""
-          ></GetStartedSteps>
-        </div>
-        <img className="img-fluid get-started-img" src="images/mobile-previews-fake.png" alt="" />
-    </section>
-    );
-}
+      <Box className="containerSec">
+        <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
+          <Grid container spacing={10}>
+            <Grid item xs={12} md={4}>
+              <Box className="centerBox" style={{marginBottom:'10px'}}>
+                <MenuBookIcon style={{width:'80px', height:'80px', cursor:'pointer'}}/>
+              </Box>
+              <p>
+                Build and test your blockchain applications and infrastructure.
+              </p>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Box className="centerBox" style={{marginBottom:'10px'}}>
+                <LibraryBooksIcon style={{width:'80px', height:'80px', cursor:'pointer'}}/>
+              </Box>
+              <p>
+                Learn about blockchain through compelling learning resources.
+              </p>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Box className="centerBox" style={{marginBottom:'10px'}}>
+                <CropFreeIcon style={{width:'80px', height:'80px', cursor:'pointer'}}/>
+              </Box>
+              <p>
+                Visualize network data using the LACChain EOSIO dashboard
+              </p>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    )
+  }
 
-const BannerSection = () => {
+  const DiscoverPowerful = () => {
     return (
-        <section className="banner">
-            <h4 className="font-weight-light text-center">
-            "LatamLink is a voluntary regional alliance to highlight the benefits
-            of the EOSIO blockchain."
-            </h4>
-            <img className="img-fluid" src="images/latamlink_logo-footer.svg" alt="" />
-      </section>
-    );
-}
-
-const CustomCard = (props) => {
-  let classes = lightTheme();
-
-  return (
-    <Card className={classes.card} variant="outlined">
-      <CardActionArea onClick={() => window.open(props.href, "_self")}>
-        <div className="card-img-container"> 
-          <img src={props.img} className={classes.imgcard}/>
-        </div>
-        <CardContent>
-          <Typography className={classes.title}  gutterBottom variant="h5" component="h2">{props.title}</Typography>
-          <Typography className={classes.body} variant="body2" component="p">{props.body}</Typography>
-        </CardContent>
-      </CardActionArea>
-  </Card>
-  );
-}
-
-const ToolsSection = () => {
-  return (
-    <section id="herramientas" className="d-flex pb-5 pt-5 flex-column justify-content-sm-center">
-      <div className="tools-header text-center mb-4">
-        <h2 className="h1">
-          <span className="underline">Herramientas</span>
-        </h2>
-        <br />
-        <p className="text-justify text-center">
-          Estas son algunas herramientas y recursos que te ayudarán a prepararte
-          para iniciar en LACChain EOSIO.
-        </p>
-      </div>
-      <div class="container">
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          spacing={2}
-        >
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="/docs/eosio"
-              img="images/docse-01.svg"
-              title="Documentación"
-              body="Una lista de recursos para aprender de expertos de la industria de blockchain."
-            />
+      <Box className="containerSec">
+        <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
+          <Grid container spacing={5}>
+            <Grid item xs={12} md={6}>
+              <Box className="titleBox">
+                <h3>Discover the powerful combination of EOSIO performance and the LACChain framework</h3>
+              </Box>
+              <p>
+                LACChain EOSIO deploys a public permissioned version of [EOSIO](https://eos.io/),
+                an open-source blockchain technology, that allows developers and organizations to
+                test and build their decentralized applications and infrastructure.
+              </p>
+              <Box className={clsx('centerBox','buttonBox')}>
+                <button className='buttonPrimary' onClick={() => history.push("/")} >See Projects</button>
+              </Box>
+            </Grid>
+            {isDesktop && 
+              <Grid item md={6}>
+                <Box style={{paddingLeft:'120px', marginTop:'-50px'}}>
+                  <img src="https://raw.githubusercontent.com/LatamLink/latamlink.io/master/static/images/mobile-previews-fake.png" alt="" />
+                </Box>  
+              </Grid>
+            }
           </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="https://dashboard.latamlink.io"
-              img="images/latamlink_Monitor_1014.svg"
-              title="Servicio de monitoreo"
-              body="Un servicio de monitoreo que permite la trazabilidad de la actividad en la red."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="https://developers.eos.io/manuals/eos/latest/cleos/index"
-              img="images/latamlink_Laptop_187.svg"
-              title="Cleos"
-              body="Cleos es la interfaz de comando desarrollada por la empresa block.one"
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="https://github.com/eoscostarica/eosio-network-bootstrap"
-              img="images/latamlink_Wrench_1004034.svg"
-              title="Ambiente local"
-              body="Un ambiente local para desarrollar aplicaciones descentralizadas basadas en EOSIO."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="https://t.me/latamlink"
-              img="images/latamlink_balloon-1.svg"
-              title="Comunidad de Telegram"
-              body="Contamos con un grupo de Telegram para coordinar esfuerzos y compartir información relevante al ecosistema de EOS regional."
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <CustomCard 
-              href="https://github.com/latamlink"
-              img="images/Github-VerGreen-SVG-Hermes-22-04-20.svg"
-              title="GitHub"
-              body="LatamLink tiene un perfil de github que reune a todos los participantes de la iniciativa."
-            />
-          </Grid>
-        </Grid>
-      </div>
-    </section>
-  );
-}
-
-const HomePage = () => {  
+        </Box>
+      </Box>
+    )
+  }
+  
+  const AnEcosystem = () => {
     return (
-        <div>
-          <link rel="canonical" href="https://es.latamlink.io/" />
-          <Layout>
-            <HeroSection/>
-            <AboutSection/>
-            <br />
-            <hr />
-            <InformationSection/>
-            <WhyChoose/>
-            <BannerSection/>
-            <ToolsSection/>
-          </Layout>
-        </div>
+      <Box className="containerSec">
+        <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
+          <Grid container spacing={5}>
+            {isDesktop && 
+                <Grid item md={6}>
+                  <Box style={{marginTop:'-50px'}} >
+                    <img style={{width:'400px'}} src="https://raw.githubusercontent.com/LatamLink/eosio.lacchain.net/master/static/images/map-content-home.png" alt="" />
+                  </Box>  
+                </Grid>
+              }
+            <Grid item xs={12} md={6}>
+              <Box className="titleBox">
+                <h3>An ecosystem of key partners</h3>
+              </Box>
+              <p>
+                LACChain EOSIO is supported by the [LACChain](https://www.lacchain.net/)
+                program of the IDB Lab (part of the Inter-American Development Bank)
+                and incorporates a permissioning committee to ensure proper transparency
+                and decentralization. 
+              </p>
+              <Box className={'buttonBox'} style={{display:'flex'}}>
+                <Grid item xs={12} md={3}>
+                  <Box className={isMobile? "centerBox": "boxFlexEnd"}>
+                    <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
+                      <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                    </a>
+                    <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
+                      <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                    </a>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} md={3}>
+                  <Box className="centerBox" style={{marginLeft:'20px'}}>
+                    <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
+                      <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                    </a>
+                    <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
+                      <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
+                    </a>
+                  </Box>
+                </Grid>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    )
+  }
+
+  const FoundingPartners  = () => {
+    return (
+      <Box className="containerSec">
+        <Box className="sectionNoPadding">
+          <Box className="h3Box">
+            <h3>Founding partners</h3>
+          </Box>
+          <Box>
+            <Grid container justify='center'>
+              <Grid style={{marginRight:'25px', paddingTop:'10px'}} item xs={12} md={2}>
+                <Box className="imgBoxLogos">
+                  <a target="_blank" href="http://latamlink.io/">
+                    <img
+                      style={{width:'480px'}}
+                      className="oneGroupLogo"
+                      alt="LACChain"
+                      src="https://www.lacchain.net/assets/images/logo-lacchain-footer.png"
+                    />
+                  </a>
+                </Box>
+              </Grid>
+              <Grid style={{marginLeft:'15px'}} item xs={12} md={2}>
+                <Box>
+                  <a target="_blank" href="https://www.edenia.com/">
+                    <img
+                      className="oneGroupLogo"
+                      style={{width:'140px'}}
+                      alt="EOS Costa Rica"
+                      src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/master/static/img/logos/eoscr-logo.png"
+                    />
+                  </a>
+                </Box>
+              </Grid>
+              <Grid style={{marginRight:'15px'}} item xs={12} md={2}>
+                <Box className="imgBoxLogos">
+                  <a target="_blank" href="https://eosurf.com/">
+                    <img
+                      className="oneGroupLogo"
+                      alt="EOS Argentina"
+                      src="https://www.eosargentina.io/assets/img/navigation-logo.png"
+                    />
+                  </a>
+                </Box>
+              </Grid>
+              <Grid style={{marginLeft:'15px', marginRight:'15px', paddingTop:'15px'}} item xs={12} md={2}>
+                <Box className="imgBoxLogos">
+                    <a target="_blank" href="https://ticoblockchain.cr/">
+                      <img
+                        style={{width:'170px'}}
+                        className="oneGroupLogo"
+                        alt="Block One"
+                        src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/mkiu15vsjtl2pgpoptsq"
+                      />
+                    </a>
+                </Box>
+              </Grid>
+              <Grid style={{marginLeft:'25px', marginRight:'15px'}} item xs={12} md={2}>
+                <Box className="imgBoxLogos">
+                  <a target="_blank" href="https://ticoblockchain.cr/">
+                    <img
+                      style={{width:'290px'}}
+                      className="oneGroupLogo"
+                      alt="EOS Venezuela"
+                      src="data:image/png;base64,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"
+                    />
+                  </a>
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
+      </Box>
     );
   };
-  
-  export default HomePage;
-  
+
+  const WhatLACChainEOSIO = () => {
+    return (
+      <Box className="containerSec">
+        <Box className="sectionPaddingTop">
+          <Box className="h3Box">
+              <h3 style={{textAlign:'center'}}>What’s in LACChain EOSIO?</h3>
+          </Box>
+          <Box className="spacingBox">
+            <Grid container spacing={10}>
+              <Grid item xs={12} md={4}>
+                <Box className="h3Box">
+                  <h4>Multi-layered Network </h4>
+                </Box>
+                <p>
+                  LACChain EOSIO is a three-layered network. The core network
+                  comprises validator and interconnecting p2p nodes, while
+                  validator p2p out, boot nodes, writer, and observer nodes
+                  belong to the outer layers of the network.{" "}
+                  <a href={useBaseUrl("/docs/topologia-red")} target="_blank">
+                    Learn more about our network topology here
+                  </a>
+                </p>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Box className="h3Box">
+                  <h4>Configurable Accounts</h4>
+                </Box>
+                <p>
+                  LACChain EOSIO enables you to easily create an account
+                  either as an end-user, partner, non-partner,
+                  or an app or contract developer. As a LACChain EOSIO
+                  user, you will be able to manage your account and private keys.{" "}
+                  <a href={useBaseUrl("/docs/guias/llaves-privadas")} target="_blank">
+                    Read more about LACChain EOSIO accounts
+                  </a>
+                </p>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Box className="h3Box">
+                  <h4>Resource-distributed Model </h4>
+                </Box>
+                <p>
+                  LACChain EOSIO enables users to deploy resources when
+                  co-signing a transaction and a distribution model that
+                  allows a flexible testing environment for all users.
+                  Also, the support of the LACChain team is crucial to
+                  maintaining the network running.{" "}
+                  <a href={useBaseUrl("/docs/guias/obtener-recursos")} target="_blank">
+                    See more about network resources
+                  </a>
+                </p>
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
+      </Box>
+    );
+  };
+
+  const AreYouReady = () => {
+    return (
+      <Box className="containerSec">
+        <Box className="sectionPaddingTop">
+          <Grid  justify="center" alignItems="center" container spacing={5}>
+            <Grid item xs={12} md={8}>
+              <Box className="boxFlexEnd">
+                <h3 style={{marginTop:'25px'}}>Are you ready to start using LACChain EOSIO?</h3>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Box>
+                  <button 
+                    className="buttonPrimary" 
+                    onClick={() => history.push("/contactenos")}
+                  >
+                    Start Now!
+                  </button>
+                </Box>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    );
+  };
+
+  const Tools = () => {
+    return (
+      <Box className="containerSec">
+        <Box className="sectionPaddingTop">
+          <Box >
+            <Box className="titleBox">
+              <h3>LACChain EOSIO Tools and Features</h3>
+            </Box>
+            <Grid justify="center" container spacing={10}>
+              <Grid item xs={12} md={1}>
+                <BarChartIcon style={{width:'90px', height:'90px', cursor:'pointer', marginTop:'-10px'}}/>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Box className="specialH3Box">
+                  <h4>Network Monitor</h4>
+                </Box>
+                <p >
+                  You can access a LACChain EOSIO network monitor to
+                  visualize both "on-chain" and "off-chain" metrics
+                  and network data.{" "}
+                  <a href="https://monitor.latamlink.io" target="_blank">
+                    Visit the Network Monitor
+                  </a>
+                </p>
+              </Grid>
+              <Grid item xs={12} md={1}>
+                <CropFreeIcon style={{width:'90px', height:'90px', cursor:'pointer', marginTop:'-10px'}}/>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Box className="specialH3Box">
+                  <h4>API Integrations</h4>
+                </Box>
+                <p>
+                  We deploy <a href="https://dfuse.io/en/home/" target="_blank"> dfuse</a>
+                  a robust blockchain API to stream real-time state
+                  updates, conduct lightning-fast searches and provide
+                  irreversible transaction guarantees. 
+                </p>
+              </Grid>
+              <Grid item xs={12} md={1}>
+                <SearchIcon style={{width:'90px', height:'90px', cursor:'pointer', marginTop:'-10px'}}/>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Box className="specialH3Box">
+                  <h4>Block Explorer</h4>
+                </Box>
+                <p>
+                  We installed <a href="https://eos.eosq.eosnation.io/" target="_blank"> eosq</a>, a 
+                  block explorer that provides access to detailed, accurate,
+                  actionable data about accounts, actions, validator nodes, and 
+                  more.<a href="http://explorer.testnet.latamlink.io/" target="_blank"> Use our block explorer</a>.
+                </p>
+              </Grid>
+              <Grid item xs={12} md={1}>
+                <ScatterPlotIcon style={{width:'90px', height:'90px', cursor:'pointer', marginTop:'-10px'}}/>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Box className="specialH3Box">
+                  <h4>Fast Nodes Generation</h4>
+                </Box>
+                <p>
+                  LACChain EOSIO offers a command-line interface to interact
+                  among the nodes and snapshots for nodes generation with
+                  no need to sync from the genesis.{" "}
+                  <a href={useBaseUrl("/docs/guias/instalacion-nodos")} target="_blank">Read more about nodes installation</a>.
+                </p>
+              </Grid>
+              <Grid item xs={12} md={1}>
+                <ExtensionIcon style={{width:'90px', height:'90px', cursor:'pointer', marginTop:'-10px'}}/>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Box className="specialH3Box">
+                  <h4>Dapps Resources</h4>
+                </Box>
+                <p>
+                  LACChain EOSIO provides a faucet to send resources to test
+                  dapps (decentralized apps) in our testnet, and an app
+                  developer boilerplate to create dapps within a local
+                  environment.{" "}
+                  <a href={useBaseUrl("/docs/guias/obtener-recursos")} target="_blank">Find here how to obtain network resources</a>.
+                </p>
+              </Grid>
+              <Grid item xs={12} md={1}>
+                <LocalLibraryIcon style={{width:'90px', height:'90px', cursor:'pointer', marginTop:'-10px'}}/>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Box className="specialH3Box">
+                  <h4>Learning Resources</h4>
+                </Box>
+                <p>
+                  We provide an ever-growing library of resources to learn about
+                  blockchain technology, guides to start using LACChain EOSIO,
+                  and tutorials to integrate wallets.{" "}
+                  <a href={useBaseUrl("/docs/eosio")} target="_blank">See the documentation</a>.
+                </p>
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
+      </Box>
+    );
+  };
+
+  const Roadmap = () => {
+    return (
+      <Box className="containerSec">
+        <Box className="sectionPaddingTop">
+          <Box className="titleBox">
+            <h3 style={{textAlign:'center'}}>LACChain EOSIO Tools and Features</h3>
+          </Box>
+          <Box style={{width:'100%'}}>
+            <img src={useBaseUrl('images/roadmapTest.png')} alt="" />
+          </Box>
+        </Box>
+      </Box>
+    );
+  };
+
+  const Projects  = () => {
+    return (
+      <Box className="containerSec">
+        <Box className="sectionPadding">
+          <Box className="titleBox">
+            <h3>Projects in LACChain EOSIO</h3>
+          </Box>
+          <Box className="spacingBox">
+              <Grid container spacing={10}>
+                  <Grid item xs={12} md={3}>
+                      <Box className="imgBoxLogos">
+                          <a target="_blank" href="https://www.edenia.com/">
+                              <img
+                                  className="oneGroupLogo"
+                                  alt="Edenia"
+                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                              />
+                          </a>
+                      </Box>
+                  </Grid>
+                  <Grid item xs={12} md={3}>
+                      <Box className="imgBoxLogos">
+                          <a target="_blank" href="https://eosurf.com/">
+                              <img
+                                  className="oneGroupLogo"
+                                  alt="Eossurf"
+                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                              />
+                          </a>
+                      </Box>
+                  </Grid>
+                  <Grid item xs={12} md={3}>
+                      <Box className="imgBoxLogos">
+                          <a target="_blank" href="http://lifebank.io/">
+                              <img
+                                  className="oneGroupLogo"
+                                  alt="LatamLink"
+                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                              />
+                          </a>
+                      </Box>
+                  </Grid>
+                  <Grid item xs={12} md={3}>
+                      <Box className="imgBoxLogos">
+                          <a target="_blank" href="https://ticoblockchain.cr/">
+                              <img
+                                  className="oneGroupLogo"
+                                  alt="Ticoblockchain"
+                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                              />
+                          </a>
+                      </Box>
+                  </Grid>
+              </Grid>
+            </Box>
+        </Box>
+      </Box>
+    );
+  };
+
+  const CreateAccount = () => {
+    return (
+      <Box className="containerSec">
+        <Box className="section">
+          <Grid  justify="center" alignItems="center" container spacing={5}>
+            <Grid item xs={12} md={9}>
+              <Box className="boxFlexEnd">
+                <h3 style={{marginTop:'25px'}}>Create your account and start using LACChain EOSIO.</h3>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Box>
+                  <button 
+                    className="buttonPrimary" 
+                    onClick={() => history.push("/contactenos")}
+                  >
+                    Start Now!
+                  </button>
+                </Box>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    );
+  };
+
+  return (
+    <Layout
+      title={MetaData.title}
+      description={MetaData.description}
+      image={MetaData.img}
+      hrefLangPath={MetaData.hrefLangPath}
+    > 
+      {isDesktop && 
+        <Box className="mainContainer">
+          <HeroSection/>
+          <IconSection/>
+          <DiscoverPowerful/>
+          <AnEcosystem/>
+          <FoundingPartners/>
+          <WhatLACChainEOSIO/>
+          <AreYouReady/>
+          <Tools/>
+          <Roadmap/>
+          <Projects/>
+          <CreateAccount/>
+        </Box>
+      }
+      {isMobile && 
+        <Box className="mainContainer">
+          <HeroSection/>
+          <IconSection/>
+          <DiscoverPowerful/>
+          <AnEcosystem/>
+          <FoundingPartners/>
+          <AreYouReady/>
+          <Tools/>
+          <Roadmap/>
+          <CreateAccount/>
+        </Box>
+      }
+    </Layout>
+  );
+};
+
+export default Home;
