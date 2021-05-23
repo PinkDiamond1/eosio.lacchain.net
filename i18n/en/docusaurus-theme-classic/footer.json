@@ -13,7 +13,7 @@
   },
   "link.item.label.Monitor de Red": {
     "message": "Network Monitor",
-    "description": "The label of footer link with label=Monitor de Red linking to http://dashboard.latamlink.io/"
+    "description": "The label of footer link with label=Monitor de Red linking to http://lacchain.eosio.online/"
   },
   "link.item.label.Explorador de Bloques": {
     "message": "Block Explorer",
