@@ -797,7 +797,7 @@ a{
   width: "100%";
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #159547;
   overflow-x: hidden;
 }
 
@@ -859,7 +859,7 @@ a{
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  font-size: 19px;
+  font-size: 16px;
   letter-spacing: -0.05px;
   line-height: 25px;
   text-align: justify;
@@ -1570,18 +1570,18 @@ a{
   }
 
   .h3Footer{
-    text-align: start;
+    text-align: center;
     font-size: 18px;
   }
 
   .body1Footer{
-    text-align: start;
+    text-align: center;
     font-size: 16px;
   }
 
   .linkFooter{
-    text-align: start;
-    font-size: 16px;
+    text-align: center;
+    font-size: 14px;
   }
 
   .buttonBox{

@@ -50,7 +50,7 @@ const siteConfig = {
       hideOnScroll: false,
       logo: {
         alt: 'LatamLink Logo',
-        src: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.svg',
+        src: 'img/logos/lacchain-eosio-logo.png',
         srcDark: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/img/footerlogo.png'
       },
       items: [
