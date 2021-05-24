@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.LACChain EOSIO": {
+    "message": "LACChain EOSIO",
+    "description": "The label for category LACChain EOSIO in sidebar docs"
+  },
+  "sidebar.docs.category.Guías y Tutoriales": {
+    "message": "Guías y Tutoriales",
+    "description": "The label for category Guías y Tutoriales in sidebar docs"
+  },
+  "sidebar.docs.category.Herramientas": {
+    "message": "Herramientas",
+    "description": "The label for category Herramientas in sidebar docs"
+  },
+  "sidebar.docs.category.Recursos de Aprendizaje": {
+    "message": "Recursos de Aprendizaje",
+    "description": "The label for category Recursos de Aprendizaje in sidebar docs"
+  }
+}

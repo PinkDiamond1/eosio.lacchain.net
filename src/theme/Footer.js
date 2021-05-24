@@ -4,12 +4,6 @@ import { useMediaQuery } from 'react-responsive'
 import Box from '@material-ui/core/Box'
 import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
-import clsx from "clsx"
-import InstagramIcon from '@material-ui/icons/Instagram'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import YouTubeIcon from '@material-ui/icons/YouTube'
-import GitHubIcon from '@material-ui/icons/GitHub'
 
 const Footer = () => {
   const isMobile = useMediaQuery({query:'(max-width: 769px)'})

@@ -6,7 +6,7 @@
  */
 import React from 'react';
 import clsx from 'clsx';
-import SkipToContent from '@theme/SkipToContent';
+import { useMediaQuery } from 'react-responsive'
 import AnnouncementBar from '@theme/AnnouncementBar';
 import Navbar from '@theme/Navbar';
 import Footer from '@theme/Footer';
