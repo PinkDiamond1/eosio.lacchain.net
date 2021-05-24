@@ -166,7 +166,7 @@ a{
 
 .boxFlexEnd{
   display: flex;
-  justify-content:flex-end;
+  justify-content:end;
 }
 
 .buttonSecondary:hover{
@@ -1304,8 +1304,7 @@ a{
 }
 
 .noMarginsTop{
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-right: 20px;
 }
 
 .socialMediaAnimation{
@@ -1489,6 +1488,14 @@ a{
   margin-left: 25px;
 }
 
+.iconsTools{
+  margin-top: -10px
+}
+
+.bannerStyle{
+  margin-top:'25px'
+}
+
 @media only screen and (max-width: 1279px) {
   .menuWrapper{
     width: 960px;
@@ -1543,7 +1550,20 @@ a{
   .footerLogo {
     width: 50%;
   }
-  
+
+  .bannerStyle{
+    margin-bottom: 0;
+    text-align: center
+  }
+
+  .specialH3Box{
+    margin-top: 1rem;
+  }
+
+  .iconsTools{
+    margin-top: 0
+  }
+
   .footerLogoBox{
     display: flex;
     justify-content: center;
