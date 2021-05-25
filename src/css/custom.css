@@ -1488,12 +1488,12 @@ a{
   margin-left: 25px;
 }
 
-.iconsTools{
-  margin-top: -10px
-}
-
 .bannerStyle{
   margin-top:'25px'
+}
+
+.socialMediaIcons{
+  width: 100%
 }
 
 @media only screen and (max-width: 1279px) {
@@ -1551,6 +1551,10 @@ a{
     width: 50%;
   }
 
+  .socialMediaIcons{
+    width: 20%
+  }
+
   .bannerStyle{
     margin-bottom: 0;
     text-align: center
@@ -1558,10 +1562,6 @@ a{
 
   .specialH3Box{
     margin-top: 1rem;
-  }
-
-  .iconsTools{
-    margin-top: 0
   }
 
   .footerLogoBox{

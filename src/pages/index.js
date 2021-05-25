@@ -10,15 +10,6 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import MenuBookIcon from '@material-ui/icons/MenuBook'
-import LibraryBooksIcon from '@material-ui/icons/LibraryBooks'
-import CropFreeIcon from '@material-ui/icons/CropFree'
-import BarChartIcon from '@material-ui/icons/BarChart'
-import SearchIcon from '@material-ui/icons/Search'
-import ExtensionIcon from '@material-ui/icons/Extension'
-import ScatterPlotIcon from '@material-ui/icons/ScatterPlot'
-import LocalLibraryIcon from '@material-ui/icons/LocalLibrary'
-
 
 const MetaData={
   title:"Enterprise Blockchain Solutions | EOSIO",
@@ -86,7 +77,11 @@ const Home = () => {
           <Grid container spacing={10}>
             <Grid item xs={12} md={4}>
               <Box className="centerBox" style={{marginBottom:'10px'}}>
-                <MenuBookIcon style={{width:'80px', height:'80px', cursor:'pointer'}}/>
+                <img 
+                  src={useBaseUrl("img/icons/list.png")}
+                  style={{width:'80px', height:'80px', cursor:'pointer'}}
+                  alt="Icono de lista"
+                />
               </Box>
               <p>
                 Build and test your blockchain applications and infrastructure.
@@ -94,7 +89,11 @@ const Home = () => {
             </Grid>
             <Grid item xs={12} md={4}>
               <Box className="centerBox" style={{marginBottom:'10px'}}>
-                <LibraryBooksIcon style={{width:'80px', height:'80px', cursor:'pointer'}}/>
+                <img
+                  src={useBaseUrl("img/icons/book-shelf.png")}
+                  style={{width:'80px', height:'80px', cursor:'pointer'}}
+                  alt="Icono de libros"
+                />
               </Box>
               <p>
                 Learn about blockchain through compelling learning resources.
@@ -102,7 +101,11 @@ const Home = () => {
             </Grid>
             <Grid item xs={12} md={4}>
               <Box className="centerBox" style={{marginBottom:'10px'}}>
-                <CropFreeIcon style={{width:'80px', height:'80px', cursor:'pointer'}}/>
+                <img
+                  src={useBaseUrl("img/icons/blockchain-technology.png")}
+                  style={{width:'80px', height:'80px', cursor:'pointer'}}
+                  alt="Icono de bloques"
+                />
               </Box>
               <p>
                 Visualize network data using the LACChain EOSIO dashboard
@@ -365,13 +368,17 @@ const Home = () => {
             <Box className="titleBox">
               <h3>LACChain EOSIO Tools and Features</h3>
             </Box>
-            <Grid justify="center" container spacing={isDesktop ? 10 : 0}>
+            <Grid justify="center" container spacing={isDesktop ? 2 : 0}>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
-                  <BarChartIcon style={{width: '90px', height: '90px'}} className="iconsTools"/>
+                  <img
+                    src={useBaseUrl("img/icons/bar-chart.png")}
+                    className="socialMediaIcons"
+                    alt="Icono de barras"
+                  />
                 </Box>
               </Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
                   <h4>Network Monitor</h4>
                 </Box>
@@ -384,12 +391,17 @@ const Home = () => {
                   </a>
                 </p>
               </Grid>
+              <Grid md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
-                  <CropFreeIcon style={{width:'90px', height:'90px'}}  className="iconsTools"/>
+                  <img
+                    src={useBaseUrl("img/icons/computers-connecting.png")}
+                    className="socialMediaIcons"
+                    alt="Icono de conexion"
+                  />
                 </Box>
               </Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
                   <h4>API Integrations</h4>
                 </Box>
@@ -400,12 +412,17 @@ const Home = () => {
                   irreversible transaction guarantees. 
                 </p>
               </Grid>
+              <Grid md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
-                  <SearchIcon style={{width:'90px', height:'90px'}} className="iconsTools"/>
+                  <img
+                    src={useBaseUrl("img/icons/search.png")}
+                    className="socialMediaIcons"
+                    alt="Icono de busqueda"
+                  />
                 </Box>
               </Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
                   <h4>Block Explorer</h4>
                 </Box>
@@ -416,12 +433,17 @@ const Home = () => {
                   more.<a href="http://explorer.testnet.latamlink.io/" target="_blank"> Use our block explorer</a>.
                 </p>
               </Grid>
+              <Grid md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
-                  <ScatterPlotIcon style={{width:'90px', height:'90px'}} className="iconsTools"/>
+                  <img
+                    src={useBaseUrl("img/icons/connect.png")}
+                    className="socialMediaIcons"
+                    alt="Icono de conectar"
+                  />
                 </Box>
               </Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
                   <h4>Fast Nodes Generation</h4>
                 </Box>
@@ -432,12 +454,17 @@ const Home = () => {
                   <a href={useBaseUrl("/docs/guias/instalacion-nodos")} target="_blank">Read more about nodes installation</a>.
                 </p>
               </Grid>
+              <Grid md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
-                  <ExtensionIcon style={{width:'90px', height:'90px'}} className="iconsTools"/>
+                  <img
+                    src={useBaseUrl("img/icons/puzzle.png")}
+                    className="socialMediaIcons"
+                    alt="Icono de puzzle"
+                  />
                 </Box>
               </Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
                   <h4>Dapps Resources</h4>
                 </Box>
@@ -449,12 +476,17 @@ const Home = () => {
                   <a href={useBaseUrl("/docs/guias/obtener-recursos")} target="_blank">Find here how to obtain network resources</a>.
                 </p>
               </Grid>
+              <Grid md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
-                  <LocalLibraryIcon style={{width:'90px', height:'90px'}} className="iconsTools"/>
+                  <img
+                    src={useBaseUrl("img/icons/learning.png")}
+                    className="socialMediaIcons"
+                    alt="Icono de aprender"
+                  />
                 </Box>
               </Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
                   <h4>Learning Resources</h4>
                 </Box>
@@ -465,6 +497,7 @@ const Home = () => {
                   <a href={useBaseUrl("/docs/eosio")} target="_blank">See the documentation</a>.
                 </p>
               </Grid>
+              <Grid md={1}/>
             </Grid>
           </Box>
         </Box>
