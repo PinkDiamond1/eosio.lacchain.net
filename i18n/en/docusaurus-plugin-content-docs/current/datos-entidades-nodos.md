@@ -4,35 +4,35 @@ title: Información sobre Entidades y Nodos
 sidebar_label: Info Entidades y Nodos
 ---
 
-Este es un estándar JSON propuesto para la información de entidades y nodos que los socios de LACChain deben publicar y almacenar en las tablas de contratos del sistema. Este estándar se basa en el [estándar BP JSON](https://github.com/eosrio/bp-info-standard) utilizado en la red mainnet de EOS.
+This is a proposed JSON Standard for Entity and Node Information which LACChain partners are required to publish and stored on the system contract tables. This Standard is based off the [BP JSON standard](https://github.com/eosrio/bp-info-standard) utilized in the EOS mainnet.
 
-Los contratos de sistema de permiten a las entidades que sean operadores de nodos anunciar públicamente las cuentas de sus nodos y compartir información sobre ellos mismos.
+It allows node operators to publicly advertise their ownership of a LACChain account and share information about themselves.
 
-Es como un WHOIS para cuentas de LACChain que se verifiquen mediante una firma de blockchain. Todos estos campos requieren un inicio de sesión único que se autentica a través de blockchain. Solo la entidad con las claves correctas pueden editar estos campos , ya sea mediante linea de comando p utilizando la interfaz de usuario.
+Think of a WHOIS for LACChain accounts that are verified by a blockchain signature. All of these fields require a single sign-on that authenticates via blockchain and therefore cannot be wrong. Only the BP with the correct key can edit these fields using the user interface.
 
-#### Versión
+#### Version
 
-la versión actual es **v0.1.0** y cumple con el esquema JSON [Draft 2019-09](https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8)
+The current revision **v0.1.0** is compliant with the JSON schema [Draft 2019-09](https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8)
 
 
-## Registro de Información de Entidades
-Ejecutar esta acción requiere de la autorización de la cuenta de la entidad o del comité permisionador.
+## Setting Entity Information
+
+Executing this action requires the authorization of the authorized account or the permissioning committee.
 
 `eosio::action`
 `setentinfo(entity, info)`
 
-Insertará o actualizará un registro en la tabla `entity` en los contratos del sistema `eosio`.
-
-| Parámetro | Tipo | Notas |
+| Parameter | Type | Notes |
 |---|---|---|
-| `entity` | *name* | Cuenta de la entidad permisionada |
-| `info` | *string* | JSON según estructura de entidades |
+| `entity` | *name* | Name of the node asociated to the entity |
+| `info` | *string* | JSON for entity info |
 
+it will insert or update a record in the `entity` table located  in the `eosio` system contracts.
 
-### Estructura JSON para Entidades 
+### Entity JSON Structure 
 
 - **org:** *{Object}*
-  - **candidate_name**: Organization name
+  - **organization_name**: Organization name
   - **organization_id**: Government Issued Organization ID
   - **technical_contact**: Person Name
   - **business_contact**: Person Name
@@ -41,7 +41,7 @@ Insertará o actualizará un registro en la tabla `entity` en los contratos del 
   - **ownership_disclosure:** Full URL to page
   - **email:** Contact email
   - **github_user:** Operational github username (or array or usernames)
-  - **chain_resources:** *[Array]* - List related resources on LACChain
+  - **chain_resources:** *[Array]* - List related resources on LAC Chain
   - **other_resources:** *[Array]* - List of other relevant URLs 
   - **branding:** *{Object} *- Logo images
       - **logo_256:** Entire url to image 256x256px 
@@ -66,7 +66,7 @@ Insertará o actualizará un registro en la tabla `entity` en los contratos del 
 
 ### Entity JSON Example 
 
-```json title="información on-chain de entidades"
+```json title="on-chain entity info"
 {
 	"organization_name": "EOS Costa Rica",
 	"organization_id": "3-101-123456",
@@ -104,27 +104,26 @@ Insertará o actualizará un registro en la tabla `entity` en los contratos del 
 }
 ```
 
-## Información de Nodos
+## Setting Node Information
 
 `eosio::action`
 `setnodeinfo(node, info)`
 
-Ejecutar esta acción requiere de la autorización de la cuenta permisionada o del comité permisionador.
+Executing this action requires the authorization of the authorized account or the permissioning committee.
 
-| Parámetro | Tipo | Notas |
+| Parameter | Type | Notes |
 |---|---|---|
-| `node` | *name* | Nombre del nodo asociada a la entidad |
-| `info` | *string* | JSON según tipo de Nodo |
+| `node` | *name* | Name given to the node registered under the entity |
+| `info` | *string* | JSON according to node type |
 
-Insertará o actualizará un registro en la tabla `nodes` en los contratos del sistema `eosio`.
 
-### Estructura JSON para Nodos
+### Node JSON Structure
 
-La información esperada varia dependiendo del tipo de nodo **node_type:**  `validator / boot / writer / observer `
+Expected node info varies depending on **node_type:**  `validator / boot / writer / observer `
 
 - **node:** *{Object}*
     - **nodetype_keys:**  *{Object}* - Public Keys required for each node type.
-        - **peer_keys** : **[Array]** ["EOS..."] 
+        - **peer_keys** : *[Array]* ["EOS..."] 
         - **account_key** : "EOS..." *(required for writer node)*
     - **nodetype_endpoints:**  *{Object}* - HTTP and P2P endpoints required for each node type.
         - **p2p_endpoint:** EOSIO P2P endpoint `host:port`
@@ -136,11 +135,11 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
         - **latitude:** Node latitude in decimal degrees
         - **longitude:** Node longitude in decimal degrees
     - **nodetype_features:** *[Array]*
-        - features supported by the `api_endpoint` or `ssl_endpoint` on writer or observer nodes, refer to the [list of features](#caracteristicas-de-nodos-escritores--observadores)
+        - features supported by the `api_endpoint` or `ssl_endpoint` on writer or observer nodes, refer to the [list of features](#writer--observer-node-features)
 
 
-### Ejemplo de Nodo Validador
-```json title="información on-chain de un nodo velidador"
+### Validator Node Example
+```json title="on-chain validator node info"
 {
     "validator_keys":{
         "peer_keys": ["EOS..."]
@@ -157,8 +156,8 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 }
 ```
 
-### Ejemplo de Nodo Boot
-```json title="información on-chain de un nodo boot"
+### Boot Node Example
+```json  title="on-chain boot node info"
 {
     "boot_keys":{
         "peer_keys": ["EOS..."]
@@ -175,8 +174,8 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 }
 ```
 
-### Ejemplo de Nodo Escritor
-```json title="información on-chain de un nodo escritor"
+### Writer Node Example
+```json title="on-chain writer node info"
 {
     "writer_keys":{
         "peer_keys": ["EOS..."],
@@ -197,7 +196,7 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 }
 ```
 
-### Ejemplo de Nodo Observador
+### Observer Node Example
 ```json title="on-chain observer node info"
 {
     "observer_keys":{
@@ -218,8 +217,8 @@ La información esperada varia dependiendo del tipo de nodo **node_type:**  `val
 }
 ```
 
-#### Caracteristicas de Nodos Escritores / Observadores  
-Para nodos de tipo validador y observador existen estos servicios opcionales.
+#### Writer / Observer Node Features
+For query type nodes one or more features from the list below must be added:
   - `chain-api`: basic eosio::chain_api_plugin (/v1/chain/*)
   - `account-query`: (/v1/chain/get_accounts_by_authorizers)
   - `history-v1`: (/v1/history/*)
@@ -227,78 +226,78 @@ Para nodos de tipo validador y observador existen estos servicios opcionales.
   - `dfuse`
   - `snapshot-api`
 
-## Enlaces Utiles
-Con el propósito de facilitar la actualización de datos de las entidades hemos desarrollado una herramienta para entidades permisionadas.  Para acceder a la interfaz de usuario para actualizar datos seleccione la opción "Update Node Info" en el [Monitor de red](https://lacchain.eosio.online).
+## Useful Links
+To access the user interface to update data, select the "Update Node Info" option in the [Network Monitor](https://lacchain.eosio.online).
 
-Valide sus JSON aquí: https://www.jsonschemavalidator.net/
+Validate your JSON inputs here: https://www.jsonschemavalidator.net/
 
-## Fases de Implementación 
+## Implementation Roadmap
 
-### Fase I
-#### Lista  de todos los nodos validadores registrados 
- - Nombre de la cuenta del nodo
- - Tipo de entidad de nodo
- - Clave pública de nodo
- - Código de ubicación (ISO 3166-1 numérico)
+### Phase  I
+#### Self-generated list of all validator nodes extracted from the blockchain.
+ - Node account name
+ - Type of node entity
+ - Node public key
+ - Location code (ISO 3166-1 numeric)
 
-#### Información voluntaria proporcionada por cada entidad
- - Nombre legal
- - Número de identificación
- - Nombre de contacto técnico
- - Nombre de contacto negocios
- - Dirección
- - Sitio web
- - Correo Electrónico
- - Redes sociales
- - Marca / Logotipo
- - Código de Conducta
- 
-#### Nodos EOSIO
-- Ubicaciones de nodos
-- Puntos finales API y P2P
-- Validadores
-- Nodos de escritor
-- Nodos History API
-- Nodos API
-- Nodos Boot
-- Nodos Observadores
- 
-### Fase II
-#### Rendimiento
- - Bloques perdidos en X período de tiempo *- Involuntario*
- - Rondas perdidas en X período de tiempo *- Involuntario*
- - Número total de bloques producidos *- Involuntario*
- - Posición media en la lista de BP *- Involuntario*
- - Calificación de rendimiento promedio *- Involuntario*
- - Tiempo de inactividad total
- - Interrupciones
- - Pruebas de estrés
- - Gestión de parches
- - Capacidad Recuperación de Desastres
- - Pruebas de intrusión
+#### Voluntary information provided by each entity
+ - Legal name
+ - Identification number
+ - Technical contact name
+ - Business contact name
+ - Address
+ - Website
+ - Email
+ - Social networks
+ - Brand / Logo
+ - Code of conduct
 
-#### Infraestructura
-- Física / Nube pública / Compartida
-	- Sitio primario
-	- Sitio secundario
-- Diagrama Infraestructura
-- Protección DDoS
+#### EOSIO nodes
+- Node locations
+- API and P2P endpoints
+- Validators
+- Writer nodes
+- History API nodes
+- API nodes
+- Boot nodes
+- Observer nodes
+
+### Phase II
+#### Performance
+ - Blocks lost in X time period * - Involuntary *
+ - Missed rounds in X time period * - Involuntary *
+ - Total number of blocks produced * - Involuntary *
+ - Average position on the BP list * - Involuntary *
+ - Average performance rating * - Involuntary *
+ - Total downtime
+ - Interruptions
+ - Stress tests
+ - Patch management
+ - Disaster Recovery Capacity
+ - Intrusion tests
+
+#### Infrastructure
+- Physics / Public Cloud / Shared
+- Primary site
+- Secondary site
+- Infrastructure diagram
+- DDoS protection
 - Firewalls
-- Balanceadores de carga
-- VPN 
-- Planes futuros
+- Load balancers
+- VPN
+- Future plans
 
-### Fase III
+### Phase III
 
-#### Estructura de soporte
- - Número de empleados técnicos.
- - Soporte 24/7
- - Herramientas de monitoreo
- - Plan de comunicación con otros nodos Validadores
+#### Support structure
+ - Number of technical employees.
+ - 24/7 support
+ - Monitoring tools
+ - Communication plan with other Validator nodes
 
-#### Estructura de propiedad
- - Descripción de la estructura comercial
- - Número de empleados
- - Titulares de intereses individuales
- - Accionistas de entidades comerciales
- - Entidades afiliadas
+#### Ownership structure
+ - Description of the commercial structure
+ - Number of employees
+ - Individual interest holders
+ - Shareholders of commercial entities
+ - Affiliated entities
