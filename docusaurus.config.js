@@ -16,7 +16,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: "eosio.lacchain.net",
-  organizationName: "LACChain EOSIO",
+  organizationName: "LatamLink",
   favicon: "img/favicon.ico",
 
   presets: [
