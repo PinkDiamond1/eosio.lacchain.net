@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://latamlink.io">
+	<a href="https://eosio.lacchain.net">
 		<img src="https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.png" width="400px" >
 	</a>
 </p>
@@ -14,7 +14,7 @@
 </p>
 
 ## Descripción 
-Documentación técnica para el testnet LACChain EOSIO [es.latamlink.io](https://es.latamlink.io)
+Documentación técnica para el testnet LACChain EOSIO [eosio.lacchain.net](https://eosio.lacchain.net)
 
 Este sitio web es creado usando [https://docusaurus.io/](Docusaurus), una herramienta para mantener documentación técnica de proyectos de código libre. 
 
@@ -29,7 +29,7 @@ Pautas para contribuyentes. [https://developers.eoscostarica.io/docs/open-source
 Informe cualquier idea o errores grandes y pequeños [abriendo un "issue"](https://github.com/LatamLink/latamlink.io/issues).
 
 ### Editar Contenido
-La documentación se genera a partir de archivos en formato markdown ubicados dentro de la sub-carpeta `/docs`. Ver mas información [aquí](https://github.com/LatamLink/es.latamlink.io/tree/master/website).
+La documentación se genera a partir de archivos en formato markdown ubicados dentro de la sub-carpeta `/docs`. Ver mas información [aquí](https://github.com/LatamLink/eosio.lacchain.net/tree/master/website).
 
 ## Guía rápida
 
@@ -86,13 +86,13 @@ Es necesario contar con:
 1. Clone el repositorio
 
 ```bash
-$ git clone https://github.com/LatamLink/es.latamlink.io.git
+$ git clone https://github.com/LatamLink/eosio.lacchain.net.git
 ```
 
 2. Ubíquese al directorio apropiado
 
 ```bash
-$ cd es.latamlink.io
+$ cd eosio.lacchain.net
 ```
 
 3. Instale las dependencias:
@@ -111,16 +111,16 @@ $ yarn serve
 ```
 
 ### Publicar
-[es.latamlink.io](https://es.latamlink.io) esta alojado en GitHub y se publica mediante el siguientes comandos:
+[eosio.lacchain.net](https://eosio.lacchain.net) esta alojado en GitHub y se publica mediante el siguientes comandos:
 
 ```bash		
 $ yarn build 
 ```
 
 ```bash		
-$ GIT_USER=LatamLink CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages
+$ GIT_USER=eosio.lacchain.net CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages
 ```
 
 ## Licencia
 
-MIT © [LatamLink Testnet](https://latamlink.io)  
+MIT © [LACChain EOSIO Testnet](https://eosio.lacchain.net)  

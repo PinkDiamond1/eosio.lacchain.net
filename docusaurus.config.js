@@ -11,11 +11,11 @@
 const siteConfig = {
   title: "EOSIO Pro Testnet Blockchain - LACChain BID Labs", // Title for your website.
   tagline: "Documentación Técnica LACChain EOSIO",
-  url: "https://es.latamlink.io", // Your website URL
+  url: "https://eosio.lacchain.net", // Your website URL
   baseUrl: "/", // Base URL for your project */
 
   // Used for publishing and more
-  projectName: "es.latamlink.io",
+  projectName: "eosio.lacchain.net",
   organizationName: "LatamLink",
   favicon: "img/favicon.ico",
 
@@ -26,7 +26,7 @@ const siteConfig = {
         docs: {
           // Docs folder path relative to website dir.
           path: './docs',
-          editUrl: 'https://github.com/LatamLink/es.latamlink.io/tree/master',
+          editUrl: 'https://github.com/LatamLink/eosio.lacchain.net/tree/master',
           // Equivalent to `docsUrl`.
           routeBasePath: 'docs/',
           // Sidebars file relative to website dir.
@@ -49,7 +49,7 @@ const siteConfig = {
       title: ' ',
       hideOnScroll: false,
       logo: {
-        alt: 'LatamLink Logo',
+        alt: 'LACChain EOSIO Logo',
         src: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.svg',
         srcDark: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/img/footerlogo.png'
       },
