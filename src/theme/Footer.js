@@ -10,6 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import TelegramIcon from '@material-ui/icons/Telegram';
 import GitHubIcon from '@material-ui/icons/GitHub'
+import Translate, {translate} from '@docusaurus/Translate';
 
 const Footer = () => {
   const isMobile = useMediaQuery({query:'(max-width: 769px)'})
@@ -34,10 +35,18 @@ const Footer = () => {
             <Grid container xs={12} md={8}>
               <Grid item xs={12} md={6}> 
                 <Box className="specialH3Box">
-                  <h3 className="h3Footer">About LACChain EOSIO</h3>
+                  <h3 className="h3Footer">
+                    <Translate id="footer.aboutLacchainEosio">
+                      Sobre LACChain EOSIO
+                    </Translate>
+                  </h3>
                 </Box>
                 <Box className="specialH3Box">
-                  <h3 className="h3Footer" style={{marginBottom:'0'}}>Services</h3>
+                  <h3 className="h3Footer" style={{marginBottom:'0'}}>
+                    <Translate id="footer.devTools">
+                      Herramientas para devs
+                    </Translate>
+                  </h3>
                   <p style={{textAlign: isMobile ? 'center' : ''}}>
                     <Link
                       className="linkFooter"
@@ -45,7 +54,9 @@ const Footer = () => {
                       target="_blank"
                       style={{color:'white'}}
                     >
-                    Network Dashboard
+                    <Translate id="footer.networkDashboard">
+                      Monitor de red
+                    </Translate>
                     </Link>
                   </p>
                   <p style={{textAlign: isMobile ? 'center' : ''}}>
@@ -55,15 +66,25 @@ const Footer = () => {
                       target="_blank"
                       style={{color:'white'}}
                     >
-                    Block Explorer
+                    <Translate id="homepage.blockExplorerTitle">
+                      Explorador de bloques
+                    </Translate>
                     </Link>
                   </p>
                 </Box>
                 <Box className="specialH3Box">
-                  <h3 className="h3Footer" style={{marginBottom:'0'}}>Documentation</h3>
+                  <h3 className="h3Footer" style={{marginBottom:'0'}}>
+                    <Translate id="footer.documentation">
+                      Documentación
+                    </Translate>
+                  </h3>
                 </Box>
                 <Box className="specialH3Box">
-                  <h3 className="h3Footer" style={{marginBottom:'0'}}>Contact US</h3>
+                  <h3 className="h3Footer" style={{marginBottom:'0'}}>
+                    <Translate id="footer.contactUs">
+                      Contáctenos
+                    </Translate>
+                  </h3>
                 </Box>
               </Grid>
               <Grid container md={12}>

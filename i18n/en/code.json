@@ -343,5 +343,20 @@
   },
   "homepage.createAccountBanner": {
     "message": "Create your account and start using LACChain EOSIO."
+  },
+  "footer.aboutLacchainEosio": {
+    "message": "About LACChain EOSIO"
+  },
+  "footer.devTools": {
+    "message": "Developer Tools"
+  },
+  "footer.networkDashboard": {
+    "message": "Network Dashboard"
+  },
+  "footer.documentation": {
+    "message": "Documentation"
+  },
+  "footer.contactUs": {
+    "message": "Contact US"
   }
 }
