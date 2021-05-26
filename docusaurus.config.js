@@ -81,54 +81,6 @@ const siteConfig = {
         {to: 'search'},
       ]
     },
-    footer: {
-      links: [
-        {
-          title: 'Herramientas',
-          items: [
-            {
-              label: 'Monitor de Red',
-              to: 'http://lacchain.eosio.online/',
-            },
-            {
-              label: 'Explorador de Bloques',
-              to: 'http://explorer.latamlink.io/',
-            },
-            {
-              label: 'Endpoints API',
-              to: 'https://es.latamlink.io/docs/api.html',
-            },
-          ],
-        },
-        {
-          title: 'Comunidad',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://eosio.stackexchange.com/',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/lacchain',
-            },
-          ],
-        },
-        {
-          title: 'Más',
-          items: [
-            {
-              label: 'Medium',
-              href: 'https://medium.com/@latam_link',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/LatamLink_EOS',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} LACChain`, // You can also put own HTML here.
-    },
     //Algolia integration
     algolia: {
       apiKey: '63254e86059566be7b401497c9484166',

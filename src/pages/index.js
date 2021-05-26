@@ -10,6 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import Translate, {translate} from '@docusaurus/Translate';
 
 const MetaData={
   title:"Enterprise Blockchain Solutions | EOSIO",
@@ -38,31 +39,51 @@ const Home = () => {
         {isDesktop && 
           <Box className="sectionHero">
           <Box className="titleBox">
-            <h1>The EOSIO Blockchain Network for <br/> Latin America and the Caribbean</h1>
+            <h1>
+              <Translate id="homepage.titule1">La red de blockchain EOSIO para </Translate>
+              {" "}
+              <Translate id="homepage.titule2"> Latinoamérica y el Caribe</Translate>
+            </h1>
           </Box>
           <p>
-            LACChain EOSIO enables organizations and developers to build blockchain 
-            applications on the LACChain network powered by EOSIO technology.
+            <Translate id="homepage.headerText">
+              LACChain EOSIO permite a organizaciones y desarrolladores crear
+              aplicaciones en la red de LACChain impulsada por tecnología EOSIO.
+            </Translate>
           </p>
           <Box className="buttonBox" style={{justifyContent:'space-around', display:'flex'}}>
-            <button className="buttonPrimary" onClick={() => history.push("/")} >Join the Network</button>
-            <button className="buttonPrimary" onClick={() => history.push("/")} >Learn More</button>
+            <button className="buttonPrimary" onClick={() => history.push("/")} >
+              <Translate id="homepage.headerButton1">Únase a la red</Translate>
+            </button>
+            <button className="buttonPrimary" onClick={() => history.push("/")} >
+              <Translate id="homepage.headerButton2">Aprenda más</Translate>
+            </button>
           </Box>
         </Box>
         }
         {isMobile && 
           <Box className="sectionHeroMobile">
             <Box className="titleBox">
-              <h1>The EOSIO Blockchain Network for <br/> Latin America and the Caribbean</h1>
+              <h1>
+                <Translate id="homepage.titule1">La red de blockchain EOSIO para </Translate>
+                {" "}
+                <Translate id="homepage.titule2"> Latinoamérica y el Caribe</Translate>
+              </h1>
             </Box>
             <p>
-              LACChain EOSIO enables organizations and developers to build blockchain 
-              applications on the LACChain network powered by EOSIO technology.
+              <Translate id="homepage.headerText">
+                LACChain EOSIO permite a organizaciones y desarrolladores crear
+                aplicaciones en la red de LACChain impulsada por tecnología EOSIO.
+              </Translate>
             </p>
             <Box className="buttonBoxMobile" style={{display:'grid'}}>
-              <button className="buttonPrimary" onClick={() => history.push("/")} >Join the Network</button>
+              <button className="buttonPrimary" onClick={() => history.push("/")} >
+                <Translate id="homepage.headerButton1">Únase a la red</Translate>
+              </button>
               <br/>
-              <button className="buttonPrimary" onClick={() => history.push("/")} >Learn More</button>
+              <button className="buttonPrimary" onClick={() => history.push("/")} >
+                <Translate id="homepage.headerButton2">Aprenda más</Translate>
+              </button>
             </Box>
           </Box>
       }
@@ -84,7 +105,7 @@ const Home = () => {
                 />
               </Box>
               <p>
-                Build and test your blockchain applications and infrastructure.
+                <Translate id="homepage.iconBuildText">Ponga a prueba sus aplicaciones e infraestructura blockchain.</Translate>
               </p>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -96,7 +117,7 @@ const Home = () => {
                 />
               </Box>
               <p>
-                Learn about blockchain through compelling learning resources.
+                <Translate id="homepage.iconBlockchainText">Aprenda sobre blockchain con nuestra guía de recursos.</Translate>
               </p>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -108,7 +129,7 @@ const Home = () => {
                 />
               </Box>
               <p>
-                Visualize network data using the LACChain EOSIO dashboard
+                <Translate id="homepage.iconNetworkText">Visualice datos en la red usando nuestro dashboard.</Translate>
               </p>
             </Grid>
           </Grid>
@@ -124,15 +145,27 @@ const Home = () => {
           <Grid container spacing={5}>
             <Grid item xs={12} md={6}>
               <Box className="titleBox">
-                <h3>Discover the powerful combination of EOSIO performance and the LACChain framework</h3>
+                <h3>
+                  <Translate id="homepage.porwerFulTitle">
+                    Descubra la poderosa combinación del rendimiento de EOSIO y el marco de LACChain
+                  </Translate>
+                </h3>
               </Box>
               <p>
-                LACChain EOSIO deploys a public permissioned version of <a href="https://eos.io/" target="_blank"> EOSIO</a>
-                , an open-source blockchain technology, that allows developers and organizations to
-                test and build their decentralized applications and infrastructure.
+                <Translate id="homepage.porwerFulText1">
+                  LACChain EOSIO utiliza una versión público permisionada de
+                </Translate> {" "}
+                <a href="https://eos.io/" target="_blank"> EOSIO</a> {" "}
+                <Translate id="homepage.porwerFulText2">
+                  , tecnología blockchain de código abierto que permite a 
+                  desarrolladores y organizaciones poner a prueba y
+                  crear aplicaciones descentralizadas e infraestructura.
+                </Translate>
               </p>
               <Box className={clsx('centerBox','buttonBox')}>
-                <button className='buttonPrimary' onClick={() => history.push("/")} >See Projects</button>
+                <button className='buttonPrimary' onClick={() => history.push("/")} >
+                  <Translate id="homepage.seeProjects">Ver proyectos</Translate>
+                </button>
               </Box>
             </Grid>
             {isDesktop && 
@@ -162,13 +195,17 @@ const Home = () => {
               }
             <Grid item xs={12} md={6}>
               <Box className="titleBox">
-                <h3>An ecosystem of key partners</h3>
+                <h3>
+                  <Translate id="homepage.ecosystemTitle">Un ecosistema de aliados clave</Translate>
+                </h3>
               </Box>
               <p>
-                LACChain EOSIO is supported by the <a href="https://www.lacchain.net/" target="_blank">LACChain </a>
-                program of the IDB Lab (part of the Inter-American Development Bank)
-                and incorporates a permissioning committee to ensure proper transparency
-                and decentralization. 
+                <Translate id="homepage.ecosystemText1">LACChain EOSIO cuenta con el apoyo de</Translate> {" "}
+                 <a href="https://www.lacchain.net/" target="_blank">LACChain </a> {" "}
+                <Translate id="homepage.ecosystemText2">
+                  , un programa del BID Lab (parte del Banco Interamericano de Desarrollo) y que
+                  incorpora un comité permisionador para garantizar transparencia y descentralización.
+                </Translate>
               </p>
               <Box className="buttonBox" style={{display:'flex'}}>
                 <Grid item xs={12} style={{flexBasis:'0'}} md={3}>
@@ -204,7 +241,11 @@ const Home = () => {
       <Box className="containerSec">
         <Box className="sectionNoPadding">
           <Box className="h3Box">
-            <h3>Founding partners</h3>
+            <h3>
+              <Translate id="homepage.foundingTitle">
+                Socios fundadores
+              </Translate>
+            </h3>
           </Box>
           <Box>
             <Grid container justify='center' alignItems="center">
@@ -280,51 +321,78 @@ const Home = () => {
       <Box className="containerSec">
         <Box className="sectionPaddingTop">
           <Box className="h3Box">
-              <h3 style={{textAlign:'center'}}>What’s in LACChain EOSIO?</h3>
+            <h3 style={{textAlign:'center'}}>
+              <Translate id="homepage.whatLACChain">
+                ¿Qué hay en LACChain EOSIO?
+              </Translate>
+            </h3>
           </Box>
           <Box className="spacingBox">
             <Grid container spacing={10}>
               <Grid item xs={12} md={4}>
                 <Box className="h3Box">
-                  <h4>Multi-layered Network </h4>
+                  <h4>
+                    <Translate id="homepage.layaredNetworkTitle">
+                      Red con múltiples capas
+                    </Translate>
+                  </h4>
                 </Box>
                 <p>
-                  LACChain EOSIO is a three-layered network. The core network
-                  comprises validator and interconnecting p2p nodes, while
-                  validator p2p out, boot nodes, writer, and observer nodes
-                  belong to the outer layers of the network.{" "}
+                  <Translate id="homepage.layaredNetworkText">
+                    LACChain EOSIO es una red formada por tres capas. La red
+                    central incluye nodos validadores e interconectores p2p, mientras 
+                    que los nodos validadores p2p out, boot, escritores y 
+                    observadores se encuentran en las capas externas.
+                  </Translate>{" "}
                   <a href={useBaseUrl("/docs/topologia-red")} target="_blank">
-                    Learn more about our network topology here
-                  </a>
+                    <Translate id="homepage.layaredNetworkLink">
+                      Aprenda más sobre la topología de la red aquí
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="h3Box">
-                  <h4>Configurable Accounts</h4>
+                  <h4>
+                    <Translate id="homepage.configAccountTitle">
+                      Cuentas configurables
+                    </Translate>
+                  </h4>
                 </Box>
                 <p>
-                  LACChain EOSIO enables you to easily create an account
-                  either as an end-user, partner, non-partner,
-                  or an app or contract developer. As a LACChain EOSIO
-                  user, you will be able to manage your account and private keys.{" "}
+                  <Translate id="homepage.configAccountText">
+                    LACChain EOSIO le permite crear fácilmente una cuenta
+                    como usuario final, socio, no socio o desarrollador de app o
+                    contracto. Como usuario de LACChain EOSIO, podrá
+                    administrar su cuenta y llaves privadas.
+                  </Translate>{" "}
                   <a href={useBaseUrl("/docs/guias/llaves-privadas")} target="_blank">
-                    Read more about LACChain EOSIO accounts
-                  </a>
+                    <Translate id="homepage.configAccountLink">
+                      Lea más sobre cuentas en LACChain EOSIO
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="h3Box">
-                  <h4>Resource-distributed Model </h4>
+                  <h4>
+                    <Translate id="homepage.resourceModelTitle">
+                      Modelo de distribución de recursos
+                    </Translate>
+                  </h4>
                 </Box>
                 <p>
-                  LACChain EOSIO enables users to deploy resources when
-                  co-signing a transaction and a distribution model that
-                  allows a flexible testing environment for all users.
-                  Also, the support of the LACChain team is crucial to
-                  maintaining the network running.{" "}
+                  <Translate id="homepage.resourceModelText">
+                    LACChain EOSIO brinda acceso a usuarios a la distribución de}
+                    recursos para co-firmar transacciones y a un ambiente
+                    de prueba flexible. Además, el apoyo del equipo de LACChain
+                    es crucial para mantener la red activa.
+                  </Translate>{" "}
                   <a href={useBaseUrl("/docs/guias/obtener-recursos")} target="_blank">
-                    See more about network resources
-                  </a>
+                    <Translate id="homepage.resourceModelLink">
+                      Lea más sobre recursos de red
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
             </Grid>
@@ -341,7 +409,11 @@ const Home = () => {
           <Grid  justify="center" alignItems="center" container spacing={5}>
             <Grid item xs={12} md={8}>
               <Box className="boxFlexEnd">
-                <h3 className="bannerStyle">Are you ready to start using LACChain EOSIO?</h3>
+                <h3 className="bannerStyle">
+                  <Translate id="homepage.readyText">
+                    ¿Todo listo para empezar a usar LACChain EOSIO?
+                  </Translate>
+                </h3>
               </Box>
             </Grid>
             <Grid item xs={12} md={3}>
@@ -350,7 +422,9 @@ const Home = () => {
                     className="buttonPrimary" 
                     onClick={() => history.push("/contactenos")}
                   >
-                    Start Now!
+                    <Translate id="homepage.startNow">
+                      Comience ahora
+                    </Translate>
                   </button>
                 </Box>
             </Grid>
@@ -366,7 +440,11 @@ const Home = () => {
         <Box className="sectionPaddingTop">
           <Box >
             <Box className="titleBox">
-              <h3>LACChain EOSIO Tools and Features</h3>
+              <h3>
+                <Translate id="homepage.toolsFeaturesTitle">
+                  Herramientas de LACChain EOSIO
+                </Translate>
+              </h3>
             </Box>
             <Grid justify="center" container spacing={isDesktop ? 2 : 0}>
               <Grid item xs={12} md={1}>
@@ -380,18 +458,25 @@ const Home = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
-                  <h4>Network Monitor</h4>
+                  <h4>
+                    <Translate id="homepage.networkMonitorTitle">
+                      Monitor de red
+                    </Translate>
+                  </h4>
                 </Box>
                 <p className="h3Box">
-                  You can access a LACChain EOSIO network monitor to
-                  visualize both "on-chain" and "off-chain" metrics
-                  and network data.{" "}
+                  <Translate id="homepage.networkMonitorText">
+                    Usted puede acceder al monitor de red de LACChain EOSIO para
+                    visualizar métricas y datos de red “on-chain” y “off-chain.”
+                  </Translate>{" "}
                   <a href="https://monitor.latamlink.io" target="_blank">
-                    Visit the Network Monitor
-                  </a>
+                    <Translate id="homepage.networkMonitorLink">
+                      Visite el Monitor de Red
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
-              <Grid md={1}/>
+              <Grid item md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
                   <img
@@ -403,16 +488,25 @@ const Home = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
-                  <h4>API Integrations</h4>
+                  <h4>
+                    <Translate id="homepage.apiIntegrationsTitle">
+                      Integraciones API
+                    </Translate>
+                  </h4>
                 </Box>
                 <p className="h3Box">
-                  We deploy <a href="https://dfuse.io/en/home/" target="_blank"> dfuse </a>
-                  a robust blockchain API to stream real-time state
-                  updates, conduct lightning-fast searches and provide
-                  irreversible transaction guarantees. 
+                  <Translate id="homepage.apiIntegrationsText1">
+                    Usamos
+                  </Translate>{' '}
+                  <a href="https://dfuse.io/en/home/" target="_blank"> dfuse </a>{' '}
+                  <Translate id="homepage.apiIntegrationsText2">
+                    un API de blockchain robusto que permite un flujo en
+                    tiempo real de actualizaciones,búsquedas rápidas y
+                    garantía de transacciones irreversibles.
+                  </Translate>
                 </p>
               </Grid>
-              <Grid md={1}/>
+              <Grid item md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
                   <img
@@ -424,16 +518,30 @@ const Home = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
-                  <h4>Block Explorer</h4>
+                  <h4>
+                    <Translate id="homepage.blockExplorerTitle">
+                      Explorador de bloques
+                    </Translate>
+                  </h4>
                 </Box>
                 <p className="h3Box">
-                  We installed <a href="https://eos.eosq.eosnation.io/" target="_blank"> eosq</a>, a 
-                  block explorer that provides access to detailed, accurate,
-                  actionable data about accounts, actions, validator nodes, and 
-                  more.<a href="http://explorer.testnet.latamlink.io/" target="_blank"> Use our block explorer</a>.
+                  <Translate id="homepage.blockExplorerText1">
+                    Instalamos
+                  </Translate>{' '}
+                  <a href="https://eos.eosq.eosnation.io/" target="_blank"> eosq</a>{' '}
+                  <Translate id="homepage.blockExplorerText2">
+                    , un explorador de bloques que brinda acceso a datos
+                    precisos, detallados y procesables sobre cuentas,
+                    acciones, nodos validadores y más.
+                  </Translate>{' '}
+                  <a href="http://explorer.testnet.latamlink.io/" target="_blank">
+                    <Translate id="homepage.blockExplorerLink">
+                      Pruebe el explorador de bloques
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
-              <Grid md={1}/>
+              <Grid item md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
                   <img
@@ -445,16 +553,27 @@ const Home = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
-                  <h4>Fast Nodes Generation</h4>
+                  <h4>
+                    <Translate id="homepage.nodesGenerationTitle">
+                      Rápida generación de nodos
+                    </Translate>
+                  </h4>
                 </Box>
                 <p className="h3Box">
-                  LACChain EOSIO offers a command-line interface to interact
-                  among the nodes and snapshots for nodes generation with
-                  no need to sync from the genesis.{" "}
-                  <a href={useBaseUrl("/docs/guias/instalacion-nodos")} target="_blank">Read more about nodes installation</a>.
+                  <Translate id="homepage.nodesGenerationText">
+                    LACChain EOSIO ofrece una interfaz de línea
+                    de comando que interactúa entre nodos y
+                    snapshots para generar nodos sin necesidad
+                    de sincronización desde el génesis.
+                  </Translate>{" "}
+                  <a href={useBaseUrl("/docs/guias/instalacion-nodos")} target="_blank">
+                    <Translate id="homepage.nodesGenerationLink">
+                      Lea más sobre instalación de nodos
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
-              <Grid md={1}/>
+              <Grid item md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
                   <img
@@ -466,17 +585,27 @@ const Home = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
-                  <h4>Dapps Resources</h4>
+                  <h4>
+                    <Translate id="homepage.dappsResourcesTitle">
+                      Recursos para dapps
+                    </Translate>
+                  </h4>
                 </Box>
                 <p className="h3Box">
-                  LACChain EOSIO provides a faucet to send resources to test
-                  dapps (decentralized apps) in our testnet, and an app
-                  developer boilerplate to create dapps within a local
-                  environment.{" "}
-                  <a href={useBaseUrl("/docs/guias/obtener-recursos")} target="_blank">Find here how to obtain network resources</a>.
+                  <Translate id="homepage.dappsResourcesText">
+                    LACChain EOSIO ofrece un faucet para obtener recursos y 
+                    poder probar dapps (apps descentralizadas) en nuestro
+                    testnet, así como un boilerplate para que desarrolladores puedan
+                    crear dapps en un ambiente local.
+                  </Translate>{" "}
+                  <a href={useBaseUrl("/docs/guias/obtener-recursos")} target="_blank">
+                    <Translate id="homepage.dappsResourcesLink">
+                      Encuentre aquí cómo obtener recursos de red
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
-              <Grid md={1}/>
+              <Grid item md={1}/>
               <Grid item xs={12} md={1}>
                 <Box className={isDesktop ? "boxFlexEnd" : "centerBox"}>
                   <img
@@ -488,16 +617,26 @@ const Home = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <Box className="specialH3Box">
-                  <h4>Learning Resources</h4>
+                  <h4>
+                    <Translate id="homepage.learningResourcesTitle">
+                      Recursos de aprendizaje
+                    </Translate>
+                  </h4>
                 </Box>
                 <p className="h3Box">
-                  We provide an ever-growing library of resources to learn about
-                  blockchain technology, guides to start using LACChain EOSIO,
-                  and tutorials to integrate wallets.{" "}
-                  <a href={useBaseUrl("/docs/eosio")} target="_blank">See the documentation</a>.
+                  <Translate id="homepage.learningResourcesText">
+                    Ofrecemos una librería creciente de recursos para aprender sobre
+                    tecnología blockchain, guías para comenzar a usar LACChain
+                    EOSIO y tutoriales para integrar wallets.
+                  </Translate>{" "}
+                  <a href={useBaseUrl("/docs/eosio")} target="_blank">
+                    <Translate id="homepage.learningResourcesLink">
+                      Lea la documentación
+                    </Translate>
+                  </a>.
                 </p>
               </Grid>
-              <Grid md={1}/>
+              <Grid item md={1}/>
             </Grid>
           </Box>
         </Box>
@@ -510,10 +649,14 @@ const Home = () => {
       <Box className="containerSec">
         <Box className="sectionPaddingTop">
           <Box className="titleBox">
-            <h3 style={{textAlign:'center'}}>LACChain EOSIO Tools and Features</h3>
+            <h3 style={{textAlign:'center'}}>
+              <Translate id="homepage.roadmapTitle">
+                Ruta estratégica de LACChain EOSIO
+              </Translate>
+            </h3>
           </Box>
           <Box style={{width:'100%'}}>
-            <img src={useBaseUrl('images/roadmapTest.png')} alt="" />
+            <img src={useBaseUrl('images/roadmapTest.png')} alt="Roadmap project" />
           </Box>
         </Box>
       </Box>
@@ -525,7 +668,11 @@ const Home = () => {
       <Box className="containerSec">
         <Box className="sectionPadding">
           <Box className="titleBox">
-            <h3>Projects in LACChain EOSIO</h3>
+            <h3>
+              <Translate id="homepage.projectsTitle">
+                Proyectos en LACChain EOSIO
+              </Translate>
+            </h3>
           </Box>
           <Box className="spacingBox">
               <Grid container spacing={10}>
@@ -587,7 +734,11 @@ const Home = () => {
           <Grid  justify="center" alignItems="center" container spacing={5}>
             <Grid item xs={12} md={9}>
               <Box className="boxFlexEnd">
-                <h3 className="bannerStyle">Create your account and start using LACChain EOSIO.</h3>
+                <h3 className="bannerStyle">
+                  <Translate id="homepage.createAccountBanner">
+                    Cree su cuenta y empiece a usar LACChain EOSIO. 
+                  </Translate>
+                </h3>
               </Box>
             </Grid>
             <Grid item xs={12} md={3}>
@@ -596,7 +747,9 @@ const Home = () => {
                     className="buttonPrimary" 
                     onClick={() => history.push("/contactenos")}
                   >
-                    Start Now!
+                    <Translate id="homepage.startNow">
+                      Comience ahora
+                    </Translate>
                   </button>
                 </Box>
             </Grid>
