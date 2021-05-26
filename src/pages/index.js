@@ -13,10 +13,10 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import Translate, {translate} from '@docusaurus/Translate';
 
 const MetaData={
-  title:"Enterprise Blockchain Solutions | EOSIO",
-  description:"EOS Costa Rica develops blockchain solutions. We deploy the EOSIO protocol to improve business efficiency, traceability, and transparency.",
-  img:"img/metaImgBlack.png",
-  hrefLangPath: "https://es.eoscostarica.io/"
+  title:"LACChain EOSIO Testnet",
+  description:"LACChain EOSIO",
+  img:"img/logos/lacchain-eosio-logo.png",
+  hrefLangPath: ""
 }
 
 const Home = () => {
