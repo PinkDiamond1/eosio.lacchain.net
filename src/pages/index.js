@@ -10,7 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import Translate, {translate} from '@docusaurus/Translate';
+import Translate, {translate} from '@docusaurus/Translate'
 
 const MetaData={
   title:"LACChain EOSIO Testnet",
@@ -313,8 +313,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const WhatLACChainEOSIO = () => {
     return (
@@ -399,8 +399,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const AreYouReady = () => {
     return (
@@ -431,8 +431,8 @@ const Home = () => {
           </Grid>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const Tools = () => {
     return (
@@ -641,8 +641,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const Roadmap = () => {
     return (
@@ -660,8 +660,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const Projects  = () => {
     return (
@@ -724,8 +724,8 @@ const Home = () => {
             </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const CreateAccount = () => {
     return (
@@ -756,8 +756,8 @@ const Home = () => {
           </Grid>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   return (
     <Layout
@@ -795,7 +795,7 @@ const Home = () => {
         </Box>
       }
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
