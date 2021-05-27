@@ -151,7 +151,7 @@ const ContactUs = () => {
                   >
                     {translate({
                       id: 'contact.wantAccount',
-                      message: 'Quiero contribuir'
+                      message: 'Quiero crear una cuenta'
                     })}
                   </option>
                   <option
@@ -162,7 +162,7 @@ const ContactUs = () => {
                   >
                     {translate({
                       id: 'contact.haveQuestions',
-                      message: 'Quiero contribuir'
+                      message: 'Tengo preguntas sobre LACChain EOSIO'
                     })}
                   </option>
                   <option 
@@ -208,7 +208,7 @@ const ContactUs = () => {
             </Grid>
             <Grid item xs={12} md={12}>
               <ReCAPTCHA
-                sitekey={process.env.RECAPTCHA_CLIENT_KEY}
+                sitekey={'dsdsdsd'}
                 onChange={(value) => setRecaptchaValue(value)}
               />
             </Grid>
