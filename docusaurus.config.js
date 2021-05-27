@@ -75,7 +75,7 @@ const siteConfig = {
           position: 'right',
         },
         {
-          to: '/contactUs',
+          to: '/contact-us',
           label: 'Contáctenos',
           position: 'right',
         },
