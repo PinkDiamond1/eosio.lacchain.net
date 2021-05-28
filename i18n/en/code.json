@@ -190,5 +190,173 @@
   "theme.SearchBar.label": {
     "message": "Search",
     "description": "The ARIA label and placeholder for search button"
+  },
+  "homepage.titule1": {
+    "message": "The EOSIO Blockchain Network for"
+  },
+  "homepage.titule2": {
+    "message": "Latin America and the Caribbean"
+  },
+  "homepage.headerText": {
+    "message": "LACChain EOSIO enables organizations and developers to build blockchain applications on the LACChain network powered by EOSIO technology."
+  },
+  "homepage.headerButton1": {
+    "message": "Join the Network"
+  },
+  "homepage.headerButton2": {
+    "message": "Learn More"
+  },
+  "homepage.iconBuildText": {
+    "message": "Build and test your blockchain applications and infrastructure."
+  },
+  "homepage.iconBlockchainText": {
+    "message": "Learn about blockchain through compelling learning resources."
+  },
+  "homepage.iconNetworkText": {
+    "message": "Visualize network data using the LACChain EOSIO dashboard."
+  },
+  "homepage.porwerFulTitle": {
+    "message": "Discover the powerful combination of EOSIO performance and the LACChain framework"
+  },
+  "homepage.porwerFulText1": {
+    "message": "LACChain EOSIO deploys a public permissioned version of"
+  },
+  "homepage.porwerFulText2": {
+    "message": ", an open-source blockchain technology, that allows developers and organizations to test and build their decentralized applications and infrastructure."
+  },
+  "homepage.seeProjects": {
+    "message": "See Projects"
+  },
+  "homepage.ecosystemTitle": {
+    "message": "An ecosystem of key partners"
+  },
+  "homepage.ecosystemText1": {
+    "message": "LACChain EOSIO is supported by the"
+  },
+  "homepage.ecosystemText2": {
+    "message": "program of the IDB Lab (part of the Inter-American Development Bank) and incorporates a permissioning committee to ensure proper transparency and decentralization."
+  },
+  "homepage.foundingTitle": {
+    "message": "Founding partners"
+  },
+  "homepage.whatLACChain": {
+    "message": "What’s in LACChain EOSIO?"
+  },
+  "homepage.layaredNetworkTitle": {
+    "message": "Multi-layered Network"
+  },
+  "homepage.layaredNetworkText": {
+    "message": "LACChain EOSIO is a three-layered network. The core network comprises validator and interconnecting p2p nodes, while validator p2p out, boot nodes, writer, and observer nodes belong to the outer layers of the network."
+  },
+  "homepage.layaredNetworkLink": {
+    "message": "Learn more about our network topology here"
+  },
+  "homepage.configAccountTitle": {
+    "message": "Configurable Accounts"
+  },
+  "homepage.configAccountText": {
+    "message": "LACChain EOSIO enables you to easily create an account either as an end-user, partner, non-partner, or an app or contract developer. As a LACChain EOSIO user, you will be able to manage your account and private keys."
+  },
+  "homepage.configAccountLink": {
+    "message": "Read more about LACChain EOSIO accounts"
+  },
+  "homepage.resourceModelTitle": {
+    "message": "Resource-distributed Model"
+  },
+  "homepage.resourceModelText": {
+    "message": "LACChain EOSIO enables users to deploy resources when co-signing a transaction and a distribution model that allows a flexible testing environment for all users. Also, the support of the LACChain team is crucial to maintaining the network running."
+  },
+  "homepage.resourceModelLink": {
+    "message": "See more about network resources"
+  },
+  "homepage.readyText": {
+    "message": "Are you ready to start using LACChain EOSIO?"
+  },
+  "homepage.startNow": {
+    "message": "Start Now!"
+  },
+  "homepage.toolsFeaturesTitle": {
+    "message": "LACChain EOSIO Tools and Features"
+  },
+  "homepage.networkMonitorTitle": {
+    "message": "Network Monitor"
+  },
+  "homepage.networkMonitorText": {
+    "message": "You can access a LACChain EOSIO network monitor to visualize both \"on-chain\" and \"off-chain\" metrics and network data."
+  },
+  "homepage.networkMonitorLink": {
+    "message": "Visit the Network Monitor"
+  },
+  "homepage.apiIntegrationsTitle": {
+    "message": "API Integrations"
+  },
+  "homepage.apiIntegrationsText1": {
+    "message": "We deploy"
+  },
+  "homepage.apiIntegrationsText2": {
+    "message": "a robust blockchain API to stream real-time state updates, conduct lightning-fast searches and provide irreversible transaction guarantees."
+  },
+  "homepage.blockExplorerTitle": {
+    "message": "Block Explorer"
+  },
+  "homepage.blockExplorerText1": {
+    "message": "We installed"
+  },
+  "homepage.blockExplorerText2": {
+    "message": ", a block explorer that provides access to detailed, accurate, actionable data about accounts, actions, validator nodes, and more."
+  },
+  "homepage.blockExplorerLink": {
+    "message": "Use our block explorer"
+  },
+  "homepage.nodesGenerationTitle": {
+    "message": "Fast Nodes Generation"
+  },
+  "homepage.nodesGenerationText": {
+    "message": "LACChain EOSIO offers a command-line interface to interact among the nodes and snapshots for nodes generation with no need to sync from the genesis."
+  },
+  "homepage.nodesGenerationLink": {
+    "message": "Read more about nodes installation"
+  },
+  "homepage.dappsResourcesTitle": {
+    "message": "Dapps Resources"
+  },
+  "homepage.dappsResourcesText": {
+    "message": "LACChain EOSIO provides a faucet to send resources to test dapps (decentralized apps) in our testnet, and an app developer boilerplate to create dapps within a local environment."
+  },
+  "homepage.dappsResourcesLink": {
+    "message": "Find here how to obtain network resources"
+  },
+  "homepage.learningResourcesTitle": {
+    "message": "Learning Resources"
+  },
+  "homepage.learningResourcesText": {
+    "message": "We provide an ever-growing library of resources to learn about blockchain technology, guides to start using LACChain EOSIO, and tutorials to integrate wallets."
+  },
+  "homepage.learningResourcesLink": {
+    "message": "See the documentation"
+  },
+  "homepage.roadmapTitle": {
+    "message": "LACChain EOSIO Roadmap"
+  },
+  "homepage.projectsTitle": {
+    "message": "Projects in LACChain EOSIO"
+  },
+  "homepage.createAccountBanner": {
+    "message": "Create your account and start using LACChain EOSIO."
+  },
+  "footer.aboutLacchainEosio": {
+    "message": "About LACChain EOSIO"
+  },
+  "footer.devTools": {
+    "message": "Developer Tools"
+  },
+  "footer.networkDashboard": {
+    "message": "Network Dashboard"
+  },
+  "footer.documentation": {
+    "message": "Documentation"
+  },
+  "footer.contactUs": {
+    "message": "Contact US"
   }
 }
