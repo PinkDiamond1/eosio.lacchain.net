@@ -73,7 +73,12 @@ const siteConfig = {
           to: 'docs/eosio',
           label: 'Documentación',
           position: 'right',
-        },        
+        },
+        {
+          to: '/contact-us',
+          label: 'Contáctenos',
+          position: 'right',
+        },
         {
           type: 'localeDropdown',
           position: 'right',
