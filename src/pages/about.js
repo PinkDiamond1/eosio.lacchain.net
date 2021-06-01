@@ -382,17 +382,17 @@ const About = () => {
                     <img
                       className="teamSizeImage"
                       alt="Block One"
-                      src={person.photo}
+                      src={useBaseUrl(person.photo)}
                     />
                   </Box>
                   <h4 style={{textAlign:'center', lineHeight:0}}>
-                      {person.name}
+                    {person.name}
                   </h4>
                   <p style={{textAlign:'center'}}>
-                      {person.org}
+                    {person.org}
                   </p>
                   <p style={{textAlign:'center'}}>
-                      {person.position}
+                    {person.position}
                   </p>
                 </Grid>
               ))}
