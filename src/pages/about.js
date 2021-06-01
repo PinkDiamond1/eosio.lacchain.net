@@ -10,7 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import Translate from '@docusaurus/Translate'
+import Translate, {translate} from '@docusaurus/Translate'
 import Accordion from '@material-ui/core/Accordion'
 import AccordionDetails from '@material-ui/core/AccordionDetails'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
@@ -28,25 +28,41 @@ const team = [
     photo:"img/team/edgar.jpg",
     name:"Marcos Allende",
     org:"LACChain",
-    position:"Consejero"
+    position: 
+      translate({
+        id: 'about.advisor',
+        message: 'Consejero'
+      })
   },
   {
       photo:"img/team/edgar.jpg",
       name:"Edgar Fernández",
       org:"EOS Costa Rica",
-      position:"Desarrollo de negocios"
+      position:
+        translate({
+          id: 'about.businessDevelopment',
+          message: 'Desarrollo de negocios'
+        })
   },
   {
     photo:"img/team/xavier.jpg",
     name:"Xavier Fernández",
     org:"EOS Costa Rica",
-    position:"Líder técnico"
+    position:
+      translate({
+        id: 'about.techLead',
+        message: 'Líder técnico'
+      })
   },
   {
     photo:"img/team/andres.jpg",
     name:"Jesús Chitty",
     org:"EOS Argentina",
-    position:"Líder técnico"
+    position:
+      translate({
+        id: 'about.techLead',
+        message: 'Líder técnico'
+      })
   },
   {
     photo:"img/team/andres.jpg",
@@ -58,19 +74,31 @@ const team = [
     photo:"img/team/luisDiego.jpg",
     name:"Matías Romero",
     org:"EOS Argentina",
-    position:"Desarrollador EOS"
+    position:
+      translate({
+        id: 'about.EOSDeveloper',
+        message: 'Desarrollador EOS'
+      })
   },
   {
     photo:"img/team/jorge.jpg",
     name:"Jorge Murillo",
     org:"EOS Costa Rica",
-    position:"Diseñador UX"
+    position:
+      translate({
+        id: 'about.UXDesigner',
+        message: 'Diseñador UX'
+      })
   },
   {
     photo:"img/team/luisDiego.jpg",
     name:"Luis Diego Rojas",
     org:"EOS Costa Rica",
-    position:"Comunicaciones"
+    position:
+      translate({
+        id: 'about.communications',
+        message: 'Comunicaciones'
+      })
   },
   {
     photo:"img/team/angelo.jpg",

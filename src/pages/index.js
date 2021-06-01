@@ -10,7 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import Translate from '@docusaurus/Translate';
+import Translate from '@docusaurus/Translate'
 
 const MetaData={
   title:"LACChain EOSIO Testnet",
@@ -304,8 +304,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const WhatLACChainEOSIO = () => {
     return (
@@ -390,8 +390,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const AreYouReady = () => {
     return (
@@ -422,8 +422,8 @@ const Home = () => {
           </Grid>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const Tools = () => {
     return (
@@ -632,8 +632,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const Roadmap = () => {
     return (
@@ -651,8 +651,8 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const Projects  = () => {
     return (
@@ -666,57 +666,57 @@ const Home = () => {
             </h3>
           </Box>
           <Box className="spacingBox">
-              <Grid container spacing={10}>
-                  <Grid item xs={12} md={3}>
-                      <Box className="imgBoxLogos">
-                          <a target="_blank" href="https://www.edenia.com/">
-                              <img
-                                  className="oneGroupLogo"
-                                  alt="Edenia"
-                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
-                              />
-                          </a>
-                      </Box>
-                  </Grid>
-                  <Grid item xs={12} md={3}>
-                      <Box className="imgBoxLogos">
-                          <a target="_blank" href="https://eosurf.com/">
-                              <img
-                                  className="oneGroupLogo"
-                                  alt="Eossurf"
-                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
-                              />
-                          </a>
-                      </Box>
-                  </Grid>
-                  <Grid item xs={12} md={3}>
-                      <Box className="imgBoxLogos">
-                          <a target="_blank" href="http://lifebank.io/">
-                              <img
-                                  className="oneGroupLogo"
-                                  alt="LatamLink"
-                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
-                              />
-                          </a>
-                      </Box>
-                  </Grid>
-                  <Grid item xs={12} md={3}>
-                      <Box className="imgBoxLogos">
-                          <a target="_blank" href="https://ticoblockchain.cr/">
-                              <img
-                                  className="oneGroupLogo"
-                                  alt="Ticoblockchain"
-                                  src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
-                              />
-                          </a>
-                      </Box>
-                  </Grid>
+            <Grid container spacing={10}>
+              <Grid item xs={12} md={3}>
+                <Box className="imgBoxLogos">
+                  <a target="_blank" href="https://www.edenia.com/">
+                    <img
+                      className="oneGroupLogo"
+                      alt="Edenia"
+                      src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                    />
+                  </a>
+                </Box>
               </Grid>
-            </Box>
+              <Grid item xs={12} md={3}>
+                <Box className="imgBoxLogos">
+                  <a target="_blank" href="https://eosurf.com/">
+                    <img
+                      className="oneGroupLogo"
+                      alt="Eossurf"
+                      src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                    />
+                  </a>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <Box className="imgBoxLogos">
+                  <a target="_blank" href="http://lifebank.io/">
+                    <img
+                      className="oneGroupLogo"
+                      alt="LatamLink"
+                      src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                    />
+                  </a>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <Box className="imgBoxLogos">
+                  <a target="_blank" href="https://ticoblockchain.cr/">
+                    <img
+                      className="oneGroupLogo"
+                      alt="Ticoblockchain"
+                      src="https://raw.githubusercontent.com/eoscostarica/eoscostarica.io/b91c698cf650e5eccccc0b6d343a7df92ca27da1/static/img/logos/lifebank.svg"
+                    />
+                  </a>
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   const CreateAccount = () => {
     return (
@@ -747,8 +747,8 @@ const Home = () => {
           </Grid>
         </Box>
       </Box>
-    );
-  };
+    )
+  }
 
   return (
     <Layout
@@ -786,7 +786,7 @@ const Home = () => {
         </Box>
       }
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

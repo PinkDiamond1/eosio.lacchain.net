@@ -462,6 +462,63 @@
     "message": "Also, we’re open to having more organizations or members working with us. Contact us."
   },
   "about.createStartBanner":{
-    "message": "Create your LACChain EOSIO account and start building. "
+    "message": "Create your LACChain EOSIO account and start building."
+  },
+  "about.advisor":{
+    "message": "Advisor"
+  },
+  "about.businessDevelopment":{
+    "message": "Business Development"
+  },
+  "about.techLead":{
+    "message": "Tech Lead"
+  },
+  "about.EOSDeveloper":{
+    "message": "EOS Developer"
+  },
+  "about.UXDesigner":{
+    "message": "UX Designer"
+  },
+  "about.communications":{
+    "message": "Communications"
+  },
+  "contact.name": {
+    "message": "First name"
+  },
+  "contact.lastName": {
+    "message": "Last Name"
+  },
+  "contact.companyName": {
+    "message": "Organization or company"
+  },
+  "contact.reason": {
+    "message": "Why are you contacting us?"
+  },
+  "contact.additionalComments": {
+    "message": "Additional comments"
+  },
+  "contact.title": {
+    "message": "Contact LACChain EOSIO"
+  },
+  "contact.text": {
+    "message": "Do you have questions or are you ready to create an account and start using LACChain EOSIO?"
+  },
+  "contact.resultText": {
+    "message": "Thank you for contacting LACChain EOSIO. We will respond to you as soon as possible"
+  },
+  "contact.useInformation": {
+    "message": "We respect your privacy. We will not share any contact information and will only use it to contact you about our services. You may unsubscribe from these communications at any time."
+  },
+  "contact.wantAccount": {
+    "message": "I want to create an account"
+  },
+  "contact.haveQuestions": {
+    "message": "I have questions about LACChain EOSIO"
+  },
+  "contact.wantContribute": {
+    "message": "I want to contribute"
+  },
+  "contact.submit": {
+    "message": "Submit"
   }
 }

@@ -16,7 +16,8 @@ jobs:
       run: |
         yarn install 
         yarn run build
-    
+      env:
+        RECAPTCHA_CLIENT_KEY: ${{ secrets.RECAPTCHA_CLIENT_KEY }}
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
