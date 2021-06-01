@@ -974,8 +974,14 @@ a{
 
 .sectionHero{
   width: 1100px;
-  height: 780px;
-  padding-top: 250px;
+  height: 750px;
+  padding-top: 180px;
+}
+
+.sectionLittleHero{
+  width: 1100px;
+  height: 350px;
+  padding-top: 100px;
 }
 
 .sectionHeroMobile{
@@ -1290,13 +1296,18 @@ a{
 .imgBoxTheCompany{
   display: flex;
   justify-content: center;
-  height: 100px;
   margin-bottom: 2rem;
 }
 
 .sizeImageTheCompany{
-  width: 300px;
-  height: 100px;
+  width: 200px;
+  height: 60px;
+}
+
+.teamSizeImage{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
 }
 
 .centerText{
