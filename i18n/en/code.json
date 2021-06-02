@@ -359,32 +359,14 @@
   "footer.contactUs": {
     "message": "Contact US"
   },
-  "contact.name": {
-    "message": "First name"
-  },
-  "contact.lastName": {
-    "message": "Last Name"
-  },
-  "contact.companyName": {
-    "message": "Organization or company"
-  },
-  "contact.reason": {
-    "message": "Why are you contacting us?"
-  },
-  "contact.additionalComments": {
-    "message": "Additional comments"
-  },
   "contact.title": {
     "message": "Contact LACChain EOSIO"
   },
+  "contact.bodyTitle": {
+    "message": "Choose the closest option to the support you are seeking"
+  },
   "contact.text": {
     "message": "Do you have questions or are you ready to create an account and start using LACChain EOSIO?"
-  },
-  "contact.resultText": {
-    "message": "Thank you for contacting LACChain EOSIO. We will respond to you as soon as possible"
-  },
-  "contact.useInformation": {
-    "message": "We respect your privacy. We will not share any contact information and will only use it to contact you about our services. You may unsubscribe from these communications at any time."
   },
   "contact.wantAccount": {
     "message": "I want to create an account"
@@ -392,8 +374,26 @@
   "contact.haveQuestions": {
     "message": "I have questions about LACChain EOSIO"
   },
+  "contact.haveQuestionsText": {
+    "message": "Connect with us through Telegram and find support from people in the community"
+  },
   "contact.wantContribute": {
     "message": "I want to contribute"
+  },
+  "contact.wantContributeText": {
+    "message": "Join our Github and contribute. We are always lookingfor help!"
+  },
+  "contact.wantContributekLink": {
+    "message": "Learn more about how to contribute"
+  },
+  "contact.wantAccountText": {
+    "message": "Contact one of the partners of LACChain EOSIO so we can guide you with the process."
+  },
+  "contact.followUs1": {
+    "message": "To receive updates about LACChain EOSIO,"
+  },
+  "contact.followUs2": {
+    "message": "please connect with us on social media!"
   },
   "contact.submit": {
     "message": "Submit"
