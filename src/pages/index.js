@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import Box from '@material-ui/core/Box'
@@ -10,7 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import Translate, {translate} from '@docusaurus/Translate'
+import Translate from '@docusaurus/Translate'
 
 const MetaData={
   title:"LACChain EOSIO Testnet",
@@ -22,16 +22,7 @@ const MetaData={
 const Home = () => {
   const isMobile = useMediaQuery( {query:'(max-width: 960px)'} )
   const isDesktop = useMediaQuery( {query:'(min-width: 960px)'} )
-  const [expanded, setExpanded] = useState('panel_SoftDev')
   const history = useHistory()
-  
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded? panel: false)
-  }
-  
-  useEffect(() => {
-    handleChange('panel_SoftDev')
-  }, [])
 
   const HeroSection = () => {
     return (

@@ -60,6 +60,11 @@ const siteConfig = {
         //   position: 'right',
         // },
         {
+          href: '/about',
+          label: 'About LACChain EOSIO',
+          position: 'right'
+        },
+        {
           href: 'https://lacchain.eosio.online/',
           label: 'Monitor de Red',
           position: 'right',
