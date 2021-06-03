@@ -35,8 +35,10 @@ const Footer = () => {
               <Grid item xs={12} md={1}/>
               <Grid item xs={12} md={3}>
                 <Box className="specialH3Box">
-                  <h3 className="h3Footer" style={{marginBottom:'0'}}>
-                    OVERVIEW
+                  <h3 className="h3Footer" style={{marginBottom:'0'}}>                    
+                    <Translate id="footer.overview">
+                      GENERAL
+                    </Translate>
                   </h3>
                 </Box>
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
@@ -47,7 +49,7 @@ const Footer = () => {
                     style={{color:'white'}}
                   >
                   <Translate id="footer.homePage">
-                    Home page
+                    Inicio
                   </Translate>
                   </Link>
                 </p>
@@ -92,7 +94,7 @@ const Footer = () => {
                 <Box className="specialH3Box">
                   <h3 className="h3Footer" style={{marginBottom:'0'}}>
                     <Translate id="footer.devTools">
-                      HERRAMIENTAS DEV
+                      HERRAMIENTAS
                     </Translate>
                   </h3>
                 </Box>

@@ -359,10 +359,12 @@
   "footer.contactUs": {
     "message": "Contact US"
   },
-<<<<<<< HEAD
   "footer.contactPartners": {
     "message": "CONTACT PARTNERS"
-=======
+  },
+  "footer.overview": {
+    "message": "OVERVIEW"
+  },
   "about.titule1":{
     "message": "About LACChain EOSIO"
   },
@@ -488,7 +490,6 @@
   },
   "contact.name": {
     "message": "First name"
->>>>>>> 239f1cbe8abbba615e92d786271fb995d84283e5
   },
   "footer.homePage": {
     "message": "Home Page"
