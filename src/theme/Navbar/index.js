@@ -14,6 +14,7 @@ import Translate, {translate} from '@docusaurus/Translate'
 import SearchBar from '@theme/SearchBar'
 
 import CustomListItem from '../../pages/components/CustomListItem'
+import global from '../../../static/img/icons/navbar/global.png'
 
 const PATHS = [
   {
@@ -166,7 +167,7 @@ const Navbar = ({isMobile, isDesktop}) => {
           style={{padding: '5px'}}
           onClick={handleClickMenuLang}
         >
-          <img src={'img/icons/globalBlack.svg'} style={{width:'20px', height: '20px'}}/>
+          <img src={global} style={{width:'20px', height: '20px'}}/>
         </IconButton>
         {true && (
           <Box  className={clsx("boxLanguagesSelector",{["boxLanguagesSelectorActive"]: langMenuHandler})} onMouseLeave={handleCloseMenuLang}>
