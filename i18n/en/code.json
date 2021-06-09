@@ -520,5 +520,20 @@
   },
   "contact.submit": {
     "message": "Submit"
+  },
+  "navbar.home": {
+    "message": "Home"
+  },
+  "navbar.about": {
+    "message": "About LACChain EOSIO"
+  },
+  "navbar.learning": {
+    "message": "Learning"
+  },
+  "navbar.contact": {
+    "message": "Contact"
+  },
+  "navbar.options": {
+    "message": "Options"
   }
 }

@@ -1,24 +1,11 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// See https://docusaurus.io/docs/site-config for all the possible
-// site configuration options.
-
 const siteConfig = {
   title: "EOSIO Pro Testnet Blockchain - LACChain BID Labs", // Title for your website.
   tagline: "Documentación Técnica LACChain EOSIO",
   url: "https://eosio.lacchain.net", // Your website URL
   baseUrl: "/", // Base URL for your project */
-
-  // Used for publishing and more
   projectName: "eosio.lacchain.net",
   organizationName: "LatamLink",
   favicon: "img/favicon.ico",
-
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -42,66 +29,28 @@ const siteConfig = {
   ],
   themeConfig: {
     colorMode: {
-      defaultMode: 'light',
       disableSwitch: true
     },
     navbar: {
-      title: ' ',
-      hideOnScroll: false,
+      title: 'LACChain EOSIO',
       logo: {
         alt: 'LACChain EOSIO Logo',
         src: 'img/logos/lacchain-eosio-logo.png',
-        srcDark: 'https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/img/footerlogo.png'
+        href: '/',
+        target: '_self'
       },
-      items: [
-        // {
-        //   href: 'https://medium.com/@latam_link',
-        //   label: ' Noticias',
-        //   position: 'right',
-        // },
-        {
-          href: '/about',
-          label: 'About LACChain EOSIO',
-          position: 'right'
-        },
-        {
-          href: 'https://lacchain.eosio.online/',
-          label: 'Monitor de Red',
-          position: 'right',
-        },
-        {
-          href: 'http://explorer.latamlink.io/',
-          label: 'Explorador de Bloques',
-          position: 'right',
-        },
-        {
-          to: 'docs/eosio',
-          label: 'Documentación',
-          position: 'right',
-        },
-        {
-          to: '/contact-us',
-          label: 'Contáctenos',
-          position: 'right',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {to: 'search'},
-      ]
     },
     //Algolia integration
     algolia: {
       apiKey: '63254e86059566be7b401497c9484166',
       indexName: 'latamlink_es',
       placeholder: 'Buscar',
-      algoliaOptions: {} // Optional, if provided by Algolia
+      algoliaOptions: {}
     },
     //Google Analytics
     googleAnalytics: {
       trackingID: "UA-173987-71",
-    },
+    }
   },
   scripts: [
     {
@@ -121,4 +70,4 @@ const siteConfig = {
   }
 };
 
-module.exports = siteConfig;
+module.exports = siteConfig

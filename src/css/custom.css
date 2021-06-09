@@ -422,7 +422,7 @@ a{
 
 .menuWrapper{
   position: relative;
-  width: 1100px;
+  width: 90%;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -441,16 +441,16 @@ a{
 .imgLogoBox{
   position: absolute;
   left: 0;
-  top: -25px;
-  width: 330px;
+  top: -17px;
+  width: 250px;
 }
 
 .imgLogoBoxMobile{
   visibility: visible;
   position: absolute;
   left: 25px;
-  top: 18px;
-  width: 330px;
+  top: 27px;
+  width: 250px;
 }
 
 .hideImgLogoBoxMobile{
@@ -478,10 +478,10 @@ a{
 .imgLogoScroll{
   -webkit-transform-origin: top left;
   -webkit-transition: all 0.26s;
-  -webkit-transform: scale(0.4, 0.4);
-  -moz-transform: scale(0.4, 0.4);
-  -o-transform: scale(0.4, 0.4);
-  transform:scale(0.4, 0.4);
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  transform:scale(0.7, 0.7);
 }
 
 .boxRight{
@@ -510,7 +510,6 @@ a{
 }
 
 .boxLanguagesSelectorActive{
-
   visibility: visible;
   opacity: 1;
 }
@@ -564,7 +563,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .menuItem:hover .dropDownMenuActive{
@@ -576,7 +575,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .menuItem:hover .menuItemDrop{
@@ -593,7 +592,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .navBarItemTab:focus-within .dropDownMenuActive{
@@ -605,7 +604,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .navBarItemTab:focus-within .dropDownMenu .menuItemDrop{
@@ -773,6 +772,7 @@ a{
   opacity: .6;
   color: black;
   font-weight: bold;
+  text-transform: uppercase
 }
 
 .linkItem{
