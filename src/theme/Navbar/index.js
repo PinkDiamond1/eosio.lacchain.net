@@ -133,7 +133,7 @@ const Navbar = ({isMobile, isDesktop}) => {
     if(currentURL.includes('/en/'))
       window.open(`https://${window.location.hostname}${pathname.substring(3,)}`,'_self')
     else 
-      window.open(`https://${window.location.hostname}${pathname.substring(1,)}`,'_self')
+      window.open(`https://${window.location.hostname}${pathname}`,'_self')
   }
 
   const LanguagueSelector = () => {
