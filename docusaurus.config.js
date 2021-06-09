@@ -31,15 +31,6 @@ const siteConfig = {
     colorMode: {
       disableSwitch: true
     },
-    navbar: {
-      title: 'LACChain EOSIO',
-      logo: {
-        alt: 'LACChain EOSIO Logo',
-        src: 'img/logos/lacchain-eosio-logo.png',
-        href: '/',
-        target: '_self'
-      },
-    },
     //Algolia integration
     algolia: {
       apiKey: '63254e86059566be7b401497c9484166',
