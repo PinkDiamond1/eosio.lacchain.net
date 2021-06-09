@@ -189,7 +189,6 @@ const Navbar = ({isMobile, isDesktop}) => {
 
   return (
     <Box className={clsx("navBar",{["navBarScroll"]: (trigger || isMobile)})} >
-      {console.log('window.location.href: ', window.location.hostname)}
       <Box className="menuWrapper">
         {isMobile && 
           <>
