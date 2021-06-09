@@ -128,13 +128,12 @@ const Navbar = ({isMobile, isDesktop}) => {
   }
 
   const translateSite = () => {
-    console.log('window.location.pathname: ', window.location.hostname)
     var currentURL = window.location.href
 
     if(currentURL.includes('/en/'))
-      window.open(`http://localhost:3000${pathname.substring(3,)}`,'_self')
+      window.open(`https://${window.location.hostname}${pathname.substring(3,)}`,'_self')
     else 
-      window.open(`http://localhost:3000/en${pathname}`,'_self')
+      window.open(`https://${window.location.hostname}${pathname.substring(1,)}`,'_self')
   }
 
   const LanguagueSelector = () => {
@@ -190,6 +189,7 @@ const Navbar = ({isMobile, isDesktop}) => {
 
   return (
     <Box className={clsx("navBar",{["navBarScroll"]: (trigger || isMobile)})} >
+      {console.log('window.location.href: ', window.location.hostname)}
       <Box className="menuWrapper">
         {isMobile && 
           <>
