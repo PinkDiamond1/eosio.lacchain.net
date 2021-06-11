@@ -14,95 +14,39 @@
   overflow-x: hidden;
 }
 
-h1 {
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 60px;
-  letter-spacing: -0.24px;
-  line-height: 60px;
+.docs-wrapper{
+  display: flex;
+  padding-top: 120px;
 }
 
-h2 {
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 40px;
-  letter-spacing: -0.24px;
-  line-height: 46px;
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage- {
+  margin-top: 10px !important;
 }
 
-h3 {
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.06px;
-  line-height: 34px;
+.docSidebarContainer_3Kbt {
+  margin-top: 10px !important;
 }
 
-h4 {
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 20px;
-  letter-spacing: -0.06px;
-  line-height: 24px;
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
+  top: 100px !important;
+  padding-top: 0 !important;
 }
 
-h5{
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: -0.05px;
-  line-height: 24px;
+.sidebar_15mo {
+  top: 100px !important;
+  padding-top: 0 !important;
 }
 
-h6{
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 14px;
-  letter-spacing: -0.05px;
-  line-height: 24px;
+.tableOfContents_node_modules-\@docusaurus-theme-classic-lib-next-theme-TOC- {
+  top: 100px !important;
 }
 
-p{
-  font-family: Lato, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 19px;
-  letter-spacing: -0.05px;
-  line-height: 25px;
-  text-align: justify;
-  margin-bottom: 0;
-}
-
-label{
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 19px;
-  letter-spacing: -0.05px;
-  line-height: 25px;
-  text-align: justify;
+.tableOfContents_35-E {
+  top: 100px !important;
 }
 
 a{
   color: #1cc15c;
-}
-
-.button{
-  font-size: 14px;
 }
 
 .white{
@@ -281,131 +225,6 @@ a{
   color: #1cc15c;
 }
 
-.doc-wrapper h2{
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 30px;
-  letter-spacing: -0.24px;
-  line-height: 30px;
-}
-
-.doc-wrapper h2::before {
-  display: block;
-  content: " ";
-  margin-top: -120px;
-  height: 120px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.doc-wrapper h3{
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 25px;
-  letter-spacing: -0.24px;
-  line-height: 25px;
-}
-
-.doc-wrapper h3::before {
-  display: block;
-  content: " "; 
-  margin-top: -120px;
-  height: 120px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-
-.doc-wrapper h4{
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 20px;
-  letter-spacing: -0.24px;
-  line-height: 20px;
-}
-
-.doc-wrapper h4::before {
-  display: block;
-  content: " ";
-  margin-top: -120px;
-  height: 120px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.doc-wrapper h5{
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: -0.24px;
-  line-height: 20px;
-}
-
-.doc-wrapper h5::before {
-  display: block;
-  content: " ";
-  margin-top: -120px;
-  height: 120px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-
-.doc-wrapper p{
-  font-family: Lato, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 19px;
-  letter-spacing: -0.05px;
-  line-height: 25px;
-  text-align: justify;
-  margin-bottom: 15px;
-}
-
-.doc-wrapper ul{
-  font-family: Lato, sans-serif;
-}
-
-.doc-wrapper ol{
-  font-family: Lato, sans-serif;
-}
-
-.doc-wrapper h1 a{
-  color: black;
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-}
-
-.doc-wrapper h2 a{
-  color: black;
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-}
-
-.doc-wrapper h3 a{
-  color: black;
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-}
-
-.doc-wrapper h4 a{
-  color: black;
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-}
-
 /*Navbar*/
 .navBar {
   z-index: 1000;
@@ -422,7 +241,7 @@ a{
 
 .menuWrapper{
   position: relative;
-  width: 1100px;
+  width: 90%;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -441,16 +260,16 @@ a{
 .imgLogoBox{
   position: absolute;
   left: 0;
-  top: -25px;
-  width: 330px;
+  top: -17px;
+  width: 220px;
 }
 
 .imgLogoBoxMobile{
   visibility: visible;
   position: absolute;
   left: 25px;
-  top: 18px;
-  width: 330px;
+  top: 27px;
+  width: 250px;
 }
 
 .hideImgLogoBoxMobile{
@@ -478,10 +297,10 @@ a{
 .imgLogoScroll{
   -webkit-transform-origin: top left;
   -webkit-transition: all 0.26s;
-  -webkit-transform: scale(0.4, 0.4);
-  -moz-transform: scale(0.4, 0.4);
-  -o-transform: scale(0.4, 0.4);
-  transform:scale(0.4, 0.4);
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  transform:scale(0.7, 0.7);
 }
 
 .boxRight{
@@ -510,7 +329,6 @@ a{
 }
 
 .boxLanguagesSelectorActive{
-
   visibility: visible;
   opacity: 1;
 }
@@ -564,7 +382,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .menuItem:hover .dropDownMenuActive{
@@ -576,7 +394,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .menuItem:hover .menuItemDrop{
@@ -593,7 +411,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .navBarItemTab:focus-within .dropDownMenuActive{
@@ -605,7 +423,7 @@ a{
   top: 0;
   right: auto;
   height: 100%;
-  width: 150px;
+  width: 210px;
 }
 
 .navBarItemTab:focus-within .dropDownMenu .menuItemDrop{
@@ -773,6 +591,7 @@ a{
   opacity: .6;
   color: black;
   font-weight: bold;
+  text-transform: uppercase
 }
 
 .linkItem{
@@ -990,7 +809,7 @@ a{
 .sectionLittleHero{
   width: 1100px;
   height: 350px;
-  padding-top: 100px;
+  padding-top: 180px;
 }
 
 .sectionHeroMobile{
@@ -1711,61 +1530,7 @@ a{
     margin-bottom: 50px;
   }
   
-  h1{
-    line-height: 30px;
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 4px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  h2{
-    line-height: 25px;
-    font-size: 25px;
-    text-align: left;
-    margin-bottom: 6px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  h3{
-    line-height: 22px;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 4px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  h4{
-    line-height: 25px;
-    font-size: 18px;
-    text-align: left;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  p{
-    line-height: 18px;
-    font-size: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  label{
-    line-height: 18px;
-    font-size: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
   /*doc*/
-  .doc-wrapper{
-    margin-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 
   .subHeaderdocBox{
     padding-bottom: 0;
@@ -1831,59 +1596,6 @@ a{
   .docChipTagsBox{
     padding-left: 25px;
     padding-right: 25px;
-  }
-
-  .doc-wrapper h1{
-    font-size: 30px;
-    text-align: left;
-    padding: 0;
-  }
-
-  .doc-wrapper h2{
-    font-size: 25px;
-    text-align: left;
-    padding: 0;
-  }
-
-  .doc-wrapper h2::before {
-    content: none;
-  }
-
-  .doc-wrapper h3{
-    font-size: 20px;
-    text-align: left;
-    padding: 0;
-  }
-
-  .doc-wrapper h3::before {
-    content: none;
-  }
-
-  .doc-wrapper h4{
-    font-size: 15px;
-    padding: 0;
-    text-align: left;
-  }
-
-  .doc-wrapper h4::before {
-    content: none;
-  }
-
-  .doc-wrapper h5::before {
-    content: none;
-  }
-
-  .doc-wrapper p{
-    font-family: Lato, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: -0.05px;
-    text-align: justify;
-    margin-bottom: 15px;
-    padding: 0;
-    line-height: 18px;
-    font-size: 15px;
   }
 
   .titleDevs1{

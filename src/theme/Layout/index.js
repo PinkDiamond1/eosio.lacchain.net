@@ -1,9 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 import React from 'react';
 import clsx from 'clsx';
 import { useMediaQuery } from 'react-responsive'
@@ -30,7 +24,7 @@ function Layout(props) {
       {isDesktop && 
         <>
           <AnnouncementBar />
-          <Navbar isMobile={isMobile}  isDesktop={isDesktop}/>
+          <Navbar isMobile={isMobile} isDesktop={isDesktop}/>
           <div className={clsx('main-wrapper', wrapperClassName)}>{children}</div>
           <Footer />
         </>
@@ -38,7 +32,7 @@ function Layout(props) {
       {isMobile && 
         <>
           <AnnouncementBar />
-          <Navbar isMobile={isMobile}  isDesktop={isDesktop}/>
+          <Navbar isMobile={isMobile} isDesktop={isDesktop}/>
           <div className={clsx('main-wrapper', wrapperClassName)}>{children}</div>
           <Footer />
         </>

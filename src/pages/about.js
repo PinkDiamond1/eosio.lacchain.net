@@ -475,7 +475,7 @@ const About = () => {
                   onChange={handleChange('what_LACChainEOSIO')} 
                   className="accordion"
                   style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#5484B3'}}/>}>
+                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
                     <h4 style={{margin:'2px', padding: 0}}>
                       <Translate id="about.WhatsLACChain">
                         ¿Qué es LACChain EOSIO?
@@ -506,7 +506,7 @@ const About = () => {
                   onChange={handleChange('what_LACChain')} 
                   className="accordion"
                   style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#5484B3'}}/>}>
+                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
                     <h4 style={{margin:'2px', padding: 0}}>
                       <Translate id="about.WhatsLACChain2">
                         ¿Qué es LACChain?
@@ -537,7 +537,7 @@ const About = () => {
                   onChange={handleChange('what_EOSIO')} 
                   className="accordion"
                   style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#5484B3'}}/>}>
+                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
                     <h4 style={{margin:'2px', padding: 0}}>
                       <Translate id="about.whatEOSIO">
                         ¿Qué es EOSIO?
@@ -585,7 +585,7 @@ const About = () => {
                   onChange={handleChange('founders')} 
                   className="accordion"
                   style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#5484B3'}}/>}>
+                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
                     <h4 style={{margin:'2px', padding: 0}}>
                       <Translate id="about.whoBehind">
                         ¿Quién está detrás de LACChain EOSIO?
@@ -613,7 +613,7 @@ const About = () => {
                   onChange={handleChange('how_start')} 
                   className="accordion"
                   style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#5484B3'}}/>}>
+                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
                     <h4 style={{margin:'2px', padding: 0}}>
                       <Translate id="about.howStarted">
                         ¿Cómo iniciar en LACChain EOSIO?
@@ -644,7 +644,7 @@ const About = () => {
                   onChange={handleChange('how_contribute')} 
                   className="accordion"
                   style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#5484B3'}}/>}>
+                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
                     <h4 style={{margin:'2px', padding: 0}}>
                       <Translate id="about.howContributeTitle">
                         ¿Cómo contribuir con LACChain EOSIO?
