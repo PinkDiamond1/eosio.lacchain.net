@@ -348,7 +348,7 @@
     "message": "About LACChain EOSIO"
   },
   "footer.devTools": {
-    "message": "Developer Tools"
+    "message": "DEVELOPER TOOLS"
   },
   "footer.networkDashboard": {
     "message": "Network Dashboard"
@@ -358,6 +358,12 @@
   },
   "footer.contactUs": {
     "message": "Contact US"
+  },
+  "footer.contactPartners": {
+    "message": "CONTACT PARTNERS"
+  },
+  "footer.overview": {
+    "message": "OVERVIEW"
   },
   "about.titule1": {
     "message": "About LACChain EOSIO"
@@ -488,8 +494,11 @@
   "contact.name": {
     "message": "First name"
   },
-  "contact.lastName": {
-    "message": "Last Name"
+  "footer.homePage": {
+    "message": "Home Page"
+  },
+  "footer.about": {
+    "message": "About"
   },
   "contact.companyName": {
     "message": "Organization or company"
