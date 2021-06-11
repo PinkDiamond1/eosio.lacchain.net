@@ -482,6 +482,9 @@
   "about.communications": {
     "message": "Communications"
   },
+  "about.fullStack": {
+    "message": "Full-stack Developer"
+  },
   "contact.name": {
     "message": "First name"
   },

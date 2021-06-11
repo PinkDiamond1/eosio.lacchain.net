@@ -25,10 +25,20 @@ const MetaData={
 
 const team = [
   {
-    photo:"img/team/edgar.jpg",
+    photo:"img/team/marcos.png",
     name:"Marcos Allende",
     org:"LACChain",
-    position: 
+    position:
+      translate({
+        id: 'about.advisor',
+        message: 'Consejero'
+      })
+  },
+  {
+    photo:"img/team/diego.jpg",
+    name:"Diego Lopez",
+    org:"LACChain",
+    position:
       translate({
         id: 'about.advisor',
         message: 'Consejero'
@@ -98,6 +108,16 @@ const team = [
       translate({
         id: 'about.communications',
         message: 'Comunicaciones'
+      })
+  },
+  {
+    photo:"img/team/adriel.jpg",
+    name:"Adriel Díaz",
+    org:"EOS Costa Rica",
+    position:
+      translate({
+        id: 'about.fullStack',
+        message: 'Desarrollador Full-stack'
       })
   },
   {
