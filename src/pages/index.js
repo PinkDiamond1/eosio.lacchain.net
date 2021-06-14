@@ -48,10 +48,10 @@ const Home = () => {
             </Translate>
           </p>
           <Box className="buttonBox" style={{justifyContent:'space-around', display:'flex'}}>
-            <button className="buttonPrimary" onClick={() => history.push("/")} >
+            <button className="buttonSecondary" onClick={() => history.push("/contact-us")} >
               <Translate id="homepage.headerButton1">Únase a la red</Translate>
             </button>
-            <button className="buttonPrimary" onClick={() => history.push("/")} >
+            <button className="buttonPrimary" onClick={() => history.push("/docs/eosio")} >
               <Translate id="homepage.headerButton2">Aprenda más</Translate>
             </button>
           </Box>
@@ -97,7 +97,7 @@ const Home = () => {
                 <Box className="centerBox" style={{marginBottom:'10px'}}>
                   <img 
                     src={useBaseUrl("img/icons/list.png")}
-                    style={{width:'80px', height:'80px', cursor:'pointer'}}
+                    style={{width:'80px', height:'80px'}}
                     alt="Icono de lista"
                   />
                 </Box>
@@ -109,7 +109,7 @@ const Home = () => {
                 <Box className="centerBox" style={{marginBottom:'10px'}}>
                   <img
                     src={useBaseUrl("img/icons/book-shelf.png")}
-                    style={{width:'80px', height:'80px', cursor:'pointer'}}
+                    style={{width:'80px', height:'80px'}}
                     alt="Icono de libros"
                   />
                 </Box>
@@ -121,7 +121,7 @@ const Home = () => {
                 <Box className="centerBox" style={{marginBottom:'10px'}}>
                   <img
                     src={useBaseUrl("img/icons/blockchain-technology.png")}
-                    style={{width:'80px', height:'80px', cursor:'pointer'}}
+                    style={{width:'80px', height:'80px'}}
                     alt="Icono de bloques"
                   />
                 </Box>
@@ -235,10 +235,10 @@ const Home = () => {
                   </Grid>
                   <Grid item xs={12} style={{flexBasis:'0'}} md={3}>
                     <Box className="centerBox">
-                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
+                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
                         <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                       </a>
-                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
+                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
                         <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
                       </a>
                     </Box>
@@ -440,7 +440,7 @@ const Home = () => {
                 <Box className="centerBox">
                   <button 
                     className="buttonPrimary" 
-                    onClick={() => history.push("/contactenos")}
+                    onClick={() => history.push("/contac-us")}
                   >
                     <Translate id="homepage.startNow">
                       Comience ahora
@@ -739,7 +739,7 @@ const Home = () => {
                 <Box className="centerBox">
                   <button 
                     className="buttonPrimary" 
-                    onClick={() => history.push("/contactenos")}
+                    onClick={() => history.push("/contact-us")}
                   >
                     <Translate id="homepage.startNow">
                       Comience ahora

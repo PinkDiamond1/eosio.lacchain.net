@@ -25,7 +25,7 @@ const MetaData={
 
 const team = [
   {
-    photo:"img/team/marcos.png",
+    photo:"img/team/marcos.jpg",
     name:"Marcos Allende",
     org:"LACChain",
     position:

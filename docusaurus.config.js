@@ -13,7 +13,7 @@ const siteConfig = {
         docs: {
           // Docs folder path relative to website dir.
           path: './docs',
-          editUrl: 'https://github.com/LatamLink/eosio.lacchain.net/tree/master',
+          editUrl: 'https://github.com/lacchain/eosio.lacchain.net/tree/master',
           // Equivalent to `docsUrl`.
           routeBasePath: 'docs/',
           // Sidebars file relative to website dir.

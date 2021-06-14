@@ -555,7 +555,7 @@
     "message": "Home"
   },
   "navbar.about": {
-    "message": "About LACChain EOSIO"
+    "message": "LACChain EOSIO"
   },
   "navbar.learning": {
     "message": "Learning"
@@ -565,5 +565,8 @@
   },
   "navbar.options": {
     "message": "Options"
+  },
+  "navbar.tools": {
+    "message": "Tools"
   }
 }
