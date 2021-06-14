@@ -1,269 +1,69 @@
-import React, { useState } from "react"
-import clsx from "clsx"
-import Layout from "@theme/Layout"
+import React, { useState, useEffect } from "react"
+import { useHistory } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
-import InputBase from '@material-ui/core/InputBase'
-import Snackbar from '@material-ui/core/Snackbar'
-import Alert from '@material-ui/lab/Alert'
-import { withStyles } from '@material-ui/core/styles'
-import { useMediaQuery } from 'react-responsive'
-import ReCAPTCHA from "react-google-recaptcha"
-import CircularProgress from '@material-ui/core/CircularProgress'
+import useBaseUrl from "@docusaurus/useBaseUrl"
+import clsx from "clsx"
+import Layout from "@theme/Layout"
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import TelegramIcon from '@material-ui/icons/Telegram'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import GitHubIcon from '@material-ui/icons/GitHub'
 import Translate, {translate} from '@docusaurus/Translate'
 
 const MetaData={
-  title:"LACChain: Contáctenos",
-  description:"Pregúntenos sobre la red LACChain EOSIO.",
-  img:"img/logos/lacchain-eosio-logo.png",
-  hrefLangPath: ""
+    title:"LACChain: Contáctenos",
+    description:"Pregúntenos sobre la red LACChain EOSIO.",
+    img:"img/logos/lacchain-eosio-logo.png",
+    hrefLangPath: ""
 }
 
-const GenericInput = withStyles({
-  root: {
-      width: '100%',
-      padding:'10px',
-      border: 'solid 1px gray',
-  },
-  input:{
-      fontFamily: 'Lato',
-      fontSize: 19,
-      fontWeight: 'normal',
-      '&:-webkit-autofill': {
-          transitionDelay: '9999s',
-          transitionProperty: 'background-color, color',
-      },
-  },
-  focused:{
-      border: 'solid 1px #5484b3'
-  }
-})((props) => <InputBase {...props} />)
-
-const ContactUs = () => {
+const ContactUS = () => {
   const isMobile = useMediaQuery( {query:'(max-width: 960px)'} )
   const isDesktop = useMediaQuery( {query:'(min-width: 960px)'} )
-  const [resultsSection, setResultsSection] = useState(false)
-  const ContactForm = () =>{
-    const [errorMessage, setErrorMessage] = useState(false)
-    const [recaptchaValue, setRecaptchaValue] = useState(false)
-    const [submitLoading, setSubmitLoading] = useState(false)
-    const [contactForm, setContactForm] = useState({
-      email: '',
-      firstName: '',
-      lastName: '',
-      companyName: '',
-      reason: '',
-      additionalComments: ''
-    })
-
-    const handleSetField = (field, value) => {
-      setContactForm({...contactForm, [field]: value })
-    }
-
-    const handleCloseErrorMessage = () =>{
-      setErrorMessage(false)
-    }
-
-    const validateEmail = (email) => {
-      const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-      return regex.test(email)
-    }
-
-    return(
-      <Box>
-        <form noValidate> 
-          <Grid container spacing={2}> 
-            <Grid item xs={12} md={6}>
-              <label htmlFor="firstName_contact">
-                <Translate id="contact.name">
-                  Nombre
-                </Translate>{' *'}
-              </label>
-              <Box className="inputFormBox">
-                <GenericInput 
-                  id="firstName_contact" 
-                  value={contactForm.firstName || ''}  
-                  onChange={(event) => handleSetField('firstName', event.target.value)} 
-                  required
-                />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <label htmlFor="lastName_contact">
-                <Translate id="contact.lastName">
-                  Apellido
-                </Translate>{' *'}
-                </label>
-              <Box className="inputFormBox">
-                <GenericInput 
-                  id="lastName_contact" 
-                  value={contactForm.lastName || ''}  
-                  onChange={(event) => handleSetField('lastName', event.target.value)} 
-                  required
-                />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <label htmlFor="email_contact">
-                Email *
-              </label>
-              <Box className="inputFormBox">
-                <GenericInput 
-                  id="email_contact" 
-                  value={contactForm.email || ''}  
-                  onChange={(event) => handleSetField('email', event.target.value)} 
-                  required
-                />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <label htmlFor="companyName_contact">
-                <Translate id="contact.companyName">
-                  Organización o compañía
-                </Translate>
-              </label>
-              <Box className="inputFormBox">
-                  <GenericInput 
-                    id="companyName_contact" 
-                    value={contactForm.companyName || ''}  
-                    onChange={(event) => handleSetField('companyName', event.target.value)} 
-                    required
-                  />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <label htmlFor="additionalComments_contact">
-                <Translate id="contact.reason">
-                  ¿Por qué nos está contactando?
-                </Translate>
-              </label>
-              <Box className="inputFormBox">
-                <select
-                  style={{width:'100%', height:'60px', fontSize:'16px'}}
-                  name="reason"
-                  onChange={(event) => handleSetField('reason', event.target.value)}
-                >
-                  <option 
-                    value={translate({
-                      id: 'contact.wantAccount',
-                      message: 'Quiero crear una cuenta'
-                    })}
-                  >
-                    {translate({
-                      id: 'contact.wantAccount',
-                      message: 'Quiero crear una cuenta'
-                    })}
-                  </option>
-                  <option
-                    value={translate({
-                      id: 'contact.haveQuestions',
-                      message: 'Tengo preguntas sobre LACChain EOSIO'
-                    })}
-                  >
-                    {translate({
-                      id: 'contact.haveQuestions',
-                      message: 'Tengo preguntas sobre LACChain EOSIO'
-                    })}
-                  </option>
-                  <option 
-                    value={translate({
-                      id: 'contact.wantContribute',
-                      message: 'Quiero contribuir'
-                    })}
-                    selected
-                  >
-                    {translate({
-                      id: 'contact.wantContribute',
-                      message: 'Quiero contribuir'
-                    })}
-                  </option>
-                </select>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <label htmlFor="additionalComments_contact">
-                <Translate id="contact.additionalComments">
-                  Comentarios adicionales
-                </Translate>
-              </label>
-              <Box className="inputFormBox">
-                <GenericInput 
-                  id="additionalComments_contact" 
-                  value={contactForm.additionalComments || ''}  
-                  onChange={(event) => handleSetField('additionalComments', event.target.value)}
-                  multiline
-                  rows={2}
-                />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={12}>
-              <p>
-                <Translate id="contact.useInformation">
-                  Respetamos su privacidad. No compartiremos ninguna
-                  información de contacto y solo la usaremos para
-                  comunicarnos con usted acerca de nuestros servicios.
-                  Puede darse de baja de estas comunicaciones en cualquier momento.
-                </Translate>
-              </p>
-            </Grid>
-            <Grid item xs={12} md={12}>
-              <ReCAPTCHA
-                sitekey={'dsdsdsd'}
-                onChange={(value) => setRecaptchaValue(value)}
-              />
-            </Grid>
-            <Grid item xs={12} md={12}>
-              <Box className={isMobile ? "centerBox" : ""}>
-                {submitLoading && 
-                  <CircularProgress style={{color:'#5484B3'}}/>
-                }
-                {!submitLoading && 
-                  <input
-                    type="submit"
-                    className="buttonPrimary"
-                    value={
-                      translate({
-                        id: 'contact.submit',
-                        message: 'Enviar'
-                      })}
-                    disabled={
-                      !contactForm.firstName ||
-                      !contactForm.lastName ||
-                      !contactForm.email ||
-                      !recaptchaValue ||
-                      !validateEmail(contactForm.email)
-                    }
-                  />
-                }
-              </Box>
-            </Grid>
-            <Snackbar open={errorMessage} autoHideDuration={4000} onClose={handleCloseErrorMessage}>
-              <Alert severity="error">¡Algo pasó! Inténtalo de nuevo</Alert>
-            </Snackbar>
-          </Grid>
-        </form>
-      </Box>
-    )
+  const history = useHistory()
+  
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded? panel: false)
   }
+  
+  useEffect(() => {
+    handleChange('panel_SoftDev')
+  }, [])
 
-  return(
-    <Layout
-      title={MetaData.title}
-      description={MetaData.description}
-      image={MetaData.img}
-      hrefLangPath={MetaData.hrefLangPath}
-    >
-      {isDesktop && 
-        <Box className="containerSec">
-          <Box className={clsx("sectionPaddingTop",{["sectionPadding"]: isMobile})}>
-            <Box className="h3Box">
-              <h1>
+  const HeroSection = () => {
+    return (
+        <>
+        {isDesktop && 
+            <Box className="containerSec">
+              <Box className={clsx("sectionPaddingTop",{["sectionPadding"]: isMobile})}>
+                <Box className="h2Box">
+                  <h1>
+                    <Translate id="contact.title">
+                      Contacte a LACChain EOSIO
+                    </Translate>
+                  </h1>
+                </Box>
+                  <Box className="contactFormBox">
+                    <Box className="spacingBox">
+                      <p>
+                        <Translate id="contact.text">
+                          ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
+                        </Translate>
+                      </p>
+                    </Box>
+                  </Box>
+              </Box>
+            </Box>
+          }
+          {isMobile && 
+            <Box className="sectionHeroMobile">
+              <Box className="h2Box">
                 <Translate id="contact.title">
                   Contacte a LACChain EOSIO
                 </Translate>
-              </h1>
-            </Box>
-            {!resultsSection && 
+              </Box>
               <Box className="contactFormBox">
                 <Box className="spacingBox">
                   <p>
@@ -272,51 +72,188 @@ const ContactUs = () => {
                     </Translate>
                   </p>
                 </Box>
-                <ContactForm />
               </Box>
-            }
-            {resultsSection && 
-              <Box className="contactFormBox" style={{height:'120px'}}>
-                <p>
-                  <Translate id="contact.resultText">
-                    Gracias por contactar a LACChain EOSIO. Te responderemos a la brevedad
+            </Box>
+        }
+        </>
+    )
+  } 
+
+  const IconSection = () => {
+    return (
+      <Box className="containerSec">
+        <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
+          <Grid container spacing={isDesktop ? 8 : 3}>
+            <Grid item xs={12} md={9}>
+              <Box className="titleBox">
+                <h2>
+                  <Translate id="contact.bodyTitle">
+                    Elija la opción más cercana a lo que está buscando
                   </Translate>
-                </p>
+                </h2>
               </Box>
-            }
-          </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box className="titleBox">
+                <h3>
+                  <Translate id="contact.haveQuestions">
+                    Tengo preguntas sobre LACChain EOSIO.
+                  </Translate>
+                </h3>
+              </Box>
+              <p>
+                <Translate id="contact.haveQuestionsText">
+                  Conecte con nosotros por Telegram y obtenga ayuda de personas en la comunidad.
+                </Translate>
+              </p>
+            </Grid>
+            <Grid item xs={12} md={3} alignItems='center' alignContent='center' justify='center'>
+              <Box className="specialButtonBox">
+                <Box className={clsx("boxIconButton", "centerBox", "buttonPrimary")}>
+                  <TelegramIcon style={{width:'50px', height:'50px'}}/>
+                  <Box className="marginLeft">
+                      Telegram
+                  </Box>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box className="titleBox">
+                <h3>
+                  <Translate id="contact.wantContribute">
+                    Quiero contribuir.
+                  </Translate>
+                </h3>
+              </Box>
+              <p>
+                <Translate id="contact.wantContributeText">
+                  Únase a nuestro Github y contribuya. ¡Buscamos colaboración en todo momento!
+                </Translate>{' '}
+                <a href={useBaseUrl("/docs/guias/contribuir")} target="_blank">
+                  <Translate id="contact.wantContributekLink">
+                    Aprenda más sobre cómo contribuir
+                  </Translate>
+                </a>.
+              </p>
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Box className="specialButtonBox">
+                <Box className={clsx("boxIconButton", "centerBox", "buttonPrimary")}>
+                  <GitHubIcon style={{width:'50px', height:'50px'}}/>
+                  <Box className="marginLeft">
+                    Github
+                  </Box>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box className="titleBox">
+                <h3>
+                  <Translate id="contact.wantAccount">
+                    Quiero crear una cuenta.
+                  </Translate>
+                </h3>
+              </Box>
+              <p>
+                <Translate id="contact.wantAccountText">
+                  Contacte alguno de los socios de LACChain EOSIO y con gusto le guiaremos con el proceso.
+                </Translate>
+              </p>
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Box className="buttonBox">
+                <button
+                  className="buttonPrimary" 
+                  onClick={() => history.push("/contactenos")}
+                >
+                  EOS Costa Rica
+                </button>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Box className="buttonBox">
+                <button
+                  className="buttonPrimary" 
+                  onClick={() => history.push("/contactenos")}
+                >
+                  EOS Argentina
+                </button>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    )
+  }
+
+  const FollowUsBanner = () => {
+    return (
+      <Box className="containerSec">
+        <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
+          <Grid container justify='center' alignItems="center" spacing={2}>
+            <Grid item xs={12} md={12}>
+                <Box className="h2Box">
+                    <h2 style={{textAlign:'center'}}>
+                      <Translate id="contact.followUs1">
+                        ¡Síganos en nuestras redes sociales para
+                      </Translate>
+                      <br/>
+                      <Translate id="contact.followUs2">
+                        recibir actualizaciones sobre LACChain EOSIO!
+                      </Translate>
+                    </h2>
+                </Box>
+            </Grid>
+            <Grid item xs={5} md={2}>
+              <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
+                    <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
+                    <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+              </Box>
+            </Grid>
+            <Grid item xs={5} md={2}>
+              <Box className="centerBox" style={{justifyContent:'space-around'}}>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
+                    <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
+                    <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    )
+  }
+
+  
+  return (
+    <Layout
+      title={MetaData.title}
+      description={MetaData.description}
+      image={MetaData.img}
+      hrefLangPath={MetaData.hrefLangPath}
+    > 
+      {isDesktop && 
+        <Box className="mainContainer">
+          <HeroSection/>
+          <IconSection/>
+          <FollowUsBanner/>
         </Box>
       }
       {isMobile && 
-        <Box className="sectionHeroMobile">
-          <Box className="h3Box">
-            <h1>Contáctenos</h1>
-          </Box>
-          {!resultsSection && 
-            <Box className="contactFormBox">
-              <Box className="spacingBox">
-                <p style={{padding:0}}>
-                  <Translate id="contact.text">
-                    ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
-                  </Translate>
-                </p>
-              </Box>
-              <ContactForm />
-            </Box>
-          }
-          {resultsSection && 
-            <Box className="contactFormBox">
-              <p style={{padding:0}}>
-                <Translate id="contact.resultText">
-                  Gracias por contactar a LACChain EOSIO. Te responderemos a la brevedad
-                </Translate>
-              </p>
-            </Box>
-          }
+        <Box className="mainContainer">
+          <HeroSection/>
+          <IconSection/>
+          <FollowUsBanner/>
         </Box>
       }
     </Layout>
   )
 }
 
-export default ContactUs
+export default ContactUS

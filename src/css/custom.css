@@ -801,6 +801,15 @@ h1{
   margin-bottom: 3rem;
 }
 
+.boxIconButton{
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 45px;
+  width: 200px
+}
+
 .buttonBoxMobile{
   margin-top: 50px;
   width: 100%;
@@ -1432,6 +1441,16 @@ h1{
   }
 
   .buttonBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxIconButton{
+    margin-top: 0;
+  }
+
+  .specialButtonBox{
     width: 100%;
     display: flex;
     justify-content: center;

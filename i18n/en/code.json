@@ -351,7 +351,7 @@
     "message": "About LACChain EOSIO"
   },
   "footer.devTools": {
-    "message": "Developer Tools"
+    "message": "DEVELOPER TOOLS"
   },
   "footer.networkDashboard": {
     "message": "Network Dashboard"
@@ -362,134 +362,146 @@
   "footer.contactUs": {
     "message": "Contact US"
   },
-  "about.titule1":{
+  "footer.contactPartners": {
+    "message": "CONTACT PARTNERS"
+  },
+  "footer.overview": {
+    "message": "OVERVIEW"
+  },
+  "about.titule1": {
     "message": "About LACChain EOSIO"
   },
-  "about.headerText":{
+  "about.headerText": {
     "message": "Learn more about what we do and what you can find in LACChain EOSIO."
   },
   "about.purposeTitle":{
     "message": "The purpose of LACChain EOSIO"
   },
-  "about.purposeText":{
+  "about.purposeText": {
     "message": "LACChain EOSIO strives to offer a top-grade blockchain network for developers and organizations in Latin America and the Caribbean to explore, learn, and put to the test their decentralized apps in a secure and local environment before starting production stages."
   },
-  "about.whyWorkTitle":{
+  "about.whyWorkTitle": {
     "message": "Why work with LACChain EOSIO?"
   },
-  "about.whyWorkText":{
+  "about.whyWorkText": {
     "message": "The team of LACChain EOSIO has developed a compelling network infrastructure and resources to help you get started in minutes. Also, with the support of partners and ally organizations, we have assembled a unique set of resources and tools to help you explore EOSIO blockchain technology."
   },
-  "about.followUs":{
+  "about.followUs": {
     "message": "Follow us to stay up to date"
   },
-  "about.LACChain":{
+  "about.LACChain": {
     "message": "is the Global Alliance for the Development of the Blockchain Ecosystem in Latin America and the Caribbean, an initiative led by IDB Lab (Innovation Laboratory of the Inter-American Development Bank group)."
   },
-  "about.EOSCR":{
+  "about.EOSCR": {
     "message": "develops blockchain-based enterprise solutions deploying the EOSIO protocol. The company also offers blockchain infrastructure and learning resources for executives and developers."
   },
-  "about.EOSArgentina":{
+  "about.EOSArgentina": {
     "message": "has extensive experience in DPOS networks and blockchain projects, provides infrastructure, and promotes the technology. The company is a block producerin the EOS network."
   },
-  "about.blockOne":{
+  "about.blockOne": {
     "message": "is a leading tech company that launched the EOSIO blockchain protocol in 2018. It provides technology and products that enable trust in transactions, transparency in systems, and efficiency in how the world works"
   },
-  "about.EOSVenezuela":{
+  "about.EOSVenezuela": {
     "message": "provides blockchain infrastructure in POS and DPOS systems. They are pioneers in the use of crypto and blockchain for social impact and promote blockchain in Latin America."
   },
-  "about.whoBehind":{
+  "about.whoBehind": {
     "message": "Who’s behind LACChain EOSIO"
   },
-  "about.haveQuestionsTitle":{
+  "about.haveQuestionsTitle": {
     "message": "Do you have questions about LACChain EOSIO?"
   },
-  "about.haveQuestionsButton":{
+  "about.haveQuestionsButton": {
     "message": "Join the Conversation"
   },
-  "about.questions":{
+  "about.questions": {
     "message": "Frequently asked questions"
   },
-  "about.WhatsLACChain":{
+  "about.WhatsLACChain": {
     "message": "What Is LACChain EOSIO?"
   },
-  "about.WhatsLACChainText":{
+  "about.WhatsLACChainText": {
     "message": "LACChain EOSIO offers a blockchain blockchain network that integrates into LACChain. Led by Latin American technology companies, LACChain EOSIO deploys a public permissioned version of EOSIO blockchain technology to enable developers and organizations to test their decentralized applications and infrastructure within a testing environment. The LACChain EOSIO network incorporates a permissioning committee to authorize the nodes that write and validate new blocks into the blockchain. The network deploys system contracts based on the Proof-of-Authority (POA) consensus mechanism and ensures standard agreement among the nodes."
   },
-  "about.WhatsLACChain2":{
+  "about.WhatsLACChain2": {
     "message": "What Is LACChain?"
   },
-  "about.WhatsLACChainText2":{
+  "about.WhatsLACChainText2": {
     "message": "LACChain is the Global Alliance for the Development of the Blockchain Ecosystem in Latin America and the Caribbean, an initiative led by IDB Lab (Innovation Laboratory of the Inter-American Development Bank group). Its goal is to accelerate the empowerment and adoption of blockchain technology to foster innovation, reduce inequalities and impact on inclusion. To do this, LACChain focuses on two main pillars: community and infrastructure. In addition, it seeks to develop and promote network interoperability, as well as to deploy and maintain interoperable blockchain infrastructures. LACChain Blockchain Networks, uses Hyperledger Besu and EOSIO technologies."
   },
-  "about.whatEOSIO":{
+  "about.whatEOSIO": {
     "message": "What Is EOSIO?"
   },
-  "about.whatEOSIOText1":{
+  "about.whatEOSIOText1": {
     "message": "EOSIO is a next-generation blockchain technology launched in 2018 by Block.one, a leading technology company that provides high-performance blockchain solutions. EOSIO offers:"
   },
-  "about.whatEOSIOText2":{
+  "about.whatEOSIOText2": {
     "message": "- High scalability: EOSIO allows industry-leading speed with up to 4,000 transactions per second, low block time latency rate (0.5 seconds), and Byzantine fault tolerance."
   },
-  "about.whatEOSIOText3":{
+  "about.whatEOSIOText3": {
     "message": "- Flexibility: EOSIO can deploy configurable smart contracts suitable to any business or application with custom governance and business logic and free transactions with consumption limits."
   },
-  "about.whatEOSIOText4":{
+  "about.whatEOSIOText4": {
     "message": "- Quick adaptability: The EOSIO community introduces a growing set of resources and tools for developers. Also, EOSIO smart contacts can be coded with C++."
   },
-  "about.whatEOSIOText5":{
+  "about.whatEOSIOText5": {
     "message": "- Improved security: EOSIO deploys the latest in blockchain and web security verification standards with end-to-end authentication."
   },
-  "about.whoBehindText":{
+  "about.whoBehindText": {
     "message": "LACChain EOSIO was initially developed by the EOS Costa Rica and EOS Argentina teams, with the support of LACChain, a program of the IDB Lab (part of the Inter-American Development Bank). LACChain EOSIO deploys a public permissioned version of EOSIO. The team mainly comprises members of EOS Costa Rica, EOS Argentina, and advisory from LACChain, with some efforts from other organizations such as EOS Venezuela, Block.one, dfuse, and EOS Detroit."
   },
   "about.howStarted":{
     "message": "How to Get Started in LACChain EOSIO?"
   },
-  "about.howStartedText":{
+  "about.howStartedText": {
     "message": "To create an account, first, contact our team through the contact form. We will reply as soon as possible and guide you through the following steps. To find more about how to start using LACChain EOSIO,"
   },
-  "about.howStartedLink":{
+  "about.howStartedLink": {
     "message": "visit our documentation"
   },
-  "about.howContributeTitle":{
+  "about.howContributeTitle": {
     "message": "How to Contribute with LACChain EOSIO?"
   },
-  "about.howContributeText1":{
+  "about.howContributeText1": {
     "message": "You can help us assembling documentation, resources, and tools for developers."
   },
-  "about.howContributeLink":{
+  "about.howContributeLink": {
     "message": "See here how to contribute"
   },
-  "about.howContributeText2":{
+  "about.howContributeText2": {
     "message": "Also, we’re open to having more organizations or members working with us. Contact us."
   },
-  "about.createStartBanner":{
+  "about.createStartBanner": {
     "message": "Create your LACChain EOSIO account and start building."
   },
-  "about.advisor":{
+  "about.advisor": {
     "message": "Advisor"
   },
-  "about.businessDevelopment":{
+  "about.businessDevelopment": {
     "message": "Business Development"
   },
-  "about.techLead":{
+  "about.techLead": {
     "message": "Tech Lead"
   },
-  "about.EOSDeveloper":{
+  "about.EOSDeveloper": {
     "message": "EOS Developer"
   },
-  "about.UXDesigner":{
+  "about.UXDesigner": {
     "message": "UX Designer"
   },
-  "about.communications":{
+  "about.communications": {
     "message": "Communications"
+  },
+  "about.fullStack": {
+    "message": "Full-stack Developer"
   },
   "contact.name": {
     "message": "First name"
   },
-  "contact.lastName": {
-    "message": "Last Name"
+  "footer.homePage": {
+    "message": "Home Page"
+  },
+  "footer.about": {
+    "message": "About"
   },
   "contact.companyName": {
     "message": "Organization or company"
@@ -503,14 +515,11 @@
   "contact.title": {
     "message": "Contact LACChain EOSIO"
   },
+  "contact.bodyTitle": {
+    "message": "Choose the closest option to the support you are seeking"
+  },
   "contact.text": {
     "message": "Do you have questions or are you ready to create an account and start using LACChain EOSIO?"
-  },
-  "contact.resultText": {
-    "message": "Thank you for contacting LACChain EOSIO. We will respond to you as soon as possible"
-  },
-  "contact.useInformation": {
-    "message": "We respect your privacy. We will not share any contact information and will only use it to contact you about our services. You may unsubscribe from these communications at any time."
   },
   "contact.wantAccount": {
     "message": "I want to create an account"
@@ -518,8 +527,26 @@
   "contact.haveQuestions": {
     "message": "I have questions about LACChain EOSIO"
   },
+  "contact.haveQuestionsText": {
+    "message": "Connect with us through Telegram and find support from people in the community"
+  },
   "contact.wantContribute": {
     "message": "I want to contribute"
+  },
+  "contact.wantContributeText": {
+    "message": "Join our Github and contribute. We are always lookingfor help!"
+  },
+  "contact.wantContributekLink": {
+    "message": "Learn more about how to contribute"
+  },
+  "contact.wantAccountText": {
+    "message": "Contact one of the partners of LACChain EOSIO so we can guide you with the process."
+  },
+  "contact.followUs1": {
+    "message": "To receive updates about LACChain EOSIO,"
+  },
+  "contact.followUs2": {
+    "message": "please connect with us on social media!"
   },
   "contact.submit": {
     "message": "Submit"
