@@ -65,7 +65,7 @@ const team = [
       })
   },
   {
-    photo:"img/team/andres.jpg",
+    photo:"img/team/gris.jpg",
     name:"Jesús Chitty",
     org:"EOS Argentina",
     position:
@@ -81,7 +81,7 @@ const team = [
     position:"DevOps"
   },
   {
-    photo:"img/team/luisDiego.jpg",
+    photo:"img/team/gris.jpg",
     name:"Matías Romero",
     org:"EOS Argentina",
     position:
@@ -111,7 +111,7 @@ const team = [
       })
   },
   {
-    photo:"img/team/adriel.jpg",
+    photo:"img/team/gris.jpg",
     name:"Adriel Díaz",
     org:"EOS Costa Rica",
     position:
