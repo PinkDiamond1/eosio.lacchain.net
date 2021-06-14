@@ -197,8 +197,11 @@
   "homepage.titule2": {
     "message": "Latin America and the Caribbean"
   },
-  "homepage.headerText": {
-    "message": "LACChain EOSIO enables organizations and developers to build blockchain applications on the LACChain network powered by EOSIO technology."
+  "homepage.headerText1": {
+    "message": "LACChain EOSIO enables organizations and developers to build blockchain"
+  },
+  "homepage.headerText2": {
+    "message": "applications on the LACChain network powered by EOSIO technology."
   },
   "homepage.headerButton1": {
     "message": "Join the Network"

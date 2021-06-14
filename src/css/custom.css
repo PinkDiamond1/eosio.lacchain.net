@@ -1,7 +1,7 @@
  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
  :root {
-  --ifm-color-primary: #19af54;
+  --ifm-color-primary: #038702;
   --ifm-color-primary-dark: #179e4c;
   --ifm-color-primary-darker: #159547;
   --ifm-color-primary-darkest: #117b3b;
@@ -12,6 +12,11 @@
 
  body{
   overflow-x: hidden;
+}
+
+.paddingBox{
+  padding: 25px;
+  padding-top: 0;
 }
 
 .docs-wrapper{
@@ -49,6 +54,10 @@ a{
   color: #1cc15c;
 }
 
+h1{
+  font-size: 3rem;
+}
+
 .white{
   color: white;
 }
@@ -62,7 +71,7 @@ a{
   font-size: 21px;
   width: auto;
   padding: 25px;
-  background-color: #19af54;
+  background-color: #038702;
   color: white;
   border: none;
   border-radius: 0;
@@ -91,8 +100,8 @@ a{
   padding: 25px;
   background-color: transparent;
   border-radius: 0;
-  border: solid 2px #19af54;
-  color: #19af54;
+  border: solid 2px #038702;
+  color: #038702;
   cursor: pointer;
   transition: all .5s ease;
 }
@@ -115,7 +124,7 @@ a{
 
 .buttonSecondary:hover{
   color: white;
-  background-color: #19af54;
+  background-color: #038702;
 }
 
 .resourcesIcon{
@@ -232,7 +241,7 @@ a{
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255);
 }
 
 .navBarScroll{
@@ -349,7 +358,7 @@ a{
 .langItemActive{
   font-family: Lato, sans-serif;
   padding-bottom: 3px;
-  border-bottom: solid 4px #19af54;
+  border-bottom: solid 4px #038702;
   font-weight: bold;
   cursor: pointer;
 }
@@ -461,7 +470,7 @@ a{
   height: 5px;
   width: 0%;
   top: 0;
-  background:#19af54;
+  background:#038702;
   transition-property: width height;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
@@ -483,7 +492,7 @@ a{
   height: 5px;
   width: 100%;
   top: 0;
-  background:#19af54;
+  background:#038702;
   transition-property: width height;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
@@ -532,7 +541,7 @@ a{
   height: 5px;
   width: 0;
   bottom: 45px;
-  background:#19af54;
+  background:#038702;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -552,7 +561,7 @@ a{
   height: 5px;
   width: 100%;
   bottom: 45px;
-  background:#19af54;
+  background:#038702;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -572,7 +581,7 @@ a{
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #19af54;
+  color: #038702;
 }
 
 .drawerContent{
@@ -685,7 +694,7 @@ a{
 }
 
 .linkFooter:hover{
-  color: #19af54;
+  color: #038702;
   text-decoration: none;
 }
 
@@ -701,6 +710,14 @@ a{
   width: 1100px;
   justify-content: center;
   padding: 0;
+  background-color: #ffffff;
+}
+
+.generalContainer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #ffffff;
 }
 
 .containerGray{
@@ -793,7 +810,7 @@ a{
 
 .sectionHero{
   width: 1100px;
-  height: 750px;
+  height: 670px;
   padding-top: 180px;
 }
 
@@ -1000,7 +1017,7 @@ a{
 
 .socialMediaIcon{
   cursor: pointer;
-  color: #19af54;
+  color: #038702;
   margin-right: 15px;
 }
 
@@ -1151,7 +1168,7 @@ a{
 }
 
 .iconSocialMediaAnimation:hover{
-  fill: #19af54;
+  fill: #038702;
 }
 
 .footerMediumIcon{
@@ -1202,7 +1219,7 @@ a{
 }
 
 .iconStepActive{
-  background-color: #19af54;
+  background-color: #038702;
   width: 30px;
   height: 30px;
   border-radius: 50%;
