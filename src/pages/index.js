@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import Box from '@material-ui/core/Box'
@@ -26,63 +26,77 @@ const Home = () => {
   const isDesktop = useMediaQuery( {query:'(min-width: 960px)'} )
   const history = useHistory()
 
+  const refProjects = useRef(null)
+
+  const handleScrollProjects = () => refProjects.current.scrollIntoView({behavior:'smooth', block:'start', inline:'nearest'})
+
   const HeroSection = () => {
     return (
-      <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
-        {isDesktop && 
-          <Box className="sectionHero">
-          <Box className="titleBox">
-            <h1 style={{textAlign:'center'}}>
-              <Translate id="homepage.titule1">La red de blockchain EOSIO para </Translate>
-              <br/>
-              <Translate id="homepage.titule2"> Latinoamérica y el Caribe</Translate>
-            </h1>
-          </Box>
-          <p style={{textAlign:'center', fontSize:'24px'}}>
-            <Translate id="homepage.headerText1">
-              LACChain EOSIO permite a organizaciones y desarrolladores crear
-            </Translate>
-            <br/>
-            <Translate id="homepage.headerText2">
-              aplicaciones en la red de LACChain impulsada por tecnología EOSIO.
-            </Translate>
-          </p>
-          <Box className="buttonBox" style={{justifyContent:'space-around', display:'flex'}}>
-            <button className="buttonSecondary" onClick={() => history.push("/contact-us")} >
-              <Translate id="homepage.headerButton1">Únase a la red</Translate>
-            </button>
-            <button className="buttonPrimary" onClick={() => history.push("/docs/eosio")} >
-              <Translate id="homepage.headerButton2">Aprenda más</Translate>
-            </button>
-          </Box>
-        </Box>
-        }
-        {isMobile && 
-          <Box className="sectionHeroMobile">
+      <Box className="generalContainer" 
+        style={{ 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '89%',
+          backgroundPosition: '280px 120px',
+          backgroundImage: `url(${bg})`,
+          backgroundColor: '#F9F9F9'
+        }}
+      >
+        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+          {isDesktop && 
+            <Box className="sectionHero">
             <Box className="titleBox">
-              <h1>
+              <h1 style={{textAlign:'center'}}>
                 <Translate id="homepage.titule1">La red de blockchain EOSIO para </Translate>
-                {" "}
+                <br/>
                 <Translate id="homepage.titule2"> Latinoamérica y el Caribe</Translate>
               </h1>
             </Box>
-            <p>
-              <Translate id="homepage.headerText">
+            <p style={{textAlign:'center', fontSize:'24px'}}>
+              <Translate id="homepage.headerText1">
                 LACChain EOSIO permite a organizaciones y desarrolladores crear
+              </Translate>
+              <br/>
+              <Translate id="homepage.headerText2">
                 aplicaciones en la red de LACChain impulsada por tecnología EOSIO.
               </Translate>
             </p>
-            <Box className="buttonBoxMobile" style={{display:'grid'}}>
-              <button className="buttonPrimary" onClick={() => history.push("/")} >
+            <Box className="buttonBox" style={{justifyContent:'space-around', display:'flex'}}>
+              <button className="buttonSecondary" onClick={() => history.push("/contact-us")} >
                 <Translate id="homepage.headerButton1">Únase a la red</Translate>
               </button>
-              <br/>
-              <button className="buttonPrimary" onClick={() => history.push("/")} >
+              <button className="buttonPrimary" onClick={() => history.push("/docs/eosio")} >
                 <Translate id="homepage.headerButton2">Aprenda más</Translate>
               </button>
             </Box>
           </Box>
-      }
+          }
+          {isMobile && 
+            <Box className="sectionHeroMobile">
+              <Box className="titleBox">
+                <h1>
+                  <Translate id="homepage.titule1">La red de blockchain EOSIO para </Translate>
+                  {" "}
+                  <Translate id="homepage.titule2"> Latinoamérica y el Caribe</Translate>
+                </h1>
+              </Box>
+              <p>
+                <Translate id="homepage.headerText">
+                  LACChain EOSIO permite a organizaciones y desarrolladores crear
+                  aplicaciones en la red de LACChain impulsada por tecnología EOSIO.
+                </Translate>
+              </p>
+              <Box className="buttonBoxMobile" style={{display:'grid'}}>
+                <button className="buttonPrimary" onClick={() => history.push("/")} >
+                  <Translate id="homepage.headerButton1">Únase a la red</Translate>
+                </button>
+                <br/>
+                <button className="buttonPrimary" onClick={() => history.push("/")} >
+                  <Translate id="homepage.headerButton2">Aprenda más</Translate>
+                </button>
+              </Box>
+            </Box>
+          }
+        </Box>
       </Box>
     )
   } 
@@ -162,7 +176,7 @@ const Home = () => {
                   </Translate>
                 </p>
                 <Box className={clsx('centerBox','buttonBox')}>
-                  <button className='buttonPrimary' onClick={() => history.push("/")} >
+                  <button className='buttonPrimary' onClick={handleScrollProjects} >
                     <Translate id="homepage.seeProjects">Ver proyectos</Translate>
                   </button>
                 </Box>
@@ -180,7 +194,7 @@ const Home = () => {
                   </Grid>
                   <Grid item md={3}>
                     <Box style={{marginTop:'75px'}}>
-                      <img style={{width:'82px'}} src={useBaseUrl('img/logos/eosio-logo.svg')} alt="EOSIO logo" />
+                      <img style={{width:'95px'}} src={useBaseUrl('img/logos/eosio-logo.svg')} alt="EOSIO logo" />
                     </Box>
                   </Grid>
                 </Grid>
@@ -256,7 +270,7 @@ const Home = () => {
     return (
       <Box className="generalContainer">
         <Box className="containerSec">
-          <Box className="sectionNoPadding">
+          <Box className="section">
             <Box className="h3Box">
               <h2>
                 <Translate id="homepage.foundingTitle">
@@ -272,8 +286,8 @@ const Home = () => {
                       <img
                         style={{width:'200px'}}
                         className="oneGroupLogo"
-                        alt="LACChain"
-                        src={useBaseUrl('img/logos/lacchain.svg')}
+                        alt="BID Lab logo"
+                        src={useBaseUrl('img/logos/bid-lab-logo.svg')}
                       />
                     </a>
                   </Box>
@@ -424,31 +438,41 @@ const Home = () => {
 
   const AreYouReady = () => {
     return (
-      <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
-        <Box className="sectionPadding">
-          <Grid  justify="center" alignItems="center" container spacing={5}>
-            <Grid item xs={12} md={8}>
-              <Box className="boxFlexEnd">
-                <h2 className="bannerStyle">
-                  <Translate id="homepage.readyText">
-                    ¿Todo listo para empezar a usar LACChain EOSIO?
-                  </Translate>
-                </h2>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={3}>
-                <Box className="centerBox">
-                  <button 
-                    className="buttonPrimary" 
-                    onClick={() => history.push("/contac-us")}
-                  >
-                    <Translate id="homepage.startNow">
-                      Comience ahora
+      <Box className="generalContainer" 
+        style={{ 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '89%',
+          backgroundPosition: '280px 0',
+          backgroundImage: `url(${bg})`,
+          backgroundColor: '#F9F9F9'
+        }}
+      >
+        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+          <Box className="sectionPadding">
+            <Grid  justify="center" alignItems="center" container spacing={5}>
+              <Grid item xs={12} md={8}>
+                <Box className="boxFlexEnd">
+                  <h2 className="bannerStyle">
+                    <Translate id="homepage.readyText">
+                      ¿Todo listo para empezar a usar LACChain EOSIO?
                     </Translate>
-                  </button>
+                  </h2>
                 </Box>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                  <Box className="centerBox">
+                    <button 
+                      className="buttonPrimary" 
+                      onClick={() => history.push("/contac-us")}
+                    >
+                      <Translate id="homepage.startNow">
+                        Comience ahora
+                      </Translate>
+                    </button>
+                  </Box>
+              </Grid>
             </Grid>
-          </Grid>
+          </Box>
         </Box>
       </Box>
     )
@@ -668,7 +692,7 @@ const Home = () => {
 
   const Projects  = () => {
     return (
-      <Box className="generalContainer">
+      <Box ref={refProjects} className="generalContainer">
         <Box className="containerSec">
           <Box className="sectionPadding">
             <Box className="titleBox">
@@ -723,40 +747,41 @@ const Home = () => {
 
   const CreateAccount = () => {
     return (
-      <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
-        <Box className="sectionPadding">
-          <Grid  justify="center" alignItems="center" container spacing={5}>
-            <Grid item xs={12} md={9}>
-              <Box className="boxFlexEnd">
-                <h2 className="bannerStyle">
-                  <Translate id="homepage.createAccountBanner">
-                    Cree su cuenta y empiece a usar LACChain EOSIO. 
-                  </Translate>
-                </h2>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={3}>
-                <Box className="centerBox">
-                  <button 
-                    className="buttonPrimary" 
-                    onClick={() => history.push("/contact-us")}
-                  >
-                    <Translate id="homepage.startNow">
-                      Comience ahora
+      <Box className="generalContainer" 
+        style={{ 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '89%',
+          backgroundPosition: '280px 0',
+          backgroundImage: `url(${bg})`,
+          backgroundColor: '#F9F9F9'
+        }}
+      >
+        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+          <Box className="sectionPadding">
+            <Grid justify="center" alignItems="center" container spacing={5}>
+              <Grid item xs={12} md={9}>
+                <Box className="boxFlexEnd">
+                  <h2 className="bannerStyle">
+                    <Translate id="homepage.createAccountBanner">
+                      Cree su cuenta y empiece a usar LACChain EOSIO. 
                     </Translate>
-                  </button>
+                  </h2>
                 </Box>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                  <Box className="centerBox">
+                    <button 
+                      className="buttonPrimary" 
+                      onClick={() => history.push("/contact-us")}
+                    >
+                      <Translate id="homepage.startNow">
+                        Comience ahora
+                      </Translate>
+                    </button>
+                  </Box>
+              </Grid>
             </Grid>
-          </Grid>
-        </Box>
-      </Box>
-    )
-  }
-
-  const SpaceWhite = () => {
-    return (
-      <Box className="generalContainer">
-        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)', height:'60px'}}>
+          </Box>
         </Box>
       </Box>
     )
@@ -770,26 +795,17 @@ const Home = () => {
       hrefLangPath={MetaData.hrefLangPath}
     > 
       {isDesktop && 
-        <Box className="mainContainer" 
-          style={{ 
-            backgroundRepeat: 'repeat-y',
-            backgroundSize: '100%',
-            backgroundPosition: '270px 114px',
-            backgroundImage: `url(${bg})`,
-            backgroundColor: '#F9F9F9'
-          }}
-        >
+        <Box className="mainContainer">
           <HeroSection/>
           <IconSection/>
           <DiscoverPowerful/>
           <AnEcosystem/>
           <FoundingPartners/>
+          <CreateAccount/>
           <WhatLACChainEOSIO/>
           <AreYouReady/>
           <Tools/>
           <Projects/>
-          <CreateAccount/>
-          <SpaceWhite/>
         </Box>
       }
       {isMobile && 
@@ -800,9 +816,11 @@ const Home = () => {
             <DiscoverPowerful/>
             <AnEcosystem/>
             <FoundingPartners/>
+            <CreateAccount/>
+            <WhatLACChainEOSIO/>
             <AreYouReady/>
             <Tools/>
-            <CreateAccount/>
+            <Projects/>
           </Box>
         </Box>
       }
