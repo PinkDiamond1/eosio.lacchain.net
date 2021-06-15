@@ -36,7 +36,7 @@ const PATHS = [
     label: 
       translate({
         id: 'navbar.about',
-        message: 'Sobre LACChain EOSIO'
+        message: 'LACChain EOSIO'
       }),
     target: '_self',
     icon: 'img/icons/navbar/services.png'
@@ -47,8 +47,8 @@ const PATHS = [
     espPath: "/",
     label: 
       translate({
-        id: 'footer.devTools',
-        message: 'Herramientas para Devs'
+        id: 'navbar.tools',
+        message: 'Herramientas'
       }),
     target: '_self',
     markerSize: "210px",

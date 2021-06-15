@@ -16,7 +16,7 @@ const GenericListItem = withStyles({
     }
   },
   selected: {
-    borderLeft: 'solid 5px #19af54',
+    borderLeft: 'solid 5px #038702',
   }
 })((props) => <ListItem {...props} />);
 

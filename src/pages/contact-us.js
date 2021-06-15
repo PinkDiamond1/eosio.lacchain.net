@@ -38,7 +38,7 @@ const ContactUS = () => {
         {isDesktop && 
             <Box className="containerSec">
               <Box className={clsx("sectionPaddingTop",{["sectionPadding"]: isMobile})}>
-                <Box className="h3Box">
+                <Box className="h2Box">
                   <h1>
                     <Translate id="contact.title">
                       Contacte a LACChain EOSIO
@@ -59,7 +59,7 @@ const ContactUS = () => {
           }
           {isMobile && 
             <Box className="sectionHeroMobile">
-              <Box className="h3Box">
+              <Box className="h2Box">
                 <Translate id="contact.title">
                   Contacte a LACChain EOSIO
                 </Translate>
@@ -86,20 +86,20 @@ const ContactUS = () => {
           <Grid container spacing={isDesktop ? 8 : 3}>
             <Grid item xs={12} md={9}>
               <Box className="titleBox">
-                <h3>
+                <h2>
                   <Translate id="contact.bodyTitle">
                     Elija la opción más cercana a lo que está buscando
                   </Translate>
-                </h3>
+                </h2>
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
               <Box className="titleBox">
-                <h4>
+                <h3>
                   <Translate id="contact.haveQuestions">
                     Tengo preguntas sobre LACChain EOSIO.
                   </Translate>
-                </h4>
+                </h3>
               </Box>
               <p>
                 <Translate id="contact.haveQuestionsText">
@@ -119,11 +119,11 @@ const ContactUS = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Box className="titleBox">
-                <h4>
+                <h3>
                   <Translate id="contact.wantContribute">
                     Quiero contribuir.
                   </Translate>
-                </h4>
+                </h3>
               </Box>
               <p>
                 <Translate id="contact.wantContributeText">
@@ -148,11 +148,11 @@ const ContactUS = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Box className="titleBox">
-                <h4>
+                <h3>
                   <Translate id="contact.wantAccount">
                     Quiero crear una cuenta.
                   </Translate>
-                </h4>
+                </h3>
               </Box>
               <p>
                 <Translate id="contact.wantAccountText">
@@ -192,8 +192,8 @@ const ContactUS = () => {
         <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
           <Grid container justify='center' alignItems="center" spacing={2}>
             <Grid item xs={12} md={12}>
-                <Box className="h3Box">
-                    <h3 style={{textAlign:'center'}}>
+                <Box className="h2Box">
+                    <h2 style={{textAlign:'center'}}>
                       <Translate id="contact.followUs1">
                         ¡Síganos en nuestras redes sociales para
                       </Translate>
@@ -201,7 +201,7 @@ const ContactUS = () => {
                       <Translate id="contact.followUs2">
                         recibir actualizaciones sobre LACChain EOSIO!
                       </Translate>
-                    </h3>
+                    </h2>
                 </Box>
             </Grid>
             <Grid item xs={5} md={2}>

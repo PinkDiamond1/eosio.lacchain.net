@@ -44,7 +44,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://lacchain.eosio.online/"
+                    href={useBaseUrl("/")}
                     target="_blank"
                     style={{color:'white'}}
                   >
@@ -56,7 +56,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://explorer.latamlink.io/"
+                    href={useBaseUrl("/about")}
                     target="_blank"
                     style={{color:'white'}}
                   >
@@ -68,7 +68,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://explorer.latamlink.io/"
+                    href={useBaseUrl("/docs/eosio")}
                     target="_blank"
                     style={{color:'white'}}
                   >
@@ -80,7 +80,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://explorer.latamlink.io/"
+                    href={useBaseUrl("/contact-us")}
                     target="_blank"
                     style={{color:'white'}}
                   >
@@ -134,7 +134,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://explorer.latamlink.io/"
+                    href="https://eoscostarica.io/"
                     target="_blank"
                     style={{color:'white'}}
                   >
@@ -144,7 +144,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://explorer.latamlink.io/"
+                    href="https://www.eosargentina.io/"
                     target="_blank"
                     style={{color:'white'}}
                   >
@@ -165,7 +165,7 @@ const Footer = () => {
               <Grid item xs={12} md={4}>
                 <Grid item xs={12}>
                   <Box style={{marginTop: isMobile ? '40px' : ''}} className={isMobile ? "centerBox" : "leftBox"}>
-                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
+                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
                       <TwitterIcon 
                         style={{
                           width: isDesktop ? '35px' : '45px',
@@ -173,7 +173,7 @@ const Footer = () => {
                           cursor:'pointer', color:'#ffffff'
                         }}/>
                     </a>
-                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://www.linkedin.com/company/eoscostarica/mycompany/" target="_blank">
+                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
                       <LinkedInIcon
                         style={{
                           width: isDesktop ? '35px' : '45px',
@@ -181,7 +181,7 @@ const Footer = () => {
                           cursor:'pointer', color:'#ffffff'
                         }}/>
                     </a>
-                    <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://www.youtube.com/channel/UCvYinCH3O1iKpi-_dNfQAGQ" target="_blank">
+                    <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
                       <TelegramIcon 
                         style={{
                           width: isDesktop ? '42px' : '45px',
@@ -196,8 +196,8 @@ const Footer = () => {
               <Grid item xs={12} md={3}>
                 <Grid style={{marginLeft: isDesktop ? '-20px' : ''}} item xs={12}>
                   <Box className={isMobile ? "centerBox" : "leftBox"} style={{marginTop:'3px'}}>
-                    <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
-                      <EmailIcon 
+                    <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
+                      <EmailIcon
                         style={{
                           width: isDesktop ? '38px' : '45px',
                           height: isDesktop ? '38px' : '45px',
@@ -205,7 +205,7 @@ const Footer = () => {
                           color:'#ffffff'
                         }}/>
                     </a>
-                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
+                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
                       <GitHubIcon 
                         style={{
                           width: isDesktop ? '35px' : '45px',
