@@ -10,7 +10,9 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import Translate, {translate} from '@docusaurus/Translate'
+import Translate from '@docusaurus/Translate'
+
+import bg from '../../static/img/bgHomePage.jpg'
 
 const MetaData={
     title:"LACChain: Contáctenos",
@@ -22,7 +24,6 @@ const MetaData={
 const ContactUS = () => {
   const isMobile = useMediaQuery( {query:'(max-width: 960px)'} )
   const isDesktop = useMediaQuery( {query:'(min-width: 960px)'} )
-  const history = useHistory()
   
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded? panel: false)
@@ -60,18 +61,18 @@ const ContactUS = () => {
           {isMobile && 
             <Box className="sectionHeroMobile">
               <Box className="h2Box">
-                <Translate id="contact.title">
-                  Contacte a LACChain EOSIO
-                </Translate>
+                <h1>
+                  <Translate id="contact.title">
+                    Contacte a LACChain EOSIO
+                  </Translate>
+                </h1>
               </Box>
               <Box className="contactFormBox">
-                <Box className="spacingBox">
-                  <p>
-                    <Translate id="contact.text">
-                      ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
-                    </Translate>
-                  </p>
-                </Box>
+                <p>
+                  <Translate id="contact.text">
+                    ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
+                  </Translate>
+                </p>
               </Box>
             </Box>
         }
@@ -108,13 +109,10 @@ const ContactUS = () => {
               </p>
             </Grid>
             <Grid item xs={12} md={3} alignItems='center' alignContent='center' justify='center'>
-              <Box className="specialButtonBox">
-                <Box className={clsx("boxIconButton", "centerBox", "buttonPrimary")}>
-                  <TelegramIcon style={{width:'50px', height:'50px'}}/>
-                  <Box className="marginLeft">
-                      Telegram
-                  </Box>
-                </Box>
+              <Box className="buttonBox">
+                <button className='buttonPrimary' style={{width:'185px'}} onClick={() => window.open('https://t.me/lacchaineosio')}>
+                  Telegram
+                </button>
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -137,13 +135,10 @@ const ContactUS = () => {
               </p>
             </Grid>
             <Grid item xs={12} md={3}>
-              <Box className="specialButtonBox">
-                <Box className={clsx("boxIconButton", "centerBox", "buttonPrimary")}>
-                  <GitHubIcon style={{width:'50px', height:'50px'}}/>
-                  <Box className="marginLeft">
-                    Github
-                  </Box>
-                </Box>
+              <Box className="buttonBox">
+                <button className='buttonPrimary' style={{width:'185px'}} onClick={() => window.open('https://github.com/lacchain/eosio.lacchain.net')}>
+                  GitHub
+                </button>
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -163,8 +158,8 @@ const ContactUS = () => {
             <Grid item xs={12} md={3}>
               <Box className="buttonBox">
                 <button
-                  className="buttonPrimary" 
-                  onClick={() => history.push("/contactenos")}
+                  className="buttonPrimary"
+                  onClick={() => window.open('https://github.com/lacchain/eosio.lacchain.net')}
                 >
                   EOS Costa Rica
                 </button>
@@ -174,7 +169,7 @@ const ContactUS = () => {
               <Box className="buttonBox">
                 <button
                   className="buttonPrimary" 
-                  onClick={() => history.push("/contactenos")}
+                  onClick={() => window.open('https://www.eosargentina.io/')}
                 >
                   EOS Argentina
                 </button>
@@ -188,43 +183,53 @@ const ContactUS = () => {
 
   const FollowUsBanner = () => {
     return (
-      <Box className="containerSec">
-        <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
-          <Grid container justify='center' alignItems="center" spacing={2}>
-            <Grid item xs={12} md={12}>
+      <Box className="generalContainer" 
+        style={{ 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '89%',
+          backgroundPosition: '280px 0',
+          backgroundImage: `url(${bg})`,
+          backgroundColor: '#F9F9F9'
+        }}
+      >
+        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+          <Box className="sectionPadding">
+            <Grid container justify='center' alignItems="center" spacing={2}>
+              <Grid item xs={12} md={12}>
                 <Box className="h2Box">
-                    <h2 style={{textAlign:'center'}}>
-                      <Translate id="contact.followUs1">
-                        ¡Síganos en nuestras redes sociales para
-                      </Translate>
-                      <br/>
-                      <Translate id="contact.followUs2">
-                        recibir actualizaciones sobre LACChain EOSIO!
-                      </Translate>
-                    </h2>
+                  <h2 style={{textAlign:'center'}}>
+                    <Translate id="contact.followUs1">
+                      ¡Síganos en nuestras redes sociales para
+                    </Translate>
+                    <br/>
+                    <Translate id="contact.followUs2">
+                      recibir actualizaciones sobre LACChain EOSIO!
+                    </Translate>
+                  </h2>
                 </Box>
+              </Grid>
+              <Grid item xs={5} md={2}>
+                <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
+                      <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
+                      <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
+                </Box>
+              </Grid>
+              <Grid item xs={5} md={2}>
+                <Box className="centerBox" style={{justifyContent:'space-around'}}>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
+                      <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
+                      <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
+                </Box>
+              </Grid>
             </Grid>
-            <Grid item xs={5} md={2}>
-              <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
-                    <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
-                    <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-              </Box>
-            </Grid>
-            <Grid item xs={5} md={2}>
-              <Box className="centerBox" style={{justifyContent:'space-around'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
-                    <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
-                    <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-              </Box>
-            </Grid>
-          </Grid>
+          </Box>
         </Box>
       </Box>
     )
@@ -247,9 +252,11 @@ const ContactUS = () => {
       }
       {isMobile && 
         <Box className="mainContainer">
-          <HeroSection/>
-          <IconSection/>
-          <FollowUsBanner/>
+          <Box className="paddingBox">
+            <HeroSection/>
+            <IconSection/>
+            <FollowUsBanner/>
+          </Box>
         </Box>
       }
     </Layout>
