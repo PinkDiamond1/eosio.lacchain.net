@@ -494,6 +494,18 @@
   "about.fullStack": {
     "message": "Full-stack Developer"
   },
+  "about.highScalability": {
+    "message": "- High Scalability"
+  },
+  "about.flexibility": {
+    "message": "- Flexibility"
+  },
+  "about.quickAdaptability": {
+    "message": "- Quick adaptability"
+  },
+  "about.improvedSecurity": {
+    "message": "- Improved security"
+  },
   "contact.name": {
     "message": "First name"
   },
