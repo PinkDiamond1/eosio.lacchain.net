@@ -16,6 +16,8 @@ import AccordionDetails from '@material-ui/core/AccordionDetails'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
+import bg from '../../static/img/bgHomePage.jpg'
+
 const MetaData={
   title:"LACChain EOSIO Testnet",
   description:"LACChain EOSIO",
@@ -113,6 +115,16 @@ const team = [
   {
     photo:"img/team/gris.jpg",
     name:"Adriel Díaz",
+    org:"EOS Costa Rica",
+    position:
+      translate({
+        id: 'about.fullStack',
+        message: 'Desarrollador Full-stack'
+      })
+  },
+  {
+    photo:"img/team/gris.jpg",
+    name:"Terencio Gómez",
     org:"EOS Costa Rica",
     position:
       translate({
@@ -232,39 +244,50 @@ const About = () => {
   
   const FollowUsBanner = () => {
     return (
-      <Box className="containerSec">
-        <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
-          <Grid container justify='center' alignItems="center" spacing={2}>
-            <Grid item xs={12} md={12}>
-                <Box className="h3Box">
-                    <h2 style={{textAlign:'center'}}>
-                      <Translate id="about.followUs">
-                        Síganos para estar al tanto:
-                      </Translate>
-                    </h2>
+      <Box className="generalContainer" 
+        style={{ 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '89%',
+          backgroundPosition: '280px 0',
+          backgroundImage: `url(${bg})`,
+          backgroundColor: '#F9F9F9'
+        }}
+      >
+        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+          <Box className="sectionPadding">
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={4}>
+                  <Box className="h3Box">
+                      <h2>
+                        <Translate id="about.followUs">
+                          Síganos para estar al tanto:
+                        </Translate>
+                      </h2>
+                  </Box>
+              </Grid>
+              <Grid md={3}/>
+              <Grid item xs={5} md={2}>
+                <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
+                      <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
+                      <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
                 </Box>
+              </Grid>
+              <Grid item xs={5} md={2}>
+                <Box className="centerBox" style={{justifyContent:'space-around'}}>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
+                    <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
+                    <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
+                  </a>
+                </Box>
+              </Grid>
             </Grid>
-            <Grid item xs={5} md={2}>
-              <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
-                    <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
-                    <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-              </Box>
-            </Grid>
-            <Grid item xs={5} md={2}>
-              <Box className="centerBox" style={{justifyContent:'space-around'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
-                  <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
-                  <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
-                </a>
-              </Box>
-            </Grid>
-          </Grid>
+          </Box>
         </Box>
       </Box>
     )
@@ -288,8 +311,8 @@ const About = () => {
                             <Box className="imgBoxTheCompany">
                                 <img
                                     className="sizeImageTheCompany"
-                                    alt="LACChain"
-                                    src={useBaseUrl('img/logos/lacchain.svg')}
+                                    alt="BID Lab logo"
+                                    src={useBaseUrl('img/logos/bid-lab-logo.svg')}
                                 />
                             </Box>
                             <p>
@@ -425,31 +448,41 @@ const About = () => {
 
   const HaveQuestions = () => {
     return (
-      <Box className="containerSec">
-        <Box className="sectionPaddingTop">
-          <Grid  justify="center" alignItems="center" container spacing={5}>
-            <Grid item xs={12} md={8}>
-              <Box style={{justifyContent: 'flex-end'}} className="boxFlexEnd">
-                <h2 className="bannerStyle">
-                  <Translate id="about.haveQuestionsTitle">
-                    ¿Tiene preguntas acerca de LACChain EOSIO? 
-                  </Translate>
-                </h2>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-                <Box className="centerBox">
-                  <button 
-                    className="buttonPrimary" 
-                    onClick={() => history.push("/contactenos")}
-                  >
-                    <Translate id="about.haveQuestionsButton">
-                      Únase a la conversación
+      <Box className="generalContainer" 
+        style={{ 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '89%',
+          backgroundPosition: '280px 0',
+          backgroundImage: `url(${bg})`,
+          backgroundColor: '#F9F9F9'
+        }}
+      >
+        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+          <Box className="sectionPadding">
+            <Grid  justify="center" alignItems="center" container spacing={5}>
+              <Grid item xs={12} md={7}>
+                <Box>
+                  <h2 className="bannerStyle">
+                    <Translate id="about.haveQuestionsTitle">
+                      ¿Tiene preguntas acerca de LACChain EOSIO? 
                     </Translate>
-                  </button>
+                  </h2>
                 </Box>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                  <Box className="centerBox">
+                    <button 
+                      className="buttonPrimary" 
+                      onClick={() => history.push("/contactenos")}
+                    >
+                      <Translate id="about.haveQuestionsButton">
+                        Únase a la conversación
+                      </Translate>
+                    </button>
+                  </Box>
+              </Grid>
             </Grid>
-          </Grid>
+          </Box>
         </Box>
       </Box>
     )
@@ -469,204 +502,220 @@ const About = () => {
             </Box>
             <Grid justify="center" container spacing={2}>
               <Grid item xs={10} md={10}>
-                <Accordion 
-                  square
-                  expanded={expanded === 'what_LACChainEOSIO'} 
-                  onChange={handleChange('what_LACChainEOSIO')} 
-                  className="accordion"
-                  style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
-                    <h3 style={{margin:'2px', padding: 0}}>
-                      <Translate id="about.WhatsLACChain">
-                        ¿Qué es LACChain EOSIO?
-                      </Translate>
-                    </h3>
-                  </AccordionSummary>
-                  <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
-                    <p style={{padding: 0}}>
-                      <Translate id="about.WhatsLACChainText">
-                        LACChain EOSIO ofrece una testnet de blockchain que se integra en la red de
-                        LACChain. Liderada por compañías tecnológicas de Latinoamérica, LACChain
-                        EOSIO utiliza una versión público permisionada de la tecnología blockchain
-                        EOSIO para permitir a desarrolladores y organizaciones crear y poner a prueba
-                        sus aplicaciones descentralizadas e infraestructura de un ambiente local. La
-                        red de LACChain EOSIO incorpora un comité permisionador que autoriza los
-                        nodos que escriben y validan los nuevos bloques en la blockchain. La red usa
-                        un sistema de contratos basado en el mecanismo de consenso Proof-of-Authority (POA)
-                        y garantiza y acuerdo estándar entre nodos.
-                      </Translate>
-                    </p>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-              <Grid item xs={10} md={10}>
-                <Accordion 
-                  square
-                  expanded={expanded === 'what_LACChain'} 
-                  onChange={handleChange('what_LACChain')} 
-                  className="accordion"
-                  style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
-                    <h3 style={{margin:'2px', padding: 0}}>
-                      <Translate id="about.WhatsLACChain2">
-                        ¿Qué es LACChain?
-                      </Translate>
-                    </h3>
-                  </AccordionSummary>
-                  <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
-                    <p style={{padding: 0}}>
-                      <Translate id="about.WhatsLACChainText2">
-                        LACChain es la Alianza Global para el desarrollo del ecosistema blockchain en
-                        América Latina y el Caribe, una iniciativa liderara por BID Lab (Laboratorio de
-                        Innovación del grupo Banco Interamericano de Desarrollo). Su objetivo es
-                        acelerar la habilitación y la adopción de la tecnología blockchain para el
-                        fomento de la innovación, la reducción de las desigualdades y el impacto en
-                        inclusión. Para ello, LACChain se enfoca en dos grandes pilares: comunidad e
-                        infraestructura. Además, busca desarrollar y promover interoperabilidad de redes,
-                        así como desplegar y mantener infraestructuras blockchain interoperables.
-                        LACChain Blockchain Networks, utiliza tecnologías Hyperledger Besu y EOSIO.
-                      </Translate>
-                    </p>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-              <Grid item xs={10} md={10}>
-                <Accordion 
-                  square
-                  expanded={expanded === 'what_EOSIO'} 
-                  onChange={handleChange('what_EOSIO')} 
-                  className="accordion"
-                  style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
-                    <h3 style={{margin:'2px', padding: 0}}>
-                      <Translate id="about.whatEOSIO">
-                        ¿Qué es EOSIO?
-                      </Translate>
-                    </h3>
-                  </AccordionSummary>
-                  <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
-                    <p style={{padding: 0}}>
-                      <Translate id="about.whatEOSIOText1">
-                        EOSIO es una tecnología blockchain de nueva generación lanzada en 2018
-                        por Block.one, empresa de tecnología líder que provee soluciones en
-                        blockchain de alto rendimiento. EOSIO ofrece:
-                      </Translate>
-                      <br/>
-                      <Translate id="about.whatEOSIOText2">
-                        - Alta escalabilidad: EOSIO permite rapidez líder en la industria con más de
-                        4.000 transacciones por segundo, baja latencia (0.5 segundos) y tolerancia a
-                        fallas bizantinas.
-                      </Translate>
-                      <br/>
-                      <Translate id="about.whatEOSIOText3">
-                        - Flexibilidad: EOSIO permite desplegar contratos inteligentes programables y 
-                        adaptables a cualquier negocio o aplicación con gobernanza y lógica personalizada
-                        y transacciones gratuitas con límites de consumo.
-                      </Translate>
-                      <br/>
-                      <Translate id="about.whatEOSIOText4">
-                        - Rápida adaptabilidad: La comunidad EOSIO pone a disposición un creciente conjunto
-                        de recursos y herramientas para desarrolladores. Además, los contratos inteligentes
-                        en EOSIO pueden ser programados con C++.
-                      </Translate>
-                      <br/>
-                      <Translate id="about.whatEOSIOText5">
-                        - Seguridad mejorada: EOSIO utiliza lo último en estándares de verificación web y
-                        blockchain con autenticación de extremo a extremo.
-                      </Translate>
-                    </p>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-              <Grid item xs={10} md={10}>
-                <Accordion 
-                  square
-                  expanded={expanded === 'founders'} 
-                  onChange={handleChange('founders')} 
-                  className="accordion"
-                  style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
-                    <h3 style={{margin:'2px', padding: 0}}>
-                      <Translate id="about.whoBehind">
-                        ¿Quién está detrás de LACChain EOSIO?
-                      </Translate>
-                    </h3>
-                  </AccordionSummary>
-                  <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
-                    <p style={{padding: 0}}>
-                      <Translate id="about.whoBehindText">
-                        LACChain EOSIO fue inicialmente desarrollada por los equipos de EOS Costa Rica
-                        y EOS Argentina, con el apoyo de LACChain, un programa del BID Lab (parte del
-                        Banco Interamericano de Desarrollo). LACChain EOSIO utiliza una versión público
-                        permisionada de EOSIO. El equipo se comprende principalmente por miembros de
-                        EOS Costa Rica, EOS Argentina y el apoyo de LACChain, con algunos esfuerzos
-                        por parte de organizaciones como EOS Venezuela, Block.one, dfuse y EOS Detroit.
-                      </Translate>
-                    </p>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-              <Grid item xs={10} md={10}>
-                <Accordion 
-                  square
-                  expanded={expanded === 'how_start'} 
-                  onChange={handleChange('how_start')} 
-                  className="accordion"
-                  style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
-                    <h3 style={{margin:'2px', padding: 0}}>
-                      <Translate id="about.howStarted">
-                        ¿Cómo iniciar en LACChain EOSIO?
-                      </Translate>
-                    </h3>
-                  </AccordionSummary>
-                  <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
-                    <p style={{padding: 0}}>
-                      <Translate id="about.howStartedText">
-                        Para crear su cuenta, primero debe contactar al equipo a través del formulario de
-                        contacto. Le responderemos tan pronto nos sea posible y le guiaremos por todos los pasos necesarios.
-                        Para aprender más acerca de LACChain EOSIO,
-                      </Translate>
-                      {' '}
-                      <a href={useBaseUrl('/docs/eosio')} target="_blank">
-                        <Translate id="about.howStartedLink">
-                          visite nuestra documentación
+                <Box className="accordionBox" style={{ marginTop:'20px'}}>
+                  <Accordion 
+                    square
+                    expanded={expanded === 'what_LACChainEOSIO'} 
+                    onChange={handleChange('what_LACChainEOSIO')} 
+                    className="accordion"
+                    style={{boxShadow:'none'}} >
+                    <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
+                      <h3 style={{margin:'2px', padding: 0}}>
+                        <Translate id="about.WhatsLACChain">
+                          ¿Qué es LACChain EOSIO?
                         </Translate>
-                      </a>
-                    </p>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-              <Grid item xs={10} md={10}>
-                <Accordion 
-                  square
-                  expanded={expanded === 'how_contribute'} 
-                  onChange={handleChange('how_contribute')} 
-                  className="accordion"
-                  style={{boxShadow:'none'}} >
-                  <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
-                    <h3 style={{margin:'2px', padding: 0}}>
-                      <Translate id="about.howContributeTitle">
-                        ¿Cómo contribuir con LACChain EOSIO?
-                      </Translate>
-                    </h3>
-                  </AccordionSummary>
-                  <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
-                    <p style={{padding: 0}}>
-                      <Translate id="about.howContributeText1">
-                        Puede ayudarnos con documentación, recursos y herramientas para desarrolladores.¿Cómo contribuir con LACChain EOSIO?
-                      </Translate>{' '}
-                      <a href={useBaseUrl('/docs/guias/contribuir')} target="_blank">
-                        <Translate id="about.howContributeLink">
-                          Encuentre aquí cómo contribuir
+                      </h3>
+                    </AccordionSummary>
+                    <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
+                      <p style={{padding: 0}}>
+                        <Translate id="about.WhatsLACChainText">
+                          LACChain EOSIO ofrece una testnet de blockchain que se integra en la red de
+                          LACChain. Liderada por compañías tecnológicas de Latinoamérica, LACChain
+                          EOSIO utiliza una versión público permisionada de la tecnología blockchain
+                          EOSIO para permitir a desarrolladores y organizaciones crear y poner a prueba
+                          sus aplicaciones descentralizadas e infraestructura de un ambiente local. La
+                          red de LACChain EOSIO incorpora un comité permisionador que autoriza los
+                          nodos que escriben y validan los nuevos bloques en la blockchain. La red usa
+                          un sistema de contratos basado en el mecanismo de consenso Proof-of-Authority (POA)
+                          y garantiza y acuerdo estándar entre nodos.
                         </Translate>
-                      </a> {' '}
-                      <Translate id="about.howContributeText2">
-                        Además, estamos abiertos a tener más organizaciones y miembros trabajando con nosotros. Contáctenos
-                      </Translate>
-                    </p>
-                  </AccordionDetails>
-                </Accordion>
+                      </p>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion 
+                    square
+                    expanded={expanded === 'what_LACChain'} 
+                    onChange={handleChange('what_LACChain')} 
+                    className="accordion"
+                    style={{boxShadow:'none'}}
+                  >
+                    <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
+                      <h3 style={{margin:'2px', padding: 0}}>
+                        <Translate id="about.WhatsLACChain2">
+                          ¿Qué es LACChain?
+                        </Translate>
+                      </h3>
+                    </AccordionSummary>
+                    <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
+                      <p style={{padding: 0}}>
+                        <Translate id="about.WhatsLACChainText2">
+                          LACChain es la Alianza Global para el desarrollo del ecosistema blockchain en
+                          América Latina y el Caribe, una iniciativa liderara por BID Lab (Laboratorio de
+                          Innovación del grupo Banco Interamericano de Desarrollo). Su objetivo es
+                          acelerar la habilitación y la adopción de la tecnología blockchain para el
+                          fomento de la innovación, la reducción de las desigualdades y el impacto en
+                          inclusión. Para ello, LACChain se enfoca en dos grandes pilares: comunidad e
+                          infraestructura. Además, busca desarrollar y promover interoperabilidad de redes,
+                          así como desplegar y mantener infraestructuras blockchain interoperables.
+                          LACChain Blockchain Networks, utiliza tecnologías Hyperledger Besu y EOSIO.
+                        </Translate>
+                      </p>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion 
+                    square
+                    expanded={expanded === 'what_EOSIO'} 
+                    onChange={handleChange('what_EOSIO')} 
+                    className="accordion"
+                    style={{boxShadow:'none'}} >
+                    <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
+                      <h3 style={{margin:'2px', padding: 0}}>
+                        <Translate id="about.whatEOSIO">
+                          ¿Qué es EOSIO?
+                        </Translate>
+                      </h3>
+                    </AccordionSummary>
+                    <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
+                      <p style={{padding: 0}}>
+                        <Translate id="about.whatEOSIOText1">
+                          EOSIO es una tecnología blockchain de nueva generación lanzada en 2018
+                          por Block.one, empresa de tecnología líder que provee soluciones en
+                          blockchain de alto rendimiento. EOSIO ofrece:
+                        </Translate>
+                        <br/>
+                        <b>
+                          <Translate id="about.highScalability">
+                            - Alta escalabilidad
+                          </Translate>
+                        </b>
+                        <Translate id="about.whatEOSIOText2">
+                          : EOSIO permite rapidez líder en la industria con más de
+                          4.000 transacciones por segundo, baja latencia (0.5 segundos) y tolerancia a
+                          fallas bizantinas.
+                        </Translate>
+                        <br/>
+                        <b>
+                          <Translate id="about.flexibility">
+                            - Flexibilidad
+                          </Translate>
+                        </b>
+                        <Translate id="about.whatEOSIOText3">
+                          : EOSIO permite desplegar contratos inteligentes programables y 
+                          adaptables a cualquier negocio o aplicación con gobernanza y lógica personalizada
+                          y transacciones gratuitas con límites de consumo.
+                        </Translate>
+                        <br/>
+                        <b>
+                          <Translate id="about.quickAdaptability">
+                            - Rápida adaptabilidad
+                          </Translate>
+                        </b>
+                        <Translate id="about.whatEOSIOText4">
+                          : La comunidad EOSIO pone a disposición un creciente conjunto
+                          de recursos y herramientas para desarrolladores. Además, los contratos inteligentes
+                          en EOSIO pueden ser programados con C++.
+                        </Translate>
+                        <br/>
+                        <b>
+                          <Translate id="about.improvedSecurity">
+                            - Seguridad mejorada
+                          </Translate>
+                        </b>
+                        <Translate id="about.whatEOSIOText5">
+                          : EOSIO utiliza lo último en estándares de verificación web y
+                          blockchain con autenticación de extremo a extremo.
+                        </Translate>
+                      </p>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion 
+                    square
+                    expanded={expanded === 'founders'} 
+                    onChange={handleChange('founders')} 
+                    className="accordion"
+                    style={{boxShadow:'none'}}
+                  >
+                    <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
+                      <h3 style={{margin:'2px', padding: 0}}>
+                        <Translate id="about.whoBehind">
+                          ¿Quién está detrás de LACChain EOSIO?
+                        </Translate>
+                      </h3>
+                    </AccordionSummary>
+                    <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
+                      <p style={{padding: 0}}>
+                        <Translate id="about.whoBehindText">
+                          LACChain EOSIO fue inicialmente desarrollada por los equipos de EOS Costa Rica
+                          y EOS Argentina, con el apoyo de LACChain, un programa del BID Lab (parte del
+                          Banco Interamericano de Desarrollo). LACChain EOSIO utiliza una versión público
+                          permisionada de EOSIO. El equipo se comprende principalmente por miembros de
+                          EOS Costa Rica, EOS Argentina y el apoyo de LACChain, con algunos esfuerzos
+                          por parte de organizaciones como EOS Venezuela, Block.one, dfuse y EOS Detroit.
+                        </Translate>
+                      </p>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion 
+                    square
+                    expanded={expanded === 'how_start'} 
+                    onChange={handleChange('how_start')} 
+                    className="accordion"
+                    style={{boxShadow:'none'}}
+                  >
+                    <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
+                      <h3 style={{margin:'2px', padding: 0}}>
+                        <Translate id="about.howStarted">
+                          ¿Cómo iniciar en LACChain EOSIO?
+                        </Translate>
+                      </h3>
+                    </AccordionSummary>
+                    <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
+                      <p style={{padding: 0}}>
+                        <Translate id="about.howStartedText">
+                          Para crear su cuenta, primero debe contactar al equipo a través del formulario de
+                          contacto. Le responderemos tan pronto nos sea posible y le guiaremos por todos los pasos necesarios.
+                          Para aprender más acerca de LACChain EOSIO,
+                        </Translate>
+                        {' '}
+                        <a href={useBaseUrl('/docs/eosio')} target="_blank">
+                          <Translate id="about.howStartedLink">
+                            visite nuestra documentación
+                          </Translate>
+                        </a>
+                      </p>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion 
+                    square
+                    expanded={expanded === 'how_contribute'} 
+                    onChange={handleChange('how_contribute')} 
+                    className="accordion"
+                    style={{boxShadow:'none'}}
+                  >
+                    <AccordionSummary style={{padding:1}} expandIcon={<ExpandMoreIcon style={{color:'#000000'}}/>}>
+                      <h3 style={{margin:'2px', padding: 0}}>
+                        <Translate id="about.howContributeTitle">
+                          ¿Cómo contribuir con LACChain EOSIO?
+                        </Translate>
+                      </h3>
+                    </AccordionSummary>
+                    <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
+                      <p style={{padding: 0}}>
+                        <Translate id="about.howContributeText1">
+                          Puede ayudarnos con documentación, recursos y herramientas para desarrolladores.¿Cómo contribuir con LACChain EOSIO?
+                        </Translate>{' '}
+                        <a href={useBaseUrl('/docs/guias/contribuir')} target="_blank">
+                          <Translate id="about.howContributeLink">
+                            Encuentre aquí cómo contribuir
+                          </Translate>
+                        </a> {' '}
+                        <Translate id="about.howContributeText2">
+                          Además, estamos abiertos a tener más organizaciones y miembros trabajando con nosotros. Contáctenos
+                        </Translate>
+                      </p>
+                    </AccordionDetails>
+                  </Accordion>
+                </Box>
               </Grid>
             </Grid>
           </Box>
@@ -677,31 +726,41 @@ const About = () => {
 
   const CreateAccount = () => {
     return (
-      <Box className="containerSec">
-        <Box className="sectionPadding">
-          <Grid  justify="center" alignItems="center" container spacing={5}>
-            <Grid item xs={12} md={9}>
-              <Box className="boxFlexEnd">
-                <h2 className="bannerStyle">
-                  <Translate id="about.createStartBanner">
-                    Cree su cuenta de LACChain EOSIO y empiece a desarrollar
-                  </Translate>
-                </h2>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={3}>
-                <Box className="centerBox">
-                  <button 
-                    className="buttonPrimary" 
-                    onClick={() => history.push("/contactenos")}
-                  >
-                    <Translate id="homepage.startNow">
-                      Comience aquí
+      <Box className="generalContainer" 
+        style={{ 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '89%',
+          backgroundPosition: '280px 0',
+          backgroundImage: `url(${bg})`,
+          backgroundColor: '#F9F9F9'
+        }}
+      >
+        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+          <Box className="sectionPadding">
+            <Grid  justify="center" alignItems="center" container spacing={5}>
+              <Grid item xs={12} md={9}>
+                <Box className="boxFlexEnd">
+                  <h2 className="bannerStyle">
+                    <Translate id="about.createStartBanner">
+                      Cree su cuenta de LACChain EOSIO y empiece a desarrollar
                     </Translate>
-                  </button>
+                  </h2>
                 </Box>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                  <Box className="centerBox">
+                    <button 
+                      className="buttonPrimary" 
+                      onClick={() => history.push("/contactenos")}
+                    >
+                      <Translate id="homepage.startNow">
+                        Comience aquí
+                      </Translate>
+                    </button>
+                  </Box>
+              </Grid>
             </Grid>
-          </Grid>
+          </Box>
         </Box>
       </Box>
     )
