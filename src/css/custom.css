@@ -626,7 +626,7 @@ h1{
   width: "100%";
   display: flex;
   justify-content: center;
-  background-color: #159547;
+  background-color: #038702;
   overflow-x: hidden;
 }
 
@@ -1145,11 +1145,6 @@ h1{
   margin-bottom: 2rem;
 }
 
-.sizeImageTheCompany{
-  width: 200px;
-  height: 60px;
-}
-
 .teamSizeImage{
   width: 230px;
   height: 230px;
@@ -1536,10 +1531,6 @@ h1{
     display: flex;
     justify-content: center;
     margin-top: 15px;
-  }
-
-  .sizeImageTheCompany{
-    width: 190px;
   }
 
   .animationBox{

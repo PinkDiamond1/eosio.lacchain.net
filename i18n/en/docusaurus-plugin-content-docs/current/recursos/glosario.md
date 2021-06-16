@@ -1,7 +1,7 @@
 ---
 id: glosario
-title: Glosario de Términos
-sidebar_label: Glosario de Términos
+title: Glossary of Terms
+sidebar_label: Glossary of Terms
 ---
 
 List of terms necessary to understand the contents of this guide.

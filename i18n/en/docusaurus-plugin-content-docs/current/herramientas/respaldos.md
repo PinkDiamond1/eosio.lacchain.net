@@ -1,7 +1,7 @@
 ---
 id: respaldos
-title: Respaldos y Snapshots 
-sidebar_label: Respaldos y Snapshots
+title: Snapshots and Backups
+sidebar_label: Snapshots and Backups
 ---
 
 LACChain EOSIO snapshot service will allow making changes in the EOSIO nodes quickly, without the necessity of synchronizing the blockchain since its genesis.

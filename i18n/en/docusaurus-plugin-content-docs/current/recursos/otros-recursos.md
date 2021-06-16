@@ -1,7 +1,7 @@
 ---
 id: otros-recursos
-title: Recursos para aprender EOSIO
-sidebar_label: Portal de Aprendizaje
+title: EOSIO Learning Resources
+sidebar_label: Learning Portals
 ---
 
 If you're interested in learning more about the EOSIO ecosystem, we recommend the following resources:

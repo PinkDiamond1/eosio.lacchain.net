@@ -1,7 +1,7 @@
 ---
 id: librerias-sdk
-title: Librerías SDK para EOSIO
-sidebar_label: Librerías SDK
+title: EOSIO SDK Libraries
+sidebar_label: EOSIO SDK Libraries
 ---
 
 APIs for integrating with EOSIO blockchains 

@@ -1,7 +1,7 @@
 ---
 id: rendimiento
-title: Rendimiendo y Seguridad de la Red
-sidebar_label: Rendimiento y Seguridad
+title: Network Performance and Security
+sidebar_label: Performance and Security
 ---
 
 It is essential to know the limits of the infrastructure from cybersecurity and performance perspective.

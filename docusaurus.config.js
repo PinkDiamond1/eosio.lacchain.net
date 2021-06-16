@@ -4,7 +4,7 @@ const siteConfig = {
   url: "https://eosio.lacchain.net", // Your website URL
   baseUrl: "/", // Base URL for your project */
   projectName: "eosio.lacchain.net",
-  organizationName: "LatamLink",
+  organizationName: "LACChain EOSIO",
   favicon: "img/favicon.ico",
   presets: [
     [

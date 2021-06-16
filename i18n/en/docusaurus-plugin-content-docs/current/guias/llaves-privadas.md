@@ -1,7 +1,7 @@
 ---
 id: llaves-privadas
-title: Manejo de Llaves Privadas
-sidebar_label: Llaves Públicas y Privadas
+title: Public and Private Key Management
+sidebar_label: Public and Private Keys
 ---
 
 ## 1. Generate public + private key pair

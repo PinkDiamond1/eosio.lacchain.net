@@ -1,7 +1,7 @@
 ---
 id: ambiente-desarrollo
-title: Ambiente de desarrollo
-sidebar_label: Ambiente de Desarrollo
+title: Development Environment
+sidebar_label: Development Enviroment
 ---
 
 These steps show the process of installing the development environment necessary to work on the LACChain EOSIO network (creating accounts, managing resources, deploying contracts.

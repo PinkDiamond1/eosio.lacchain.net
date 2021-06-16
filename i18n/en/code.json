@@ -390,7 +390,10 @@
     "message": "Follow us to stay up to date"
   },
   "about.LACChain": {
-    "message": "is the Global Alliance for the Development of the Blockchain Ecosystem in Latin America and the Caribbean, an initiative led by IDB Lab (Innovation Laboratory of the Inter-American Development Bank group)."
+    "message": "is the Global Alliance for the Development of the Blockchain Ecosystem in Latin America and the Caribbean, an initiative led by"
+  },
+  "about.LACChain1": {
+    "message": "(Innovation Laboratory of the Inter-American Development Bank group)."
   },
   "about.EOSCR": {
     "message": "develops blockchain-based enterprise solutions deploying the EOSIO protocol. The company also offers blockchain infrastructure and learning resources for executives and developers."

@@ -1,6 +1,7 @@
 <p align="center">
 	<a href="https://eosio.lacchain.net">
-		<img src="https://raw.githubusercontent.com/LatamLink/es.latamlink.io/master/static/images/latamlink_logo-h-full-color-overwhite.png" width="400px" >
+		<img src="https://raw.githubusercontent.com/lacchain/eosio.lacchain.net/master/static/img/logos/lacchain-eosio-logo.png"
+		width="400px" >
 	</a>
 </p>
 
@@ -20,23 +21,23 @@ Este sitio web es creado usando [https://docusaurus.io/](Docusaurus), una herram
 
 ## Contribuciones 
 
-Utilizamos un tablero de estilo Kanban para priorizar el trabajo. [Ir al tablero del proyecto](https://github.com/LatamLink/projects/1).
+Utilizamos un tablero de estilo Kanban para priorizar el trabajo. [Ir al tablero del proyecto](https://github.com/lacchain/eosio.lacchain.net/projects/1).
 
-Los principales canales de comunicación son [github issues](https://github.com/LatamLink/latamlink.io/issues) y el [canal de Telegram](https://t.me/latamlink). Siéntase libre mandar todas las preguntas que pueda tener.
+Los principales canales de comunicación son [github issues](https://github.com/lacchain/eosio.lacchain.net/issues) y el [canal de Telegram](https://t.me/lacchaineosio). Siéntase libre mandar todas las preguntas que pueda tener.
 
-Pautas para contribuyentes. [https://developers.eoscostarica.io/docs/open-source-guidelines](https://developers.eoscostarica.io/docs/open-source-guidelines).
+[Pautas para contribuyentes](https://eosio.lacchain.net/docs/guias/contribuir).
 
-Informe cualquier idea o errores grandes y pequeños [abriendo un "issue"](https://github.com/LatamLink/latamlink.io/issues).
+Informe cualquier idea o error [abriendo un "issue"](https://github.com/lacchain/eosio.lacchain.net/issues).
 
 ### Editar Contenido
-La documentación se genera a partir de archivos en formato markdown ubicados dentro de la sub-carpeta `/docs`. Ver mas información [aquí](https://github.com/LatamLink/eosio.lacchain.net/tree/master/website).
+La documentación se genera a partir de archivos en formato markdown ubicados dentro de la sub-carpeta `/docs`. Ver mas información [aquí](https://github.com/lacchain/eosio.lacchain.net/tree/master).
 
 ## Guía rápida
 
 ### Estructura de archivos
 
 ```sh
-es.latamlink.io
+eosio.lacchain.net
 ├── .github
 │ ├── workflows
 │ | ├── nodejs.yml
@@ -86,7 +87,7 @@ Es necesario contar con:
 1. Clone el repositorio
 
 ```bash
-$ git clone https://github.com/LatamLink/eosio.lacchain.net.git
+$ git clone https://github.com/lacchain/eosio.lacchain.net.git
 ```
 
 2. Ubíquese al directorio apropiado

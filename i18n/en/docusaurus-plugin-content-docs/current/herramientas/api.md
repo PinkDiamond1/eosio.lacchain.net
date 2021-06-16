@@ -1,6 +1,7 @@
 ---
 id: api
-title: API Endpoints
+title: Application Programming Interface
+sidebar_label: API Endpoints
 ---
 
 The term API is an abbreviation of "Application Programming Interface", which allows for the interaction of applications with the network using the HTTP protocol.
@@ -16,9 +17,9 @@ The following API is EOSIO's native mechanism available to interact with the tes
 Here are some examples of HTTP RPC endpoints
 
 > 
-  - Writer Node + Middleware : [https://lacchain.eosio.cr](https://latamlink.eosio.cr/v1/chain/get_info) 
-  - Observer Node (read only) : [https://observer.eosio.cr](https://latamlink.eosio.cr/v1/chain/get_info)
-  - Writer Node (no middleware) : [https://writer.eosio.cr](https://latamlink.eosio.cr/v1/chain/get_info) 
+  - Writer Node + Middleware : [https://lacchain.eosio.cr](https://lacchain.eosio.cr/v1/chain/get_info) 
+  - Observer Node (read only) : [https://observer.eosio.cr](https://lacchain.eosio.cr/v1/chain/get_info)
+  - Writer Node (no middleware) : [https://writer.eosio.cr](https://lacchain.eosio.cr/v1/chain/get_info) 
 
 The complete list of endpoints is available at the following link: [LACChain EOSIO Endpoints](https://lacchain.eosio.online/endpoints)
 

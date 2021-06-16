@@ -15,9 +15,9 @@ La siguiente API es el mecanismo nativo de EOSIO disponible para interactuar con
 ### Endpoints HTTP
 A continuación algunos ejemplos de endpoints HTTP RPC 
 > 
-  - Nodo Escritor + Middleware : [https://lacchain.eosio.cr](https://latamlink.eosio.cr/v1/chain/get_info) 
-  - Nodo Observador solo lectura : [https://observer.eosio.cr](https://latamlink.eosio.cr/v1/chain/get_info)
-  - Nodo Escritor sin Middleware : [https://writer.eosio.cr](https://latamlink.eosio.cr/v1/chain/get_info) 
+  - Nodo Escritor + Middleware : [https://lacchain.eosio.cr](https://lacchain.eosio.cr/v1/chain/get_info) 
+  - Nodo Observador solo lectura : [https://observer.eosio.cr](https://lacchain.eosio.cr/v1/chain/get_info)
+  - Nodo Escritor sin Middleware : [https://writer.eosio.cr](https://lacchain.eosio.cr/v1/chain/get_info) 
 
 La lista completa de endpoints esta disponible en el siguiente enlace : [Endpoints LACChain EOSIO](https://lacchain.eosio.online/endpoints)
 

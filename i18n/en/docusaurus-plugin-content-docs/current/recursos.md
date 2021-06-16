@@ -1,7 +1,7 @@
 ---
 id: recursos
-title: Uso de Recursos
-sidebar_label: Uso de Recursos
+title: Resource Usage
+sidebar_label: Resource Usage
 ---
 
 LACChain does not and will not have transaction fees. However, to regulate network usage to its technical limits and avoid denial of service attacks, it is necessary to establish a mechanism for requesting and allocating network resources.

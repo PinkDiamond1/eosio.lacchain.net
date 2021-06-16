@@ -13,7 +13,7 @@ Se pueden crear permisos específicos para cada acción privilegiada y ademas se
 
 Los contratos de permisionado de LACChain EOSIO son implementados como [Contratos de Sistema](https://developers.eos.io/manuals/eosio.contracts/latest/index). Estos contratos tiene acceso a [funciones privilegiadas](http://localhost:3000/docs/recursos/funciones-importantes) que encapsulan la funcionalidad base para el marco de gobernanza de LACChain.
 
-[Contratos de Sistemas LACChain EOSOIO](https://github.com/LatamLink/eosio.contracts/tree/master/contracts/lacchain.system)
+[Contratos de Sistemas LACChain EOSOIO](https://github.com/lacchain/eosio.contracts/tree/master/contracts/lacchain.system)
 
 ## Interfaz Grafica para Comite Permisionador
 Esta herramienta es para manejar el permisionamiento y gobernanza de LACChain EOSIO mediante contratos inteligentes.

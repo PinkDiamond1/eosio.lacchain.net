@@ -1,7 +1,7 @@
 ---
 id: monitoreo
-title: Monitoreo de Red
-sidebar_label: Monitoreo de Red
+title: Network monitoring
+sidebar_label: Network monitoring
 ---
 
 Monitoring what is happening on the network is essential to improve it and measure the social impact of our solutions. The main objective of the monitoring tools is to produce objective and reliable information about each node and the activity of the network.

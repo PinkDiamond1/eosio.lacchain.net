@@ -1,7 +1,7 @@
 ---
 id: datos-entidades-nodos
-title: Información sobre Entidades y Nodos
-sidebar_label: Info Entidades y Nodos
+title: Entity and Node Information
+sidebar_label: Entity and Node Data
 ---
 
 This is a proposed JSON Standard for Entity and Node Information which LACChain partners are required to publish and stored on the system contract tables. This Standard is based off the [BP JSON standard](https://github.com/eosrio/bp-info-standard) utilized in the EOS mainnet.
@@ -72,7 +72,7 @@ it will insert or update a record in the `entity` table located  in the `eosio` 
 	"organization_id": "3-101-123456",
 	"technical_contact": "Asia Trejo",
 	"business_contact": "Kris Peralta",
-	"email": "latamlink@eosio.cr",
+	"email": "eoscostarica@eosio.cr",
 	"website": "https://eoscostarica.io",
 	"code_of_conduct": "https://eoscostarica.io/en/transparency/#code_of_conduct",
 	"ownership_disclosure": "https://eoscostarica.io/en/transparency/#ownership_disclosure",
