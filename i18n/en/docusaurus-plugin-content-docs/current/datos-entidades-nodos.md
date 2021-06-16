@@ -72,7 +72,7 @@ it will insert or update a record in the `entity` table located  in the `eosio` 
 	"organization_id": "3-101-123456",
 	"technical_contact": "Asia Trejo",
 	"business_contact": "Kris Peralta",
-	"email": "latamlink@eosio.cr",
+	"email": "eoscostarica@eosio.cr",
 	"website": "https://eoscostarica.io",
 	"code_of_conduct": "https://eoscostarica.io/en/transparency/#code_of_conduct",
 	"ownership_disclosure": "https://eoscostarica.io/en/transparency/#ownership_disclosure",

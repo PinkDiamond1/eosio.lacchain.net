@@ -13,7 +13,7 @@ You can create specific permissions for each privileged action and also you can 
 
 LACChain EOSIO permissioning contracts are implemented as [System Contracts](https://developers.eos.io/manuals/eosio.contracts/latest/index). These contracts have access to [privileged functions](../recursos/funciones-importantes) that encapsulate the base functionality for the LACChain governance framework.
 
-[LACChain EOSOIO Systems Contracts](https://github.com/LatamLink/eosio.contracts/tree/master/contracts/lacchain.system)
+[LACChain EOSOIO Systems Contracts](https://github.com/lacchain/eosio.contracts/tree/master/contracts/lacchain.system)
 
 ## Graphic Interface for Permisioning Committee
 This tool is to manage the permitting and the governance of LACChain EOSIO through Smart Contract.

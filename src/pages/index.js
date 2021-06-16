@@ -282,7 +282,7 @@ const Home = () => {
               <Grid container justify='center' alignItems="center">
                 <Grid style={{marginRight: isDesktop ? '25px' : '0', paddingTop:'10px'}} item xs={12} md={2}>
                   <Box className="imgBoxLogos">
-                    <a target="_blank" href="http://latamlink.io/">
+                    <a target="_blank" href="https://bidlab.org/en">
                       <img
                         style={{width:'200px'}}
                         className="oneGroupLogo"
@@ -514,7 +514,7 @@ const Home = () => {
                       Usted puede acceder al monitor de red de LACChain EOSIO para
                       visualizar métricas y datos de red “on-chain” y “off-chain.”
                     </Translate>{" "}
-                    <a href="https://monitor.latamlink.io" target="_blank">
+                    <a href="https://lacchain.eosio.online/" target="_blank">
                       <Translate id="homepage.networkMonitorLink">
                         Visite el Monitor de Red
                       </Translate>
@@ -579,7 +579,7 @@ const Home = () => {
                       precisos, detallados y procesables sobre cuentas,
                       acciones, nodos validadores y más.
                     </Translate>{' '}
-                    <a href="https://explorer.latamlink.io/" target="_blank">
+                    <a href="https://lacchain.eosio.online/" target="_blank">
                       <Translate id="homepage.blockExplorerLink">
                         Pruebe el explorador de bloques
                       </Translate>
