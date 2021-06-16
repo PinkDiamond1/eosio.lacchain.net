@@ -101,7 +101,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://explorer.latamlink.io/"
+                    href="https://lacchain.eosio.online/"
                     target="_blank"
                     style={{color:'white'}}
                   >
@@ -194,7 +194,7 @@ const Footer = () => {
                 </Grid>
               </Grid>
               <Grid item xs={12} md={3}>
-                <Grid style={{marginLeft: isDesktop ? '-20px' : ''}} item xs={12}>
+                <Grid style={{marginLeft: isDesktop ? '-50px' : ''}} item xs={12}>
                   <Box className={isMobile ? "centerBox" : "leftBox"} style={{marginTop:'3px'}}>
                     <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
                       <EmailIcon

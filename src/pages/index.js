@@ -86,11 +86,11 @@ const Home = () => {
                 </Translate>
               </p>
               <Box className="buttonBoxMobile" style={{display:'grid'}}>
-                <button className="buttonPrimary" onClick={() => history.push("/")} >
+                <button className="buttonSecondary" onClick={() => history.push("/contact-us")} >
                   <Translate id="homepage.headerButton1">Únase a la red</Translate>
                 </button>
                 <br/>
-                <button className="buttonPrimary" onClick={() => history.push("/")} >
+                <button className="buttonPrimary" onClick={() => history.push("/docs/eosio")} >
                   <Translate id="homepage.headerButton2">Aprenda más</Translate>
                 </button>
               </Box>
@@ -239,10 +239,10 @@ const Home = () => {
                 <Box className="buttonBox" style={{display:'flex'}}>
                   <Grid item xs={12} style={{flexBasis:'0'}} md={3}>
                     <Box className={isMobile ? "centerBox": "boxFlexEnd"}>
-                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
+                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
                         <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                       </a>
-                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
+                      <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
                         <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                       </a>
                     </Box>
@@ -463,7 +463,7 @@ const Home = () => {
                   <Box className="centerBox">
                     <button 
                       className="buttonPrimary" 
-                      onClick={() => history.push("/contac-us")}
+                      onClick={() => history.push("/contact-us")}
                     >
                       <Translate id="homepage.startNow">
                         Comience ahora
@@ -579,7 +579,7 @@ const Home = () => {
                       precisos, detallados y procesables sobre cuentas,
                       acciones, nodos validadores y más.
                     </Translate>{' '}
-                    <a href="http://explorer.testnet.latamlink.io/" target="_blank">
+                    <a href="https://explorer.latamlink.io/" target="_blank">
                       <Translate id="homepage.blockExplorerLink">
                         Pruebe el explorador de bloques
                       </Translate>
@@ -794,7 +794,7 @@ const Home = () => {
       image={MetaData.img}
       hrefLangPath={MetaData.hrefLangPath}
     > 
-      {isDesktop && 
+      {isDesktop &&
         <Box className="mainContainer">
           <HeroSection/>
           <IconSection/>

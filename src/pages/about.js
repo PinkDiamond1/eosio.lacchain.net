@@ -266,22 +266,22 @@ const About = () => {
                   </Box>
               </Grid>
               <Grid md={3}/>
-              <Grid item xs={5} md={2}>
+              <Grid item xs={6} md={2}>
                 <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/EOSCostaRica" target="_blank">
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
                       <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                   </a>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.instagram.com/eoscostarica/" target="_blank">
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
                       <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                   </a>
                 </Box>
               </Grid>
-              <Grid item xs={5} md={2}>
+              <Grid item xs={6} md={2}>
                 <Box className="centerBox" style={{justifyContent:'space-around'}}>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/eoscr" target="_blank">
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
                     <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                   </a>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/eoscostarica" target="_blank">
+                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
                     <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
                   </a>
                 </Box>
@@ -315,11 +315,14 @@ const About = () => {
                                 />
                             </Box>
                             <p>
-                                <a href="(https://www.lacchain.net/" target="_blank">LACChain</a>{' '}
+                                <a href="https://www.lacchain.net/home" target="_blank">LACChain</a>{' '}
                                 <Translate id="about.LACChain">
                                   es la Alianza Global para el desarrollo del
                                   ecosistema blockchain en América Latina y el
-                                  Caribe, una iniciativa liderara por BID Lab
+                                  Caribe, una iniciativa liderara por 
+                                </Translate>{' '}
+                                <a href="https://bidlab.org/en" target="_blank">BID Lab</a>{' '}
+                                <Translate id="about.LACChain1">
                                   (Laboratorio de Innovación del grupo Banco
                                   Interamericano de Desarrollo).
                                 </Translate>
@@ -333,7 +336,7 @@ const About = () => {
                                 />
                             </Box>
                             <p>
-                                <a href="(https://eoscostarica.io/" target="_blank">EOS Costa Rica</a>{' '}
+                                <a href="https://eoscostarica.io/" target="_blank">EOS Costa Rica</a>{' '}
                                 <Translate id="about.EOSCR">
                                   desarrolla soluciones empresariales basadas en
                                   blockchain usando el protocolo EOSIO. La compañía
@@ -379,19 +382,19 @@ const About = () => {
                         </Grid>
                         <Grid item xs={12} md={4}>
                             <Box style={{marginTop:'-44px'}} className="imgBoxTheCompany">
-                                <img
-                                    alt="EOS Venezuela"
-                                    src={useBaseUrl('img/logos/eosven.svg')}
-                                />
+                              <img
+                                alt="EOS Venezuela"
+                                src={useBaseUrl('img/logos/eosven.svg')}
+                              />
                             </Box>
                             <Box>
                               <p>
                                 <a href="https://eosvenezuela.io/" target="_blank">EOS Venezuela</a>{' '}
                                 <Translate id="about.EOSVenezuela">
-                                    ofrece infraestructura blockchain en sistemas
-                                    POS y DPOS. Son pioneros en el uso de criptomonedas
-                                    y blockchain para impacto social y promueven
-                                    blockchain en Latinoamérica.
+                                  ofrece infraestructura blockchain en sistemas
+                                  POS y DPOS. Son pioneros en el uso de criptomonedas
+                                  y blockchain para impacto social y promueven
+                                  blockchain en Latinoamérica.
                                 </Translate>
                               </p>
                             </Box>
@@ -469,8 +472,8 @@ const About = () => {
               <Grid item xs={12} md={4}>
                   <Box className="centerBox">
                     <button 
-                      className="buttonPrimary" 
-                      onClick={() => history.push("/contactenos")}
+                      className="buttonPrimary"
+                      onClick={() => window.open('/contact-us')}
                     >
                       <Translate id="about.haveQuestionsButton">
                         Únase a la conversación
@@ -747,8 +750,8 @@ const About = () => {
               <Grid item xs={12} md={3}>
                   <Box className="centerBox">
                     <button 
-                      className="buttonPrimary" 
-                      onClick={() => history.push("/contactenos")}
+                      className="buttonPrimary"
+                      onClick={() => history.push("/contact-us")}
                     >
                       <Translate id="homepage.startNow">
                         Comience aquí
