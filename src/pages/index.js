@@ -99,7 +99,7 @@ const Home = () => {
         </Box>
       </Box>
     )
-  } 
+  }
 
   const IconSection = () => {
     return (
