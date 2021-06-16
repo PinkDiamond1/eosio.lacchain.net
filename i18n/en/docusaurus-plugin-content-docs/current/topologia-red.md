@@ -1,7 +1,7 @@
 ---
 id: topologia-red
-title: Topología de Red
-sidebar_label: Topología de Red
+title: Network Topology
+sidebar_label: Network Topology
 ---
 
 We present the following proposal for LACChain network configuration using EOSIO nodes.

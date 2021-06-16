@@ -1,7 +1,7 @@
 ---
 id: crear-cuenta-usuario
-title: Obtener una cuenta en LACChain
-sidebar_label: Registrarse como Usuario
+title: Get an Account for an End Users
+sidebar_label: How to Register as an User
 ---
 
 There are several ways to obtain an account in LACChain EOSIO, the most common are through an application or through a registered entity.

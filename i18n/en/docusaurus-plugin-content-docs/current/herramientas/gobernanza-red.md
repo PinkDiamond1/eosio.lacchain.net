@@ -1,7 +1,7 @@
 ---
 id: gobernanza-red
-title: Herramientas de Gobernanza.
-sidebar_label: Gobernanza de Red
+title: Network Governance Tool
+sidebar_label: Network Governance
 ---
 
 ## EOSIO Privileged Account

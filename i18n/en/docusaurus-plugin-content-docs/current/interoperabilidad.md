@@ -1,7 +1,7 @@
 ---
 id: interoperabilidad
-title: Interoperabilidad de Redes
-sidebar_label: Interoperabilidad
+title: Network Interoperability
+sidebar_label: Interoperability
 ---
 
 LACChain is designed to be technology-agnostic. We aim to integrate several blockchain protocols used in LACChain.

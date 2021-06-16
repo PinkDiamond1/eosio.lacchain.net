@@ -1,7 +1,7 @@
 ---
 id: cli
-title: Línea de Comando
-sidebar_label: Línea de Comando
+title: Command Line Interface
+sidebar_label: Command Line
 ---
 
 ## CLEOS

@@ -1,7 +1,7 @@
 ---
 id: trazabilidad
-title: Autorizaciones y Trazabilidad 
-sidebar_label: Permisos y Visibilidad
+title: Permissions and Traceability
+sidebar_label: Permissions and Visibility
 ---
 
 ## EOSIO Native Features

@@ -1,7 +1,7 @@
 ---
 id: partners
-title: Partners de la Red 
-sidebar_label: Partners de la Red
+title: Network Partners
+sidebar_label: Network Partners
 ---
 
 Currently the LACChain EOSIO network is made up of a group of entities who are in charge of managing and administering the accounts and resources on the network. These entities are registered in the `entity` table in the `eosio` system contracts.

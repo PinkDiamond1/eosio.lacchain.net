@@ -308,9 +308,8 @@ const About = () => {
                 <Box>
                     <Grid container justify='center' spacing={10}>
                         <Grid item xs={12} md={4}>
-                            <Box className="imgBoxTheCompany">
+                            <Box style={{marginTop:'22px'}} className="imgBoxTheCompany">
                                 <img
-                                    className="sizeImageTheCompany"
                                     alt="BID Lab logo"
                                     src={useBaseUrl('img/logos/bid-lab-logo.svg')}
                                 />
@@ -329,9 +328,8 @@ const About = () => {
                         <Grid item xs={12} md={4}>
                             <Box className="imgBoxTheCompany">
                                 <img
-                                    className="sizeImageTheCompany"
                                     alt="EOS Costa Rica"
-                                    src={useBaseUrl('img/logos/eoscr.svg')}
+                                    src={useBaseUrl('img/logos/eoscr.png')}
                                 />
                             </Box>
                             <p>
@@ -345,9 +343,8 @@ const About = () => {
                             </p>
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <Box className="imgBoxTheCompany">
+                            <Box style={{marginTop:'-20px'}} className="imgBoxTheCompany">
                                 <img
-                                    className="sizeImageTheCompany"
                                     alt="EOS Argentina"
                                     src={useBaseUrl('img/logos/eosarg.svg')}
                                 />
@@ -365,9 +362,8 @@ const About = () => {
                         <Grid item xs={12} md={4}>
                             <Box className="imgBoxTheCompany">
                                 <img
-                                    className="sizeImageTheCompany"
                                     alt="Block One"
-                                    src={useBaseUrl('img/logos/block-one.svg')}
+                                    src={useBaseUrl('img/logos/block-one.png')}
                                 />
                             </Box>
                             <p>
@@ -382,14 +378,14 @@ const About = () => {
                             </p>
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <Box className="imgBoxTheCompany">
+                            <Box style={{marginTop:'-44px'}} className="imgBoxTheCompany">
                                 <img
-                                    className="sizeImageTheCompany"
                                     alt="EOS Venezuela"
                                     src={useBaseUrl('img/logos/eosven.svg')}
                                 />
                             </Box>
-                            <p>
+                            <Box>
+                              <p>
                                 <a href="https://eosvenezuela.io/" target="_blank">EOS Venezuela</a>{' '}
                                 <Translate id="about.EOSVenezuela">
                                     ofrece infraestructura blockchain en sistemas
@@ -397,7 +393,8 @@ const About = () => {
                                     y blockchain para impacto social y promueven
                                     blockchain en Latinoamérica.
                                 </Translate>
-                            </p>
+                              </p>
+                            </Box>
                         </Grid>
                     </Grid>
                 </Box>

@@ -1,6 +1,6 @@
 ---
 id: explorador-bloques
-title: Explorador de Bloques
+title: Block Explorer
 ---
 
 A block explorer is a tool for visualizing all transactions that occur on the network. 

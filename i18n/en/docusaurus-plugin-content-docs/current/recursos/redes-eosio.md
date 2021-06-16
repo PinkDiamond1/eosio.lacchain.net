@@ -1,7 +1,7 @@
 ---
 id: redes-eosio
-title: Redes Blockchain basadas en EOSIO 
-sidebar_label: Otras Redes EOSIO
+title: EOSIO based Blockchain Networks
+sidebar_label: Other EOSIO Networks
 ---
 
 The EOSIO ecosystem is composed of many public and private blockchains, each one with different governance models and aimed at different use cases and markets.

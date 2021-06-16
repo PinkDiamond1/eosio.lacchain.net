@@ -1,7 +1,7 @@
 ---
 id: configurar-wallet
-title: Configurar Wallet
-sidebar_label: Configurar Wallet
+title: Configure Wallet
+sidebar_label: Configure Wallet
 ---
 
 To use external authenticators(wallets) in LACChain EOSIO such as Anchor Wallet, a configuration must be made to include the network within the networks available in the authenticator, below, a tutorial is shown where this process is explained.

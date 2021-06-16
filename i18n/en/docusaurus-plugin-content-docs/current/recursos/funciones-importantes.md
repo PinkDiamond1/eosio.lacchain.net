@@ -1,7 +1,7 @@
 ---
 id: funciones-importantes
-title: Funciones Importantes en EOSIO
-sidebar_label: Funciones Importantes
+title: Important Functions in EOSIO
+sidebar_label: Important Functions
 ---
 
 ## EOSIO Privileged Account
