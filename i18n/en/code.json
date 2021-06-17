@@ -360,7 +360,7 @@
     "message": "Documentation"
   },
   "footer.contactUs": {
-    "message": "Contact US"
+    "message": "Contact Us"
   },
   "footer.contactPartners": {
     "message": "CONTACT PARTNERS"
@@ -583,5 +583,8 @@
   },
   "navbar.tools": {
     "message": "Tools"
+  },
+  "translate.language": {
+    "message": "Sitio en español"
   }
 }
