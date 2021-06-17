@@ -40,11 +40,11 @@ const GenericListItemText = withStyles({
 })((props) => <ListItemText {...props} />);
 
 
-const CustomListItem = ( {label, href, target, icon, isSelected}) => {
+const CustomListItem = ( {label, href, target, icon, isSelected, onClick}) => {
   return (
-    <Link href={href} target={target} style={{textDecoration: 'none'}}>
+    <Link onClick={onClick} href={href} target={target} style={{textDecoration: 'none'}}>
       <GenericListItem button selected={isSelected}>
-        <GenericListItemIcon >
+        <GenericListItemIcon style={{width:'40px', marginRight:'10px'}} >
           <img src={useBaseUrl(icon)} alt={label} />
         </GenericListItemIcon>
         <GenericListItemText primary={label} />
