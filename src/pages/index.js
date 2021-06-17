@@ -12,12 +12,12 @@ import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Translate from '@docusaurus/Translate'
 
-import bg from '../../static/img/bgHomePage.jpg'
+import bg from '../../static/img/bgHomePage.png'
 
 const MetaData={
   title:"LACChain EOSIO Testnet",
   description:"LACChain EOSIO",
-  img:"img/logos/lacchain-eosio-logo.png",
+  img:"img/lacchain-eosio-social-media.png",
   hrefLangPath: ""
 }
 
@@ -32,15 +32,6 @@ const Home = () => {
 
   const HeroSection = () => {
     return (
-      <Box className="generalContainer" 
-        style={{ 
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '89%',
-          backgroundPosition: '280px 120px',
-          backgroundImage: `url(${bg})`,
-          backgroundColor: '#F9F9F9'
-        }}
-      >
         <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
           {isDesktop && 
             <Box className="sectionHero">
@@ -97,7 +88,6 @@ const Home = () => {
             </Box>
           }
         </Box>
-      </Box>
     )
   }
 
@@ -438,41 +428,31 @@ const Home = () => {
 
   const AreYouReady = () => {
     return (
-      <Box className="generalContainer" 
-        style={{ 
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '89%',
-          backgroundPosition: '280px 0',
-          backgroundImage: `url(${bg})`,
-          backgroundColor: '#F9F9F9'
-        }}
-      >
-        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
-          <Box className="sectionPadding">
-            <Grid  justify="center" alignItems="center" container spacing={5}>
-              <Grid item xs={12} md={8}>
-                <Box className="boxFlexEnd">
-                  <h2 className="bannerStyle">
-                    <Translate id="homepage.readyText">
-                      ¿Todo listo para empezar a usar LACChain EOSIO?
-                    </Translate>
-                  </h2>
-                </Box>
-              </Grid>
-              <Grid item xs={12} md={3}>
-                  <Box className="centerBox">
-                    <button 
-                      className="buttonPrimary" 
-                      onClick={() => history.push("/contact-us")}
-                    >
-                      <Translate id="homepage.startNow">
-                        Comience ahora
-                      </Translate>
-                    </button>
-                  </Box>
-              </Grid>
+      <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+        <Box className="sectionPadding">
+          <Grid  justify="center" alignItems="center" container spacing={5}>
+            <Grid item xs={12} md={8}>
+              <Box className="boxFlexEnd">
+                <h2 className="bannerStyle">
+                  <Translate id="homepage.readyText">
+                    ¿Todo listo para empezar a usar LACChain EOSIO?
+                  </Translate>
+                </h2>
+              </Box>
             </Grid>
-          </Box>
+            <Grid item xs={12} md={3}>
+                <Box className="centerBox">
+                  <button 
+                    className="buttonPrimary" 
+                    onClick={() => history.push("/contact-us")}
+                  >
+                    <Translate id="homepage.startNow">
+                      Comience ahora
+                    </Translate>
+                  </button>
+                </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     )
@@ -747,41 +727,31 @@ const Home = () => {
 
   const CreateAccount = () => {
     return (
-      <Box className="generalContainer" 
-        style={{ 
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '89%',
-          backgroundPosition: '280px 0',
-          backgroundImage: `url(${bg})`,
-          backgroundColor: '#F9F9F9'
-        }}
-      >
-        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
-          <Box className="sectionPadding">
-            <Grid justify="center" alignItems="center" container spacing={5}>
-              <Grid item xs={12} md={9}>
-                <Box className="boxFlexEnd">
-                  <h2 className="bannerStyle">
-                    <Translate id="homepage.createAccountBanner">
-                      Cree su cuenta y empiece a usar LACChain EOSIO. 
-                    </Translate>
-                  </h2>
-                </Box>
-              </Grid>
-              <Grid item xs={12} md={3}>
-                  <Box className="centerBox">
-                    <button 
-                      className="buttonPrimary" 
-                      onClick={() => history.push("/contact-us")}
-                    >
-                      <Translate id="homepage.startNow">
-                        Comience ahora
-                      </Translate>
-                    </button>
-                  </Box>
-              </Grid>
+      <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+        <Box className="sectionPadding">
+          <Grid justify="center" alignItems="center" container spacing={5}>
+            <Grid item xs={12} md={9}>
+              <Box className="boxFlexEnd">
+                <h2 className="bannerStyle">
+                  <Translate id="homepage.createAccountBanner">
+                    Cree su cuenta y empiece a usar LACChain EOSIO. 
+                  </Translate>
+                </h2>
+              </Box>
             </Grid>
-          </Box>
+            <Grid item xs={12} md={3}>
+                <Box className="centerBox">
+                  <button 
+                    className="buttonPrimary" 
+                    onClick={() => history.push("/contact-us")}
+                  >
+                    <Translate id="homepage.startNow">
+                      Comience ahora
+                    </Translate>
+                  </button>
+                </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     )
@@ -795,18 +765,31 @@ const Home = () => {
       hrefLangPath={MetaData.hrefLangPath}
     > 
       {isDesktop &&
-        <Box className="mainContainer">
-          <HeroSection/>
-          <IconSection/>
-          <DiscoverPowerful/>
-          <AnEcosystem/>
-          <FoundingPartners/>
-          <CreateAccount/>
-          <WhatLACChainEOSIO/>
-          <AreYouReady/>
-          <Tools/>
-          <Projects/>
-        </Box>
+        <>
+          <Box className="mainContainer">
+            <Box 
+              style={{ 
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '84%',
+                backgroundAttachment: 'fixed',
+                backgroundPosition: '270px 120px',
+                backgroundImage: `url(${bg})`,
+                backgroundColor: '#F9F9F9'
+              }}
+            >
+                <HeroSection/>
+                <IconSection/>
+                <DiscoverPowerful/>
+                <AnEcosystem/>
+                <FoundingPartners/>
+                <CreateAccount/>
+                <WhatLACChainEOSIO/>
+                <AreYouReady/>
+                <Tools/>
+                <Projects/>
+            </Box>
+          </Box>
+        </>
       }
       {isMobile && 
         <Box className="mainContainer">

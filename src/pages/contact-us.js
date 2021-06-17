@@ -12,13 +12,13 @@ import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Translate from '@docusaurus/Translate'
 
-import bg from '../../static/img/bgHomePage.jpg'
+import bg from '../../static/img/bgHomePage.png'
 
 const MetaData={
-    title:"LACChain: Contáctenos",
-    description:"Pregúntenos sobre la red LACChain EOSIO.",
-    img:"img/logos/lacchain-eosio-logo.png",
-    hrefLangPath: ""
+  title:"LACChain EOSIO: Contáctenos",
+  description:"Pregúntenos sobre la red LACChain EOSIO.",
+  img:"img/lacchain-eosio-social-media.png",
+  hrefLangPath: ""
 }
 
 const ContactUS = () => {
@@ -183,53 +183,43 @@ const ContactUS = () => {
 
   const FollowUsBanner = () => {
     return (
-      <Box className="generalContainer" 
-        style={{ 
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '89%',
-          backgroundPosition: '280px 0',
-          backgroundImage: `url(${bg})`,
-          backgroundColor: '#F9F9F9'
-        }}
-      >
-        <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
-          <Box className="sectionPadding">
-            <Grid container justify='center' alignItems="center" spacing={2}>
-              <Grid item xs={12} md={12}>
-                <Box className="h2Box">
-                  <h2 style={{textAlign:'center'}}>
-                    <Translate id="contact.followUs1">
-                      ¡Síganos en nuestras redes sociales para
-                    </Translate>
-                    <br/>
-                    <Translate id="contact.followUs2">
-                      recibir actualizaciones sobre LACChain EOSIO!
-                    </Translate>
-                  </h2>
-                </Box>
-              </Grid>
-              <Grid item xs={5} md={2}>
-                <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
-                      <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                  </a>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
-                      <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                  </a>
-                </Box>
-              </Grid>
-              <Grid item xs={5} md={2}>
-                <Box className="centerBox" style={{justifyContent:'space-around'}}>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
-                      <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
-                  </a>
-                  <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
-                      <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
-                  </a>
-                </Box>
-              </Grid>
+      <Box className="containerSec" style={{backgroundColor:'rgb(255, 255, 255, 0)'}}>
+        <Box className="sectionPadding">
+          <Grid container justify='center' alignItems="center" spacing={2}>
+            <Grid item xs={12} md={12}>
+              <Box className="h2Box">
+                <h2 style={{textAlign:'center'}}>
+                  <Translate id="contact.followUs1">
+                    ¡Síganos en nuestras redes sociales para
+                  </Translate>
+                  <br/>
+                  <Translate id="contact.followUs2">
+                    recibir actualizaciones sobre LACChain EOSIO!
+                  </Translate>
+                </h2>
+              </Box>
             </Grid>
-          </Box>
+            <Grid item xs={5} md={2}>
+              <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
+                    <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
+                    <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+              </Box>
+            </Grid>
+            <Grid item xs={5} md={2}>
+              <Box className="centerBox" style={{justifyContent:'space-around'}}>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
+                    <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
+                    <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
+                </a>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     )
@@ -247,7 +237,18 @@ const ContactUS = () => {
         <Box className="mainContainer">
           <HeroSection/>
           <IconSection/>
-          <FollowUsBanner/>
+          <Box 
+            style={{ 
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: '84%',
+              backgroundAttachment: 'fixed',
+              backgroundPosition: '270px 120px',
+              backgroundImage: `url(${bg})`,
+              backgroundColor: '#F9F9F9'
+            }}
+          >
+            <FollowUsBanner/>
+          </Box>
         </Box>
       }
       {isMobile && 
