@@ -329,7 +329,7 @@ h1{
 .boxLanguagesSelector{
   z-index: 500;
   position: absolute;
-  right: 45px;
+  right: 40px;
   top: -7px;
   display: flex;
   border-radius: 5px;

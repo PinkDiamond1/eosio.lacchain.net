@@ -385,7 +385,7 @@ const Home = () => {
                   <p>
                     <Translate id="homepage.configAccountText">
                       LACChain EOSIO le permite crear fácilmente una cuenta
-                      como usuario final, socio, no socio o desarrollador de app o
+                      como usuario final, socio, no afiliado o desarrollador de app o
                       contracto. Como usuario de LACChain EOSIO, podrá
                       administrar su cuenta y llaves privadas.
                     </Translate>{" "}
@@ -406,7 +406,7 @@ const Home = () => {
                   </Box>
                   <p>
                     <Translate id="homepage.resourceModelText">
-                      LACChain EOSIO brinda acceso a usuarios a la distribución de}
+                      LACChain EOSIO brinda acceso a usuarios a la distribución de
                       recursos para co-firmar transacciones y a un ambiente
                       de prueba flexible. Además, el apoyo del equipo de LACChain
                       es crucial para mantener la red activa.
@@ -520,14 +520,10 @@ const Home = () => {
                     </h3>
                   </Box>
                   <p className="h3Box">
-                    <Translate id="homepage.apiIntegrationsText1">
-                      Usamos
-                    </Translate>{' '}
-                    <a href="https://dfuse.io/en/home/" target="_blank"> dfuse </a>{' '}
-                    <Translate id="homepage.apiIntegrationsText2">
-                      un API de blockchain robusto que permite un flujo en
-                      tiempo real de actualizaciones,búsquedas rápidas y
-                      garantía de transacciones irreversibles.
+                    <Translate id="homepage.apiIntegrationsText">
+                      Ponemos a disposición un API de blockchain que permite
+                      un flujo en tiempo real de actualizaciones, búsquedas
+                      rápidas y garantía de transacciones irreversibles
                     </Translate>
                   </p>
                 </Grid>
@@ -550,14 +546,10 @@ const Home = () => {
                     </h3>
                   </Box>
                   <p className="h3Box">
-                    <Translate id="homepage.blockExplorerText1">
-                      Instalamos
-                    </Translate>{' '}
-                    <a href="https://eos.eosq.eosnation.io/" target="_blank"> eosq</a>{' '}
-                    <Translate id="homepage.blockExplorerText2">
-                      , un explorador de bloques que brinda acceso a datos
-                      precisos, detallados y procesables sobre cuentas,
-                      acciones, nodos validadores y más.
+                    <Translate id="homepage.blockExplorerText">
+                      Implementamos un explorador de bloques que brinda
+                      acceso a datos precisos, detallados y procesables
+                      sobre cuentas, acciones, nodos validadores y más.
                     </Translate>{' '}
                     <a href="https://lacchain.eosio.online/" target="_blank">
                       <Translate id="homepage.blockExplorerLink">

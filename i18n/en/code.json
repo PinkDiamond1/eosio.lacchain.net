@@ -293,20 +293,14 @@
   "homepage.apiIntegrationsTitle": {
     "message": "API Integrations"
   },
-  "homepage.apiIntegrationsText1": {
-    "message": "We deploy"
-  },
-  "homepage.apiIntegrationsText2": {
-    "message": "a robust blockchain API to stream real-time state updates, conduct lightning-fast searches and provide irreversible transaction guarantees."
+  "homepage.apiIntegrationsText": {
+    "message": "We provide a blockchain API to stream real-time state updates, conduct lightning-fast searches and provide irreversible transaction guarantees."
   },
   "homepage.blockExplorerTitle": {
     "message": "Block Explorer"
   },
-  "homepage.blockExplorerText1": {
-    "message": "We installed"
-  },
-  "homepage.blockExplorerText2": {
-    "message": ", a block explorer that provides access to detailed, accurate, actionable data about accounts, actions, validator nodes, and more."
+  "homepage.blockExplorerText": {
+    "message": "We installed a block explorer that provides access to detailed, accurate, actionable data about accounts, actions, validator nodes, and more. Use our block explorer."
   },
   "homepage.blockExplorerLink": {
     "message": "Use our block explorer"
