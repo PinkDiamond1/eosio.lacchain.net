@@ -39,7 +39,7 @@ const PATHS = [
         message: 'LACChain EOSIO'
       }),
     target: '_self',
-    icon: 'img/icons/navbar/services.png'
+    icon: 'img/icons/navbar/about.png'
   },
   {
     dropDown:true,
@@ -55,15 +55,15 @@ const PATHS = [
     subPaths: 
     [
       {
-        path: "http://explorer.latamlink.io/",
-        espPath: "http://explorer.latamlink.io/",
+        path: "https://eosio-explorer.lacchain.net/",
+        espPath: "https://eosio-explorer.lacchain.net/",
         label: 
           translate({
             id: 'homepage.blockExplorerTitle',
             message: 'Explorador de bloques'
           }),
         target: '_blank',
-        icon: 'img/icons/navbar/blockproducer.png'
+        icon: 'img/icons/navbar/block-explorer.png'
       },
       {
         path: "https://lacchain.eosio.online/",
@@ -74,7 +74,7 @@ const PATHS = [
             message: 'Monitor de red'
           }),
         target: '_blank',
-        icon: 'img/icons/navbar/projects.png'
+        icon: 'img/icons/navbar/network-dashboard.png'
       }
     ]
   },
@@ -162,14 +162,13 @@ const Navbar = ({isMobile, isDesktop}) => {
 
     return (
       <>
-        <IconButton
-          style={{padding: '5px'}}
-          onClick={handleClickMenuLang}
+        <Box
+          style={{padding:'0', marginTop:'-6px'}}
         >
-          <img src={global} style={{width:'20px', height: '20px'}}/>
-        </IconButton>
+          <img src={global} style={{width:'40px'}}/>
+        </Box>
         {true && (
-          <Box  className={clsx("boxLanguagesSelector",{["boxLanguagesSelectorActive"]: langMenuHandler})} onMouseLeave={handleCloseMenuLang}>
+          <Box className="boxLanguagesSelector" onMouseLeave={handleCloseMenuLang}>
             <LangItem
               label="EN"
               handleClick={handleChangeLang}
@@ -244,7 +243,15 @@ const Navbar = ({isMobile, isDesktop}) => {
                         OPCIONES
                       </Translate>
                     </span>
-                    <CustomListItem href="https://es.eoscostarica.io/" target="_blank" label="Spanish website" icon={'img/icons/navbar/global.png'} isSelected={false}/>
+                    <CustomListItem
+                      onClick={translateSite}
+                      label={
+                        translate({
+                          id: 'translate.language',
+                          message: 'English website'
+                        })}
+                      icon={'img/icons/navbar/global.png'}
+                      isSelected={false}/>
                   </Box>
                 </List>
               </Box>
@@ -307,7 +314,7 @@ const Navbar = ({isMobile, isDesktop}) => {
 
 Navbar.propTypes = {
   isDesktop:PropTypes.bool,
-  isMobile:PropTypes.bool,
+  isMobile:PropTypes.bool
 }
 
 export default Navbar

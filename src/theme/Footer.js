@@ -113,7 +113,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://explorer.latamlink.io/"
+                    href="https://eosio-explorer.lacchain.net/"
                     target="_blank"
                     style={{color:'white'}}
                   >

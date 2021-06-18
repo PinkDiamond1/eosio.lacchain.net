@@ -20,7 +20,7 @@ El monitor de red es totalmente código abierto y se puede ver el proyecto en el
 
 Existe una colección de [contratos inteligentes y utilidades para EOSIO](https://eosmechanics.com/) desplegados en LACChain EOSIO para el monitoreo del rendimiento de los nodos en la red. Los datos estarán públicamente disponibles para su análisis y lo alentamos a hacerlo para ayudar a identificar problemas y mejorar el rendimiento de los nodos validadores.
 
-Las métricas son generadas por contratos inteligentes ubicados bajo la cuenta [`eosmechanics`](https://explorer.latamlink.io/account/eosmechanics).
+Las métricas son generadas por contratos inteligentes ubicados bajo la cuenta [`eosmechanics`](https://eosio-explorer.lacchain.net/account/eosmechanics).
 
 ### CPU Benchmark
 

@@ -11,7 +11,7 @@ A block explorer is a tool for visualizing all transactions that occur on the ne
 The aim of this application is to provide application developers for LACChain EOSIO (consisting of smart contract developers and front-end developers) a quick and easy way to visualize and test such applications on the EOSIO blockchain.
 
 ### Link to block explorer
-https://explorer.latamlink.io
+https://eosio-explorer.lacchain.net/
 
 ## eosq high-precision block explorer
 LACChain EOSIO has plans to install  **eosq**, a block explorer that provides access to detailed, accurate, actionable data about accounts, actions, validator nodes, and more on the LACChain EOSIO testnet.

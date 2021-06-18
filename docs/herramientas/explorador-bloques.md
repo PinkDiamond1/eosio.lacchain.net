@@ -12,7 +12,7 @@ El objetivo de esta aplicación es proporcionar a los desarrolladores de aplicac
 
 ### Enlace al explorador de bloques
 
-http://explorer.latamlink.io/
+https://eosio-explorer.lacchain.net/
 
 
 ## Explorador de bloques de alta precisión eosq
