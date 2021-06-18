@@ -385,7 +385,7 @@ const Home = () => {
                   <p>
                     <Translate id="homepage.configAccountText">
                       LACChain EOSIO le permite crear fácilmente una cuenta
-                      como usuario final, socio, no afiliado o desarrollador de app o
+                      como usuario final, partner, non-partner o desarrollador de app o
                       contracto. Como usuario de LACChain EOSIO, podrá
                       administrar su cuenta y llaves privadas.
                     </Translate>{" "}
