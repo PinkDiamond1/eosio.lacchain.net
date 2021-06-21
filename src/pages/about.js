@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import Box from '@material-ui/core/Box'

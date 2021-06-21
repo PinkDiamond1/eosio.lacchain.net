@@ -174,17 +174,17 @@ const Home = () => {
               {isDesktop && 
                 <Grid container md={6}>
                   <Grid item md={3} />
-                  <Grid item md={3}>
-                    <Box style={{marginTop:'70px'}}>
-                      <img src={useBaseUrl('img/logos/lacchain-a.svg')} alt="LACChain logo" />
+                  <Grid item md={4}>
+                    <Box style={{marginTop:'30px'}}>
+                      <img style={{width:'220px'}} src={useBaseUrl('img/logos/lacchain-a.png')} alt="LACChain logo" />
                     </Box>
                   </Grid>
-                  <Grid item md={3}>
-                      <h1 style={{textAlign:'center', marginTop:'110px', fontWeight:'300'}}> + </h1>
+                  <Grid item md={2}>
+                      <h1 style={{textAlign:'center', marginRight:'60px', marginTop:'110px', fontWeight:'300'}}> + </h1>
                   </Grid>
                   <Grid item md={3}>
                     <Box style={{marginTop:'75px'}}>
-                      <img style={{width:'95px'}} src={useBaseUrl('img/logos/eosio-logo.svg')} alt="EOSIO logo" />
+                      <img style={{width:'90px'}} src={useBaseUrl('img/logos/eosio-logo.svg')} alt="EOSIO logo" />
                     </Box>
                   </Grid>
                 </Grid>

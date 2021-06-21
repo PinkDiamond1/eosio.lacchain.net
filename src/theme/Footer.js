@@ -24,7 +24,7 @@ const Footer = () => {
             <Grid item xs={12} md={3}>
               <Box className="centerBox">
                 <img
-                  src={useBaseUrl("img/logos/lacchain-eosio-logo.png")}
+                  src={useBaseUrl("img/logos/lacchain-eosio-logo-white.png")}
                   alt="LACChain EOSIO LOGO"
                   className="footerLogo"
                 />
@@ -155,7 +155,7 @@ const Footer = () => {
             </Grid>
             { isDesktop && 
               <Grid item md={6}>
-                <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'10px'}}>
+                <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'2px'}}>
                     2021 LACChain EOSIO
                 </p>
             </Grid>
