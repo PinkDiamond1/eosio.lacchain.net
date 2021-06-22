@@ -347,6 +347,12 @@
   "homepage.createAccountBanner": {
     "message": "Create your account and start using LACChain EOSIO."
   },
+  "homepage.metadataTitle": {
+    "message": "LACChain EOSIO: EOSIO Blockchain Network Integrated into LACChain"
+  },
+  "homepage.metadataDescription": {
+    "message": "LACChain EOSIO offers a blockchain network that integrates into LACChain. Test and build decentralized apps and infrastructure using EOSIO."
+  },
   "footer.aboutLacchainEosio": {
     "message": "About LACChain EOSIO"
   },
@@ -555,10 +561,10 @@
     "message": "Learn more about how to contribute"
   },
   "contact.wantContributeText2": {
-    "message": "If you have a query for the community you can leave it"
+    "message": "If you have any queries for the community, you can use our"
   },
   "contact.wantContributekLink2": {
-    "message": "here"
+    "message": "GitHub Discussions"
   },
   "contact.wantAccountText": {
     "message": "Contact one of the partners of LACChain EOSIO so we can guide you with the process."

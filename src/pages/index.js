@@ -10,13 +10,21 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import Translate from '@docusaurus/Translate'
+import Translate, {translate} from '@docusaurus/Translate'
 
 import bg from '../../static/img/bgHomePage.png'
 
 const MetaData={
-  title:"LACChain EOSIO Testnet",
-  description:"LACChain EOSIO",
+  title:
+    translate({
+      id: 'homepage.metadataTitle',
+      message: 'LACChain EOSIO: Red blockchain EOSIO integrada a LACChain'
+    }),
+  description:
+    translate({
+      id: 'homepage.metadataDescription',
+      message: 'LACChain EOSIO ofrece una red blockchain que se integra a LACChain. Pruebe y desarrolle apps descentralizadas e infraestructura usando EOSIO.'
+    }),
   img:"img/lacchain-eosio-social-media.png",
   hrefLangPath: ""
 }
