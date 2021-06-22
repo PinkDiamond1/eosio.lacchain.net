@@ -131,7 +131,15 @@ const ContactUS = () => {
                   <Translate id="contact.wantContributekLink">
                     Aprenda más sobre cómo contribuir
                   </Translate>
-                </a>.
+                </a>.{' '}
+                <Translate id="contact.wantContributeText2">
+                  Si tiene alguna consulta para la comunidad, puede usar nuestro 
+                </Translate>{' '}
+                <a href='https://github.com/lacchain/eosio.lacchain.net/discussions' target="_blank">
+                  <Translate id="contact.wantContributekLink2">
+                    GitHub Discussions
+                  </Translate>.
+                </a>
               </p>
             </Grid>
             <Grid item xs={12} md={3}>
@@ -169,7 +177,7 @@ const ContactUS = () => {
               <Box className="buttonBox">
                 <button
                   className="buttonPrimary" 
-                  onClick={() => window.open('https://www.eosargentina.io/')}
+                  onClick={() => window.open(`mailto:${'info@eosargentina.io'}?subject=${'LACChain EOSIO Contact'}`)}
                 >
                   EOS Argentina
                 </button>

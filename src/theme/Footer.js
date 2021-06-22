@@ -5,16 +5,16 @@ import Box from '@material-ui/core/Box'
 import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
 import clsx from "clsx"
-import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TwitterIcon from '@material-ui/icons/Twitter'
-import TelegramIcon from '@material-ui/icons/Telegram';
+import TelegramIcon from '@material-ui/icons/Telegram'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import Translate, {translate} from '@docusaurus/Translate';
+import Translate from '@docusaurus/Translate'
 
 const Footer = () => {
   const isMobile = useMediaQuery({query:'(max-width: 769px)'})
-  const isDesktop = useMediaQuery({query:'(min-width: 769px)'})
+  const isTablet = useMediaQuery({query:'(min-width: 1025px)'})
+  const isDesktop = useMediaQuery({query:'(min-width: 710px)'})
 
   return (
     <Box>
@@ -134,6 +134,16 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
+                    href="https://www.lacchain.net/home"
+                    target="_blank"
+                    style={{color:'white'}}
+                  >
+                    LACChain
+                  </Link>
+                </p>
+                <p style={{textAlign: isMobile ? 'center' : ''}}>
+                  <Link
+                    className="linkFooter"
                     href="https://eoscostarica.io/"
                     target="_blank"
                     style={{color:'white'}}
@@ -156,15 +166,15 @@ const Footer = () => {
             { isDesktop && 
               <Grid item md={6}>
                 <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'2px'}}>
-                    2021 LACChain EOSIO
+                  LACChain 2021 - Open Source
                 </p>
             </Grid>
             }
             <Grid container md={6}>
-              <Grid item md={5}/>
-              <Grid item xs={12} md={4}>
+              <Grid item md={6}/>
+              <Grid item xs={12} md={3}>
                 <Grid item xs={12}>
-                  <Box style={{marginTop: isMobile ? '40px' : ''}} className={isMobile ? "centerBox" : "leftBox"}>
+                  <Box style={{marginTop: isMobile ? '40px' : '', marginLeft: isTablet ? '8px' : ''}} className={isMobile ? "centerBox" : "leftBox"}>
                     <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
                       <TwitterIcon 
                         style={{
@@ -181,26 +191,17 @@ const Footer = () => {
                           cursor:'pointer', color:'#ffffff'
                         }}/>
                     </a>
+                  </Box>
+                </Grid>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <Grid style={{marginLeft: isTablet ? '-50px' : '', marginTop: isDesktop ? '-5px' : ''}} item xs={12}>
+                  <Box className={isMobile ? "centerBox" : "leftBox"}>
                     <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
                       <TelegramIcon 
                         style={{
                           width: isDesktop ? '42px' : '45px',
                           height: isDesktop ? '42px' : '45px',
-                          cursor:'pointer',
-                          color:'#ffffff'
-                        }}/>
-                    </a>
-                  </Box>
-                </Grid>
-              </Grid>
-              <Grid item xs={12} md={3}>
-                <Grid style={{marginLeft: isDesktop ? '-50px' : ''}} item xs={12}>
-                  <Box className={isMobile ? "centerBox" : "leftBox"} style={{marginTop:'3px'}}>
-                    <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
-                      <EmailIcon
-                        style={{
-                          width: isDesktop ? '38px' : '45px',
-                          height: isDesktop ? '38px' : '45px',
                           cursor:'pointer',
                           color:'#ffffff'
                         }}/>
@@ -221,7 +222,7 @@ const Footer = () => {
             { isMobile && 
               <Grid item md={6}>
                 <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'20px'}}>
-                    2021 LACChain EOSIO
+                  LACChain 2021 - Open Source
                 </p>
             </Grid>
             }
