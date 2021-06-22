@@ -244,7 +244,7 @@ const ContactUS = () => {
               backgroundAttachment: 'fixed',
               backgroundPosition: '270px 120px',
               backgroundImage: `url(${bg})`,
-              backgroundColor: '#F9F9F9'
+              backgroundColor: '#F8F8F8'
             }}
           >
             <FollowUsBanner/>

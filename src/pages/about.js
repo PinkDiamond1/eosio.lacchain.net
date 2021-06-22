@@ -417,7 +417,7 @@ const About = () => {
             <Box className="spacingBox">
               <Grid container spacing={8}>
                 {team.map((person) => (
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={12} md={4} lg={3}>
                     <Box className="imgBoxTheCompany">
                       <img
                         className="teamSizeImage"
@@ -490,8 +490,8 @@ const About = () => {
                 </h2>
               </Box>
               <Grid justify="center" container spacing={2}>
-                <Grid item xs={10} md={10}>
-                  <Box className="accordionBox" style={{ marginTop:'20px'}}>
+                <Grid item xs={12} md={11}>
+                  <Box className="accordionBox">
                     <Accordion 
                       square
                       expanded={expanded === 'what_LACChainEOSIO'} 
@@ -762,7 +762,7 @@ const About = () => {
               backgroundAttachment: 'fixed',
               backgroundPosition: '270px 120px',
               backgroundImage: `url(${bg})`,
-              backgroundColor: '#F9F9F9'
+              backgroundColor: '#F8F8F8'
             }}
           >
             <HeroSection/>
