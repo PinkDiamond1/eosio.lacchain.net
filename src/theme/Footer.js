@@ -134,6 +134,16 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
+                    href="https://github.com/lacchain/eosio.lacchain.net/discussions"
+                    target="_blank"
+                    style={{color:'white'}}
+                  >
+                    LACChain
+                  </Link>
+                </p>
+                <p style={{textAlign: isMobile ? 'center' : ''}}>
+                  <Link
+                    className="linkFooter"
                     href="https://eoscostarica.io/"
                     target="_blank"
                     style={{color:'white'}}
@@ -156,7 +166,7 @@ const Footer = () => {
             { isDesktop && 
               <Grid item md={6}>
                 <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'2px'}}>
-                    2021 LACChain EOSIO
+                  LACChain 2021 - Open Source
                 </p>
             </Grid>
             }
@@ -221,7 +231,7 @@ const Footer = () => {
             { isMobile && 
               <Grid item md={6}>
                 <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'20px'}}>
-                    2021 LACChain EOSIO
+                  LACChain 2021 - Open Source
                 </p>
             </Grid>
             }

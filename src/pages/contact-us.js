@@ -169,7 +169,7 @@ const ContactUS = () => {
               <Box className="buttonBox">
                 <button
                   className="buttonPrimary" 
-                  onClick={() => window.open('https://www.eosargentina.io/')}
+                  onClick={() => window.open(`mailto:${'info@eosargentina.io'}?subject=${'LACChain EOSIO Contact'}`)}
                 >
                   EOS Argentina
                 </button>
