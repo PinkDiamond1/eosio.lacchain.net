@@ -131,7 +131,15 @@ const ContactUS = () => {
                   <Translate id="contact.wantContributekLink">
                     Aprenda más sobre cómo contribuir
                   </Translate>
-                </a>.
+                </a>.{' '}
+                <Translate id="contact.wantContributeText2">
+                  Si tiene una consulta para la comunidad puede dejarla
+                </Translate>{' '}
+                <a href='https://github.com/lacchain/eosio.lacchain.net/discussions' target="_blank">
+                  <Translate id="contact.wantContributekLink2">
+                    aquí
+                  </Translate>
+                </a>
               </p>
             </Grid>
             <Grid item xs={12} md={3}>

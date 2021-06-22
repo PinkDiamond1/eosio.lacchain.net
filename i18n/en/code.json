@@ -554,6 +554,12 @@
   "contact.wantContributekLink": {
     "message": "Learn more about how to contribute"
   },
+  "contact.wantContributeText2": {
+    "message": "If you have a query for the community you can leave it"
+  },
+  "contact.wantContributekLink2": {
+    "message": "here"
+  },
   "contact.wantAccountText": {
     "message": "Contact one of the partners of LACChain EOSIO so we can guide you with the process."
   },
