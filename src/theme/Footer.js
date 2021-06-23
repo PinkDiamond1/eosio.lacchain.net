@@ -25,7 +25,7 @@ const Footer = () => {
               <Box className="centerBox">
                 <img
                   src={useBaseUrl("img/logos/lacchain-eosio-logo-white.png")}
-                  alt="LACChain EOSIO LOGO"
+                  alt="LACChain EOSIO logo"
                   className="footerLogo"
                 />
               </Box>
@@ -175,7 +175,7 @@ const Footer = () => {
               <Grid item xs={12} md={3}>
                 <Grid item xs={12}>
                   <Box style={{marginTop: isMobile ? '40px' : '', marginLeft: isTablet ? '8px' : ''}} className={isMobile ? "centerBox" : "leftBox"}>
-                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
+                    <a alt="Twitter icon" className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
                       <TwitterIcon 
                         style={{
                           width: isDesktop ? '35px' : '45px',
@@ -183,7 +183,7 @@ const Footer = () => {
                           cursor:'pointer', color:'#ffffff'
                         }}/>
                     </a>
-                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
+                    <a alt="LinkedIn icon" className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
                       <LinkedInIcon
                         style={{
                           width: isDesktop ? '35px' : '45px',
@@ -197,7 +197,7 @@ const Footer = () => {
               <Grid item xs={12} md={3}>
                 <Grid style={{marginLeft: isTablet ? '-50px' : '', marginTop: isDesktop ? '-5px' : ''}} item xs={12}>
                   <Box className={isMobile ? "centerBox" : "leftBox"}>
-                    <a className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
+                    <a alt="Telegram icon" className={clsx("marginIconsFooter", "socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
                       <TelegramIcon 
                         style={{
                           width: isDesktop ? '42px' : '45px',
@@ -206,7 +206,7 @@ const Footer = () => {
                           color:'#ffffff'
                         }}/>
                     </a>
-                    <a className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
+                    <a alt="GitHub icon" className={clsx("marginIconsFooter","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
                       <GitHubIcon 
                         style={{
                           width: isDesktop ? '35px' : '45px',
@@ -224,7 +224,7 @@ const Footer = () => {
                 <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'20px'}}>
                   LACChain 2021 - Open Source
                 </p>
-            </Grid>
+              </Grid>
             }
           </Grid>
         </Box>

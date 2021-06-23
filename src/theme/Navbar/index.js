@@ -192,11 +192,11 @@ const Navbar = ({isMobile, isDesktop}) => {
         {isMobile && 
           <>
             <Box className="imgLogoBoxMobile">
-              <a href={useBaseUrl("/")} alt="EOS CR LOGO">
+              <a href={useBaseUrl("/")}>
                 <img
                   className="imgLogoScroll"
                   src={useBaseUrl("img/logos/lacchain-eosio-logo.png")}
-                  alt="EOS CR LOGO"
+                  alt="LACChain EOSIO LOGO"
                 />
               </a>
             </Box>
@@ -265,7 +265,7 @@ const Navbar = ({isMobile, isDesktop}) => {
                   <img
                     className={clsx("imgLogo",{["imgLogoScroll"]: trigger})}
                     src={useBaseUrl("img/logos/lacchain-eosio-logo.png")}
-                    alt="EOS CR LOGO"
+                    alt="LACChain EOSIO LOGO"
                   />
                 </a>
               </Box>

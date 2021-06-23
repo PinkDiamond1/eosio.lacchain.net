@@ -347,6 +347,24 @@
   "homepage.metadataDescription": {
     "message": "LACChain EOSIO offers a blockchain network that integrates into LACChain. Test and build decentralized apps and infrastructure using EOSIO."
   },
+  "homepage.barsIcon":{
+    "message": "Bars icon"
+  },
+  "homepage.connectionIcon":{
+    "message": "Connection icon"
+  },
+  "homepage.searchIcon":{
+    "message": "Search icon"
+  },
+  "homepage.connectIcon":{
+    "message": "Connect icon"
+  },
+  "homepage.puzzleIcon":{
+    "message": "Puzzle icon"
+  },
+  "homepage.learnIcon":{
+    "message": "Learn icon"
+  },
   "footer.aboutLacchainEosio": {
     "message": "About LACChain EOSIO"
   },
@@ -508,6 +526,18 @@
   },
   "about.improvedSecurity": {
     "message": "- Improved security"
+  },
+  "about.americanMap": {
+    "message": "Map America"
+  },
+  "about.listIcon": {
+    "message": "List icon"
+  },
+  "about.bookIcon": {
+    "message": "Books icon"
+  },
+  "about.blocksIcon": {
+    "message": "Books icon"
   },
   "contact.name": {
     "message": "First name"
