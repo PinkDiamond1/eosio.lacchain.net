@@ -57,7 +57,7 @@ const team = [
         })
   },
   {
-    photo:"img/team/xavier.jpg",
+    photo:"img/team/xavier.png",
     name:"Xavier Fernández",
     org:"EOS Costa Rica",
     position:
@@ -67,7 +67,7 @@ const team = [
       })
   },
   {
-    photo:"img/team/gris.jpg",
+    photo:"img/team/chitty.png",
     name:"Jesús Chitty",
     org:"EOS Argentina",
     position:
@@ -83,7 +83,7 @@ const team = [
     position:"DevOps"
   },
   {
-    photo:"img/team/gris.jpg",
+    photo:"img/team/matias.png",
     name:"Matías Romero",
     org:"EOS Argentina",
     position:
@@ -113,7 +113,7 @@ const team = [
       })
   },
   {
-    photo:"img/team/gris.jpg",
+    photo:"img/team/adriel.png",
     name:"Adriel Díaz",
     org:"EOS Costa Rica",
     position:
@@ -123,7 +123,7 @@ const team = [
       })
   },
   {
-    photo:"img/team/gris.jpg",
+    photo:"img/team/teto.png",
     name:"Terencio Gómez",
     org:"EOS Costa Rica",
     position:
@@ -235,7 +235,16 @@ const About = () => {
               {isDesktop && 
                 <Grid item md={6}>
                   <Box style={{paddingLeft:'80px'}}>
-                    <img style={{width:'380px'}} src={useBaseUrl('images/america.svg')} alt="Mapa America" />
+                    <img
+                      style={{width:'380px'}}
+                      src={useBaseUrl('images/america.svg')}
+                      alt={
+                        translate({
+                          id: 'about.americanMap',
+                          message: 'Mapa America'
+                        })
+                      }
+                    />
                   </Box>  
                 </Grid>
               }
@@ -252,31 +261,31 @@ const About = () => {
         <Box className="sectionPadding">
           <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
-                <Box className="h3Box">
-                    <h2>
-                      <Translate id="about.followUs">
-                        Síganos para estar al tanto:
-                      </Translate>
-                    </h2>
-                </Box>
+              <Box className="h3Box">
+                <h2>
+                  <Translate id="about.followUs">
+                    Síganos para estar al tanto:
+                  </Translate>
+                </h2>
+              </Box>
             </Grid>
             <Grid md={3}/>
             <Grid item xs={6} md={2}>
               <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
+                <a alt="Twitter icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
                     <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                 </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
+                <a alt="Telegram icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
                     <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                 </a>
               </Box>
             </Grid>
             <Grid item xs={6} md={2}>
               <Box className="centerBox" style={{justifyContent:'space-around'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
+                <a alt="Linked icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
                   <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                 </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
+                <a alt="GitHub icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
                   <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
                 </a>
               </Box>
@@ -421,7 +430,7 @@ const About = () => {
                     <Box className="imgBoxTheCompany">
                       <img
                         className="teamSizeImage"
-                        alt="Block One"
+                        alt={person.name}
                         src={useBaseUrl(person.photo)}
                       />
                     </Box>
