@@ -62,15 +62,11 @@ h1{
   font-size: 3rem;
 }
 
-.white{
-  color: white;
-}
-
 .buttonPrimary{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 21px;
   width: auto;
@@ -98,7 +94,7 @@ h1{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 21px;
   width: auto;
@@ -112,17 +108,6 @@ h1{
   transition: all .5s ease;
 }
 
-.gridButton{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gridButton:hover{
-  cursor: pointer;
-  opacity: 0.5;
-}
-
 .boxFlexEnd{
   display: flex;
   justify-content:end;
@@ -133,104 +118,14 @@ h1{
   background-color: #038702;
 }
 
-.resourcesIcon{
-  width: 100px;
-}
-
 /*doc*/
-
-.sectionHeroMobiledoc{
-  position: relative;
-  padding-top: 120px;
-  padding-bottom: 0;
-  width: 100%;
-}
-
-.subHeaderdocBox{
-  padding-bottom: 70px;
-}
-
-.docLanguageAvailableBox{
-  display: flex;
-  margin-bottom: 30px;
-  align-content: center;
-}
-
-.dividerdocBox{
-  padding-bottom: 16px;
-}
-
-.docAvatarBox{
-  position: relative;
-}
-
-.docAvatarTextBox{
-  position: absolute;
-  top: 0;
-  left: 60px;
-}
-
-.docAuthorTile{
-  margin-bottom: 0;
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 20px;
-  letter-spacing: -0.24px;
-  line-height: 25px;
-  color: black;
-}
-
-.docReadMoreText{
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-}
-
-.docTagsBox{
-  margin-bottom: 10px;
-}
-
-.docIconsBox{
-  height: 95%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end
-}
-
-.docContentBox{
-  margin-bottom: 30px;
-}
 
 .docMarkdown a{
   text-decoration: underline;
 }
 
-.docStickyContentBox{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100px;
-}
-
-.docPostItemBox{
-  padding: 50px;
-}
-
-.imgListdocPost{
-  width: 100%;
-  min-height: 200px;
-  object-fit: cover;
-}
-
-.docCenterHeaderItem{
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-}
-
 .doc-wrapper a {
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   font-weight: normal;
   color: #1cc15c;
 }
@@ -282,14 +177,6 @@ h1{
   width: 250px;
 }
 
-.hideImgLogoBoxMobile{
-  position: absolute;
-  left: 15px;
-  top: 18px;
-  width: 330px;
-  visibility: hidden;
-}
-
 .imgLogo{
   -webkit-transform-origin: top left;
   -webkit-transition: all 0.26s;
@@ -297,11 +184,6 @@ h1{
   -moz-transform: scale(1, 1);
   -o-transform: scale(1, 1);
   transform: scale(1, 1);
-}
-
-.imgDrawer{
-  padding: 10%;
-  width: 50%;
 }
 
 .imgLogoScroll{
@@ -341,7 +223,7 @@ h1{
 }
 
 .langItem{
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   cursor: pointer;
 }
 
@@ -350,7 +232,7 @@ h1{
 }
 
 .langItemActive{
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   padding-bottom: 3px;
   border-bottom: solid 4px #038702;
   font-weight: bold;
@@ -515,7 +397,7 @@ h1{
 }
 
 .link {
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   color: black;
   margin: 0;
   font-weight: bold;
@@ -598,7 +480,7 @@ h1{
 }
 
 .linkItem{
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   font-weight: normal;
   color: black;
   text-decoration: none;
@@ -623,21 +505,6 @@ h1{
   overflow-x: hidden;
 }
 
-.footerCopy{
-  width: "100%";
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  overflow-x: hidden;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.footerCopyContent{
-  width: 1300px;
-  display: flex;
-}
-
 .footerContent{
   width: 1300px;
   display: flex;
@@ -645,12 +512,8 @@ h1{
   padding-bottom: 30px;
 }
 
-.boxTitle{
-  margin-bottom: 2rem;
-}
-
 .h3Footer{
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -663,20 +526,8 @@ h1{
   color: #ffffff;
 }
 
-.body1Footer{
-  font-family: Lato, sans-serif;
-  color: white;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 19px;
-  letter-spacing: -0.05px;
-  line-height: 25px;
-  text-align: justify;
-}
-
 .linkFooter{
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   color: white;
   font-weight: normal;
   font-stretch: normal;
@@ -714,63 +565,9 @@ h1{
   background-color: #ffffff;
 }
 
-.containerGray{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #F8F8F8;
-}
-
-.containerBlack{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}
-
-.containerWithBackground{
-  background-image: url("https://eoscostarica.io/img/blureoslogo.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 100%;
-}
-
 .content{
   width: 960px;
   display: flex;
-}
-
-.bgParallax{
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 780px;
-}
-
-.bgParallaxSecondary{
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 1750px;
-}
-
-.bgParallaxSecondaryCompany{
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 1650px;
-}
-
-.imgParallax{
-  z-index: 1;
-  height: 100%;
-  width: 100vw;
-  background-image: url("https://eoscostarica.io/img/blureoslogo.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .titleBox{
@@ -785,23 +582,9 @@ h1{
   margin-bottom: 1rem;
 }
 
-.footerTitle{
-  margin-top: 4rem;
-  margin-bottom: 0;
-}
-
 .buttonBox{
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.boxIconButton{
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin-top: 45px;
-  width: 200px
 }
 
 .buttonBoxMobile{
@@ -830,24 +613,6 @@ h1{
   width: 100%;
 }
 
-.sectionContact{
-  width: 1300px;
-  padding-top: 250px;
-}
-
-.logoMobileBox{
-  width: 100%;
-  display: flex;
-  margin-bottom: 2em;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.logoMobile{
-  width: 300px;
-  height: 110px;
-}
-
 .section{
   padding-bottom: 140px;
   width: 1300px;
@@ -856,10 +621,6 @@ h1{
 .sectionPaddingTop{
   padding-top: 140px;
   padding-bottom: 50px;
-  width: 1300px;
-}
-
-.sectionNoPadding{
   width: 1300px;
 }
 
@@ -890,19 +651,6 @@ h1{
   border-top: solid 1px #E0E0E0;
 }
 
-.imgBox{
-  display: flex;
-  justify-content: center;
-  height: 350px;
-  margin-bottom: 3rem;
-}
-
-.imgBoxServices{
-  display: flex;
-  justify-content: center;
-  height: 250px;
-}
-
 .imgBoxLogos{
   display: flex;
   align-items: center;
@@ -922,63 +670,11 @@ h1{
   margin-top: 3rem;
 }
 
-.topSpacingBox{
-  margin-bottom: 3rem;
-}
-
-.topSpacingBox{
-  margin-top: 3rem;
-}
-
-.doubleSpacingBox{
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.inquiereBox{
-  display: flex;
-  align-items: center;
-  height: 500px;
-}
-
-.imgBoxRight{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.imgBoxLeft{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.imgKnow{
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.imgKnowCompany{
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: left;
-}
-
-.imgProjects{
-  width: 85%;
-}
-
 /*services*/
 
 .centerBox{
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.righttBox{
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -988,148 +684,13 @@ h1{
   align-items: center;
 }
 
-/*Team*/
-
-.avatarBox{
-  display: flex;
-  justify-content: center;
-  height: 250px;
-  margin-bottom: 3rem;
-}
-
-.nameText{
-  text-align: left;
-  margin-bottom: 5px;
-}
-
-.positionText{
-  text-align: left;
-  font-weight: normal;
-  margin-bottom: 15px;
-}
-
-.bioText{
-  text-align: left;
-}
-
-.socialMediaBox{
-  display: flex;
-  justify-content: start;
-  margin-top: 15px;
-}
-
-.socialMediaIcon{
-  cursor: pointer;
-  color: #038702;
-  margin-right: 15px;
-}
-
 /* Contact */
 .contactFormBox{
   margin-bottom: 3rem;
 }
 
-.titleDevs1{
-  margin-top: 20px;
-  margin-left: 20px
-}
-
-.titleDevs2{
-  margin-top: 60px;
-  margin-left: -66px
-}
-
-.titledoc{
-  margin-top: 30px;
-  margin-left: 40px
-}
-
-.titleGit1{
-  margin-top: 30px;
-  margin-left: 40px
-}
-
-.titleGit2{
-  margin-top: 60px;
-  margin-left: -50px
-}
-
-.topSpacingBoxIcons{
-  margin-top: 3rem;
-}
-
-.paddingTopGrid{
-  padding-top: 100px
-}
-
 .paddingTop{
   padding-top: 100px
-}
-
-.mediumPaddingTop{
-  padding-top: 50px
-}
-
-.litlePaddingTop{
-  padding-top: 18px
-}
-
-.displayLine{
-  display: none
-}
-
-.imgBoxProjects{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.littleImage{
-  width: 150px;
-  height: 170px;
-  flex: 0 0 auto;
-  margin: 1px;
-}
-
-.imageIndrustries{
-  width: 150px;
-  height: 220px;
-  flex: 0 0 auto;
-}
-
-.imageIndrustriesLogistics{
-  width: 250px;
-  height: 220px;
-  flex: 0 0 auto;
-}
-
-.reduceMarginBottom
-{
-  height: 1120px;
-}
-
-.reduceMarginTop
-{
-  margin-top: -100px
-}
-
-.reduceDobleMarginTop
-{
-  margin-top: -200px
-}
-
-.reduceMediumMarginTop
-{
-  margin-top: -35px
-}
-
-.litleMarginTop {
-  margin-top: 20px;
-}
-
-.specialButton{
-  width: 100%;
 }
 
 .imgBoxTheCompany{
@@ -1169,110 +730,8 @@ h1{
   fill: #038702;
 }
 
-.footerMediumIcon{
-  fill: #ffffff;
-}
-
-.animationBox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 350px;
-}
-
 .footerLogo {
   width: 100%;
-}
-
-.footerBadge {
-  width: 50%;
-}
-
-.teamPadding{
-  padding: 2rem;
-}
-
-.projectsGridLeft{
-  padding-top: 70px;
-  padding-bottom: 70px;
-  padding-right: 40px;
-  height: 100%;
-}
-
-.projectsGridRight{
-  padding-top: 70px;
-  padding-bottom: 70px;
-  padding-right: 40px;
-  height: 100%;
-}
-
-.iconStep{
-  background-color: #9E9E9E;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.iconStepActive{
-  background-color: #038702;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.iconText{
-  color: white;
-  padding: 0;
-  margin-bottom: 1px;
-  font-size: 15px;
-}
-
-.stepText{
-  font-family: 'Gotham',Lato, sans-serif;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.06px;
-  line-height: 34px;
-}
-
-.formBox{
-  padding: 50px;
-}
-
-.radioBox{
-  margin-top: 10px;
-}
-
-.itemQuestion{
-  text-indent: -46px;
-  padding-left: 46px;
-}
-
-.itemQuestionRadio{
-  margin-right: 50px;
-}
-
-.imgcard {
-  display: block;
-  width: 150px;
-  margin: auto
-}
-
-.card{
-  height: 360px;
-  cursor: pointer;
-}
-
-.card:hover{
-  transform: scale(1.02);
 }
 
 .media {
@@ -1283,14 +742,6 @@ h1{
 
 .expand {
   transition: all 5s;
-}
-
-.shrink{
-  transition: all 5s;
-}
-
-.shrink:hover{
-  transform: scale(1.4);
 }
 
 .nowrapText{
@@ -1309,24 +760,9 @@ h1{
   transform: scale(1.18);
 }
 
-.reduceMargin{
-  margin: 20px;
-}
-
 .marginIconsFooter{
   margin-left: 9px;
   margin-right: 9px;
-}
-
-.inputFooter{
-  width: 75%;
-  padding: 13px;
-  padding-top: 11.5px;
-  margin-right: 5px;
-  display: inline-block;
-  border: none;
-  border-radius: 0;
-  box-sizing: border-box;
 }
 
 .marginLeft{
@@ -1358,23 +794,11 @@ h1{
     width: 960px;
   }
 
-  .sectionHerodoc{
-    width: 960px;
-  }
-
-  .sectionContact{
-    width: 960px;
-  }
-
   .section{
     width: 960px;
   }
 
   .sectionPaddingTop{
-    width: 960px;
-  }
-
-  .sectionNoPadding{
     width: 960px;
   }
 
@@ -1386,9 +810,6 @@ h1{
     padding-left: 0;
   }
 
-  .paddingLeft2{
-    padding-left: 0;
-  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -1409,19 +830,9 @@ h1{
     margin-top: 1rem;
   }
 
-  .footerLogoBox{
-    display: flex;
-    justify-content: center;
-  }
-
   .h3Footer{
     text-align: center;
     font-size: 18px;
-  }
-
-  .body1Footer{
-    text-align: center;
-    font-size: 16px;
   }
 
   .linkFooter{
@@ -1430,16 +841,6 @@ h1{
   }
 
   .buttonBox{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .boxIconButton{
-    margin-top: 0;
-  }
-
-  .specialButtonBox{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1454,10 +855,6 @@ h1{
   }
 
   .sectionPaddingTop{
-    width: 100%;
-  }
-
-  .sectionNoPadding{
     width: 100%;
   }
   
@@ -1483,238 +880,15 @@ h1{
     transform: scale(1.1);
   }
 
-  .inquiereBox{
-    height: auto;
-  }
-
-  .imgKnow{
-    width: 100%;
-    height: 100%;
-  }
-
-  .imgKnowCompany{
-    width: 100%;
-    height: 100%;
-  }
-  
-  .imgProjects{
-    width: 100%;
-  }
-
   .contactFormBox{
     padding-left: 5vw;
     padding-right: 5vw;
   }
-
-  .nameText{
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .positionText{
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .bioText{
-    text-align: center;
-  }
-
-  .socialMediaBox{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  }
-
-  .animationBox{
-    height: 150px;
-    margin-top: 16px;
-    margin-bottom: 50px;
-  }
   
   /*doc*/
 
-  .subHeaderdocBox{
-    padding-bottom: 0;
-  }
-
-  .docLanguageAvailableBox{
-    margin-bottom: 10px;
-  }
-
-  .dividerdocBox{
-    padding-top: 30px;
-    padding-bottom: 0;
-  }
-
-  .docContentBox{
-    margin-top: 30px;
-  }
-
-  .docAuthorTile{
-    margin-bottom: 0;
-    font-size: 18px;
-  }
-
-  .docIconsBox{
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end
-  }
-
-  .docPostItemBox{
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 10px;
-  }
-  
-  .imgListdocPost{
-    min-height:initial;
-  }
-
-  .docHeaderListPage{
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .docCenterHeaderItem{
-    height: auto;
-  }
-
-  .docHeaderListPage p{
-    padding: 0;
-  }
-  
-  .docHeaderListPage h3{
-    padding: 0;
-  }
-
-  .docHeaderListPage h4{
-    padding: 0;
-  }
-
-  .docChipTagsBox{
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .titleDevs1{
-    margin-top: 35px;
-    margin-left: 20px
-  }
-
-  .titleDevs2{
-    margin-top: 45px;
-    margin-left: -84px
-  }
-
-  .titledoc{
-    margin-left: 25px
-  }
-
-  .titleGit1{
-    margin-top: 30px;
-    margin-left: 36px
-  }
-
-  .titleGit2{
-    margin-top: 50px;
-    margin-left: -70px
-  }
-
-  .gridButton{
-    justify-content: center;
-    padding: 30px;
-  }
-
-  .resourcesIcon{
-    width: 40px;
-  }
-
-  .topSpacingBoxIcons{
-    margin-top: -10px;
-  }
-
-  .paddingTopGrid{
-    padding-top: 0
-  }
-
-  .readMoreMargin{
-    margin-left: 20px
-  }
-
-  .displayLine{
-    display: flex;
-    margin-top: -1.7px;
-  }
-
-  .marginTopAccordion
-  {
-    margin-top:-70px
-  }
-
   .boxFlexEnd{
     display: flex;
-    justify-content: center;
-  }
-
-  .reduceMarginTop
-  {
-    margin-top: 0
-  }
-
-  .reduceDobleMarginTop
-  {
-    margin-top: 0
-  }
-  
-  .reduceMarginBottom{
-    height: 1650px;
-  }
-
-  .specialButton{
-    width: auto;
-  }
-
-  .centerTextOnMobile{
-    text-align: center;
-  }
-
-  .projectsGridLeft{
-    padding-bottom: 0;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .projectsGridRight{
-    padding-top: 50px;
-    padding-right: 0;
-  }
-
-  .formBox{
-    padding: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .radioBox{
-    margin-left: 25px;
-  }
-
-  .itemQuestion{
-    text-indent: 0;
-    padding-left: 25px;
-  }
-  
-  .inputFormBox{
-    width: '100%';
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .footerCopyContent{
     justify-content: center;
   }
 
@@ -1726,10 +900,6 @@ h1{
     padding-left: 95px;
   }
 
-  .paddingLeft2{
-    padding-left: 125px;
-  }
-
   .marginLeft{
     margin-left: 0;
   }
@@ -1739,30 +909,11 @@ h1{
   .paddingLeft{
     padding-left: 40%;
   }
-
-  .paddingLeft2{
-    padding-left: 52%;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .inputFooter{
-    width: 67%;
-    margin-right: 0;
-  }
-  
-  .resourcesIcon{
-    width: 35px;
-  }
 }
 
 @media only screen and (max-width: 280px) {
   .paddingLeft{
     padding-left: 100%;
-  }
-
-  .paddingLeft2{
-    padding-left: 130%;
   }
   
   .marginLeft{
