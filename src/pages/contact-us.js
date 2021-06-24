@@ -208,20 +208,20 @@ const ContactUS = () => {
             </Grid>
             <Grid item xs={5} md={2}>
               <Box className="centerBox" style={{justifyContent:'space-around', marginLeft:'20px'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
-                    <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                <a alt="Twitter icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://twitter.com/LACChain_EOSIO" target="_blank">
+                  <TwitterIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                 </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
-                    <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
+                <a alt="Telegram icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://t.me/lacchaineosio" target="_blank">
+                  <TelegramIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                 </a>
               </Box>
             </Grid>
             <Grid item xs={5} md={2}>
               <Box className="centerBox" style={{justifyContent:'space-around'}}>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
+                <a alt="Linked icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://www.linkedin.com/company/lacchaineosio/" target="_blank">
                     <LinkedInIcon style={{width:'45px', height:'45px', cursor:'pointer', color:'#159547'}}/>
                 </a>
-                <a className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
+                <a alt="GitHub icon" className={clsx("noMarginsTop","socialMediaAnimation")} href="https://github.com/lacchain/eosio.lacchain.net" target="_blank">
                     <GitHubIcon style={{width:'40px', height:'40px', cursor:'pointer', color:'#159547'}}/>
                 </a>
               </Box>

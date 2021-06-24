@@ -110,7 +110,12 @@ const Home = () => {
                   <img 
                     src={useBaseUrl("img/icons/list.png")}
                     style={{width:'80px', height:'80px'}}
-                    alt="Icono de lista"
+                    alt={
+                      translate({
+                        id: 'about.listIcon',
+                        message: 'Icono de lista'
+                      })
+                    }
                   />
                 </Box>
                 <p style={{textAlign:'center'}}>
@@ -122,7 +127,12 @@ const Home = () => {
                   <img
                     src={useBaseUrl("img/icons/book-shelf.png")}
                     style={{width:'80px', height:'80px'}}
-                    alt="Icono de libros"
+                    alt={
+                      translate({
+                        id: 'about.bookIcon',
+                        message: 'Icono de libros'
+                      })
+                    }
                   />
                 </Box>
                 <p style={{textAlign:'center'}}>
@@ -134,7 +144,12 @@ const Home = () => {
                   <img
                     src={useBaseUrl("img/icons/blockchain-technology.png")}
                     style={{width:'80px', height:'80px'}}
-                    alt="Icono de bloques"
+                    alt={
+                      translate({
+                        id: 'about.blocksIcon',
+                        message: 'Icono de bloques'
+                      })
+                    }
                   />
                 </Box>
                 <p style={{textAlign:'center'}}>
@@ -215,7 +230,12 @@ const Home = () => {
                     <Box className='centerBox' style={{marginTop:'-10px'}} >
                       <img style={{width:'250px'}}
                         src={useBaseUrl('images/america.svg')}
-                        alt="Mapa America"
+                        alt={
+                          translate({
+                            id: 'about.americanMap',
+                            message: 'Mapa America'
+                          })
+                        }
                       />
                     </Box>  
                   </Grid>
@@ -485,7 +505,12 @@ const Home = () => {
                     <img
                       src={useBaseUrl("img/icons/bar-chart.png")}
                       className="socialMediaIcons"
-                      alt="Icono de barras"
+                      alt={
+                        translate({
+                          id: 'homepage.barsIcon',
+                          message: 'Icono de barras'
+                        })
+                      }
                     />
                   </Box>
                 </Grid>
@@ -515,7 +540,12 @@ const Home = () => {
                     <img
                       src={useBaseUrl("img/icons/computers-connecting.png")}
                       className="socialMediaIcons"
-                      alt="Icono de conexion"
+                      alt={
+                        translate({
+                          id: 'homepage.connectionIcon',
+                          message: 'Icono de conexión'
+                        })
+                      }
                     />
                   </Box>
                 </Grid>
@@ -541,7 +571,12 @@ const Home = () => {
                     <img
                       src={useBaseUrl("img/icons/search.png")}
                       className="socialMediaIcons"
-                      alt="Icono de busqueda"
+                      alt={
+                        translate({
+                          id: 'homepage.searchIcon',
+                          message: 'Icono de busqueda'
+                        })
+                      }
                     />
                   </Box>
                 </Grid>
@@ -572,7 +607,12 @@ const Home = () => {
                     <img
                       src={useBaseUrl("img/icons/connect.png")}
                       className="socialMediaIcons"
-                      alt="Icono de conectar"
+                      alt={
+                        translate({
+                          id: 'homepage.connectIcon',
+                          message: 'Icono de conectar'
+                        })
+                      }
                     />
                   </Box>
                 </Grid>
@@ -604,7 +644,12 @@ const Home = () => {
                     <img
                       src={useBaseUrl("img/icons/puzzle.png")}
                       className="socialMediaIcons"
-                      alt="Icono de puzzle"
+                      alt={
+                        translate({
+                          id: 'homepage.puzzleIcon',
+                          message: 'Icono de rompecabezas'
+                        })
+                      }
                     />
                   </Box>
                 </Grid>
@@ -636,7 +681,12 @@ const Home = () => {
                     <img
                       src={useBaseUrl("img/icons/learning.png")}
                       className="socialMediaIcons"
-                      alt="Icono de aprender"
+                      alt={
+                        translate({
+                          id: 'homepage.learnIcon',
+                          message: 'Icono de aprender'
+                        })
+                      }
                     />
                   </Box>
                 </Grid>
@@ -689,7 +739,7 @@ const Home = () => {
                     <a target="_blank" href="http://lifebank.io/">
                       <img
                         className="oneGroupLogo"
-                        alt="Lifebank"
+                        alt="Lifebank logo"
                         src={useBaseUrl("img/logos/lifebank-logo.svg")}
                       />
                     </a>
@@ -700,7 +750,7 @@ const Home = () => {
                     <a target="_blank" href="https://inmutrust.com/">
                       <img
                         className="oneGroupLogo"
-                        alt="InmuTrust"
+                        alt="InmuTrust logo"
                         src={useBaseUrl("img/logos/inmuTrust-logo.svg")}
                       />
                     </a>
@@ -711,7 +761,7 @@ const Home = () => {
                     <a target="_blank" href="https://smartgate.tech/">
                       <img
                         className="oneGroupLogo"
-                        alt="Smartgate"
+                        alt="Smartgate logo"
                         src={useBaseUrl("img/logos/smartgate-logo.svg")}
                       />
                     </a>
