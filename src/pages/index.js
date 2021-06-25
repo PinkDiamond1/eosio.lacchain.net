@@ -1,11 +1,12 @@
-import React, { useRef } from "react"
+import React, { useRef } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import useBaseUrl from "@docusaurus/useBaseUrl"
-import clsx from "clsx"
-import Layout from "@theme/Layout"
+import Link from '@material-ui/core/Link'
+import clsx from 'clsx'
+import Layout from '@theme/Layout'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
@@ -60,12 +61,16 @@ const Home = () => {
               </Translate>
             </p>
             <Box className="buttonBox" style={{justifyContent:'space-around', display:'flex'}}>
-              <button className="buttonSecondary" onClick={() => history.push("/contact-us")} >
-                <Translate id="homepage.headerButton1">Únase a la red</Translate>
-              </button>
-              <button className="buttonPrimary" onClick={() => history.push("/docs/eosio")} >
-                <Translate id="homepage.headerButton2">Aprenda más</Translate>
-              </button>
+              <Link href={useBaseUrl('/contact-us')} target={'_self'}>
+                <button className="buttonSecondary" >
+                  <Translate id="homepage.headerButton1">Únase a la red</Translate>
+                </button>
+              </Link>
+              <Link href={useBaseUrl('/docs/eosio')} target={'_self'}>
+                <button className="buttonPrimary">
+                  <Translate id="homepage.headerButton2">Aprenda más</Translate>
+                </button>
+              </Link>
             </Box>
           </Box>
           }
@@ -85,13 +90,17 @@ const Home = () => {
                 </Translate>
               </p>
               <Box className="buttonBoxMobile" style={{display:'grid'}}>
-                <button className="buttonSecondary" onClick={() => history.push("/contact-us")} >
-                  <Translate id="homepage.headerButton1">Únase a la red</Translate>
-                </button>
+                <Link href={useBaseUrl('/contact-us')} target={'_self'}>
+                  <button className="buttonSecondary" >
+                    <Translate id="homepage.headerButton1">Únase a la red</Translate>
+                  </button>
+                </Link>
                 <br/>
-                <button className="buttonPrimary" onClick={() => history.push("/docs/eosio")} >
-                  <Translate id="homepage.headerButton2">Aprenda más</Translate>
-                </button>
+                <Link href={useBaseUrl('/docs/eosio')} target={'_self'}>
+                  <button className="buttonPrimary" >
+                    <Translate id="homepage.headerButton2">Aprenda más</Translate>
+                  </button>
+                </Link>
               </Box>
             </Box>
           }
@@ -469,16 +478,17 @@ const Home = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={3}>
-                <Box className="centerBox">
+              <Box className="centerBox">
+                <Link href={useBaseUrl('/contact-us')} target={'_self'}>
                   <button 
                     className="buttonPrimary" 
-                    onClick={() => history.push("/contact-us")}
                   >
                     <Translate id="homepage.startNow">
                       Comience ahora
                     </Translate>
                   </button>
-                </Box>
+                </Link>
+              </Box>
             </Grid>
           </Grid>
         </Box>
@@ -790,16 +800,17 @@ const Home = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={3}>
-                <Box className="centerBox">
+              <Box className="centerBox">
+                <Link href={useBaseUrl('/contact-us')} target={'_self'}>
                   <button 
-                    className="buttonPrimary" 
-                    onClick={() => history.push("/contact-us")}
+                    className="buttonPrimary"
                   >
                     <Translate id="homepage.startNow">
                       Comience ahora
                     </Translate>
                   </button>
-                </Box>
+                </Link>
+              </Box>
             </Grid>
           </Grid>
         </Box>
