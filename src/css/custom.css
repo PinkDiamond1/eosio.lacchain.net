@@ -479,22 +479,6 @@ h1{
   text-transform: uppercase
 }
 
-.linkItem{
-  font-family: sans-serif;
-  font-weight: normal;
-  color: black;
-  text-decoration: none;
-}
-
-.linkItem:hover{
-  text-decoration: none;
-
-}
-
-.linkItem:focus{
-  text-decoration: none;
-}
-
 /*Footer*/
 
 .footer{
@@ -721,15 +705,6 @@ h1{
   transform: scale(1.1);
 }
 
-.iconSocialMediaAnimation{
-  color: #000000;
-  transition: all .4s ease-in-out
-}
-
-.iconSocialMediaAnimation:hover{
-  fill: #038702;
-}
-
 .footerLogo {
   width: 100%;
 }
@@ -738,26 +713,6 @@ h1{
   object-fit: cover;
   object-position: bottom;
   height: 180px
-}
-
-.expand {
-  transition: all 5s;
-}
-
-.nowrapText{
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.button-glow{
-  height:'70px';
-  width:'150px';
-}
-
-.button-glow:hover{
-  transform: scale(1.18);
 }
 
 .marginIconsFooter{
