@@ -517,15 +517,14 @@ const About = () => {
                       <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
                         <p style={{padding: 0}}>
                           <Translate id="about.WhatsLACChainText">
-                            LACChain EOSIO ofrece una testnet de blockchain que se integra en la red de
-                            LACChain. Liderada por compañías tecnológicas de Latinoamérica, LACChain
+                            LACChain EOSIO ofrece una testnet de blockchain que se integra en la red
+                            de LACChain. Liderada por compañías tecnológicas de Latinoamérica, LACChain
                             EOSIO utiliza una versión público permisionada de la tecnología blockchain
                             EOSIO para permitir a desarrolladores y organizaciones crear y poner a prueba
-                            sus aplicaciones descentralizadas e infraestructura de un ambiente local. La
-                            red de LACChain EOSIO incorpora un comité permisionador que autoriza los
-                            nodos que escriben y validan los nuevos bloques en la blockchain. La red usa
-                            un sistema de contratos basado en el mecanismo de consenso Proof-of-Authority (POA)
-                            y garantiza y acuerdo estándar entre nodos.
+                            sus aplicaciones descentralizadas e infraestructura de un ambiente local. Además,
+                            se promoverá un vehículo organizativo para administrar recursos y gestionar la
+                            infraestructura, las relaciones de servicio con los usuarios y soporte de
+                            instalación para iniciar la participación en la red.
                           </Translate>
                         </p>
                       </AccordionDetails>
@@ -700,13 +699,13 @@ const About = () => {
                       <AccordionDetails style={{padding:1, marginTop:'-15px'}}>
                         <p style={{padding: 0}}>
                           <Translate id="about.howContributeText1">
-                            Puede ayudarnos con documentación, recursos y herramientas para desarrolladores.¿Cómo contribuir con LACChain EOSIO?
+                            Puede ayudarnos con documentación, recursos y herramientas para desarrolladores. ¿Cómo contribuir con LACChain EOSIO?
                           </Translate>{' '}
                           <a href={useBaseUrl('/docs/guias/contribuir')} target="_blank">
                             <Translate id="about.howContributeLink">
                               Encuentre aquí cómo contribuir
                             </Translate>
-                          </a> {' '}
+                          </a>. {' '}
                           <Translate id="about.howContributeText2">
                             Además, estamos abiertos a tener más organizaciones y miembros trabajando con nosotros. Contáctenos
                           </Translate>

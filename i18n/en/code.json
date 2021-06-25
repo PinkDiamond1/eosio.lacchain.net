@@ -441,7 +441,7 @@
     "message": "What Is LACChain EOSIO?"
   },
   "about.WhatsLACChainText": {
-    "message": "LACChain EOSIO offers a blockchain blockchain network that integrates into LACChain. Led by Latin American technology companies, LACChain EOSIO deploys a public permissioned version of EOSIO blockchain technology to enable developers and organizations to test their decentralized applications and infrastructure within a testing environment. The LACChain EOSIO network incorporates a permissioning committee to authorize the nodes that write and validate new blocks into the blockchain. The network deploys system contracts based on the Proof-of-Authority (POA) consensus mechanism and ensures standard agreement among the nodes."
+    "message": "LACChain EOSIO offers a blockchain network that integrates into LACChain. Led by Latin American technology companies, LACChain EOSIO deploys a public permissioned version of EOSIO blockchain technology to enable developers and organizations to test their decentralized applications and infrastructure within a testing environment. Also, the team will promote an organizational vehicle to administer resources, manage the infrastructure and the service relationships with the users, and support the installation to begin deploying the network."
   },
   "about.WhatsLACChain2": {
     "message": "What Is LACChain?"

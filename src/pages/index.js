@@ -181,7 +181,7 @@ const Home = () => {
                   <Translate id="homepage.porwerFulText1">
                     LACChain EOSIO utiliza una versión público permisionada de
                   </Translate> {" "}
-                  <a href="https://eos.io/" target="_blank"> EOSIO</a> {" "}
+                  <a href="https://eos.io/" target="_blank"> EOSIO</a>
                   <Translate id="homepage.porwerFulText2">
                     , tecnología blockchain de código abierto que permite a 
                     desarrolladores y organizaciones poner a prueba y
@@ -247,8 +247,8 @@ const Home = () => {
                   </h2>
                 </Box>
                 <p>
-                  <Translate id="homepage.ecosystemText1">LACChain EOSIO cuenta con el apoyo de</Translate> {" "}
-                  <a href="https://www.lacchain.net/" target="_blank">LACChain </a> {" "}
+                  <Translate id="homepage.ecosystemText1">LACChain EOSIO cuenta con el apoyo de </Translate>
+                  <a href="https://www.lacchain.net/" target="_blank">LACChain</a>
                   <Translate id="homepage.ecosystemText2">
                     , un programa del BID Lab (parte del Banco Interamericano de Desarrollo) y que
                     incorpora un comité permisionador para garantizar transparencia y descentralización.
