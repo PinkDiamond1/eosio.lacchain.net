@@ -822,7 +822,7 @@ const Home = () => {
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '84%',
                 backgroundAttachment: 'fixed',
-                backgroundPosition: '270px 120px',
+                backgroundPosition: 'right 120px',
                 backgroundImage: `url(${bg})`,
                 backgroundColor: '#F8F8F8'
               }}

@@ -138,10 +138,6 @@ const Navbar = ({isMobile, isDesktop}) => {
 
   const LanguagueSelector = () => {
     const [langMenuHandler, seLangMenuHandler] = useState(false)
-
-    const handleClickMenuLang = () => {
-      seLangMenuHandler(true)
-    }
   
     const handleCloseMenuLang = () => {
       seLangMenuHandler(false)
@@ -167,21 +163,19 @@ const Navbar = ({isMobile, isDesktop}) => {
         >
           <img src={global} style={{width:'40px'}}/>
         </Box>
-        {true && (
-          <Box className="boxLanguagesSelector" onMouseLeave={handleCloseMenuLang}>
-            <LangItem
-              label="EN"
-              handleClick={handleChangeLang}
-              classN={ window.location.href.includes('/en/') ? "langItemActive" : "langItem"}
-            />
-            <span style={{fontSize: '15px', padding: '5px'}}>|</span>
-            <LangItem 
-              label="ES"
-              handleClick={handleChangeLang}
-              classN={ window.location.href.includes('/en/') ? "langItem" : "langItemActive"}
-            />
-          </Box>
-        )}
+        <Box className="boxLanguagesSelector" onMouseLeave={handleCloseMenuLang}>
+          <LangItem
+            label="EN"
+            handleClick={window.location.href.includes('/en/') ? '' : handleChangeLang}
+            classN={window.location.href.includes('/en/') ? "langItemActive" : "langItem"}
+          />
+          <span style={{fontSize: '15px', padding: '5px'}}>|</span>
+          <LangItem 
+            label="ES"
+            handleClick={window.location.href.includes('/en/') ? handleChangeLang : ''}
+            classN={window.location.href.includes('/en/') ? "langItem" : "langItemActive"}
+          />
+        </Box>
       </>
     )
   }
