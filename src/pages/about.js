@@ -341,7 +341,7 @@ const About = () => {
                                 />
                             </Box>
                             <p>
-                                <a href="https://eoscostarica.io/" target="_blank">EOS Costa Rica</a>{' '}
+                                <a href="https://es.eoscostarica.io/" target="_blank">EOS Costa Rica</a>{' '}
                                 <Translate id="about.EOSCR">
                                   desarrolla soluciones empresariales basadas en
                                   blockchain usando el protocolo EOSIO. La compañía

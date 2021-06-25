@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState, useEffect } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import clsx from "clsx"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 import PropTypes from 'prop-types'
@@ -137,7 +137,7 @@ const Navbar = ({isMobile, isDesktop}) => {
   }
 
   const LanguagueSelector = () => {
-    const [langMenuHandler, seLangMenuHandler] = useState(false);
+    const [langMenuHandler, seLangMenuHandler] = useState(false)
   
     const handleCloseMenuLang = () => {
       seLangMenuHandler(false)
@@ -303,8 +303,8 @@ const Navbar = ({isMobile, isDesktop}) => {
         }
       </Box>
     </Box> 
-  );
-};
+  )
+}
 
 Navbar.propTypes = {
   isDesktop:PropTypes.bool,

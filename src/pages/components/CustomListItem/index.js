@@ -18,7 +18,7 @@ const GenericListItem = withStyles({
   selected: {
     borderLeft: 'solid 5px #038702',
   }
-})((props) => <ListItem {...props} />);
+})((props) => <ListItem {...props} />)
 
 const GenericListItemIcon = withStyles({
     root: {
@@ -28,7 +28,7 @@ const GenericListItemIcon = withStyles({
       width:'20px',
       marginRight:'15px',
     },
-})((props) => <ListItemIcon {...props} />);
+})((props) => <ListItemIcon {...props} />)
 
 const GenericListItemText = withStyles({
   primary: {
@@ -37,7 +37,7 @@ const GenericListItemText = withStyles({
     fontWeight:'bold',
     color: 'black',
   },
-})((props) => <ListItemText {...props} />);
+})((props) => <ListItemText {...props} />)
 
 
 const CustomListItem = ( {label, href, target, icon, isSelected, onClick}) => {
@@ -53,4 +53,4 @@ const CustomListItem = ( {label, href, target, icon, isSelected, onClick}) => {
   )
 }
 
-export default CustomListItem;
+export default CustomListItem
