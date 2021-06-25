@@ -312,7 +312,7 @@ const Home = () => {
                 </Grid>
                 <Grid style={{marginRight: isDesktop ? '15px' : '0'}} item xs={12} md={2}>
                   <Box className="imgBoxLogos">
-                    <a target="_blank" href="https://www.edenia.com/">
+                    <a target="_blank" href="https://es.eoscostarica.io/">
                       <img
                         className="oneGroupLogo"
                         style={{width:'150px'}}
@@ -324,7 +324,7 @@ const Home = () => {
                 </Grid>
                 <Grid style={{marginRight: isDesktop ? '15px' : '0'}} item xs={12} md={2}>
                   <Box className="imgBoxLogos">
-                    <a target="_blank" href="https://eosurf.com/">
+                    <a target="_blank" href="https://www.eosargentina.io/">
                       <img
                         style={{width: isDesktop ? '170px': '200px'}}
                         className="oneGroupLogo"
@@ -336,19 +336,19 @@ const Home = () => {
                 </Grid>
                 <Grid style={{marginLeft: isDesktop ? '15px' : '0', marginRight: isDesktop ? '15px' : '0'}} item xs={12} md={2}>
                   <Box className="imgBoxLogos">
-                      <a target="_blank" href="https://ticoblockchain.cr/">
-                        <img
-                          style={{width:'170px'}}
-                          className="oneGroupLogo"
-                          alt="Block One"
-                          src={useBaseUrl('img/logos/block-one.png')}
-                        />
-                      </a>
+                    <a target="_blank" href="https://b1.com/">
+                      <img
+                        style={{width:'170px'}}
+                        className="oneGroupLogo"
+                        alt="Block One"
+                        src={useBaseUrl('img/logos/block-one.png')}
+                      />
+                    </a>
                   </Box>
                 </Grid>
                 <Grid style={{marginLeft: isDesktop ? '20px' : '0', marginRight: isDesktop ? '15px' : '0'}} item xs={12} md={2}>
                   <Box className="imgBoxLogos">
-                    <a target="_blank" href="https://ticoblockchain.cr/">
+                    <a target="_blank" href="https://eosvenezuela.io/">
                       <img
                         style={{width: '210px'}}
                         className="oneGroupLogo"
@@ -594,7 +594,7 @@ const Home = () => {
                       acceso a datos precisos, detallados y procesables
                       sobre cuentas, acciones, nodos validadores y más.
                     </Translate>{' '}
-                    <a href="https://lacchain.eosio.online/" target="_blank">
+                    <a href="https://eosio-explorer.lacchain.net/" target="_blank">
                       <Translate id="homepage.blockExplorerLink">
                         Pruebe el explorador de bloques
                       </Translate>
