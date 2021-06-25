@@ -226,19 +226,19 @@ const Home = () => {
           <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
             <Grid container spacing={5}>
               {isDesktop && 
-                  <Grid item md={6}>
-                    <Box className='centerBox' style={{marginTop:'-10px'}} >
-                      <img style={{width:'250px'}}
-                        src={useBaseUrl('images/america.svg')}
-                        alt={
-                          translate({
-                            id: 'about.americanMap',
-                            message: 'Mapa America'
-                          })
-                        }
-                      />
-                    </Box>  
-                  </Grid>
+                <Grid item md={6}>
+                  <Box className='centerBox' style={{marginTop:'-10px'}} >
+                    <img style={{width:'250px'}}
+                      src={useBaseUrl('images/america.svg')}
+                      alt={
+                        translate({
+                          id: 'about.americanMap',
+                          message: 'Mapa America'
+                        })
+                      }
+                    />
+                  </Box>
+                </Grid>
                 }
               <Grid item xs={12} md={6}>
                 <Box className="titleBox">
