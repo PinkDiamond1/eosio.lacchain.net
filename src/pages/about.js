@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import useBaseUrl from "@docusaurus/useBaseUrl"
+import Link from '@material-ui/core/Link'
 import clsx from "clsx"
 import Layout from "@theme/Layout"
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
@@ -468,16 +469,17 @@ const About = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
-                <Box className="centerBox">
-                  <button 
+              <Box className="centerBox">
+                <Link href={useBaseUrl('/contact-us')} target={'_self'}>
+                  <button
                     className="buttonPrimary"
-                    onClick={() => window.open('/contact-us')}
                   >
                     <Translate id="about.haveQuestionsButton">
                       Únase a la conversación
                     </Translate>
                   </button>
-                </Box>
+                </Link>
+              </Box>
             </Grid>
           </Grid>
         </Box>
@@ -738,16 +740,17 @@ const About = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={3}>
-                <Box className="centerBox">
-                  <button 
+              <Box className="centerBox">
+                <Link href={useBaseUrl('/contact-us')} target={'_self'}>
+                  <button
                     className="buttonPrimary"
-                    onClick={() => history.push("/contact-us")}
                   >
                     <Translate id="homepage.startNow">
                       Comience aquí
                     </Translate>
                   </button>
-                </Box>
+                </Link>
+              </Box>
             </Grid>
           </Grid>
         </Box>
