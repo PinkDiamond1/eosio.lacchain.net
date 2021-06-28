@@ -248,7 +248,7 @@ const Home = () => {
                 </Box>
                 <p>
                   <Translate id="homepage.ecosystemText1">LACChain EOSIO cuenta con el apoyo de </Translate>
-                  <a href="https://www.lacchain.net/" target="_blank">LACChain</a>
+                  <a href="https://www.lacchain.net/" target="_blank"> LACChain </a>
                   <Translate id="homepage.ecosystemText2">
                     , un programa del BID Lab (parte del Banco Interamericano de Desarrollo) y que
                     incorpora un comité permisionador para garantizar transparencia y descentralización.
