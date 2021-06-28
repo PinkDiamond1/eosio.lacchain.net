@@ -257,7 +257,7 @@ const Home = () => {
                 </Box>
                 <p>
                   <Translate id="homepage.ecosystemText1">LACChain EOSIO cuenta con el apoyo de </Translate>
-                  <a href="https://www.lacchain.net/" target="_blank">LACChain</a>
+                  <a href="https://www.lacchain.net/" target="_blank"> LACChain </a>
                   <Translate id="homepage.ecosystemText2">
                     , un programa del BID Lab (parte del Banco Interamericano de Desarrollo) y que
                     incorpora un comité permisionador para garantizar transparencia y descentralización.
@@ -321,7 +321,10 @@ const Home = () => {
                 </Grid>
                 <Grid style={{marginRight: isDesktop ? '15px' : '0'}} item xs={12} md={2}>
                   <Box className="imgBoxLogos">
-                    <a target="_blank" href="https://es.eoscostarica.io/">
+                    <a
+                      target="_blank"
+                      href={window.location.href.includes('/en/') ? "https://eoscostarica.io/" : "https://es.eoscostarica.io/"}
+                    >
                       <img
                         className="oneGroupLogo"
                         style={{width:'150px'}}

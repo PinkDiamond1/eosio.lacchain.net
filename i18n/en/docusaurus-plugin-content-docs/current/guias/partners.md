@@ -12,6 +12,6 @@ To be part of the network as Partners or Non-Partners see [this information](./c
 
 ## Founding Partners
 - [EOS Argentina](https://www.eosargentina.io/)
-- [EOS Costa Rica](https://es.eoscostarica.io/)
+- [EOS Costa Rica](https://eoscostarica.io/)
 - [Inter-American Development Bank](https://www.iadb.org/en)
 - [EOS Venezuela](https://eosvenezuela.io/)

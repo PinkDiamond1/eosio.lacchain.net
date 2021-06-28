@@ -58,7 +58,7 @@ const team = [
         })
   },
   {
-    photo:"img/team/xavier.png",
+    photo:"img/team/xavier.jpg",
     name:"Xavier Fernández",
     org:"EOS Costa Rica",
     position:
@@ -161,12 +161,12 @@ const About = () => {
                 <h1>
                   <Translate id="about.titule1">Sobre LACChain EOSIO</Translate>
                 </h1>
+                <p style={{fontSize:'24px'}}>
+                  <Translate id="about.headerText">
+                    Aprenda más sobre lo que hacemos y qué puede encontrar en LACChain EOSIO.
+                  </Translate>
+                </p>
               </Box>
-              <p>
-                <Translate id="about.headerText">
-                  Aprenda más sobre lo que hacemos y qué puedeencontrar en LACChain EOSIO.
-                </Translate>
-              </p>
             </Box>
           }
           {isMobile && 
@@ -304,7 +304,7 @@ const About = () => {
             <Box className="section">
                 <Box className="buttonBox">
                     <h2>
-                      <Translate id="about.followUs">
+                      <Translate id="homepage.foundingTitle">
                         Socios fundadores
                       </Translate>
                     </h2>
@@ -341,7 +341,12 @@ const About = () => {
                                 />
                             </Box>
                             <p>
-                                <a href="https://es.eoscostarica.io/" target="_blank">EOS Costa Rica</a>{' '}
+                                <a 
+                                  href={window.location.href.includes('/en/') ? "https://eoscostarica.io/" : "https://es.eoscostarica.io/"}
+                                  target="_blank"
+                                >
+                                  EOS Costa Rica
+                                </a>{' '}
                                 <Translate id="about.EOSCR">
                                   desarrolla soluciones empresariales basadas en
                                   blockchain usando el protocolo EOSIO. La compañía

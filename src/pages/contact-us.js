@@ -34,48 +34,46 @@ const ContactUS = () => {
 
   const HeroSection = () => {
     return (
-        <>
-        {isDesktop && 
-            <Box className="containerSec">
-              <Box className={clsx("sectionPaddingTop",{["sectionPadding"]: isMobile})}>
-                <Box className="h2Box">
-                  <h1>
-                    <Translate id="contact.title">
-                      Contacte a LACChain EOSIO
-                    </Translate>
-                  </h1>
-                </Box>
-                  <Box className="contactFormBox">
-                    <Box className="spacingBox">
-                      <p>
-                        <Translate id="contact.text">
-                          ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
-                        </Translate>
-                      </p>
-                    </Box>
-                  </Box>
-              </Box>
-            </Box>
-          }
-          {isMobile && 
-            <Box className="sectionHeroMobile">
-              <Box className="h2Box">
+      <Box className="generalContainer">
+        <Box className="containerSec">
+          {isDesktop && 
+            <Box className="sectionLittleHero">
+              <Box className="titleBox">
                 <h1>
                   <Translate id="contact.title">
                     Contacte a LACChain EOSIO
                   </Translate>
                 </h1>
-              </Box>
-              <Box className="contactFormBox">
-                <p>
-                  <Translate id="contact.text">
-                    ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
-                  </Translate>
-                </p>
+                <Box className="contactFormBox">
+                  <p style={{fontSize:'24px'}}>
+                    <Translate id="contact.text">
+                      ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
+                    </Translate>
+                  </p>
+                </Box>
               </Box>
             </Box>
-        }
-        </>
+          }
+          {isMobile && 
+            <Box className="sectionHeroMobile">
+              <Box className="titleBox">
+                <h1>
+                  <Translate id="contact.title">
+                    Contacte a LACChain EOSIO
+                  </Translate>
+                </h1>
+                <Box className="contactFormBox">
+                  <p>
+                    <Translate id="contact.text">
+                      ¿Tiene preguntas o ya tiene todo listo para crear su cuenta y comenzar a usar LACChain EOSIO?
+                    </Translate>
+                  </p>
+                </Box>
+              </Box>
+            </Box>
+          }
+        </Box>
+      </Box>
     )
   } 
 
@@ -83,15 +81,14 @@ const ContactUS = () => {
     return (
       <Box className="containerSec">
         <Box className={clsx("section",{["sectionPadding"]: isMobile})}>
+          <br/>
           <Grid container spacing={isDesktop ? 8 : 3}>
             <Grid item xs={12} md={9}>
-              <Box className="titleBox">
                 <h2>
                   <Translate id="contact.bodyTitle">
                     Elija la opción más cercana a lo que está buscando
                   </Translate>
                 </h2>
-              </Box>
             </Grid>
             <Grid item xs={12} md={6}>
               <Box className="titleBox">
@@ -166,7 +163,7 @@ const ContactUS = () => {
               <Box className="buttonBox">
                 <button
                   className="buttonPrimary"
-                  onClick={() => window.open('https://es.eoscostarica.io/lacchain/')}
+                  onClick={() => window.open(window.location.href.includes('/en/') ? "https://eoscostarica.io/lacchain/" : "https://es.eoscostarica.io/lacchain/")}
                 >
                   EOS Costa Rica
                 </button>
