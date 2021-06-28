@@ -312,7 +312,10 @@ const Home = () => {
                 </Grid>
                 <Grid style={{marginRight: isDesktop ? '15px' : '0'}} item xs={12} md={2}>
                   <Box className="imgBoxLogos">
-                    <a target="_blank" href="https://es.eoscostarica.io/">
+                    <a
+                      target="_blank"
+                      href={window.location.href.includes('/en/') ? "https://eoscostarica.io/" : "https://es.eoscostarica.io/"}
+                    >
                       <img
                         className="oneGroupLogo"
                         style={{width:'150px'}}

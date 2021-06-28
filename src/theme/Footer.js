@@ -144,7 +144,7 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href="https://es.eoscostarica.io/"
+                    href={window.location.href.includes('/en/') ? "https://eoscostarica.io/" : "https://es.eoscostarica.io/"}
                     target="_blank"
                     style={{color:'white'}}
                   >
