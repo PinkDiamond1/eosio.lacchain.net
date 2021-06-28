@@ -13,7 +13,7 @@ import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Translate, {translate} from '@docusaurus/Translate'
 
-import bg from '../../static/img/bgHomePage.png'
+import bg from '../../static/img/bgHomePage.jpg'
 
 const MetaData={
   title:
@@ -834,11 +834,9 @@ const Home = () => {
             <Box 
               style={{ 
                 backgroundRepeat: 'no-repeat',
-                backgroundSize: '84%',
                 backgroundAttachment: 'fixed',
-                backgroundPosition: 'right 120px',
-                backgroundImage: `url(${bg})`,
-                backgroundColor: '#F8F8F8'
+                backgroundPosition: 'left 120px',
+                backgroundImage: `url(${bg})`
               }}
             >
                 <HeroSection/>
