@@ -17,7 +17,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
-import bg from '../../static/img/bgHomePage.png'
+import bg from '../../static/img/bgHomePage.jpg'
 
 const MetaData={
   title:"LACChain EOSIO: Acerca de",
@@ -235,14 +235,14 @@ const About = () => {
               </Grid>
               {isDesktop && 
                 <Grid item md={6}>
-                  <Box style={{paddingLeft:'80px'}}>
+                  <Box style={{paddingLeft:'100px', marginTop:'-30px'}}>
                     <img
-                      style={{width:'380px'}}
-                      src={useBaseUrl('images/america.svg')}
+                      style={{width:'520px'}}
+                      src={useBaseUrl(window.location.href.includes('/en/') ? "images/about-icon-en.png" : "images/about-icon.png")}
                       alt={
                         translate({
                           id: 'about.americanMap',
-                          message: 'Mapa America'
+                          message: 'Sobre LACChain EOSIO'
                         })
                       }
                     />
@@ -774,11 +774,9 @@ const About = () => {
           <Box 
             style={{ 
               backgroundRepeat: 'no-repeat',
-              backgroundSize: '84%',
               backgroundAttachment: 'fixed',
-              backgroundPosition: 'right 120px',
-              backgroundImage: `url(${bg})`,
-              backgroundColor: '#F8F8F8'
+              backgroundPosition: 'left 120px',
+              backgroundImage: `url(${bg})`
             }}
           >
             <HeroSection/>
