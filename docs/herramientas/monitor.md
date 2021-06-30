@@ -10,7 +10,7 @@ Se ha desarrollado una herramienta nativa para LACChain EOSIO para monitoreo de 
 
 **El monitor de red esta disponible en el siguiente enlace**: https://lacchain.eosio.online
 
-**Repositorio de GitHub**: https://https://github.com/eoscostarica/eosio-dashboard
+**Repositorio de GitHub**: https://github.com/eoscostarica/eosio-dashboard
 
 ![Monitor de red](/img/docs/monitor.png)
 
