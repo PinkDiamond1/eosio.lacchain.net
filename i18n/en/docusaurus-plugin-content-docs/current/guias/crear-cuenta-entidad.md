@@ -35,6 +35,11 @@ Non-Partner entities may register new accounts on the network and allow  transac
 
 Each writer node has the autonomy to manage it's share of network resources according to their preferences. 
 
+### List of available actions
+
+![List of available actions](/img/docs/non-partner-list-acctions.png)
+
+
 ## Registering as a Partner
 
 For an entity to be permissioned to run a validator node, it is required to follow the following steps:
@@ -46,7 +51,11 @@ For an entity to be permissioned to run a validator node, it is required to foll
 
 The partners in the LACChain EOSIO network are entities that may also be part of the permitting committee, which are in charge of regulating and managing the management of resources and access to the network.
 
-Each partner has the autonomy to manage its share of network resources to it's clients and affiliates on the network. 
+Each partner has the autonomy to manage its share of network resources to it's clients and affiliates on the network.
+
+### List of available actions
+
+![List of available actions](/img/docs/parnert-list-acctions.png)
 
 :::note Work in Progress
 We are still working on this aspect of the documentation, if you want to improve the content you can learn [how to contribute](./contribuir). See the [Project Roadmap](../roadmap).
