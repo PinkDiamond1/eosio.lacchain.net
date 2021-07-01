@@ -48,6 +48,14 @@ Alguna de las funciones disponibles son:
 
 ![Remover entidad](/img/tutorials/gobernanzaRed/remove-entity.png)
 
+### Acciones disponibles para parnerts
+
+![Acciones disponibles para parnerts](/img/docs/partner-list-acctions.png)
+
+### Acciones disponibles para non-parnerts
+
+![Acciones disponibles para non-parnerts](/img/docs/non-partner-list-acctions.png)
+
 ## Blacklisting de cuentas
 
 Las cuentas se pueden agregar a una lista negra que debe de ser implementada por todos los nodos validadores para efectivamente bloquear acceso a una cuenta.
