@@ -35,10 +35,7 @@ Non-Partner entities may register new accounts on the network and allow  transac
 
 Each writer node has the autonomy to manage it's share of network resources according to their preferences. 
 
-### List of available actions
-
-![List of available actions](/img/docs/non-partner-list-acctions.png)
-
+[Ask about the list of actions available to non-partners](../herramientas/gobernanza-red)
 
 ## Registering as a Partner
 
@@ -53,9 +50,7 @@ The partners in the LACChain EOSIO network are entities that may also be part of
 
 Each partner has the autonomy to manage its share of network resources to it's clients and affiliates on the network.
 
-### List of available actions
-
-![List of available actions](/img/docs/parnert-list-acctions.png)
+[Ask about the list of actions available to partners](../herramientas/gobernanza-red)
 
 :::note Work in Progress
 We are still working on this aspect of the documentation, if you want to improve the content you can learn [how to contribute](./contribuir). See the [Project Roadmap](../roadmap).

@@ -35,9 +35,7 @@ Las entidades que "non-partner" pueden registrar nuevas cuentas en la red y perm
 
 Cada nodo escritor tiene autonomía para administrar su parte de los recursos de red de acuerdo con sus preferencias.
 
-### Lista de acciones disponibles
-
-![Lista de acciones disponibles](/img/docs/non-partner-list-acctions.png)
+[Consulte sobre la lista de acciones disponibles para los non-partners](../herramientas/gobernanza-red)
 
 ## Registro como partner
 
@@ -52,9 +50,7 @@ Los partner de la red LACChain EOSIO son entidades que también pueden formar pa
 
 Cada partner tiene la autonomía para administrar su parte de los recursos de la red para sus clientes y afiliados en la red.
 
-### Lista de acciones disponibles
-
-![Lista de acciones disponibles](/img/docs/parnert-list-acctions.png)
+[Consulte sobre la lista de acciones disponibles para los partners](../herramientas/gobernanza-red)
 
 :::note Trabajo en progreso
 Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
