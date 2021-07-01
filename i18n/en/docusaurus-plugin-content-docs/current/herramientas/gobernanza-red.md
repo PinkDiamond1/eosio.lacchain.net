@@ -42,9 +42,9 @@ Some of the available functions are:
 
 ![Allocation of resources to accounts](/img/tutorials/gobernanzaRed/asignacion-recursos-cuentas.png)
 
-### Remover Entidad
+### Remove Entity
 
-![Remover entidad](/img/tutorials/gobernanzaRed/remove-entity.png)
+![Remove Entity](/img/tutorials/gobernanzaRed/remove-entity.png)
 
 ### Actions available for parnerts
 
