@@ -25,6 +25,7 @@ module.exports = {
         "guias/desplegar-contrato-inteligente",
         "guias/ambiente-desarrollo",
         "guias/instalacion-nodos",
+        "guias/transacciones",
         "guias/nodos-eosio",
         "guias/contribuir"
     ],
