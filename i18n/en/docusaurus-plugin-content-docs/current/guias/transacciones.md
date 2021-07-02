@@ -4,9 +4,9 @@ title: Prepare Transactions
 sidebar_label: Prepare Transactions
 ---
 
-To execute transaction on LACChain EOSIO it is necessary to include at least two actions for each transaction.
+To execute a transaction on LACChain EOSIO it is necessary to include at least two actions for each transaction.
 
-The smart contract action you would like to execute and writer::run action which includes the authorization of the writer node who will provide the necessary network resources to execute the transaction.
+Each transaction must include at least the smart contract action you would like to execute and an additional writer::run action which includes the authorization of the writer node who will allow the transaction by providing the necessary network resources for the execute transaction to execute.
 
 Here is an example transaction:
 
