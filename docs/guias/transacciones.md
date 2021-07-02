@@ -4,16 +4,11 @@ title: Preparar transacciones
 sidebar_label: Preparar transacciones
 ---
 
-Para ejecutar acciones en un contrato de LACChain EOSIO es necesario preparar y ejecutar transacciones, acá puede observar algunas consideraciones sobre este proceso.
+Para ejecutar una transacción en LACChain EOSIO es necesario incluir al menos dos acciones para cada transacción.
 
-## Aspectos a considerar
-- Tener instalado el [ambiente de desarrollo de EOSIO](./ambiente-desarrollo).
-- Tener compilado el [contrato inteligente](./desplegar-contrato-inteligente) sobre el que va a trabajar.
-- La transacción está compuesta por:
-  - La acción run que da la autorización del nodo escritor.
-  - Otras acciones necesarias para ejecutar las tareas que desea realizar.
+La acción de contrato inteligente que le gustaría ejecutar y la acción de **writer::run** que incluye la autorización del nodo escritor que proporcionará los recursos de red necesarios para ejecutar la transacción.
 
-**Ejemplo**
+Aquí hay una transacción de ejemplo:
 
 ```javaScript title="transacction.js"
 

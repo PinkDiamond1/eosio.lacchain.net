@@ -4,16 +4,11 @@ title: Prepare Transactions
 sidebar_label: Prepare Transactions
 ---
 
-To execute actions in a LACChain EOSIO contract it is necessary to prepare and execute transactions, here you can observe some considerations about this process.
+To execute transaction on LACChain EOSIO it is necessary to include at least two actions for each transaction.
 
-## Aspects to consider
-- Have the [EOSIO development environment](./ambiente-desarrollo) installed.
-- Have compiled the [smart contract](./deploy-smart-contract) on which you are going to work.
-- The transaction consists of:
-  - The run action to give authorization to the writer node.
-  - Other actions required to perform the tasks you want to perform.
+The smart contract action you would like to execute and writer::run action which includes the authorization of the writer node who will provide the necessary network resources to execute the transaction.
 
-**Example**
+Here is an example transaction:
 
 ```javaScript title="transacction.js"
 
