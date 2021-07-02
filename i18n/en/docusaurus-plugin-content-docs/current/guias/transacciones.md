@@ -40,14 +40,14 @@ const addTransaction = ({
             data: { }
         },
         {
-          account: contractName,
-          name: action,
           authorization: [
             {
               actor: contractName,
               permission: 'active'
             }
           ],
+          account: contractName,
+          name: action,
           data
         }
       ]
