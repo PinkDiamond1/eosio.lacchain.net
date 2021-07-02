@@ -14,11 +14,7 @@ Below we included a list of some other well known public blockchains launched on
 
 - [**Eosfinex**](https://www.eosfinex.com/): a blockchain that promotes the cryptocurrency exchange in an auditable and public way.
 
-- [**Europechain**](https://europechain.io/): a public-permissioned blockchain that uses conventionals channels to support the enforcement of the European normative, GDPR included.
-
 - [**Liberland**](https://liberland.org/): (pending launch) a democratic blockchain that promotes Liberal Republic citizens.
-
-- [**Lynxx chain**](https://www.lynxwallet.io/): a blockchain that simplifies user experience by removing the need for users to worry about network resources.
 
 - [**Telos**](https://www.telos.net/): a blockchain platform without high-performance permissions for decentralized applications with advanced data storage and governance functions.
 
@@ -29,6 +25,3 @@ Below we included a list of some other well known public blockchains launched on
 - [**WAX**](https://wax.io/): a blockchain token and protocol specially designed to make e-commerce transactions faster, easier and more secure.
 
 - [**Worbli**](https://worbli.io/): a blockchain designed for the normative compliance with the financial sector, KYC verified accounts included.
-
-
-You can see a complete description of several EOSIO public blockchains here [ineos.io](https://ineos.io/)
