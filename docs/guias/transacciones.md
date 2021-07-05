@@ -6,7 +6,7 @@ sidebar_label: Preparar transacciones
 
 Para ejecutar una transacción en LACChain EOSIO es necesario incluir al menos dos acciones para cada transacción.
 
-Cada transacción debe incluir al menos la acción de contrato inteligente que le gustaría ejecutar y una acción de **writer::run** adicional que incluye la autorización del nodo de escritura que permitirá a la transacción proporcionar los recursos de red necesarios para que sea ejecutada.
+Cada transacción debe incluir al menos la acción de contrato inteligente que le gustaría ejecutar y una acción de **writer::run** adicional que incluye la autorización del **nodo escritor** que permitirá a la transacción proporcionar los recursos de red necesarios para que sea ejecutada.
 
 Aquí hay una transacción de ejemplo:
 
