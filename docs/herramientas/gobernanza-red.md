@@ -52,9 +52,9 @@ Alguna de las funciones disponibles son:
 
 ![Acciones disponibles para parnerts](/img/docs/partner-list-acctions.png)
 
-### Acciones disponibles para non-parnerts
+### Acciones disponibles para no parnerts
 
-![Acciones disponibles para non-parnerts](/img/docs/non-partner-list-acctions.png)
+![Acciones disponibles para no parnerts](/img/docs/non-partner-list-acctions.png)
 
 ## Blacklisting de cuentas
 
