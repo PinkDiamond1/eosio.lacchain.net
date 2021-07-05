@@ -36,7 +36,7 @@ Non-Partner entities may register new accounts on the network and allow  transac
 Each writer node has the autonomy to manage it's share of network resources according to their preferences.
 
 :::note Note
-     Add the data about your **partner** or **non-partner** entity using the [network governance tools](../herramientas/gobernanza-red).
+Add the data about your **partner** or **non-partner** entity using the [network governance tools](../herramientas/gobernanza-red).
 :::
 
 ## Registering as a Partner
