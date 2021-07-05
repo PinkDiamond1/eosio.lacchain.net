@@ -15,6 +15,8 @@ A continuación incluimos una lista de algunas otras redes publicas lanzadas sob
 
 - [**Eosfinex**](https://www.eosfinex.com/) : una cadena de bloques que impulsa el intercambio de criptomonedas de forma pública y auditable.
 
+- [**Europechain**](https://europechain.io/) : una cadena de bloques público-permisionada que utiliza canales informáticos normales diseñados para respaldar el cumplimiento de la normativa europea, incluido el GDPR.
+
 - [**Liberland**](https://liberland.org/) : (pendiente de lanzamiento) una blockchain democrática para impulsar a los ciudadanos de la República Liberal.
 
 - [**Telos**](https://www.telos.net/) : una plataforma blockchain sin permisos de alto rendimiento para aplicaciones descentralizadas con almacenamiento avanzado de datos y funciones de gobernanza de la cadena.

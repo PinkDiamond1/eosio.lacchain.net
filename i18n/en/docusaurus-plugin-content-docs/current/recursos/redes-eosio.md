@@ -14,6 +14,8 @@ Below we included a list of some other well known public blockchains launched on
 
 - [**Eosfinex**](https://www.eosfinex.com/): a blockchain that promotes the cryptocurrency exchange in an auditable and public way.
 
+- [**Europechain**](https://europechain.io/): a public-permissioned blockchain that uses conventionals channels to support the enforcement of the European normative, GDPR included.
+
 - [**Liberland**](https://liberland.org/): (pending launch) a democratic blockchain that promotes Liberal Republic citizens.
 
 - [**Telos**](https://www.telos.net/): a blockchain platform without high-performance permissions for decentralized applications with advanced data storage and governance functions.
