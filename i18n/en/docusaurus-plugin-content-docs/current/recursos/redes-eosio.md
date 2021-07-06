@@ -26,4 +26,4 @@ Below we included a list of some other well known public blockchains launched on
 
 - [**WAX**](https://wax.io/): a blockchain token and protocol specially designed to make e-commerce transactions faster, easier and more secure.
 
-- [**Worbli**](https://worbli.io/): a blockchain designed for the normative compliance with the financial sector, KYC verified accounts included.
+- [**Protonchain**](https://www.protonchain.com/): Proton was developed as a joint effort by two companies: Metal and Lynx. Both companies share a vision of making crypto more accessible to everyday consumers.

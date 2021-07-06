@@ -27,4 +27,4 @@ A continuación incluimos una lista de algunas otras redes publicas lanzadas sob
 
 - [**WAX**](https://wax.io/) : un token de cadena de bloques y protocolo especialmente diseñado para hacer que las transacciones de comercio electrónico sean más rápidas, fáciles y seguras.
 
-- [**Worbli**](https://worbli.io/) : una cadena de bloques diseñada para el cumplimiento normativo con el sector financiero, incluidas las cuentas verificadas por KYC.
+- [**Protonchain**](https://www.protonchain.com/): Proton fue desarrollado como un esfuerzo conjunto por dos empresas: Metal y Lynx. Ambas empresas comparten la visión de hacer que las criptomonedas sean más accesibles para los consumidores cotidianos.
