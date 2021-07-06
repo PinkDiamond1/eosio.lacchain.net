@@ -142,15 +142,7 @@ By this point in the execution, we already have our smart contract deployed in L
 
 For this we go to the [LACChain EOSIO Dashboard](https://lacchain.eosio.online/accounts), we can verify that the account is the owner of a contract that exposes the action `hello` and that it contains the information ABI in which the actions within the contract and associated components are specified in a JSON structure.
 
-Once the contract is ready, actions can be executed in the contract, for this you must [prepare the transaction](./transactions) this will receive as input the phrase **lachaineosio** and it will be obtained as output **hola lachaineosio**. For this we must execute the following command:
-
-```bash
-cleos -u http://lacchain.eosio.cr push action holacontrato hola '["lachaineosio"]' -p holacontrato@active
-```
-
-:::note Note
-It is necessary to wait a few seconds to complete the irreversibility of the block, since the block producers must validate the data block for this.
-:::
+Once the contract is ready, actions can be executed in the contract, for this you must [prepare the transaction](./transactions).
 
 ## Video-Tutorial
 

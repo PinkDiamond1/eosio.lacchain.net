@@ -136,15 +136,7 @@ Para finalizar ejecutamos el archivo con el comando `sudo ./holacontrato.sh`, lu
 
 Para esto nos dirigimos a la aplicación [LACChain EOSIO Dashboard](https://lacchain.eosio.online/accounts), podemos verificar que la cuenta es dueña de un contrato que expone la acción `hola` y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
 
-Una vez que el contrato esté listo, se pueden ejecutar acciones en el contrato, para esto se debe [prepara la transacción](./transacciones) esta va recibir como input la frase **lachaineosio** y se obtendrá como output **hola lachaineosio**. Para esto debemos ejecutar el siguiente comando:
-
-```
-cleos -u http://lacchain.eosio.cr push action holacontrato hola '["lachaineosio"]' -p holacontrato@active
-```
-
-:::note Nota
-Es necesario esperar unos segundos para completar la irreversibilidad del bloque, ya que los block producers deben hacer la validación del bloque de datos para esto.
-:::
+Una vez que el contrato esté listo, se pueden ejecutar acciones en el contrato, para esto se debe [prepara la transacción](./transacciones).
 
 ## Video tutorial
 <iframe width="100%" height="350px" src="https://www.youtube.com/embed/nMivNMvS09Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
