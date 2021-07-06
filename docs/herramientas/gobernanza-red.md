@@ -48,13 +48,13 @@ Alguna de las funciones disponibles son:
 
 ![Remover entidad](/img/tutorials/gobernanzaRed/remove-entity.png)
 
-### Acciones disponibles para parnerts
+### Acciones disponibles para partners
 
-![Acciones disponibles para parnerts](/img/docs/partner-list-acctions.png)
+![Acciones disponibles para partners](/img/docs/partner-list-acctions.png)
 
-### Acciones disponibles para no parnerts
+### Acciones disponibles para non-partners
 
-![Acciones disponibles para no parnerts](/img/docs/non-partner-list-acctions.png)
+![Acciones disponibles para non-partners](/img/docs/non-partner-list-acctions.png)
 
 ## Blacklisting de cuentas
 

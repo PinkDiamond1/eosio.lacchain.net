@@ -46,13 +46,13 @@ Some of the available functions are:
 
 ![Remove Entity](/img/tutorials/gobernanzaRed/remove-entity.png)
 
-### Actions available for parnerts
+### Actions available for partners
 
-![Actions available for parnerts](/img/docs/partner-list-acctions.png)
+![Actions available for partners](/img/docs/partner-list-acctions.png)
 
-### Actions available for non-parnerts
+### Actions available for non-partners
 
-![Actions available for non-parnerts](/img/docs/non-partner-list-acctions.png)
+![Actions available for non-partners](/img/docs/non-partner-list-acctions.png)
 
 ### Account Blacklisting
 Accounts can be added to a blacklist that must be implemented by all validator nodes to effectively block access to an account.
