@@ -42,10 +42,17 @@ Some of the available functions are:
 
 ![Allocation of resources to accounts](/img/tutorials/gobernanzaRed/asignacion-recursos-cuentas.png)
 
-### Remover Entidad
+### Remove Entity
 
-![Remover entidad](/img/tutorials/gobernanzaRed/remove-entity.png)
+![Remove Entity](/img/tutorials/gobernanzaRed/remove-entity.png)
 
+### Actions available for partners
+
+![Actions available for partners](/img/docs/partner-list-acctions.png)
+
+### Actions available for non-partners
+
+![Actions available for non-partners](/img/docs/non-partner-list-acctions.png)
 
 ### Account Blacklisting
 Accounts can be added to a blacklist that must be implemented by all validator nodes to effectively block access to an account.
