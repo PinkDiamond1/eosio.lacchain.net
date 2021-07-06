@@ -19,17 +19,12 @@ A continuación incluimos una lista de algunas otras redes publicas lanzadas sob
 
 - [**Liberland**](https://liberland.org/) : (pendiente de lanzamiento) una blockchain democrática para impulsar a los ciudadanos de la República Liberal.
 
-- [**Lynxx chain**](https://www.lynxwallet.io/) : una cadena de bloques que simplifica la experiencia del usuario al eliminar la necesidad de que los usuarios se preocupen por los recursos de la red.
-
 - [**Telos**](https://www.telos.net/) : una plataforma blockchain sin permisos de alto rendimiento para aplicaciones descentralizadas con almacenamiento avanzado de datos y funciones de gobernanza de la cadena.
+
+- [**Protonchain**](https://www.protonchain.com/) : Proton fue desarrollado como un esfuerzo conjunto por dos empresas: Metal y Lynx. Ambas empresas comparten la visión de hacer que las criptomonedas sean más accesibles para los consumidores cotidianos.
 
 - [**Ultra**](https://ultra.io/) : una cadena de bloques dirigida a la industria del juegos.
 
 - [**Voice**](https://voice.com/) : Una cadena de bloques para impulsar la red social descentralizada construida por Block.one
 
 - [**WAX**](https://wax.io/) : un token de cadena de bloques y protocolo especialmente diseñado para hacer que las transacciones de comercio electrónico sean más rápidas, fáciles y seguras.
-
-- [**Worbli**](https://worbli.io/) : una cadena de bloques diseñada para el cumplimiento normativo con el sector financiero, incluidas las cuentas verificadas por KYC.
-
-
-Puede ver una descripción completa de muchas de las cadenas de bloques EOSIO públicas en [ineos.io](https://ineos.io/)
