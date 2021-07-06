@@ -10,20 +10,20 @@ Below we included a list of some other well known public blockchains launched on
 
 - [**EOS**](https://bloks.io/) : the first blockchain launched with the EOSIO protocol, also know as "mainnet".
 
-- [**BOSCore**](https://boscore.io/): a high-speed blockchain and low finality for business and enterprises looking to implement parallel computing and IBC.
+- [**BOSCore**](https://boscore.io/) : a high-speed blockchain and low finality for business and enterprises looking to implement parallel computing and IBC.
 
-- [**Eosfinex**](https://www.eosfinex.com/): a blockchain that promotes the cryptocurrency exchange in an auditable and public way.
+- [**Eosfinex**](https://www.eosfinex.com/) : a blockchain that promotes the cryptocurrency exchange in an auditable and public way.
 
-- [**Europechain**](https://europechain.io/): a public-permissioned blockchain that uses conventionals channels to support the enforcement of the European normative, GDPR included.
+- [**Europechain**](https://europechain.io/) : a public-permissioned blockchain that uses conventionals channels to support the enforcement of the European normative, GDPR included.
 
-- [**Liberland**](https://liberland.org/): (pending launch) a democratic blockchain that promotes Liberal Republic citizens.
+- [**Liberland**](https://liberland.org/) : (pending launch) a democratic blockchain that promotes Liberal Republic citizens.
 
-- [**Telos**](https://www.telos.net/): a blockchain platform without high-performance permissions for decentralized applications with advanced data storage and governance functions.
+- [**Telos**](https://www.telos.net/) : a blockchain platform without high-performance permissions for decentralized applications with advanced data storage and governance functions.
 
-- [**Ultra**](https://ultra.io/): a blockchain geared towards the gaming industry.
+- [**Protonchain**](https://www.protonchain.com/) : Proton was developed as a joint effort by two companies: Metal and Lynx. Both companies share a vision of making crypto more accessible to everyday consumers.
 
-- [**Voice**](https://voice.com/): a blockchain to promote a decentralized social network built by Block.one.
+- [**Ultra**](https://ultra.io/) : a blockchain geared towards the gaming industry.
 
-- [**WAX**](https://wax.io/): a blockchain token and protocol specially designed to make e-commerce transactions faster, easier and more secure.
+- [**Voice**](https://voice.com/) : a blockchain to promote a decentralized social network built by Block.one.
 
-- [**Protonchain**](https://www.protonchain.com/): Proton was developed as a joint effort by two companies: Metal and Lynx. Both companies share a vision of making crypto more accessible to everyday consumers.
+- [**WAX**](https://wax.io/) : a blockchain token and protocol specially designed to make e-commerce transactions faster, easier and more secure.

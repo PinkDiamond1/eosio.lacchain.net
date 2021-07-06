@@ -21,10 +21,10 @@ A continuación incluimos una lista de algunas otras redes publicas lanzadas sob
 
 - [**Telos**](https://www.telos.net/) : una plataforma blockchain sin permisos de alto rendimiento para aplicaciones descentralizadas con almacenamiento avanzado de datos y funciones de gobernanza de la cadena.
 
+- [**Protonchain**](https://www.protonchain.com/) : Proton fue desarrollado como un esfuerzo conjunto por dos empresas: Metal y Lynx. Ambas empresas comparten la visión de hacer que las criptomonedas sean más accesibles para los consumidores cotidianos.
+
 - [**Ultra**](https://ultra.io/) : una cadena de bloques dirigida a la industria del juegos.
 
 - [**Voice**](https://voice.com/) : Una cadena de bloques para impulsar la red social descentralizada construida por Block.one
 
 - [**WAX**](https://wax.io/) : un token de cadena de bloques y protocolo especialmente diseñado para hacer que las transacciones de comercio electrónico sean más rápidas, fáciles y seguras.
-
-- [**Protonchain**](https://www.protonchain.com/): Proton fue desarrollado como un esfuerzo conjunto por dos empresas: Metal y Lynx. Ambas empresas comparten la visión de hacer que las criptomonedas sean más accesibles para los consumidores cotidianos.
