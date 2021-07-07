@@ -54,9 +54,9 @@
   margin-top: 160px !important;
 }
 
-.row{
-  margin-bottom: 60px !important;
+footer.row{
   margin-top: 60px !important;
+  margin-bottom: 10px !important;
 }
 
 a{
