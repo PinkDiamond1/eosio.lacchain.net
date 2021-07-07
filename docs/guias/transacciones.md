@@ -1,7 +1,7 @@
 ---
 id: transacciones
-title: Preparar transacciones
-sidebar_label: Preparar transacciones
+title: Preparar Transacciones
+sidebar_label: Preparar Transacciones
 ---
 
 Para ejecutar una transacción en LACChain EOSIO es necesario incluir al menos dos acciones para cada transacción.
