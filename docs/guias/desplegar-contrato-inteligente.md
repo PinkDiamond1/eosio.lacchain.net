@@ -88,7 +88,15 @@ chmod 755 holacontrato.sh
 
 <br/>
 
-### 5.1 Archivo shell
+### 5.1 Intalacion de jq
+
+Para realizar la ejecución de este archivo debe tener previmente instalado el paquete de jq con el siguiente comando:
+
+```
+sudo apt-get install jq
+```
+
+### 5.2 Archivo shell
 
 Dentro del archivo que acabamos de crear, se debe a insertar la siguiente función:
 
@@ -99,10 +107,10 @@ deploy_holacontrato_contracts_to_lacchain() {
     TEMP_DIR=./stdout/holacontrato
 
     echo '1. set holacontrato smart contract code'
-    cleos -u $EOS_API_URL set contract holacontrato -j -d -s ../holacontrato/ >$TEMP_DIR/tx2.json
+    cleos -u <EOS_API_URL> set contract holacontrato -j -d -s ../holacontrato/ >$TEMP_DIR/tx2.json
 
     echo '2. writer auth'
-    cleos -u $EOS_API_URL push action -j -d -s writer run '{}' -p costarica@writer >$TEMP_DIR/tx1.json
+    cleos -u <EOS_API_URL> push action -j -d -s writer run '{}' -p costarica@writer >$TEMP_DIR/tx1.json
 
     echo '3. merge actions'
     jq -s '[.[].actions[]]' $TEMP_DIR/tx1.json $TEMP_DIR/tx2.json >$TEMP_DIR/tx3.json
@@ -111,29 +119,24 @@ deploy_holacontrato_contracts_to_lacchain() {
     jq '.actions = input' $TEMP_DIR/tx1.json $TEMP_DIR/tx3.json >$TEMP_DIR/tx4.json
 
     echo '5. sign transaction'
-    cleos -u $EOS_API_URL push transaction $TEMP_DIR/tx4.json -p costarica@writer -p holacontrato@active
+    cleos -u <EOS_API_URL> -r "Accept-Encoding: identity" push transaction $TEMP_DIR/tx4.json -p costarica@writer -p holacontrato@active
 }
 
 deploy_holacontrato_contracts_to_lacchain
 
 ```
 
-Para este punto de la ejecución, ya tenemos nuestro contrato inteligente desplegado en LACChain.
+:::note Nota
+Tenga en cuenta que `EOS_API_URL` es una varible de ambiente, su valor orignal de ser el end point de la red http://lacchain.eosio.cr
+:::
 
+Para finalizar ejecutamos el archivo con el comando `sudo ./holacontrato.sh`, luego de esto ya tenemos nuestro contrato inteligente desplegado en LACChain EOSIO.
 
 ## 6. Verificación de contrato
 
-Para esto nos dirigimos a la aplicación ([LACChain EOSIO Dashboard](https://lacchain.eosio.online/accounts)), podemos verificar que la cuenta es dueña de un contrato que expone la acción `hola` y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
+Para esto nos dirigimos a la aplicación [LACChain EOSIO Dashboard](https://lacchain.eosio.online/accounts), podemos verificar que la cuenta es dueña de un contrato que expone la acción `hola` y que contiene la información abi en la que se especifican en estructura JSON las acciones dentro del contrato y componentes asociados.
 
-Una vez que el contrato esté listo, podemos ejecutar una acción en el contrato, esta va recibir como input la frase **LACChain EOSIO** y se obtendrá como output **hola LACChain EOSIO**. Para esto debemos ejecutar el siguiente comando:
-
-```
-cleos -u http://lacchain.eosio.cr push action holacontrato hola '["LACChain EOSIO"]' -p holacontrato@active
-```
-
-:::note Nota
-Es necesario esperar unos segundos para completar la irreversibilidad del bloque, ya que los block producers deben hacer la validación del bloque de datos para esto.
-:::
+Una vez que el contrato esté listo, se pueden ejecutar acciones en el contrato, para esto se debe [prepara la transacción](./transacciones).
 
 ## Video tutorial
 <iframe width="100%" height="350px" src="https://www.youtube.com/embed/nMivNMvS09Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
