@@ -32,6 +32,7 @@ module.exports = {
     "Herramientas": [
         "herramientas/explorador-bloques",
         "herramientas/monitor",
+        "herramientas/lacchain-eosio-local",
         "herramientas/api",
         "herramientas/cli",
         "herramientas/boilerplates",
