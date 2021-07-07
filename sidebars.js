@@ -23,9 +23,9 @@ module.exports = {
         "guias/configurar-wallet",
         "guias/obtener-recursos",
         "guias/desplegar-contrato-inteligente",
+        "guias/transacciones",
         "guias/ambiente-desarrollo",
         "guias/instalacion-nodos",
-        "guias/transacciones",
         "guias/nodos-eosio",
         "guias/contribuir"
     ],

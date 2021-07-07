@@ -75,3 +75,7 @@ In LACChain EOSIO network, there are several types of accounts. See the guide to
 - [Apps or Contracts](./crear-cuenta-contrato)
 - [Non-Partner](./crear-cuenta-entidad)
 - [Partner](./crear-cuenta-entidad)
+
+## 2. Local development environment for LACChain EOSIO
+
+To perform tests while building your contracts, you can generate a local development environment on the LACChain EOSIO network, this will give you a series of benefits that you can consult [here](../herramientas/lacchain-eosio-local)

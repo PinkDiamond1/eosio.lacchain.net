@@ -4,16 +4,20 @@ title: Herramienta para desarrollo local
 sidebar_label: Desarrollo local
 ---
 
-Este proyecto construye la red LACChain en un entorno local de modo que se puedan realizar pruebas antes de ser publicadas en la red pública. Debido a la tecnología que contiene Blockchain, al ser publicado o privado cualquier cambio en la red crea un registro inmutable de la acción y todo lo que se modifique puede afectar tanto positivamente como negativamente a los usuarios dentro de la misma, es por este motivo que es fundamental tener un entorno local donde se puedan realizar pruebas de funcionalidad, pruebas de rendimiento, pruebas de estrés (stress test) entre otras sin producir alguna falla que afecte a los usuarios.
+Tener un entorno local brinda una serie de beneficios que en una red pública no se puede, por ejemplo, con LACChain EOSIO de manera local se evita costos de transacciones ya que se realizan en un entorno de desarrollo y no de producción, asimismo, se acceden a los contratos de sistema para modificarlos según convenga.
 
-Puede consultar el repositorio de este proyecto [aquí](https://github.com/eoscostarica/lacchain-eosio-local)
+Debido a la tecnología que contiene Blockchain, cualquier cambio en la red crea un registro inmutable de la acción y todo lo que se modifique puede afectar tanto positivamente como negativamente a los usuarios dentro de la misma, es por este motivo que es fundamental tener un entorno local donde se puedan realizar pruebas de funcionalidad, pruebas de rendimiento, pruebas de estrés (stress test), entre otras sin el riesgo de producir alguna falla que afecte a los usuarios.
+
+Por último, un factor a considerar es el tiempo que se reduce en la configuración inicial de cualquier red, esta imagen permite de manera directa, con solo ejecutar dos comandos poder tener la red instalada y lista para hacer pruebas de funcionalidad según sea necesario.
+
+
+Puede consultar el repositorio de este proyecto [aquí](https://github.com/eoscostarica/lacchain-eosio-local).
 
 ### Contratos
-La imagen de LACChain EOSIO necesita contratos para su configuración inicial:
-1. **eosio.bios**: Proporciona las acciones que son absolutamente críticas para iniciar una cadena.
-2. **lacchain.system**: Brinda las reglas de gobernanza establecidas en la red de LACChain EOSIO. Consultar [este enlace](../eosio/) para más detalle.
-3. **eosio.token**: Define las estructuras y acciones que permiten a los usuarios crear, emitir y administrar tokens para cadenas de bloques basadas en EOSIO.
-4. **eosio.msig**: Permite la creación de transacciones propuestas que requieren la autorización de una lista de cuentas.
+La imagen de LACChain EOSIO usa como base el contrato de `lacchain.system` para su configuración de gobernanza. Su código se encuentra en [este enlace](https://github.com/lacchain/eosio.contracts/tree/dev/contracts/lacchain.system). Adicionalmente, se requiere los siguientes contratos como parte del proceso de la configuración completa:
+1. **lacchain.system**: Brinda las reglas de gobernanza establecidas por la red de LACChain EOSIO. Consultar [este enlace](../eosio/) para más información.
+2. **eosio.token**: Define las estructuras y acciones que permiten a los usuarios crear, emitir y administrar tokens para cadenas de bloques basadas en EOSIO.
+3. **eosio.msig**: Permite la creación de transacciones propuestas que requieren la autorización de una lista de cuentas.
 
 ### Key de configuración
 La llave preconfigurada es la de eosio que permite realizar la configuración inicial de la red. Puede consultarla [aquí](https://github.com/eoscostarica/lacchain-eosio-local/blob/main/Dockerfile#L43).

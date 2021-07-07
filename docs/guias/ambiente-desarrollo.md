@@ -67,3 +67,7 @@ brew remove eosio
 ```bash 
 sudo apt remove eosio
 ```
+
+## 2. Ambiente de desarrollo local para LACChain EOSIO
+
+Para realizar pruebas mientras construye sus contratos puede generar un ambiente de desarrollo local sobre la red de LACChain EOSIO, esto le dara una serie de beneficios que puede consultar [aquí](../herramientas/lacchain-eosio-local)
