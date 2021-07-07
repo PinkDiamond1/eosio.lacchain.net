@@ -54,6 +54,11 @@
   margin-top: 160px !important;
 }
 
+.row{
+  margin-bottom: 60px !important;
+  margin-top: 60px !important;
+}
+
 a{
   color: #1cc15c;
 }
