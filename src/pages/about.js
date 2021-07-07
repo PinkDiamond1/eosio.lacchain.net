@@ -324,7 +324,7 @@ const About = () => {
                                 <Translate id="about.LACChain">
                                   es la Alianza Global para el desarrollo del
                                   ecosistema blockchain en América Latina y el
-                                  Caribe, una iniciativa liderara por 
+                                  Caribe, una iniciativa liderada por 
                                 </Translate>{' '}
                                 <a href="https://bidlab.org/en" target="_blank">BID Lab</a>{' '}
                                 <Translate id="about.LACChain1">
