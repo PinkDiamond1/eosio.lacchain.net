@@ -53,6 +53,10 @@ wget https://github.com/EOSIO/eosio.cdt/releases/download/v1.7.0/eosio.cdt_1.7.0
 sudo apt install ./eosio.cdt_1.7.0-1-ubuntu-18.04_amd64.deb
 ``` 
 
+## 2. Local development environment for LACChain EOSIO
+
+To perform tests while building your contracts, you can generate a local development environment on the LACChain EOSIO network, this will give you a series of benefits that you can consult [here](../herramientas/lacchain-eosio-local)
+
 ## Uninstalling software
 
 To uninstall the installed EOSIO binaries and dependencies, run:
@@ -75,7 +79,3 @@ In LACChain EOSIO network, there are several types of accounts. See the guide to
 - [Apps or Contracts](./crear-cuenta-contrato)
 - [Non-Partner](./crear-cuenta-entidad)
 - [Partner](./crear-cuenta-entidad)
-
-## 2. Local development environment for LACChain EOSIO
-
-To perform tests while building your contracts, you can generate a local development environment on the LACChain EOSIO network, this will give you a series of benefits that you can consult [here](../herramientas/lacchain-eosio-local)
