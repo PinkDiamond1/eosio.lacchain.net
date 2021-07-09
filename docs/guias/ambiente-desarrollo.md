@@ -56,7 +56,7 @@ sudo apt install ./eosio.cdt_1.7.0-1-ubuntu-18.04_amd64.deb
 
 ## 2. Ambiente de desarrollo local para LACChain EOSIO
 
-Para realizar pruebas mientras construye sus contratos puede generar un ambiente de desarrollo local sobre la red de LACChain EOSIO, esto le dara una serie de beneficios que puede consultar [aquí](../herramientas/lacchain-eosio-local)
+Para realizar pruebas mientras construye sus contratos puede generar un ambiente de desarrollo local sobre la red de LACChain EOSIO, esto le dara una serie de beneficios que puede consultar [aquí](../herramientas/lacchain-eosio-local).
 
 ## Desinstalación de software
 
