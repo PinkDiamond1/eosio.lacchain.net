@@ -33,8 +33,9 @@ const siteConfig = {
     },
     //Algolia integration
     algolia: {
-      apiKey: '63254e86059566be7b401497c9484166',
-      indexName: 'latamlink_es',
+      appId: 'PA7N6QXRJW',
+      apiKey: '27bb66b90ff32b38222a70e8316484aa',
+      indexName: 'lacchain_eosio_tmp',
       placeholder: 'Buscar',
       algoliaOptions: {}
     },
