@@ -12,7 +12,7 @@ Finally, a factor to consider is the time that is reduced in the initial configu
 
 You can check the repository of this project [here](https://github.com/eoscostarica/lacchain-eosio-local).
 
-### Contratos
+### Contracts
 
 The LACChain EOSIO image is based on the `lacchain.system` contract for its governance configuration. Your code can be found at [this link](https://github.com/lacchain/eosio.contracts/tree/dev/contracts/lacchain.system). Additionally, the following contracts are required as part of the full configuration process:
 

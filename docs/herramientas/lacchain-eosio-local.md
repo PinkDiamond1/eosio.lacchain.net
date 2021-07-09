@@ -19,7 +19,7 @@ La imagen de LACChain EOSIO usa como base el contrato de `lacchain.system` para 
 2. **eosio.token**: Define las estructuras y acciones que permiten a los usuarios crear, emitir y administrar tokens para cadenas de bloques basadas en EOSIO.
 3. **eosio.msig**: Permite la creación de transacciones propuestas que requieren la autorización de una lista de cuentas.
 
-### Key de configuración
+### Llave de configuración
 La llave preconfigurada es la de eosio que permite realizar la configuración inicial de la red. Puede consultarla [aquí](https://github.com/eoscostarica/lacchain-eosio-local/blob/main/Dockerfile#L43).
 ```
 EOSIO_PRIVATE_KEY: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
