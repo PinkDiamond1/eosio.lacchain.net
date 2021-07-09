@@ -1,8 +1,8 @@
-### Issue de GH
+## Issue de GH
 
 #
 
-## ¿Qué tiene este PR?
+### ¿Qué tiene este PR?
 1.
 1.
 1.

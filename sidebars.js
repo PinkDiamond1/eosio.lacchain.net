@@ -23,15 +23,16 @@ module.exports = {
         "guias/configurar-wallet",
         "guias/obtener-recursos",
         "guias/desplegar-contrato-inteligente",
+        "guias/transacciones",
         "guias/ambiente-desarrollo",
         "guias/instalacion-nodos",
-        "guias/transacciones",
         "guias/nodos-eosio",
         "guias/contribuir"
     ],
     "Herramientas": [
         "herramientas/explorador-bloques",
         "herramientas/monitor",
+        "herramientas/lacchain-eosio-local",
         "herramientas/api",
         "herramientas/cli",
         "herramientas/boilerplates",
