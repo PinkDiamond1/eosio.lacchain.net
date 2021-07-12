@@ -43,6 +43,7 @@ La integración de la identidad digital a las redes blockchain abre nuevas oport
 
 - Eliminar la compleja mecánica de la clave privada de la experiencia del usuario.
 
+Puede informarse sobre el método [EOSIO DID (identificador descentralizado)](https://www.gimly.io/blog/the-eosio-did-method-specification), una forma más de implementar identidad digital.
 
 ## LAC Chain ID Mailbox
 

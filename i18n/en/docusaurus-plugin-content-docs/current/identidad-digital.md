@@ -73,6 +73,8 @@ The [Universal Authenticator Library (UAL)](https://github.com/EOSIO/universal-a
 ### KEOSD
 In the EOSIO's distribution comes included a CLI client called [`cleos`](https://developers.eos.io/manuals/eos/latest/cleos/index) that interacts with lite client called [`keosd`](https://developers.eos.io/manuals/eos/latest/keosd/index) which provides a secure wallet service and API endpoint for applications that require back-end integration with a signature provider.
 
+## Digital Identity
+
 Public key cryptography has been in use for several decades and has evolved to a set of standards for digital signatures. Many governments have adopted digital signature standards so individuals or businesses can obtain identity certificates and use them to sign legal documents.
 
 > LACChain EOSIO aspires to integrate self-sovereign identity for end users that is compatible with national digital identities and digital signatures commonly used by large enterprise users.
@@ -84,6 +86,8 @@ Integrating digital identity to blockchain networks opens new opportunities, for
 - Seamlessly integrating with existing IT solutions.
 
 - Removing the complex private key mechanics from the user experience.
+
+Puede informarse sobre el método [EOSIO DID (identificador descentralizado)](https://www.gimly.io/blog/the-eosio-did-method-specification), una forma más de implementar identidad digital.
 
 ## X.509 client certificates
 
