@@ -11,14 +11,24 @@ import TelegramIcon from '@material-ui/icons/Telegram'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Translate from '@docusaurus/Translate'
 
+import bg from '../../static/img/subtlene.png'
+
 const Footer = () => {
   const isMobile = useMediaQuery({query:'(max-width: 769px)'})
   const isTablet = useMediaQuery({query:'(min-width: 1025px)'})
   const isDesktop = useMediaQuery({query:'(min-width: 710px)'})
 
   return (
-    <Box>
-      <Box className="footer">
+    <Box
+      style={{ 
+        backgroundRepeat: 'repeat',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'left',
+        backgroundImage: `url(${bg})`
+      }}
+    >
+      <Box
+        className="footer">
         <Box className="footerContent">
           <Grid container justify='center' alignContent='center' spacing={4}>
             <Grid item xs={12} md={3}>
