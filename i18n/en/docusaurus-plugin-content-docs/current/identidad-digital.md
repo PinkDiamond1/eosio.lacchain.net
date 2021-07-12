@@ -87,7 +87,7 @@ Integrating digital identity to blockchain networks opens new opportunities, for
 
 - Removing the complex private key mechanics from the user experience.
 
-Puede informarse sobre el método [EOSIO DID (identificador descentralizado)](https://www.gimly.io/blog/the-eosio-did-method-specification), una forma más de implementar identidad digital.
+You can learn about the [EOSIO DID method(decentralized identifier)](https://www.gimly.io/blog/the-eosio-did-method-specification), one more way to implement digital identity.
 
 ## X.509 client certificates
 
