@@ -35,7 +35,7 @@ const siteConfig = {
     algolia: {
       appId: 'PA7N6QXRJW',
       apiKey: '27bb66b90ff32b38222a70e8316484aa',
-      indexName: 'lacchain_eosio_tmp',
+      indexName: 'lacchain_eosio',
       placeholder: 'Buscar',
       algoliaOptions: {}
     },
