@@ -1,5 +1,5 @@
 ---
-id: recursos
+id: uso-recursos
 title: Uso de Recursos
 sidebar_label: Uso de Recursos
 ---

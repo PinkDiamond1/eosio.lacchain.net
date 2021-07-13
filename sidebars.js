@@ -5,7 +5,7 @@ module.exports = {
         "mecanismo-consenso",
         "cuentas-permisos",
         "trazabilidad",
-        "recursos",
+        "uso-recursos",
         "topologia-red",
         "datos-entidades-nodos",
         "monitoreo",
