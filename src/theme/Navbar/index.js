@@ -192,6 +192,9 @@ const Navbar = ({isMobile, isDesktop}) => {
                 />
               </a>
             </Box>
+            <Box className="btnSearch">
+              <SearchBar/>
+            </Box>
             <Box className="btnDrawer">
               <IconButton onClick={handlerDrawer}>
                 <MenuIcon  fontSize="large"/>
