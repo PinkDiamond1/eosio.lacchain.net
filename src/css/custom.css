@@ -464,9 +464,17 @@ h1{
 
 .btnDrawer{
   position: absolute;
-  top: 10px;
+  display: flex;
+  top: 13px;
   right: 10px;
   color: #038702;
+}
+
+.btnSearch{
+  position: absolute;
+  display: flex;
+  top: 23px;
+  right: 60px;
 }
 
 .drawerContent{
@@ -782,6 +790,10 @@ h1{
     width: 50%;
   }
 
+  .menuWrapper{
+    height: 90px;
+  }
+
   .socialMediaIcons{
     width: 20%
   }
@@ -874,9 +886,30 @@ h1{
   .paddingLeft{
     padding-left: 40%;
   }
+
+}
+
+@media only screen and (max-width: 767px){
+  .DocSearch-Dropdown{
+    height: calc(100% - 90px) !important;
+  }
+
+  .DocSearch-Modal{
+    margin-top: 90px !important;
+    height: calc(100% - 90px) !important;
+  }
+
+  div.margin-vert--lg{
+    margin-top: 5rem !important;
+  }
+
 }
 
 @media only screen and (max-width: 280px) {
+  .imgLogoBoxMobile{
+    left: 10px;
+  }
+
   .paddingLeft{
     padding-left: 100%;
   }
