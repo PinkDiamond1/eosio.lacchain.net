@@ -59,6 +59,10 @@ footer.row{
   margin-bottom: 10px !important;
 }
 
+div.margin-vert--lg{
+  margin-top: 8rem !important;
+}
+
 a{
   color: #1cc15c;
 }
