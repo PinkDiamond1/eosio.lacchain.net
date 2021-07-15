@@ -17,7 +17,7 @@ We present the following proposal for LACChain network configuration using EOSIO
 
 ## Proposed Topology
 
-<img src="/static/img/diagramas/topologia-red.png" alt="Topologia de Red LACChain EOSIO" width="450"/>
+![LACChain EOSIO Network Topology](/img/diagramas/topologia-red.png)
 
 - **Layer 1 ([Core](/docs/topologia-red#layer-1---core-network))** Validator and interconnecting p2p node network.
 
