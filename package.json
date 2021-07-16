@@ -1,7 +1,7 @@
 {
-  "name": "es.latamkink.io",
+  "name": "eosio.lacchain.net",
   "description": "Documentación LACChain EOSIO Pro Testnet",
-  "homepage": "https://es.latamkink.io",
+  "homepage": "https://eosio.lacchain.net/",
   "version": "0.2.0",
   "license": "MIT",
   "scripts": {

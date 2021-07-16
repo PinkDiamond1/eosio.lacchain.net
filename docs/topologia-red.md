@@ -18,7 +18,7 @@ Presentamos la siguiente propuesta de configuración de red LACChain utilizando 
 
 ## Topología Propuesta
 
-<img src="/img/diagramas/topologia-red.png#center" alt="Topologia de Red LACChain EOSIO" width="450"/>
+![Topología de Red LACChain EOSIO](/img/diagramas/topologia-red.png)
 
 - **Capa 1 ([Core](/docs/topologia-red#capa-1---red-core))** Red de validadores y nodos p2p para meshear entre ellos
 
@@ -27,7 +27,7 @@ Presentamos la siguiente propuesta de configuración de red LACChain utilizando 
 		- **Capa 3 ([Satellite](/docs/topologia-red#layer-3---satellite))** Layer de consumo para writers y observers
 
 
-![LACChain EOSIO Topology](/img/diagramas/topologia-nodos-2.png)
+![Topología de LACChain EOSIO](/img/diagramas/topologia-nodos-2.png)
 
 
 ## Capa 1 - Red Core

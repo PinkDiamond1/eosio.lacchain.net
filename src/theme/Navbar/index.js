@@ -9,7 +9,6 @@ import Drawer from '@material-ui/core/Drawer'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import List from '@material-ui/core/List'
-import { useLocation } from 'react-router-dom'
 import Translate, {translate} from '@docusaurus/Translate'
 import SearchBar from '@theme/SearchBar'
 
@@ -106,7 +105,6 @@ const PATHS = [
 
 const Navbar = ({isMobile, isDesktop}) => {
   const [isOpen, setIsOpen] = useState(false)
-  const location = useLocation()
   const [pathname, setPathname] = useState("")
   const trigger = useScrollTrigger({disableHysteresis:true})
   
@@ -194,7 +192,10 @@ const Navbar = ({isMobile, isDesktop}) => {
                 />
               </a>
             </Box>
-            <Box  className="btnDrawer">
+            <Box className="btnSearch">
+              <SearchBar/>
+            </Box>
+            <Box className="btnDrawer">
               <IconButton onClick={handlerDrawer}>
                 <MenuIcon  fontSize="large"/>
               </IconButton>

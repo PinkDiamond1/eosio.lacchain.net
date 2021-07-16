@@ -32,8 +32,8 @@ const GenericListItemIcon = withStyles({
 
 const GenericListItemText = withStyles({
   primary: {
-    fontFamily:'Lato',
-    fontSize: 15,
+    fontFamily: 'sans-serif',
+    fontSize: 14,
     fontWeight:'bold',
     color: 'black',
   },
