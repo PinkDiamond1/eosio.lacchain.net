@@ -123,11 +123,16 @@ const ContactUS = () => {
                 <Translate id="contact.wantContributeText">
                   Únase a nuestro Github y contribuya. ¡Buscamos colaboración en todo momento!
                 </Translate>{' '}
-                <a href={useBaseUrl("/docs/guias/contribuir")} target="_blank">
+                <br/>
+                <Translate id="contact.wantContributeText1">
+                  Si desea reportar un problema cree un nuevo issue en nuestro
+                </Translate> {' '}
+                <a href='https://github.com/lacchain/eosio.lacchain.net/issues/new/choose' target="_blank">
                   <Translate id="contact.wantContributekLink">
-                    Aprenda más sobre cómo contribuir
+                    repositorio de GitHub
                   </Translate>
-                </a>.{' '}
+                </a>.
+                <br/>
                 <Translate id="contact.wantContributeText2">
                   Si tiene alguna consulta para la comunidad, puede usar nuestro 
                 </Translate>{' '}

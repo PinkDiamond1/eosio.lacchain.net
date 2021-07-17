@@ -582,7 +582,10 @@
     "message": "Join our Github and contribute. We are always lookingfor help!"
   },
   "contact.wantContributekLink": {
-    "message": "Learn more about how to contribute"
+    "message": "GitHub repository"
+  },
+  "contact.wantContributeText1": {
+    "message": "If you want to report a problem create a new issue in our"
   },
   "contact.wantContributeText2": {
     "message": "If you have any queries for the community, you can use our"
