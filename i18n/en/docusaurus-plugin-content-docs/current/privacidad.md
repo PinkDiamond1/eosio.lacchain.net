@@ -23,30 +23,10 @@ Blockchain technology provides the necessary tools to decentralize the informati
 
 ## Privacy on EOSIO
 
-Privacy in LACChain EOSIO is focused on making data only available to a specific list of participants. In order to accomplish this a mechanism must be implemented that ensures transactions are distributed only to a list of participants who can send private transactions among them.
+EOSIO version 2.2 has a native [Private Access Control or Security Group feature](https://developers.eos.io/manuals/eos/v2.2/nodeos/features/private_chain_access/index) which provides a two-layer security solution designed for blockchain administrators to control which participants can access and use a private EOSIO network. The first security layer is designed to enforce TLS connections in the peer-to-peer network protocol; so only those participants with a properly signed certificate are able to establish a TLS connection and communicate securely with other peers. The second security layer, which is optional, is designed to bring the concept of a privacy group or security group; so that if enabled, only those participants in the group are allowed to access data from the private network. Therefore, the first layer controls “connection” access while the second layer manages “data” access. Participants are considered logical entities with a designated EOSIO name and may host multiple nodes.
 
-This brings up a couple of questions:
-- Which accounts can see the transaction ?
-- Which nodes can see the transaction ?
-- Which nodes can see the smart contract ? 
-- Who manages the list of permitted actors ? (on chain vs. off-chain)
-
-### LACChain EOSIO ZPK
-
-Zero-Knowledge Proofs or Protocols, also known as ZKP, is one of the alternative methods explored in LACChain EOSIO to solve the privacy in blockchain challenge. ZPK is the method for which nodes operators can demonstrate that a transaction is valid without the necessity to reveal the values of the transaction. The fact that this added value of privacy can be obtained through the cryptography is useful for the people and private entities that benefit from the use of blockchain technology without the fear of sharing confidential information.
-
-LACChain EOSIO aims to integrate new primitives (intrinsics) for the verification of ZKP natively available to the Smart Contracts (Dapps) for the construction of applications with privacy requirements and at the same time can be validated for the same agents in the network (BPs + Full Nodes), without the necessity to add new agents to the network.
-
-### Privacy Transaction Manager
-
-A Privacy Transaction Manager (PTM) is a mechanism used in several blockchain technologies to distribute private transactions by a peer-to-peer side-channel, where only the participants involved in the transaction receive the private payload. A pointer or hash of the transaction is registered in the public blockchain, so the participants can check the integrity and ordering of the private transactions. 
-
-For instance **Hyperledger Besu**, another blockchain technology used in LACChain, Uses a PTM called Orion. Besu provides a pre-compile contract extension of the ethereum client that uses Orion keys to channel private transactions through Orion nodes to prevent data from being visible on the public network.
-
-### Existing EOSIO Privacy Solutions
-https://github.com/EOSIO/eosjs-ecc/issues/19#issuecomment-392941963
-
-https://github.com/GetScatter/ScatterDesktop/issues/43
+### Private Access Control Tutorial 
+This [EOSIO private access tutorial](https://developers.eos.io/manuals/eos/v2.2/nodeos/features/private_chain_access/tutorial) demonstrates how to use the `SECURITY_GROUP` feature to launch a private EOSIO network with TLS connections, create a security group and add/remove participants for data access control. 
 
 :::note Work in Progress
 We are still working on this aspect of the documentation, if you want to improve the content you can learn [how to contribute](./guias/contribuir). See the [Project Roadmap](./roadmap).

@@ -5,7 +5,7 @@ sidebar_label: Project Roadmap
 ---
 
 ### Current Status: Pro TestNet in progress
-As of May 2021
+As of July 2021
 
 
 ` ✓ = required for milestone`
@@ -23,14 +23,14 @@ As of May 2021
 | Boot nodes enabled                                                                                                      |   | ✓ | ✓ | ✓ | done |
 | Smart-contract based permissioning                                                                                      |   | ✓ | ✓ | ✓ | done |
 | App for managing permissioning                                                                                          |   | ✓ | ✓ | ✓ | done |
-| Privacy leveraged as native                                                                                             |   | ✓ | ✓ | ✓ | in progress |
+| Privacy leveraged as native                                                                                             |   | ✓ | ✓ | ✓ | done |
 | Dashboard for nodes                                                                                                     |   | ✓ | ✓ | ✓ | done |
 | Transaction explorer                                                                                                    |   | ✓ | ✓ | ✓ | done |
 | Dashboard of entities running nodes                                                                                     |   | ✓ | ✓ | ✓ | done |
-| Interface to visualize node's activity                                                                                  |   | ✓ | ✓ | ✓ | in progress |
+| Interface to visualize node's activity                                                                                  |   | ✓ | ✓ | ✓ | done |
 | Tracking system to follow and fix installation issues                                                                   |   |   | ✓ | ✓ |      |
 | Smart-contract based local whitelisting                                                                                 |   |   | ✓ | ✓ | done |
-| Dashboard of applications running on the blockchain                                                                     |   |   | ✓ | ✓ | in progress |
+| Dashboard of applications running on the blockchain                                                                     |   |   | ✓ | ✓ | done |
 | Follow installation issues via a defined tracking system to enable and fix installation problems                        |   |   | ✓ | ✓ |      |
 | Cloud vendor integration                                                                                                |   |   | ✓ | ✓ |      |
 | Gas schema to manage the use of the network                                                                             |   |   | ✓ | ✓ | done |
