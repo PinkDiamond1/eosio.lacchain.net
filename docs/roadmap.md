@@ -5,7 +5,7 @@ sidebar_label: Ruta del Proyecto
 ---
 
 ### Estado Actual: Pro TestNet en progreso 
-Actualizado a Mayo 2021
+Actualizado a Julio 2021
 
 
 ` ✓ = requerido para el hito`
@@ -21,16 +21,16 @@ Actualizado a Mayo 2021
 | Validator nodes enabled                                                                                                 | ✓ | ✓ | ✓ | ✓ | completado |
 | Writer nodes enabled                                                                                                    | ✓ | ✓ | ✓ | ✓ | completado |
 | Boot nodes enabled                                                                                                      |   | ✓ | ✓ | ✓ | completado |
-| Smart-contract based permissioning                                                                                      |   | ✓ | ✓ | ✓ | en progreso |
+| Smart-contract based permissioning                                                                                      |   | ✓ | ✓ | ✓ | completado |
 | App for managing permissioning                                                                                          |   | ✓ | ✓ | ✓ | completado |
-| Privacy leveraged as native                                                                                             |   | ✓ | ✓ | ✓ | en progreso |
+| Privacy leveraged as native                                                                                             |   | ✓ | ✓ | ✓ | completado |
 | Dashboard for nodes                                                                                                     |   | ✓ | ✓ | ✓ | completado |
 | Transaction explorer                                                                                                    |   | ✓ | ✓ | ✓ | completado |
 | Dashboard of entities running nodes                                                                                     |   | ✓ | ✓ | ✓ | completado |
-| Interface to visualize node's activity                                                                                  |   | ✓ | ✓ | ✓ | en progreso |
+| Interface to visualize node's activity                                                                                  |   | ✓ | ✓ | ✓ | completado |
 | Tracking system to follow and fix installation issues                                                                   |   |   | ✓ | ✓ |      |
 | Smart-contract based local whitelisting                                                                                 |   |   | ✓ | ✓ | completado |
-| Dashboard of applications running on the blockchain                                                                      |   |   | ✓ | ✓ | en progreso |
+| Dashboard of applications running on the blockchain                                                                     |   |   | ✓ | ✓ | completado |
 | Follow installation issues via a defined tracking system to enable and fix installation problems                        |   |   | ✓ | ✓ |      |
 | Cloud vendor integration                                                                                                |   |   | ✓ | ✓ |      |
 | Gas schema to manage the use of the network                                                                             |   |   | ✓ | ✓ | completado |
