@@ -23,5 +23,5 @@ Para ver la lista de partner que forman parte de la red diríjase [aquí](./part
 
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [cómo contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
 :::

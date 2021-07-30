@@ -31,5 +31,5 @@ La versión 2.2 de EOSIO tiene una [función de grupo de seguridad o control de 
 Este [tutorial de acceso privado a EOSIO](https://developers.eos.io/manuals/eos/v2.2/nodeos/features/private_chain_access/tutorial) demuestra cómo usar la función `SECURITY_GROUP` para lanzar una red EOSIO privada con conexiones TLS, crear un grupo de seguridad y agregar / eliminar participantes para el control de acceso a los datos.
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [cómo contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
 :::

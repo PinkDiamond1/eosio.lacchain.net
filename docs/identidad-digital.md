@@ -84,5 +84,5 @@ Los certificados emitidos por una Autoridad de Certificación (CA) responsable d
 - Sign On
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [cómo contribuir](guias/contribuir). Consulte el [Roadmap del proyecto](./roadmap).
 :::

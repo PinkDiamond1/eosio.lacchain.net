@@ -19,5 +19,5 @@ Para obtener este recurso el usuario debe solicitárselo a su [partner](./partne
 | Usuarios Finales | 0 ųs | 0 Bytes | 0 Bytes |
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [cómo contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
 :::

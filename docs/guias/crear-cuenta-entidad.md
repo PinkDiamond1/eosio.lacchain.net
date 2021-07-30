@@ -56,5 +56,5 @@ Los partner de la red LACChain EOSIO son entidades que también pueden formar pa
 Cada partner tiene la autonomía para administrar su parte de los recursos de la red para sus clientes y afiliados en la red.
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [cómo contribuir](./contribuir). Consulte el [Roadmap del proyecto](../roadmap).
 :::
