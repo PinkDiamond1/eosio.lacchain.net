@@ -15,5 +15,5 @@ Se ha desarrollado una herramienta nativa para LACChain EOSIO para monitoreo de 
 ![Monitor de red](/img/docs/monitor.png)
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [cómo contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../roadmap).
 :::

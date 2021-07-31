@@ -24,5 +24,5 @@ LACChain EOSIO tiene proyectado instalar un explorador de bloques adicional llam
 **eosq** fue desarrollado por [dfuse](https://dfuse.io) para la comunidad EOSIO.
 
 :::note Trabajo en progreso
-Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [como contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../roadmap).
+Aun estamos trabajando en este aspecto de la documentación, si desea mejorar el contenido puede aprender [cómo contribuir](../guias/contribuir). Consulte el [Roadmap del proyecto](../roadmap).
 :::
