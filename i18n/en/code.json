@@ -456,16 +456,16 @@
     "message": "EOSIO is a next-generation blockchain technology launched in 2018 by Block.one, a leading technology company that provides high-performance blockchain solutions. EOSIO offers:"
   },
   "about.whatEOSIOText2": {
-    "message": "- High scalability: EOSIO allows industry-leading speed with up to 4,000 transactions per second, low block time latency rate (0.5 seconds), and Byzantine fault tolerance."
+    "message": ": EOSIO allows industry-leading speed with up to 4,000 transactions per second, low block time latency rate (0.5 seconds), and Byzantine fault tolerance."
   },
   "about.whatEOSIOText3": {
-    "message": "- Flexibility: EOSIO can deploy configurable smart contracts suitable to any business or application with custom governance and business logic and free transactions with consumption limits."
+    "message": ": EOSIO can deploy configurable smart contracts suitable to any business or application with custom governance and business logic and free transactions with consumption limits."
   },
   "about.whatEOSIOText4": {
-    "message": "- Quick adaptability: The EOSIO community introduces a growing set of resources and tools for developers. Also, EOSIO smart contacts can be coded with C++."
+    "message": ": The EOSIO community introduces a growing set of resources and tools for developers. Also, EOSIO smart contacts can be coded with C++."
   },
   "about.whatEOSIOText5": {
-    "message": "- Improved security: EOSIO deploys the latest in blockchain and web security verification standards with end-to-end authentication."
+    "message": ": EOSIO deploys the latest in blockchain and web security verification standards with end-to-end authentication."
   },
   "about.whoBehindText": {
     "message": "LACChain EOSIO was initially developed by the EOS Costa Rica and EOS Argentina teams, with the support of LACChain, a program of the IDB Lab (part of the Inter-American Development Bank). LACChain EOSIO deploys a public permissioned version of EOSIO. The team mainly comprises members of EOS Costa Rica, EOS Argentina, and advisory from LACChain, with some efforts from other organizations such as EOS Venezuela, Block.one, dfuse, and EOS Detroit."
