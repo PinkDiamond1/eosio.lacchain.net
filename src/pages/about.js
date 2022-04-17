@@ -50,7 +50,7 @@ const team = [
   {
       photo:"img/team/edgar.jpg",
       name:"Edgar Fernández",
-      org:"EOS Costa Rica",
+      org:"Edenia",
       position:
         translate({
           id: 'about.businessDevelopment',
@@ -60,7 +60,7 @@ const team = [
   {
     photo:"img/team/xavier.jpg",
     name:"Xavier Fernández",
-    org:"EOS Costa Rica",
+    org:"Edenia",
     position:
       translate({
         id: 'about.techLead',
@@ -80,7 +80,7 @@ const team = [
   {
     photo:"img/team/andres.jpg",
     name:"Andrés Gómez",
-    org:"EOS Costa Rica",
+    org:"Edenia",
     position:"DevOps"
   },
   {
@@ -96,7 +96,7 @@ const team = [
   {
     photo:"img/team/jorge.jpg",
     name:"Jorge Murillo",
-    org:"EOS Costa Rica",
+    org:"Edenia",
     position:
       translate({
         id: 'about.UXDesigner',
@@ -106,7 +106,7 @@ const team = [
   {
     photo:"img/team/luisDiego.jpg",
     name:"Luis Diego Rojas",
-    org:"EOS Costa Rica",
+    org:"Edenia",
     position:
       translate({
         id: 'about.communications',
@@ -116,7 +116,7 @@ const team = [
   {
     photo:"img/team/adriel.png",
     name:"Adriel Díaz",
-    org:"EOS Costa Rica",
+    org:"Edenia",
     position:
       translate({
         id: 'about.fullStack',
@@ -126,7 +126,7 @@ const team = [
   {
     photo:"img/team/teto.png",
     name:"Terencio Gómez",
-    org:"EOS Costa Rica",
+    org:"Edenia",
     position:
       translate({
         id: 'about.fullStack',
@@ -136,7 +136,7 @@ const team = [
   {
     photo:"img/team/angelo.jpg",
     name:"Angelo Castro",
-    org:"EOS Costa Rica",
+    org:"Edenia",
     position:"Front-end"
   }
 ]

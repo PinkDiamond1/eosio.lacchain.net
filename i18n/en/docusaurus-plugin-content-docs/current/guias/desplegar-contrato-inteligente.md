@@ -22,7 +22,7 @@ Once the account is had in the LACChain EOSIO Testnet, for the contract, we will
 To extract the account information and verify how many kilobytes of RAM the account has available, it can perform by executing the following command which can point to the "end-point" of any of the network partners, you can see the list of partners [here](./partners).
 
 ```bash
-cleos -u http://lacchain.eosio.cr get account <accountname>
+cleos -u http://lacchain.edenia.cloud get account <accountname>
 ```
 
 ## 3. Create a Contract
@@ -131,7 +131,7 @@ deploy_hellocontract_contracts_to_lacchain
 ```
 
 :::note Note
-Note that `EOS_API_URL` is an environment variable, its original value being the network end point http://lacchain.eosio.cr
+Note that `EOS_API_URL` is an environment variable, its original value being the network end point http://lacchain.edenia.cloud
 :::
 
 To finish we execute the file with the command `sudo ./holacontrato.sh`, after this we already have our smart contract deployed in LACChain EOSIO.

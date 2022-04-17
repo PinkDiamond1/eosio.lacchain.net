@@ -154,11 +154,11 @@ const Footer = () => {
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
                   <Link
                     className="linkFooter"
-                    href={window.location.href.includes('/en/') ? "https://eoscostarica.io/" : "https://es.eoscostarica.io/"}
+                    href={window.location.href.includes('/en/') ? "https://edenia.com/" : "https://edenia.com/es/"}
                     target="_blank"
                     style={{color:'white'}}
                   >
-                    EOS Costa Rica
+                    Edenia
                   </Link>
                 </p>
                 <p style={{textAlign: isMobile ? 'center' : ''}}>
@@ -176,7 +176,7 @@ const Footer = () => {
             { isDesktop && 
               <Grid item md={6}>
                 <p style={{color:'#ffffff', fontSize: '16px', marginLeft:'18px', marginTop:'2px'}}>
-                  LACChain 2021 - Open Source
+                  LACChain - Open Source MIT License 2022
                 </p>
             </Grid>
             }

@@ -18,7 +18,7 @@ More documentation about the boilerplates in the following link:
 https://guias.eoscostarica.io/docs/boilerplate 
 
 ## EOSCR React Components
-A collection of React Components for EOSIO:  https://components.eosio.cr
+A collection of React Components for EOSIO:  https://components.edenia.cloud
 
 ### GitHub Repository
 https://github.com/eoscostarica/eoscr-components

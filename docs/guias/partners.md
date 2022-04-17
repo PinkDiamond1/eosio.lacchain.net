@@ -15,7 +15,7 @@ Para ser parte de la red como Partners o Non-Partners consulte [esta informació
 
 ## Partners Fundadores
 - [EOS Argentina](https://www.eosargentina.io/)
-- [EOS Costa Rica](https://es.eoscostarica.io/)
+- [Edenia](https://edenia.com/es)
 - [Inter-American Development Bank](https://www.iadb.org/en)
 - [EOS Venezuela](https://eosvenezuela.io/)
 
