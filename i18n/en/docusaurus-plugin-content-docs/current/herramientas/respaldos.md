@@ -8,7 +8,7 @@ The LACChain EOSIO snapshot and backup service will allow you to quickly deploy 
 
 In the following link you can find an explanation about how the different backups and snapshots work in EOSIO: [Nodeos Replays](https://developers.eos.io/manuals/eos/v2.0/nodeos/replays/index).
 
-Currently LACChain EOSIO provides several backups and snapshots that you can download from the following [link](http://archive.eosio.cr/).
+Currently LACChain EOSIO provides several backups and snapshots that you can download from the following [link](http://archive.edenia.cloud/).
 
 With these backups or snapshots you will be able to create a LACChain node much faster, without the need to synchronize from the genesis block.
 

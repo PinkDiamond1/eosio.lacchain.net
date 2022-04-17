@@ -8,7 +8,7 @@ El servicio de snapshots y respaldos de LACChain EOSIO le permitirá desplegar y
 
 En el siguiente enlace puede encontrar una explicacion acerca de como funcionan los diferentes respaldos y snapshots en EOSIO: [Nodeos Replays](https://developers.eos.io/manuals/eos/v2.0/nodeos/replays/index).
 
-Actualmente LACChain EOSIO provee de varios respaldos y snapshots que usted puede descargar del siguiente [enlace](http://archive.eosio.cr/).
+Actualmente LACChain EOSIO provee de varios respaldos y snapshots que usted puede descargar del siguiente [enlace](http://archive.edenia.cloud/).
 Con dichos respaldos o snapshots usted podrá crear un nodo de LACChain de forma mucho más rápida, sin la necesidad de sincronizar desde el bloque génesis.
 
 :::note Trabajo en progreso

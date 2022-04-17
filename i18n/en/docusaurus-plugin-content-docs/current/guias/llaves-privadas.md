@@ -63,13 +63,13 @@ cleos wallet import -n holacontrato
 Set the **owner** account permission
 
 ```bash
-cleos -u https://lacchain.eosio.cr set account permission account_name owner EOS_public_key_of_new_owner -p account_name@owner
+cleos -u https://lacchain.edenia.cloud set account permission account_name owner EOS_public_key_of_new_owner -p account_name@owner
 ```
 
 Set **active** account permission
 
 ```bash
-cleos -u https://lacchain.eosio.cr set account permission account_name active EOS_private_key_of_new_active -p account_name@active
+cleos -u https://lacchain.edenia.cloud set account permission account_name active EOS_private_key_of_new_active -p account_name@active
 ```
 
 :::note Note

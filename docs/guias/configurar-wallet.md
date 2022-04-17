@@ -24,7 +24,7 @@ En este momento se deben completar un formulario para ingresar en el autenticado
  
  - **Chain ID**: 5821525c6588037e2b066b992fcac34909a5b7f1ea8d5a393f6720fca3750d61
  - **Name of Blockchain**: LACChain EOSIO
- - **Default node for this blockchain**: https://lacchain.eosio.cr
+ - **Default node for this blockchain**: https://lacchain.edenia.cloud
  
 ![add network form](/img/tutorials/add_red_form.png)
 

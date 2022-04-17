@@ -72,7 +72,7 @@ it will insert or update a record in the `entity` table located  in the `eosio` 
 	"organization_id": "3-101-123456",
 	"technical_contact": "Asia Trejo",
 	"business_contact": "Kris Peralta",
-	"email": "eoscostarica@eosio.cr",
+	"email": "bp@edenia.com",
 	"website": "https://eoscostarica.io",
 	"code_of_conduct": "https://eoscostarica.io/en/transparency/#code_of_conduct",
 	"ownership_disclosure": "https://eoscostarica.io/en/transparency/#ownership_disclosure",
@@ -145,7 +145,7 @@ Expected node info varies depending on **node_type:**  `validator / boot / write
         "peer_keys": ["EOS..."]
     },
     "validator_endpoints":{
-        "validator_p2p": "lacchain.eosio.cr:9876"
+        "validator_p2p": "lacchain.edenia.cloud:9876"
     },
     "validator_location": {
         "name": "San Jose",
@@ -163,7 +163,7 @@ Expected node info varies depending on **node_type:**  `validator / boot / write
         "peer_keys": ["EOS..."]
     },
     "boot_endpoints":{
-        "boot_p2p": "lacchain.eosio.cr:9876"
+        "boot_p2p": "lacchain.edenia.cloud:9876"
     },
     "boot_location": {
         "name": "San Jose",
@@ -182,9 +182,9 @@ Expected node info varies depending on **node_type:**  `validator / boot / write
         "account_key": "EOS..."
     },
     "writer_endpoints":{
-        "writer_api": "http://lacchain.eosio.cr",
-        "writer_ssl": "https://lacchain.eosio.cr",
-        "writer_p2p": "lacchain.eosio.cr:9876"
+        "writer_api": "http://lacchain.edenia.cloud",
+        "writer_ssl": "https://lacchain.edenia.cloud",
+        "writer_p2p": "lacchain.edenia.cloud:9876"
     },
     "writer_location": {
         "name": "San Jose",
@@ -203,9 +203,9 @@ Expected node info varies depending on **node_type:**  `validator / boot / write
         "peer_keys": ["EOS..."]
     },
     "observer_endpoints":{
-        "observer_api": "http://lacchain.eosio.cr",
-        "observer_ssl": "https://lacchain.eosio.cr",
-        "observer_p2p": "lacchain.eosio.cr:9876"
+        "observer_api": "http://lacchain.edenia.cloud",
+        "observer_ssl": "https://lacchain.edenia.cloud",
+        "observer_p2p": "lacchain.edenia.cloud:9876"
     },
     "observer_location": {
         "name": "San Jose",
