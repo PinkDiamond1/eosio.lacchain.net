@@ -179,7 +179,7 @@ const Navbar = ({isMobile, isDesktop}) => {
   }
 
   return (
-    <Box className={clsx("navBar",{["navBarScroll"]: (trigger || isMobile)})} >
+    <Box className={clsx("navbar",{["navBarScroll"]: (trigger || isMobile)})} >
       <Box className="menuWrapper">
         {isMobile && 
           <>

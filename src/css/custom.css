@@ -1,6 +1,6 @@
- @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
- :root {
+:root {
   --ifm-color-primary: #038702;
   --ifm-color-primary-dark: #179e4c;
   --ifm-color-primary-darker: #159547;
@@ -10,16 +10,16 @@
   --ifm-color-primary-lightest: #24e06e;
 }
 
- body{
+body {
   overflow-x: hidden;
 }
 
-.paddingBox{
+.paddingBox {
   padding: 25px;
   padding-top: 0;
 }
 
-.docs-wrapper{
+.docs-wrapper {
   display: flex;
   padding-top: 120px;
 }
@@ -50,28 +50,28 @@
   top: 100px !important;
 }
 
-.DocSearch-Modal{
+.DocSearch-Modal {
   margin-top: 160px !important;
 }
 
-footer.row{
+footer.row {
   margin-top: 60px !important;
   margin-bottom: 10px !important;
 }
 
-div.margin-vert--lg{
+div.margin-vert--lg {
   margin-top: 8rem !important;
 }
 
-a{
+a {
   color: #1cc15c;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-.buttonPrimary{
+.buttonPrimary {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -86,20 +86,20 @@ h1{
   border-radius: 0;
   cursor: pointer;
   border-radius: 4px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.buttonPrimary:hover{
-  opacity:0.8;
+.buttonPrimary:hover {
+  opacity: 0.8;
 }
 
 .buttonPrimary:disabled,
-.buttonPrimary[disabled]{
+.buttonPrimary[disabled] {
   background-color: #cccccc;
   color: #666666;
 }
 
-.buttonSecondary{
+.buttonSecondary {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -114,22 +114,22 @@ h1{
   color: #038702;
   cursor: pointer;
   border-radius: 4px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.boxFlexEnd{
+.boxFlexEnd {
   display: flex;
-  justify-content:end;
+  justify-content: end;
 }
 
-.buttonSecondary:hover{
+.buttonSecondary:hover {
   color: white;
   background-color: #038702;
 }
 
 /*doc*/
 
-.docMarkdown a{
+.docMarkdown a {
   text-decoration: underline;
 }
 
@@ -140,20 +140,23 @@ h1{
 }
 
 /*Navbar*/
-.navBar {
+.navbar {
   z-index: 1000;
   width: 100%;
+  height: 120px;
   position: fixed;
   display: flex;
   justify-content: center;
+  box-shadow: none;
+  padding: 0;
   background-color: rgba(255, 255, 255);
 }
 
-.navBarScroll{
+.navBarScroll {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-.menuWrapper{
+.menuWrapper {
   position: relative;
   width: 90%;
   display: flex;
@@ -171,14 +174,14 @@ h1{
   display: flex;
 }
 
-.imgLogoBox{
+.imgLogoBox {
   position: absolute;
   left: 0;
   top: -17px;
   width: 220px;
 }
 
-.imgLogoBoxMobile{
+.imgLogoBoxMobile {
   visibility: visible;
   position: absolute;
   left: 25px;
@@ -186,7 +189,7 @@ h1{
   width: 250px;
 }
 
-.imgLogo{
+.imgLogo {
   -webkit-transform-origin: top left;
   -webkit-transition: all 0.26s;
   -webkit-transform: scale(1, 1);
@@ -195,20 +198,20 @@ h1{
   transform: scale(1, 1);
 }
 
-.imgLogoScroll{
+.imgLogoScroll {
   -webkit-transform-origin: top left;
   -webkit-transition: all 0.26s;
   -webkit-transform: scale(0.7, 0.7);
   -moz-transform: scale(0.7, 0.7);
   -o-transform: scale(0.7, 0.7);
-  transform:scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
 }
 
-.boxRight{
+.boxRight {
   width: 70%;
 }
 
-.boxLanguages{
+.boxLanguages {
   z-index: 300;
   position: absolute;
   right: 0;
@@ -217,30 +220,30 @@ h1{
   font-weight: 500;
 }
 
-.boxLanguagesSelector{
+.boxLanguagesSelector {
   z-index: 500;
   position: absolute;
   right: 40px;
   top: -7px;
   display: flex;
   border-radius: 5px;
-  transition:visibility 0.1s linear, opacity 0.1s linear;
+  transition: visibility 0.1s linear, opacity 0.1s linear;
 }
 
-.langItemBox{
+.langItemBox {
   padding: 5px;
 }
 
-.langItem{
+.langItem {
   font-family: sans-serif;
   cursor: pointer;
 }
 
-.langItem:hover{
+.langItem:hover {
   font-weight: bold;
 }
 
-.langItemActive{
+.langItemActive {
   font-family: sans-serif;
   padding-bottom: 3px;
   border-bottom: solid 4px #038702;
@@ -248,7 +251,7 @@ h1{
   cursor: pointer;
 }
 
-.boxMenuItems{
+.boxMenuItems {
   position: absolute;
   right: 0;
   top: 0;
@@ -257,7 +260,7 @@ h1{
   justify-content: flex-end;
 }
 
-.menuItem{
+.menuItem {
   position: relative;
   cursor: pointer;
   margin-left: 20px;
@@ -267,80 +270,80 @@ h1{
   text-decoration: none;
 }
 
-.menuItem:hover .dropDownMenu{
+.menuItem:hover .dropDownMenu {
   visibility: visible;
   display: block;
 }
 
-.menuItem:hover .dropDownMenu::after{
+.menuItem:hover .dropDownMenu::after {
   top: 0;
   right: auto;
   height: 100%;
   width: 210px;
 }
 
-.menuItem:hover .dropDownMenuActive{
+.menuItem:hover .dropDownMenuActive {
   visibility: visible;
   display: block;
 }
 
-.menuItem:hover .dropDownMenuActive::after{
+.menuItem:hover .dropDownMenuActive::after {
   top: 0;
   right: auto;
   height: 100%;
   width: 210px;
 }
 
-.menuItem:hover .menuItemDrop{
-  transition-delay:  0.3s;
+.menuItem:hover .menuItemDrop {
+  transition-delay: 0.3s;
   opacity: 1;
 }
 
-.navBarItemTab:focus-within .dropDownMenu{
+.navBarItemTab:focus-within .dropDownMenu {
   visibility: visible;
   display: block;
 }
 
-.navBarItemTab:focus-within .dropDownMenu::after{
+.navBarItemTab:focus-within .dropDownMenu::after {
   top: 0;
   right: auto;
   height: 100%;
   width: 210px;
 }
 
-.navBarItemTab:focus-within .dropDownMenuActive{
+.navBarItemTab:focus-within .dropDownMenuActive {
   visibility: visible;
   display: block;
 }
 
-.navBarItemTab:focus-within .dropDownMenuActive::after{
+.navBarItemTab:focus-within .dropDownMenuActive::after {
   top: 0;
   right: auto;
   height: 100%;
   width: 210px;
 }
 
-.navBarItemTab:focus-within .dropDownMenu .menuItemDrop{
-  transition-delay:  0.3s;
+.navBarItemTab:focus-within .dropDownMenu .menuItemDrop {
+  transition-delay: 0.3s;
   opacity: 1;
 }
 
-.navBarItemTab:focus-within .link:after{
-  left:  0;
+.navBarItemTab:focus-within .link:after {
+  left: 0;
   width: 100%;
 }
 
-#boxMenuItems:focus-within .linkActive::after{
-  left:  0;
+#boxMenuItems:focus-within .linkActive::after {
+  left: 0;
   width: 0%;
 }
 
-#boxMenuItems:focus-within .navBarItemTab:focus-within .linkActive::after{
-  left:  0;
+#boxMenuItems:focus-within .navBarItemTab:focus-within .linkActive::after {
+  left: 0;
   width: 100%;
 }
 
-.dropDownMenu{
+.dropDownMenu {
   position: absolute;
   display: block;
   visibility: hidden;
@@ -355,14 +358,14 @@ h1{
   height: 5px;
   width: 0%;
   top: 0;
-  background:#038702;
+  background: #038702;
   transition-property: width height;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
   font-weight: bold;
 }
 
-.dropDownMenuActive{
+.dropDownMenuActive {
   position: absolute;
   display: block;
   visibility: hidden;
@@ -377,14 +380,14 @@ h1{
   height: 5px;
   width: 100%;
   top: 0;
-  background:#038702;
+  background: #038702;
   transition-property: width height;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
   font-weight: bold;
 }
 
-.menuItemDrop{
+.menuItemDrop {
   width: auto;
   color: white;
   white-space: nowrap;
@@ -392,17 +395,17 @@ h1{
   margin-top: 15px;
   margin-bottom: 15px;
   opacity: 0;
-  transition: opacity .1s ease-in-out;
-  -moz-transition: opacity .1s ease-in-out;
-  -webkit-transition: opacity .1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
 }
 
-.menuItemDrop:hover{
-  color: #CFD8DC;
+.menuItemDrop:hover {
+  color: #cfd8dc;
 }
 
-.menuItemDropActive{
-  color: #CFD8DC;
+.menuItemDropActive {
+  color: #cfd8dc;
 }
 
 .link {
@@ -415,7 +418,7 @@ h1{
   font-style: normal;
   line-height: 1.25;
   letter-spacing: normal;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .link:after {
@@ -426,7 +429,7 @@ h1{
   height: 5px;
   width: 0;
   bottom: 45px;
-  background:#038702;
+  background: #038702;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -434,7 +437,7 @@ h1{
 }
 
 .menuItem:hover .link:after {
-  left:  0;
+  left: 0;
   width: 100%;
 }
 
@@ -446,23 +449,23 @@ h1{
   height: 5px;
   width: 100%;
   bottom: 45px;
-  background:#038702;
+  background: #038702;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
 
-#boxMenuItems:hover .linkActive::after{
-  left:  0;
+#boxMenuItems:hover .linkActive::after {
+  left: 0;
   width: 0%;
 }
 
-#boxMenuItems:hover .menuItem:hover .linkActive::after{
-  left:  0;
+#boxMenuItems:hover .menuItem:hover .linkActive::after {
+  left: 0;
   width: 100%;
 }
 
-.btnDrawer{
+.btnDrawer {
   position: absolute;
   display: flex;
   top: 13px;
@@ -470,51 +473,51 @@ h1{
   color: #038702;
 }
 
-.btnSearch{
+.btnSearch {
   position: absolute;
   display: flex;
   top: 23px;
   right: 60px;
 }
 
-.drawerContent{
+.drawerContent {
   width: 65vw;
 }
 
-.linkGruopBox{
+.linkGruopBox {
   margin-top: 15px;
 }
 
-.linkGruopLabel{
+.linkGruopLabel {
   margin: 0;
   padding: 0;
   font-size: 11px;
   margin-left: 20px;
-  opacity: .6;
+  opacity: 0.6;
   color: black;
   font-weight: bold;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 /*Footer*/
 
-.footer{
+.footer {
   width: "100%";
   display: flex;
   justify-content: center;
-  background-color: #026C01;
+  background-color: #026c01;
   opacity: 0.8;
   overflow-x: hidden;
 }
 
-.footerContent{
+.footerContent {
   width: 1300px;
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.h3Footer{
+.h3Footer {
   font-family: sans-serif;
   color: white;
   font-weight: bold;
@@ -522,13 +525,13 @@ h1{
   letter-spacing: -0.06px;
 }
 
-.hs-richtext{
+.hs-richtext {
   line-height: 24px;
   font-size: 14px;
   color: #ffffff;
 }
 
-.linkFooter{
+.linkFooter {
   font-family: sans-serif;
   color: white;
   font-weight: normal;
@@ -540,18 +543,18 @@ h1{
   text-align: justify;
 }
 
-.linkFooter:hover{
+.linkFooter:hover {
   color: #038702;
   text-decoration: none;
 }
 
 /*Home*/
 
-.mainContainer{
+.mainContainer {
   overflow-x: hidden;
 }
 
-.containerSec{
+.containerSec {
   margin: 0 auto;
   display: flex;
   width: 1300px;
@@ -560,79 +563,79 @@ h1{
   background-color: #ffffff;
 }
 
-.generalContainer{
+.generalContainer {
   display: flex;
   width: 100%;
   justify-content: center;
   background-color: #ffffff;
 }
 
-.content{
+.content {
   width: 960px;
   display: flex;
 }
 
-.titleBox{
+.titleBox {
   margin-bottom: 3rem;
 }
 
-.h3Box{
+.h3Box {
   margin-bottom: 2rem;
 }
 
-.specialH3Box{
+.specialH3Box {
   margin-bottom: 1rem;
 }
 
-.buttonBox{
+.buttonBox {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-.buttonBoxMobile{
+.buttonBoxMobile {
   margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.sectionHero{
+.sectionHero {
   width: 1300px;
   height: 670px;
   padding-top: 180px;
 }
 
-.sectionLittleHero{
+.sectionLittleHero {
   width: 1300px;
   height: 350px;
   padding-top: 180px;
 }
 
-.sectionHeroMobile{
+.sectionHeroMobile {
   position: relative;
   padding-top: 120px;
   padding-bottom: 0;
   width: 100%;
 }
 
-.section{
+.section {
   padding-bottom: 140px;
   width: 1300px;
 }
 
-.sectionPaddingTop{
+.sectionPaddingTop {
   padding-top: 140px;
   padding-bottom: 50px;
   width: 1300px;
 }
 
-.sectionPadding{
+.sectionPadding {
   padding-top: 100px;
   padding-bottom: 100px;
   width: 1300px;
 }
 
-.accordion{
+.accordion {
   width: 100%;
   background-color: #f1f1f1;
   border: none;
@@ -641,85 +644,85 @@ h1{
   box-shadow: none;
 }
 
-.MuiAccordion-root + .MuiAccordion-root::before{
+.MuiAccordion-root + .MuiAccordion-root::before {
   margin: 0;
   padding: 0;
   opacity: 0;
 }
 
-.MuiAccordion-root + .MuiAccordion-root{
+.MuiAccordion-root + .MuiAccordion-root {
   margin: 0;
   padding: 0;
-  border-top: solid 1px #E0E0E0;
+  border-top: solid 1px #e0e0e0;
 }
 
-.imgBoxLogos{
+.imgBoxLogos {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.oneGroupLogo{
-  transition: all .4s ease-in-out
+.oneGroupLogo {
+  transition: all 0.4s ease-in-out;
 }
 
-.oneGroupLogo:hover{
+.oneGroupLogo:hover {
   transform: scale(1.2);
 }
 
-.spacingBox{
+.spacingBox {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
 
 /*services*/
 
-.centerBox{
+.centerBox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.leftBox{
+.leftBox {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 /* Contact */
-.contactFormBox{
+.contactFormBox {
   margin-bottom: 3rem;
 }
 
-.paddingTop{
-  padding-top: 100px
+.paddingTop {
+  padding-top: 100px;
 }
 
-.imgBoxTheCompany{
+.imgBoxTheCompany {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
 }
 
-.teamSizeImage{
+.teamSizeImage {
   width: 230px;
   height: 230px;
   border-radius: 50%;
 }
 
-.centerText{
+.centerText {
   text-align: center;
 }
 
-.noMarginsTop{
+.noMarginsTop {
   margin-right: 20px;
 }
 
-.socialMediaAnimation{
-  transition: all .4s ease-in-out
+.socialMediaAnimation {
+  transition: all 0.4s ease-in-out;
 }
 
-.socialMediaAnimation:hover{
+.socialMediaAnimation:hover {
   transform: scale(1.1);
 }
 
@@ -730,59 +733,58 @@ h1{
 .media {
   object-fit: cover;
   object-position: bottom;
-  height: 180px
+  height: 180px;
 }
 
-.marginIconsFooter{
+.marginIconsFooter {
   margin-left: 9px;
   margin-right: 9px;
 }
 
-.marginLeft{
+.marginLeft {
   margin-left: 25px;
 }
 
-.bannerStyle{
-  margin-top:'25px'
+.bannerStyle {
+  margin-top: "25px";
 }
 
-.socialMediaIcons{
-  width: 100%
+.socialMediaIcons {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1279px) {
-  .menuWrapper{
+  .menuWrapper {
     width: 960px;
   }
 
-  .footerContent{
+  .footerContent {
     width: 960px;
   }
 
-  .containerSec{
+  .containerSec {
     width: 960px;
   }
 
-  .sectionHero{
+  .sectionHero {
     width: 960px;
   }
 
-  .section{
+  .section {
     width: 960px;
   }
 
-  .sectionPaddingTop{
+  .sectionPaddingTop {
     width: 960px;
   }
 
-  .sectionPadding{
+  .sectionPadding {
     width: 960px;
   }
 
-  .paddingLeft{
+  .paddingLeft {
     padding-left: 0;
   }
-
 }
 
 @media only screen and (max-width: 960px) {
@@ -790,131 +792,129 @@ h1{
     width: 50%;
   }
 
-  .menuWrapper{
+  .menuWrapper {
     height: 90px;
   }
 
-  .socialMediaIcons{
-    width: 20%
+  .socialMediaIcons {
+    width: 20%;
   }
 
-  .bannerStyle{
+  .bannerStyle {
     margin-bottom: 0;
-    text-align: center
+    text-align: center;
   }
 
-  .specialH3Box{
+  .specialH3Box {
     margin-top: 1rem;
   }
 
-  .h3Footer{
+  .h3Footer {
     text-align: center;
     font-size: 18px;
   }
 
-  .linkFooter{
+  .linkFooter {
     text-align: center;
     font-size: 14px;
   }
 
-  .buttonBox{
+  .buttonBox {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .containerSec{
+  .containerSec {
     width: 100%;
   }
 
-  .section{
+  .section {
     width: 100%;
   }
 
-  .sectionPaddingTop{
+  .sectionPaddingTop {
     width: 100%;
   }
-  
-  .sectionPadding{
+
+  .sectionPadding {
     padding-top: 80px;
     padding-bottom: 80px;
     width: 100%;
   }
 
-  .accordionBox{
+  .accordionBox {
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
   }
 
-  .imgBoxLogos{
+  .imgBoxLogos {
     height: auto;
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
-  .oneGroupLogo{
+  .oneGroupLogo {
     transform: scale(1.1);
   }
 
-  .contactFormBox{
+  .contactFormBox {
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  
+
   /*doc*/
 
-  .boxFlexEnd{
+  .boxFlexEnd {
     display: flex;
     justify-content: center;
   }
 
-  .marginIconsFooter{
+  .marginIconsFooter {
     margin: 18px;
   }
 
-  .paddingLeft{
+  .paddingLeft {
     padding-left: 95px;
   }
 
-  .marginLeft{
+  .marginLeft {
     margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 769px) and (min-width: 540px) {
-  .paddingLeft{
+  .paddingLeft {
     padding-left: 40%;
   }
-
 }
 
-@media only screen and (max-width: 767px){
-  .DocSearch-Dropdown{
+@media only screen and (max-width: 767px) {
+  .DocSearch-Dropdown {
     height: calc(100% - 90px) !important;
   }
 
-  .DocSearch-Modal{
+  .DocSearch-Modal {
     margin-top: 90px !important;
     height: calc(100% - 90px) !important;
   }
 
-  div.margin-vert--lg{
+  div.margin-vert--lg {
     margin-top: 5rem !important;
   }
-
 }
 
 @media only screen and (max-width: 280px) {
-  .imgLogoBoxMobile{
+  .imgLogoBoxMobile {
     left: 10px;
   }
 
-  .paddingLeft{
+  .paddingLeft {
     padding-left: 100%;
   }
-  
-  .marginLeft{
+
+  .marginLeft {
     margin-left: -15px;
   }
 }
